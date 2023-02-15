@@ -5,11 +5,22 @@ module.exports = {
     'plugin:react-native-a11y/all',
     'prettier',
     'plugin:react/jsx-runtime',
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
   ],
-  plugins: ['unused-imports'],
+  parser: '@typescript-eslint/parser',
+  plugins: ['unused-imports', '@typescript-eslint', 'prettier'],
   overrides: [
     {
       files: ['**/*.{ts,tsx,js,jsx}'],
+      rules: {
+        'sort-imports': [
+          'error',
+          {
+            ignoreDeclarationSort: true,
+          },
+        ],
+      },
     },
     {
       files: ['*.stories.tsx', 'setupTests.ts'],
