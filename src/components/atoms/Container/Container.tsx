@@ -3,7 +3,7 @@ import {SafeAreaView} from 'react-native-safe-area-context';
 import style from './Container.style';
 
 export type ContainerProps = PropsWithChildren<{
-  background: 'main' | 'white';
+  background: 'primary' | 'secondary';
   testId?: string;
 }>;
 

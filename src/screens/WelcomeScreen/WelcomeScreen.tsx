@@ -41,9 +41,9 @@ const WelcomeScreen = () => {
   const width = Dimensions.get('window').width;
   const height = Dimensions.get('window').height;
   return (
-    <Container background={'main'}>
-      <Swiper loop={false}>
-        <Column>
+    <Container background={'primary'}>
+      <Swiper loop={false} activeDotColor="white">
+        <Column background="inherit">
           <Text>slide 1</Text>
         </Column>
         <Column>

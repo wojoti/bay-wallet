@@ -1,13 +1,20 @@
 import {StyleSheet} from 'react-native';
 
-export const mainColor = '#363062';
+export const primaryColor = '#363062';
+export const secondaryColor = 'white';
 
 const style = StyleSheet.create({
-  mainBgColor: {
-    backgroundColor: mainColor,
+  primaryBgColor: {
+    backgroundColor: primaryColor,
   },
-  mainColor: {
-    color: mainColor,
+  primaryColor: {
+    color: primaryColor,
+  },
+  secondaryBgColor: {
+    backgroundColor: secondaryColor,
+  },
+  secondaryColor: {
+    color: secondaryColor,
   },
 });
 export default style;

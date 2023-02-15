@@ -24,8 +24,23 @@ interface Props {
     | 'stretch'
     | 'baseline'
     | undefined;
+  background?: string;
+  flex?: number;
 }
-const style = ({mt, mb, ml, mr, pt, pb, pl, pr, justify, align}: Props) =>
+const style = ({
+  mt,
+  mb,
+  ml,
+  mr,
+  pt,
+  pb,
+  pl,
+  pr,
+  justify,
+  align,
+  background,
+  flex,
+}: Props) =>
   StyleSheet.create({
     wrapper: {
       marginTop: mt || 0,
@@ -36,10 +51,10 @@ const style = ({mt, mb, ml, mr, pt, pb, pl, pr, justify, align}: Props) =>
       paddingBottom: pb || 0,
       paddingLeft: pl || 0,
       paddingRight: pr || 0,
-
+      backgroundColor: background || 'inherit',
       justifyContent: justify || 'flex-start',
       alignItems: align || 'flex-start',
-      width: '100%',
+      flex: flex || 0,
     },
   });
 export default style;

@@ -1,15 +1,14 @@
 import {StyleSheet} from 'react-native';
-import {mainColor} from 'style/style';
 
 interface Props {
-  background: 'main' | 'white';
+  background: 'primary' | 'secondary';
 }
 
 const style = ({background}: Props) =>
   StyleSheet.create({
     wrapper: {
       flex: 1,
-      backgroundColor: background === 'main' ? mainColor : 'white',
+      backgroundColor: background,
     },
   });
 export default style;

@@ -26,6 +26,8 @@ export type ColumnProps = PropsWithChildren<{
     | 'stretch'
     | 'baseline'
     | undefined;
+  background?: string;
+  flex?: number;
   testId?: string;
 }>;
 
@@ -40,12 +42,29 @@ const Column = ({
   pr,
   justify,
   align,
+  background,
+  flex,
   testId,
   children,
 }: ColumnProps) => {
   return (
     <View
-      style={style({mt, mb, ml, mr, pt, pb, pl, pr, justify, align}).wrapper}
+      style={
+        style({
+          mt,
+          mb,
+          ml,
+          mr,
+          pt,
+          pb,
+          pl,
+          pr,
+          justify,
+          align,
+          background,
+          flex,
+        }).wrapper
+      }
       testID={testId}>
       {children}
     </View>
