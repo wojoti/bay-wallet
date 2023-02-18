@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot 1`] = `
+<Text
+  style={
+    {
+      "color": "black",
+      "fontFamily": "Poppins-Light",
+      "fontSize": 14,
+      "margin": 0,
+      "padding": 0,
+      "textAlign": "left",
+    }
+  }
+  testID="test-label-id"
+>
+  test label
+</Text>
+`;

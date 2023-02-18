@@ -1,5 +1,5 @@
 import {StyleSheet} from 'react-native';
-import {primaryColor, secondaryColor} from 'style/style';
+import {primary, secondary} from 'style/style';
 
 interface Props {
   background: 'primary' | 'secondary';
@@ -8,12 +8,13 @@ interface Props {
 const style = ({background}: Props) =>
   StyleSheet.create({
     wrapper: {
-      flex: 1,
+      width: '100%',
+      height: '100%',
       backgroundColor:
         background === 'primary'
-          ? primaryColor
+          ? primary
           : background === 'secondary'
-          ? secondaryColor
+          ? secondary
           : 'inherit',
     },
   });

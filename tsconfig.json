@@ -10,7 +10,8 @@
       "img/*": ["src/img/*"],
       "style/*": ["src/style/*"],
       "store/*": ["src/store/*"],
-      "storybook/*": [".storybook/*"]
+      "storybook/*": [".storybook/*"],
+      "root/*": ["./*"]
     }
   }
 }

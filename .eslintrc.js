@@ -13,19 +13,18 @@ module.exports = {
   overrides: [
     {
       files: ['**/*.{ts,tsx,js,jsx}'],
-      rules: {
-        'sort-imports': [
-          'error',
-          {
-            ignoreDeclarationSort: true,
-          },
-        ],
-      },
     },
     {
-      files: ['*.stories.tsx', 'setupTests.ts'],
+      files: [
+        '*.stories.tsx',
+        'setupTests.ts',
+        'test-utils.tsx',
+        'metro.config.js',
+      ],
       rules: {
         'react-native/no-inline-styles': 'off',
+        '@typescript-eslint/ban-types': 'off',
+        '@typescript-eslint/no-var-requires': 'off',
       },
     },
   ],

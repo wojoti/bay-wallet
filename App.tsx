@@ -7,9 +7,15 @@ import {Provider, useSelector} from 'react-redux';
 import WelcomeScreen from 'screens/WelcomeScreen/WelcomeScreen';
 import {store} from 'store/store';
 import {selectStyleData} from 'store/styleSlice';
+import {
+  default as Storybook,
+  default as StorybookUIHMRRoot,
+} from './.storybook/Storybook';
+export {StorybookUIHMRRoot};
 
 export type RootStackParamList = {
   Welcome: undefined;
+  Storybook: undefined;
 };
 
 function App(): JSX.Element {
@@ -22,11 +28,12 @@ function App(): JSX.Element {
     <NavigationContainer>
       <StatusBar barStyle={style.barStyle} backgroundColor="transparent" />
       <Stack.Navigator
-        initialRouteName={'Welcome'}
+        initialRouteName={'Storybook'}
         screenOptions={{
           headerShown: false,
         }}>
         <Stack.Screen name="Welcome" component={WelcomeScreen} />
+        <Stack.Screen name="Storybook" component={Storybook} />
       </Stack.Navigator>
     </NavigationContainer>
   );
