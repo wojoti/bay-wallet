@@ -1,6 +1,5 @@
 export {default as Button} from './Button/Button';
 // export {default as Checkbox} from './Checkbox/Checkbox';
-export {default as Column} from './Column/Column';
 export {default as Container} from './Container/Container';
 export {default as Header} from './Header/Header';
 export {default as Img, ImgType} from './Img/Img';

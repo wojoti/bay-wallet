@@ -28,7 +28,7 @@ function App(): JSX.Element {
     <NavigationContainer>
       <StatusBar barStyle={style.barStyle} backgroundColor="transparent" />
       <Stack.Navigator
-        initialRouteName={'Storybook'}
+        initialRouteName={'Welcome'}
         screenOptions={{
           headerShown: false,
         }}>

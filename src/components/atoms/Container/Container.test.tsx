@@ -5,12 +5,11 @@ import Container, {ContainerProps} from './Container';
 
 const props: ContainerProps = {
   testId: 'test-container-id',
-  background: 'primary',
 };
 
 const modifiedProps: ContainerProps = {
   ...props,
-  background: 'secondary',
+  mt: 14,
 };
 
 test('should match snapshot', () => {
@@ -24,18 +23,18 @@ test('should render Container', () => {
   expect(ContainerElement).toBeOnTheScreen();
 });
 
-test('should render Container with default style', () => {
+test('should render container with default style', () => {
   render(<Container {...props} />);
-  const ContainerElement = screen.getByTestId('test-container-id');
-  expect(ContainerElement).toBeOnTheScreen();
-  expect(ContainerElement).toHaveStyle({
-    backgroundColor: '#363062',
+  const containerElement = screen.getByTestId('test-container-id');
+  expect(containerElement).toBeOnTheScreen();
+  expect(containerElement).toHaveStyle({
+    marginTop: 0,
   });
 });
 
-test('should render Container with modified style through props', () => {
+test('should render container with modified style through props', () => {
   render(<Container {...modifiedProps} />);
-  const ContainerElement = screen.getByTestId('test-container-id');
-  expect(ContainerElement).toBeOnTheScreen();
-  expect(ContainerElement).toHaveStyle({backgroundColor: 'white'});
+  const containerElement = screen.getByTestId('test-container-id');
+  expect(containerElement).toBeOnTheScreen();
+  expect(containerElement).toHaveStyle({marginTop: 14});
 });

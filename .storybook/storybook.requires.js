@@ -48,7 +48,6 @@ try {
 const getStories = () => {
   return {
     "./srccomponentsatomsButtonButton.stories.tsx": require("../src/components/atoms/Button/Button.stories.tsx"),
-    "./srccomponentsatomsColumnColumn.stories.tsx": require("../src/components/atoms/Column/Column.stories.tsx"),
     "./srccomponentsatomsContainerContainer.stories.tsx": require("../src/components/atoms/Container/Container.stories.tsx"),
     "./srccomponentsatomsHeaderHeader.stories.tsx": require("../src/components/atoms/Header/Header.stories.tsx"),
     "./srccomponentsatomsImgImg.stories.tsx": require("../src/components/atoms/Img/Img.stories.tsx"),

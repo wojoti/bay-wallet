@@ -29,9 +29,6 @@ export const textStyle = ({type}: textProps) =>
 const style = ({type, pressed}: Props) =>
   StyleSheet.create({
     wrapper: {
-      margin: 0,
-      padding: 0,
-      width: '100%',
       height: 60,
       borderRadius: 8,
       borderWidth: type === 'alt' ? 1 : 0,

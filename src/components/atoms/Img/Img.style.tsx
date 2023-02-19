@@ -1,8 +1,8 @@
 import {StyleSheet} from 'react-native';
 
 interface Props {
-  width: number;
-  height: number;
+  width: number | string;
+  height: number | string;
 }
 const style = ({width, height}: Props) =>
   StyleSheet.create({
