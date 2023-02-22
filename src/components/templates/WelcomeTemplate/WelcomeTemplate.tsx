@@ -1,58 +1,45 @@
 import {Container} from 'components/atoms';
-import {CardWelcome, MainWelcome} from 'components/organisms';
-import {PropsWithChildren} from 'react';
+import {WelcomeCards, WelcomeMain} from 'components/organisms';
+import {PropsWithChildren, useState} from 'react';
 import Swiper from 'react-native-swiper';
-import {primary, secondary} from 'style/style';
+import {primary, secondary} from 'theme/colors';
+import style from './WelcomeTemplate.style';
 
 export type WelcomeTemplateProps = PropsWithChildren<{
   onButtonPress: () => void;
+  testId?: string;
 }>;
 
-const WelcomeTemplate = ({onButtonPress}: WelcomeTemplateProps) => {
+const WelcomeTemplate = ({onButtonPress, testId}: WelcomeTemplateProps) => {
+  const [scrollable, setScrollable] = useState(true);
   return (
-    <Container background={primary} height="100%">
-      <Swiper loop={false} activeDotColor={'white'}>
-        <MainWelcome
+    <Container customStyle={style.wrapper} testId={testId}>
+      <Swiper
+        loop={false}
+        activeDotColor={'white'}
+        onIndexChanged={() => setScrollable(false)}
+        scrollEnabled={scrollable}
+        showsPagination={scrollable}>
+        <WelcomeMain
           onButtonPress={onButtonPress}
           mainColor={primary}
           accentColor={secondary}
+          testId={'test-welcomemain-id'}
         />
-        <CardWelcome
+        <WelcomeCards
           onButtonPress={onButtonPress}
           mainColor={primary}
           cardColor={secondary}
-          mainText={'New cards in few clicks'}
-          cardText={
+          mainText1={'New cards in few clicks'}
+          cardText1={
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.'
           }
+          mainText2={'Easy payments'}
+          cardText2={
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.'
+          }
+          testId={'test-welcomecards-id'}
         />
-        <CardWelcome
-          onButtonPress={onButtonPress}
-          mainColor={primary}
-          cardColor={secondary}
-          mainText={'Easy payments'}
-          cardText={
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.'
-          }
-        />
-        {/* <CardWelcome
-          onButtonPress={onButtonPress}
-          mainColor={primary}
-          cardColor={secondary}
-          title={'New cards in few clicks'}
-          description={
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.'
-          }
-        />
-        <CardWelcome
-          onButtonPress={onButtonPress}
-          mainColor={primary}
-          cardColor={secondary}
-          title={'Easy payments'}
-          description={
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.'
-          }
-        /> */}
       </Swiper>
     </Container>
   );

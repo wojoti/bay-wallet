@@ -9,7 +9,7 @@ const props: ContainerProps = {
 
 const modifiedProps: ContainerProps = {
   ...props,
-  mt: 14,
+  flex: 1,
 };
 
 test('should match snapshot', () => {
@@ -28,7 +28,7 @@ test('should render container with default style', () => {
   const containerElement = screen.getByTestId('test-container-id');
   expect(containerElement).toBeOnTheScreen();
   expect(containerElement).toHaveStyle({
-    marginTop: 0,
+    flexDirection: 'column',
   });
 });
 
@@ -36,5 +36,5 @@ test('should render container with modified style through props', () => {
   render(<Container {...modifiedProps} />);
   const containerElement = screen.getByTestId('test-container-id');
   expect(containerElement).toBeOnTheScreen();
-  expect(containerElement).toHaveStyle({marginTop: 14});
+  expect(containerElement).toHaveStyle({flex: 1});
 });

@@ -24,7 +24,7 @@ export const Example = Template.bind({});
 Example.args = {
   children: 'BayWallet',
   color: 'black',
-  size: 14,
+  size: 34,
   testId: '',
   align: 'left',
 };
@@ -33,7 +33,7 @@ export const CenteredExample = Template.bind({});
 CenteredExample.args = {
   children: 'New cards in few clicks',
   color: '#6B6B6B',
-  size: 20,
+  size: 40,
   testId: '',
   align: 'center',
 };

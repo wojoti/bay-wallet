@@ -1,14 +1,18 @@
 import {useNavigation} from '@react-navigation/native';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import {RootStackParamList} from 'App';
-import WelcomeTemplate from 'components/templates/WelcomeTemplate/WelcomeTemplate';
+import {WelcomeTemplate} from 'components/templates';
 
 export type WelcomeScreenNavigationProp = NativeStackNavigationProp<
   RootStackParamList,
   'Welcome'
 >;
 
-const WelcomeScreen = () => {
+export interface WelcomeScreenProps {
+  testId?: string;
+}
+
+const WelcomeScreen = ({testId}: WelcomeScreenProps) => {
   const navigation = useNavigation<WelcomeScreenNavigationProp>();
 
   return (
@@ -16,6 +20,7 @@ const WelcomeScreen = () => {
       onButtonPress={() => {
         navigation.navigate('Storybook');
       }}
+      testId={testId}
     />
   );
 };

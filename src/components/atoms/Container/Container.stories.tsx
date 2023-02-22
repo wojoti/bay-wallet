@@ -52,20 +52,8 @@ const Template: ComponentStory<typeof Container> = (args: ContainerProps) => (
 
 export const Example = Template.bind({});
 Example.args = {
-  mt: 0,
-  mb: 0,
-  ml: 0,
-  mr: 0,
-  pt: 0,
-  pb: 0,
-  pl: 0,
-  pr: 0,
   testId: '',
   align: 'flex-start',
   justify: 'flex-start',
   flex: 0,
-  background: 'inherit',
-  width: '',
-  height: '',
-  radius: 0,
 };

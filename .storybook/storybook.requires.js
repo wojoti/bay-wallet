@@ -52,6 +52,10 @@ const getStories = () => {
     "./srccomponentsatomsHeaderHeader.stories.tsx": require("../src/components/atoms/Header/Header.stories.tsx"),
     "./srccomponentsatomsImgImg.stories.tsx": require("../src/components/atoms/Img/Img.stories.tsx"),
     "./srccomponentsatomsLabelLabel.stories.tsx": require("../src/components/atoms/Label/Label.stories.tsx"),
+    "./srccomponentsmoleculesWelcomeCardsAreaWelcomeCardsArea.stories.tsx": require("../src/components/molecules/WelcomeCardsArea/WelcomeCardsArea.stories.tsx"),
+    "./srccomponentsorganismsWelcomeCardsWelcomeCards.stories.tsx": require("../src/components/organisms/WelcomeCards/WelcomeCards.stories.tsx"),
+    "./srccomponentsorganismsWelcomeMainWelcomeMain.stories.tsx": require("../src/components/organisms/WelcomeMain/WelcomeMain.stories.tsx"),
+    "./srccomponents\templatesWelcomeTemplateWelcomeTemplate.stories.tsx": require("../src/components/templates/WelcomeTemplate/WelcomeTemplate.stories.tsx"),
   };
 };
 

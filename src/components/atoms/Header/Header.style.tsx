@@ -1,5 +1,5 @@
 import {StyleSheet} from 'react-native';
-import {boldFont} from 'style/style';
+import {boldFont} from 'theme/fonts';
 
 interface Props {
   color?: string;

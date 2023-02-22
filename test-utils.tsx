@@ -1,11 +1,11 @@
 import type {PreloadedState} from '@reduxjs/toolkit';
 import {configureStore} from '@reduxjs/toolkit';
 import {ToolkitStore} from '@reduxjs/toolkit/dist/configureStore';
-import {render, RenderOptions} from '@testing-library/react-native';
+import {cleanup, render, RenderOptions} from '@testing-library/react-native';
 import React, {PropsWithChildren} from 'react';
 import {Provider} from 'react-redux';
-import {RootState} from 'store/store';
-import {styleSlice} from 'store/styleSlice';
+import {RootState, store} from 'store/store';
+import {resetState, styleSlice} from 'store/styleSlice';
 // As a basic setup, import your same slice reducers
 
 // This type interface extends the default options for render from RTL, as well
@@ -14,6 +14,11 @@ interface ExtendedRenderOptions extends Omit<RenderOptions, 'queries'> {
   preloadedState?: PreloadedState<RootState>;
   store?: ToolkitStore;
 }
+
+afterEach(() => {
+  cleanup();
+  store.dispatch(resetState());
+});
 
 function renderWithProviders(
   ui: React.ReactElement,

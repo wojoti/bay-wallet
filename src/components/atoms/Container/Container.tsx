@@ -3,14 +3,6 @@ import {View} from 'react-native';
 import style from './Container.style';
 
 export type ContainerProps = PropsWithChildren<{
-  mt?: number;
-  mb?: number;
-  ml?: number;
-  mr?: number;
-  pt?: number;
-  pb?: number;
-  pl?: number;
-  pr?: number;
   justify?:
     | 'flex-start'
     | 'flex-end'
@@ -26,57 +18,24 @@ export type ContainerProps = PropsWithChildren<{
     | 'stretch'
     | 'baseline'
     | undefined;
-  background?: string;
   flex?: number;
   testId?: string;
-  width?: string;
-  height?: string;
-  radius?: number;
   direction?: 'row' | 'column';
+  customStyle?: object;
 }>;
 
 const Container = ({
-  mt,
-  mb,
-  ml,
-  mr,
-  pt,
-  pb,
-  pl,
-  pr,
   justify,
   align,
-  background,
   flex,
-  width,
-  height,
-  radius,
   direction,
   testId,
+  customStyle,
   children,
 }: ContainerProps) => {
   return (
     <View
-      style={
-        style({
-          mt,
-          mb,
-          ml,
-          mr,
-          pt,
-          pb,
-          pl,
-          pr,
-          justify,
-          align,
-          background,
-          flex,
-          width,
-          height,
-          radius,
-          direction,
-        }).wrapper
-      }
+      style={[style({justify, align, flex, direction}).wrapper, customStyle]}
       testID={testId}>
       {children}
     </View>

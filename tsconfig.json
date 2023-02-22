@@ -8,7 +8,7 @@
       "screens/*": ["src/screens/*"],
       "stories/*": ["src/stories/*"],
       "img/*": ["src/img/*"],
-      "style/*": ["src/style/*"],
+      "theme/*": ["src/theme/*"],
       "store/*": ["src/store/*"],
       "storybook/*": [".storybook/*"],
       "root/*": ["./*"]

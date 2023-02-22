@@ -1,0 +1,195 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot 1`] = `
+<View
+  style={
+    [
+      {
+        "alignItems": "center",
+        "flex": 1,
+        "flexDirection": "column",
+        "justifyContent": "center",
+        "width": "100%",
+      },
+      {
+        "backgroundColor": "#363062",
+      },
+    ]
+  }
+  testID="test-welcomemain-id"
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "stretch",
+          "flex": 1,
+          "flexDirection": "column",
+          "justifyContent": "flex-end",
+          "width": "100%",
+        },
+        undefined,
+      ]
+    }
+  >
+    <SvgMock
+      height={330}
+      testID="welcomemain-img"
+      width="100%"
+    />
+  </View>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "flex": 1.1,
+          "flexDirection": "column",
+          "justifyContent": "flex-start",
+          "width": "100%",
+        },
+        {
+          "width": "85%",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "flex": 2.6,
+            "flexDirection": "column",
+            "justifyContent": "flex-start",
+            "width": "100%",
+          },
+          undefined,
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "white",
+            "fontFamily": "Poppins-Light",
+            "fontSize": 30,
+            "margin": 0,
+            "padding": 0,
+            "textAlign": "left",
+          }
+        }
+        testID="welcomemain-label"
+      >
+        Welcome to,
+      </Text>
+      <Text
+        style={
+          {
+            "color": "white",
+            "fontFamily": "Poppins-Bold",
+            "fontSize": 50,
+            "margin": 0,
+            "padding": 0,
+            "textAlign": "left",
+          }
+        }
+        testID="welcomemain-header"
+      >
+        BayWallet
+      </Text>
+      <Text
+        style={
+          {
+            "color": "white",
+            "fontFamily": "Poppins-Light",
+            "fontSize": 14,
+            "margin": 0,
+            "padding": 0,
+            "textAlign": "center",
+          }
+        }
+        testID="welcomemain-description"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+      </Text>
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "stretch",
+            "flex": 1,
+            "flexDirection": "column",
+            "justifyContent": "flex-start",
+            "width": "100%",
+          },
+          undefined,
+        ]
+      }
+    >
+      <View
+        accessibilityRole="button"
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "alignItems": "center",
+            "backgroundColor": "white",
+            "borderColor": "#363062",
+            "borderRadius": 8,
+            "borderStyle": "solid",
+            "height": 60,
+            "justifyContent": "center",
+            "opacity": 1,
+          }
+        }
+        testID="welcomemain-button"
+      >
+        <Text
+          style={
+            {
+              "color": "black",
+              "fontFamily": "Poppins-Bold",
+              "fontSize": 18,
+              "margin": 0,
+              "padding": 0,
+              "textAlign": "center",
+            }
+          }
+          testID="button-text"
+        >
+          GET STARTED
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;

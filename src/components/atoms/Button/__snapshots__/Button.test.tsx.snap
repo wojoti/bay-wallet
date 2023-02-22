@@ -7,7 +7,7 @@ exports[`should match snapshot 1`] = `
     {
       "busy": undefined,
       "checked": undefined,
-      "disabled": false,
+      "disabled": undefined,
       "expanded": undefined,
       "selected": undefined,
     }
@@ -39,14 +39,9 @@ exports[`should match snapshot 1`] = `
       "borderColor": "#363062",
       "borderRadius": 8,
       "borderStyle": "solid",
-      "borderWidth": 0,
-      "elevation": 0,
       "height": 60,
       "justifyContent": "center",
-      "margin": 0,
       "opacity": 1,
-      "padding": 0,
-      "width": "100%",
     }
   }
   testID="test-button-id"
@@ -62,6 +57,7 @@ exports[`should match snapshot 1`] = `
         "textAlign": "center",
       }
     }
+    testID="button-text"
   >
     test button
   </Text>
