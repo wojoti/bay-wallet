@@ -1,7 +1,11 @@
-import {useNavigation} from '@react-navigation/native';
+import {useIsFocused, useNavigation} from '@react-navigation/native';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import {RootStackParamList} from 'App';
 import {WelcomeTemplate} from 'components/templates';
+import {useEffect} from 'react';
+import {useDispatch} from 'react-redux';
+import {AppDispatch} from 'store/store';
+import {lightMode} from 'store/styleSlice';
 
 export type WelcomeScreenNavigationProp = NativeStackNavigationProp<
   RootStackParamList,
@@ -14,15 +18,20 @@ export interface WelcomeScreenProps {
 
 const WelcomeScreen = ({testId}: WelcomeScreenProps) => {
   const navigation = useNavigation<WelcomeScreenNavigationProp>();
+  const dispatch = useDispatch<AppDispatch>();
+  const isFocused = useIsFocused();
 
-  return (
-    <WelcomeTemplate
-      onButtonPress={() => {
-        navigation.navigate('Storybook');
-      }}
-      testId={testId}
-    />
-  );
+  useEffect(() => {
+    if (isFocused) {
+      dispatch(lightMode());
+    }
+  }, [dispatch, isFocused]);
+
+  const onButtonPress = () => {
+    navigation.navigate('Login');
+  };
+
+  return <WelcomeTemplate onButtonPress={onButtonPress} testId={testId} />;
 };
 
 export default WelcomeScreen;
