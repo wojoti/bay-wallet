@@ -4,7 +4,7 @@ import WelcomeCardsArea from './WelcomeCardsArea';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'molecules/WelcomeCardsArea',
+  title: 'Molecules/WelcomeCardsArea',
   component: WelcomeCardsArea,
   argTypes: {
     onButtonPress: {action: 'onButtonPress'},

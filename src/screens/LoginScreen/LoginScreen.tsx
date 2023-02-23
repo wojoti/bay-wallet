@@ -27,11 +27,12 @@ const LoginScreen = ({testId}: LoginScreenProps) => {
     }
   }, [dispatch, isFocused]);
 
-  const onLoginButtonPress = () => {
-    navigation.navigate('Storybook');
+  const onLoginSubmit = (username: string, password: string) => {
+    console.log('username:' + username + ',pwd:' + password);
+    //navigation.navigate('Storybook');
   };
 
-  const onResetButtonPress = () => {
+  const onPasswordReset = () => {
     navigation.navigate('Welcome');
   };
 
@@ -42,8 +43,8 @@ const LoginScreen = ({testId}: LoginScreenProps) => {
 
   return (
     <LoginTemplate
-      onLoginButtonPress={onLoginButtonPress}
-      onResetButtonPress={onResetButtonPress}
+      onLoginSubmit={onLoginSubmit}
+      onPasswordReset={onPasswordReset}
       onSocialLoginPress={onSocialLoginPress}
       testId={testId}
     />

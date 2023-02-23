@@ -4,7 +4,7 @@ import WelcomeTemplate from './WelcomeTemplate';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'organisms/WelcomeTemplate',
+  title: 'Templates/WelcomeTemplate',
   component: WelcomeTemplate,
   argTypes: {
     onButtonPress: {action: 'onButtonPress'},

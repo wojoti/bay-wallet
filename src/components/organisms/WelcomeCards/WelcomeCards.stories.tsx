@@ -5,7 +5,7 @@ import WelcomeCards from './WelcomeCards';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'organisms/WelcomeCards',
+  title: 'Organisms/WelcomeCards',
   component: WelcomeCards,
   argTypes: {
     onButtonPress: {action: 'onButtonPress'},

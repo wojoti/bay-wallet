@@ -5,7 +5,7 @@ import WelcomeMain from './WelcomeMain';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'organisms/WelcomeMain',
+  title: 'Organisms/WelcomeMain',
   component: WelcomeMain,
   argTypes: {
     onButtonPress: {action: 'onButtonPress'},

@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot 1`] = `
+<TextInput
+  accessibilityHint="Allow to insert username"
+  accessibilityLabel="Login input field"
+  autoComplete="username"
+  autoCorrect={false}
+  onChangeText={[MockFunction]}
+  style={
+    {
+      "borderColor": "#363062",
+      "borderRadius": 8,
+      "borderWidth": 1,
+      "fontFamily": "Poppins-Light",
+      "height": 60,
+      "paddingLeft": 30,
+      "width": "100%",
+    }
+  }
+  testID="test-input-id"
+/>
+`;

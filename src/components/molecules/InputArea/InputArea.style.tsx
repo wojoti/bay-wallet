@@ -2,12 +2,15 @@ import {StyleSheet} from 'react-native';
 import {secondary} from 'theme/colors';
 
 const style = StyleSheet.create({
-  wrapper: {
+  fixedLabel: {
+    flex: 0,
+    width: 95,
+    marginHorizontal: 15,
+    paddingHorizontal: 10,
     backgroundColor: secondary,
-    height: '100%',
-  },
-  sizer: {
-    width: '85%',
+    alignItems: 'flex-start',
+    top: 15,
+    zIndex: 1,
   },
 });
 export default style;

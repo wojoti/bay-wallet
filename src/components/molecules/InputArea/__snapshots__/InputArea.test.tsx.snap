@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot 1`] = `
+<View
+  style={
+    [
+      {
+        "alignItems": "flex-start",
+        "flex": undefined,
+        "flexDirection": "column",
+        "justifyContent": "flex-start",
+        "width": "100%",
+      },
+      undefined,
+    ]
+  }
+  testID="test-inputarea-id"
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "stretch",
+          "flex": undefined,
+          "flexDirection": "column",
+          "justifyContent": "flex-start",
+          "width": "100%",
+        },
+        {
+          "backgroundColor": "white",
+          "flex": 0,
+          "marginHorizontal": 15,
+          "paddingHorizontal": 10,
+          "top": 15,
+          "width": "auto",
+          "zIndex": 1,
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        {
+          "color": "black",
+          "fontFamily": "Poppins-Light",
+          "fontSize": 14,
+          "margin": 0,
+          "padding": 0,
+          "textAlign": "left",
+        }
+      }
+      testID="inputarea-label"
+    >
+      Username
+    </Text>
+  </View>
+  <TextInput
+    accessibilityHint="Allow to insert username"
+    accessibilityLabel="Login input field"
+    autoComplete="username"
+    autoCorrect={false}
+    onChangeText={[MockFunction]}
+    style={
+      {
+        "borderColor": "#363062",
+        "borderRadius": 8,
+        "borderWidth": 1,
+        "fontFamily": "Poppins-Light",
+        "height": 60,
+        "paddingLeft": 30,
+        "width": "100%",
+      }
+    }
+    testID="inputarea-input"
+  />
+</View>
+`;
