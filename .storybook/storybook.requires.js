@@ -54,6 +54,7 @@ const getStories = () => {
     "./srccomponentsatomsInputInput.stories.tsx": require("../src/components/atoms/Input/Input.stories.tsx"),
     "./srccomponentsatomsLabelLabel.stories.tsx": require("../src/components/atoms/Label/Label.stories.tsx"),
     "./srccomponentsatomsLinkLink.stories.tsx": require("../src/components/atoms/Link/Link.stories.tsx"),
+    "./srccomponentsmoleculesBreaklineBreakline.stories.tsx": require("../src/components/molecules/Breakline/Breakline.stories.tsx"),
     "./srccomponentsmoleculesInputAreaInputArea.stories.tsx": require("../src/components/molecules/InputArea/InputArea.stories.tsx"),
     "./srccomponentsmoleculesWelcomeCardsAreaWelcomeCardsArea.stories.tsx": require("../src/components/molecules/WelcomeCardsArea/WelcomeCardsArea.stories.tsx"),
     "./srccomponentsorganismsLoginFormLoginForm.stories.tsx": require("../src/components/organisms/LoginForm/LoginForm.stories.tsx"),

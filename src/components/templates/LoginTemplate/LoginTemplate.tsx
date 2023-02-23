@@ -17,7 +17,9 @@ const LoginTemplate = ({
   testId,
 }: LoginTemplateProps) => {
   const onSocialPress = () => {
-    onSocialLoginPress('test');
+    onSocialLoginPress(
+      'beda 2 funkcje od fejsa i googla - poki co nie mam komponentow',
+    );
   };
   return (
     <Container testId={testId} customStyle={style.wrapper}>

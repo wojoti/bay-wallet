@@ -159,4 +159,14 @@ test('should render loginform - link - should handle onPress event', () => {
   fireEvent.press(loginformHeaderElement);
   expect(handleResetPress).toHaveBeenCalledTimes(1);
 });
+test('should render loginform - breakline', () => {
+  render(<LoginForm {...props} />);
+  const loginformElement = screen.getByTestId('test-loginform-id');
+  expect(loginformElement).toBeOnTheScreen();
+  const loginformBreaklineElement = within(loginformElement).getByTestId(
+    'loginform-breakline',
+  );
+  expect(loginformBreaklineElement).toBeOnTheScreen();
+});
+
 //TODO: add tests for new components

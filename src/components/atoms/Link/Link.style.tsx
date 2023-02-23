@@ -11,7 +11,7 @@ export const textStyle = ({color, bold, align}: textProps) =>
       margin: 0,
       padding: 0,
       color: color || 'black',
-      textDecorationLine: bold ? 'underline' : 'none',
+      fontWeight: bold ? 'bold' : '400',
       textAlign: align || 'left',
     },
   });

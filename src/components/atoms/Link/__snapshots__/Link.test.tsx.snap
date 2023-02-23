@@ -46,10 +46,10 @@ exports[`should match snapshot 1`] = `
     style={
       {
         "color": "black",
+        "fontWeight": "400",
         "margin": 0,
         "padding": 0,
         "textAlign": "left",
-        "textDecorationLine": "none",
       }
     }
   >

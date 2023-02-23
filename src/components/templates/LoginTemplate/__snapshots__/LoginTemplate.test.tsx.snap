@@ -435,10 +435,10 @@ exports[`should match snapshot 1`] = `
                 style={
                   {
                     "color": "#363062",
+                    "fontWeight": "400",
                     "margin": 0,
                     "padding": 0,
                     "textAlign": "right",
-                    "textDecorationLine": "none",
                   }
                 }
               >
@@ -457,7 +457,10 @@ exports[`should match snapshot 1`] = `
                 "justifyContent": "flex-start",
                 "width": "100%",
               },
-              undefined,
+              {
+                "marginBottom": 20,
+                "marginTop": 50,
+              },
             ]
           }
         >

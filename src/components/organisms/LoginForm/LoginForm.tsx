@@ -61,7 +61,7 @@ const LoginForm = ({
           </Link>
         </Container>
       </Container>
-      <Container>
+      <Container customStyle={style.breaklineSpacing}>
         <Breakline testId="loginform-breakline">or sign in with</Breakline>
       </Container>
     </Container>

@@ -4,14 +4,14 @@ import LoginForm from './LoginForm';
 export default {
   title: 'Organisms/LoginForm',
   component: LoginForm,
-  argTypes: {onLoginSubmit: {action: 'onLoginSubmit'}},
+  argTypes: {
+    onLoginSubmit: {action: 'onLoginSubmit'},
+    onPasswordReset: {action: 'onPasswordReset'},
+  },
 } as ComponentMeta<typeof LoginForm>;
 const Template: ComponentStory<typeof LoginForm> = args => (
   <LoginForm {...args} />
 );
 
-export const Username = Template.bind({});
-Username.args = {testId: ''};
-
-export const Password = Template.bind({});
-Password.args = {testId: ''};
+export const Example = Template.bind({});
+Example.args = {testId: ''};

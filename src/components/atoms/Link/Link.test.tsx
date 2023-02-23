@@ -40,5 +40,5 @@ test('should render link with modified style through props', () => {
   expect(linkElement).toBeOnTheScreen();
   const textElement = screen.getByText('test link');
   expect(textElement).toBeOnTheScreen();
-  expect(textElement).toHaveStyle({textDecorationLine: 'underline'});
+  expect(textElement).toHaveStyle({fontWeight: 'bold'});
 });
