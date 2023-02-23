@@ -4,9 +4,9 @@ import TestRenderer from 'react-test-renderer';
 import {primary, secondary} from 'theme/colors';
 import WelcomeCards, {WelcomeCardsProps} from './WelcomeCards';
 
-const handleClick = jest.fn();
+const handlePress = jest.fn();
 const props: WelcomeCardsProps = {
-  onButtonPress: handleClick,
+  onButtonPress: handlePress,
   mainColor: primary,
   cardColor: secondary,
   mainText1: 'maintext1',
@@ -135,9 +135,9 @@ test('should render first welcomecardsarea: should handle onButtonPress ', () =>
     welcomeCardsWCAElement1,
   ).getByTestId('welcomecardsarea-button');
   expect(welcomecardsareaButtonElement).toBeOnTheScreen();
-  expect(handleClick).toBeCalledTimes(0);
+  expect(handlePress).toBeCalledTimes(0);
   fireEvent.press(welcomecardsareaButtonElement);
-  expect(handleClick).toBeCalledTimes(1);
+  expect(handlePress).toBeCalledTimes(1);
 });
 
 test('should render second welcomecardsarea: correct header ', () => {
@@ -225,7 +225,7 @@ test('should render second welcomecardsarea: should handle onButtonPress ', () =
     welcomeCardsWCAElement2,
   ).getByTestId('welcomecardsarea-button');
   expect(welcomecardsareaButtonElement).toBeOnTheScreen();
-  expect(handleClick).toBeCalledTimes(1);
+  expect(handlePress).toBeCalledTimes(1);
   fireEvent.press(welcomecardsareaButtonElement);
-  expect(handleClick).toBeCalledTimes(2);
+  expect(handlePress).toBeCalledTimes(2);
 });

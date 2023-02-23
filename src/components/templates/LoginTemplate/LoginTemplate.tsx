@@ -21,7 +21,7 @@ const LoginTemplate = ({
   };
   return (
     <Container testId={testId} customStyle={style.wrapper}>
-      <Container flex={1} justify="center" align="center" testId={testId}>
+      <Container flex={1} justify="center" align="center">
         <Container flex={1} justify="flex-end">
           <Img
             src={ImgType.logoSplashWhite}
@@ -31,18 +31,12 @@ const LoginTemplate = ({
           />
         </Container>
         <Container flex={2} customStyle={style.sizer}>
-          <LoginForm onLoginSubmit={onLoginSubmit} />
+          <LoginForm
+            onLoginSubmit={onLoginSubmit}
+            onPasswordReset={onPasswordReset}
+          />
         </Container>
       </Container>
-      {/* <Button onPress={onLoginButtonPress} type={'primary'}>
-        Login
-      </Button>
-      <Button onPress={onResetButtonPress} type={'secondary'}>
-        Reset
-      </Button>
-      <Button onPress={onSocialPress} type={'tertiary'}>
-        Socials
-      </Button> */}
     </Container>
   );
 };

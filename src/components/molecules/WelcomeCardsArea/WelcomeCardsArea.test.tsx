@@ -4,9 +4,9 @@ import TestRenderer from 'react-test-renderer';
 import {primary, secondary} from 'theme/colors';
 import WelcomeCardsArea, {WelcomeCardsAreaProps} from './WelcomeCardsArea';
 
-const handleClick = jest.fn();
+const handlePress = jest.fn();
 const props: WelcomeCardsAreaProps = {
-  onButtonPress: handleClick,
+  onButtonPress: handlePress,
   mainText: 'maintext',
   cardText: 'cardtext',
   testId: 'test-welcomecardsarea-id',
@@ -99,7 +99,7 @@ test('should handle onButtonPress', () => {
     welcomecardsareaElement,
   ).getByTestId('welcomecardsarea-button');
   expect(welcomecardsareaButtonElement).toBeOnTheScreen();
-  expect(handleClick).toBeCalledTimes(0);
+  expect(handlePress).toBeCalledTimes(0);
   fireEvent.press(welcomecardsareaButtonElement);
-  expect(handleClick).toBeCalledTimes(1);
+  expect(handlePress).toBeCalledTimes(1);
 });

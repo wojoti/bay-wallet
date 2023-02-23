@@ -14,6 +14,7 @@ const props: WelcomeScreenProps = {
 const mockNavigate = jest.fn();
 jest.mock('@react-navigation/native', () => ({
   useNavigation: () => ({navigate: mockNavigate}),
+  useIsFocused: jest.fn(),
 }));
 
 test('should match snapshot', () => {

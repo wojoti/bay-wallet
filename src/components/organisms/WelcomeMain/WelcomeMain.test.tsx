@@ -4,9 +4,9 @@ import TestRenderer from 'react-test-renderer';
 import {primary, secondary} from 'theme/colors';
 import WelcomeMain, {WelcomeMainProps} from './WelcomeMain';
 
-const handleClick = jest.fn();
+const handlePress = jest.fn();
 const props: WelcomeMainProps = {
-  onButtonPress: handleClick,
+  onButtonPress: handlePress,
   mainColor: primary,
   accentColor: secondary,
   testId: 'test-welcomemain-id',
@@ -87,7 +87,7 @@ test('should render welcomemain with button - handle onPress', () => {
   const welcomemainButtonElement =
     within(welcomemainElement).getByTestId('welcomemain-button');
   expect(welcomemainButtonElement).toBeOnTheScreen();
-  expect(handleClick).toBeCalledTimes(0);
+  expect(handlePress).toBeCalledTimes(0);
   fireEvent.press(welcomemainButtonElement);
-  expect(handleClick).toBeCalledTimes(1);
+  expect(handlePress).toBeCalledTimes(1);
 });

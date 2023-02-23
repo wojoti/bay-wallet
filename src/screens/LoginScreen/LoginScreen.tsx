@@ -24,6 +24,7 @@ const LoginScreen = ({testId}: LoginScreenProps) => {
   useEffect(() => {
     if (isFocused) {
       dispatch(darkMode());
+      console.log('login screen');
     }
   }, [dispatch, isFocused]);
 

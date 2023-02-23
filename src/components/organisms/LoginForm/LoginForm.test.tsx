@@ -7,9 +7,10 @@ const mockOnLoginSubmit = jest.fn<
   LoginFormProps['onLoginSubmit'],
   [email: string, password: string]
 >();
-
+const handleResetPress = jest.fn();
 const props: LoginFormProps = {
   onLoginSubmit: mockOnLoginSubmit,
+  onPasswordReset: handleResetPress,
   testId: 'test-loginform-id',
 };
 
@@ -120,9 +121,41 @@ test('should render loginform - button - handle onPress', () => {
   const loginformButtonElement =
     within(loginformElement).getByTestId('loginform-button');
   expect(loginformButtonElement).toBeOnTheScreen();
+  expect(mockOnLoginSubmit).toHaveBeenCalledTimes(0);
   fireEvent.press(loginformButtonElement);
+  expect(mockOnLoginSubmit).toHaveBeenCalledTimes(1);
   expect(mockOnLoginSubmit).toHaveBeenCalledWith(
     'randomlogin',
     'random_password',
   );
+});
+
+test('should render loginform - label about forgotten password', () => {
+  render(<LoginForm {...props} />);
+  const loginformElement = screen.getByTestId('test-loginform-id');
+  expect(loginformElement).toBeOnTheScreen();
+  const loginformHeaderElement =
+    within(loginformElement).getByTestId('loginform-label');
+  expect(loginformHeaderElement).toBeOnTheScreen();
+});
+
+test('should render loginform - link to reset password', () => {
+  render(<LoginForm {...props} />);
+  const loginformElement = screen.getByTestId('test-loginform-id');
+  expect(loginformElement).toBeOnTheScreen();
+  const loginformHeaderElement =
+    within(loginformElement).getByTestId('loginform-link');
+  expect(loginformHeaderElement).toBeOnTheScreen();
+});
+
+test('should render loginform - link - should handle onPress event', () => {
+  render(<LoginForm {...props} />);
+  const loginformElement = screen.getByTestId('test-loginform-id');
+  expect(loginformElement).toBeOnTheScreen();
+  const loginformHeaderElement =
+    within(loginformElement).getByTestId('loginform-link');
+  expect(loginformHeaderElement).toBeOnTheScreen();
+  expect(handleResetPress).toHaveBeenCalledTimes(0);
+  fireEvent.press(loginformHeaderElement);
+  expect(handleResetPress).toHaveBeenCalledTimes(1);
 });

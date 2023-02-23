@@ -3,9 +3,9 @@ import {fireEvent, render, screen} from '@testing-library/react-native';
 import TestRenderer from 'react-test-renderer';
 import Button, {ButtonProps} from './Button';
 
-const handleClick = jest.fn();
+const handlePress = jest.fn();
 const props: ButtonProps = {
-  onPress: handleClick,
+  onPress: handlePress,
   testId: 'test-button-id',
   children: 'test button',
   type: 'primary',
@@ -30,11 +30,11 @@ test('should render matching button with text', () => {
 });
 
 test("shouldn't be able to handle onPress when disabled", () => {
-  render(<Button {...modifiedProps} onPress={handleClick} />);
+  render(<Button {...modifiedProps} onPress={handlePress} />);
   const buttonElement = screen.getByTestId('test-button-id');
   fireEvent.press(buttonElement);
   expect(buttonElement).toBeDisabled();
-  expect(handleClick).toHaveBeenCalledTimes(0);
+  expect(handlePress).toHaveBeenCalledTimes(0);
 });
 
 test('should handle onPress event', () => {
@@ -42,5 +42,5 @@ test('should handle onPress event', () => {
   const buttonElement = screen.getByTestId('test-button-id');
   fireEvent.press(buttonElement);
   expect(buttonElement).toBeEnabled();
-  expect(handleClick).toHaveBeenCalledTimes(1);
+  expect(handlePress).toHaveBeenCalledTimes(1);
 });

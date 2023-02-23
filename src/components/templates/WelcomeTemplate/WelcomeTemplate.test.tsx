@@ -4,9 +4,9 @@ import TestRenderer from 'react-test-renderer';
 import {primary, secondary} from 'theme/colors';
 import WelcomeTemplate, {WelcomeTemplateProps} from './WelcomeTemplate';
 
-const handleClick = jest.fn();
+const handlePress = jest.fn();
 const props: WelcomeTemplateProps = {
-  onButtonPress: handleClick,
+  onButtonPress: handlePress,
   testId: 'test-welcometemplate-id',
 };
 
@@ -105,9 +105,9 @@ test('should render welcomemain with button - handle onPress', () => {
   const welcomemainButtonElement =
     within(welcomemainElement).getByTestId('welcomemain-button');
   expect(welcomemainButtonElement).toBeOnTheScreen();
-  expect(handleClick).toBeCalledTimes(0);
+  expect(handlePress).toBeCalledTimes(0);
   fireEvent.press(welcomemainButtonElement);
-  expect(handleClick).toBeCalledTimes(1);
+  expect(handlePress).toBeCalledTimes(1);
 });
 //////////////////////////////
 test('should render welcomecards', () => {
@@ -240,9 +240,9 @@ test('should render first welcomecardsarea: should handle onButtonPress ', () =>
     welcomeCardsWCAElement1,
   ).getByTestId('welcomecardsarea-button');
   expect(welcomecardsareaButtonElement).toBeOnTheScreen();
-  expect(handleClick).toBeCalledTimes(1);
+  expect(handlePress).toBeCalledTimes(1);
   fireEvent.press(welcomecardsareaButtonElement);
-  expect(handleClick).toBeCalledTimes(2);
+  expect(handlePress).toBeCalledTimes(2);
 });
 
 test('should render second welcomecardsarea: correct header ', () => {
@@ -340,7 +340,7 @@ test('should render second welcomecardsarea: should handle onButtonPress ', () =
     welcomeCardsWCAElement2,
   ).getByTestId('welcomecardsarea-button');
   expect(welcomecardsareaButtonElement).toBeOnTheScreen();
-  expect(handleClick).toBeCalledTimes(2);
+  expect(handlePress).toBeCalledTimes(2);
   fireEvent.press(welcomecardsareaButtonElement);
-  expect(handleClick).toBeCalledTimes(3);
+  expect(handlePress).toBeCalledTimes(3);
 });
