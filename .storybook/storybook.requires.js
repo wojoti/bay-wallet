@@ -59,6 +59,7 @@ const getStories = () => {
     "./srccomponentsorganismsLoginFormLoginForm.stories.tsx": require("../src/components/organisms/LoginForm/LoginForm.stories.tsx"),
     "./srccomponentsorganismsWelcomeCardsWelcomeCards.stories.tsx": require("../src/components/organisms/WelcomeCards/WelcomeCards.stories.tsx"),
     "./srccomponentsorganismsWelcomeMainWelcomeMain.stories.tsx": require("../src/components/organisms/WelcomeMain/WelcomeMain.stories.tsx"),
+    "./srccomponents\templatesLoginTemplateLoginTemplate.stories.tsx": require("../src/components/templates/LoginTemplate/LoginTemplate.stories.tsx"),
     "./srccomponents\templatesWelcomeTemplateWelcomeTemplate.stories.tsx": require("../src/components/templates/WelcomeTemplate/WelcomeTemplate.stories.tsx"),
   };
 };

@@ -13,7 +13,9 @@ exports[`should match snapshot 1`] = `
       "borderRadius": 8,
       "borderWidth": 1,
       "fontFamily": "Poppins-Light",
-      "height": 60,
+      "fontSize": 16,
+      "fontWeight": "400",
+      "height": 65,
       "paddingLeft": 30,
       "width": "100%",
     }

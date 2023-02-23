@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "marginVertical": 10,
+      "width": "100%",
+    }
+  }
+  testID="test-breakline-id"
+>
+  <View
+    style={
+      {
+        "backgroundColor": "#BDBDBD",
+        "height": 1,
+        "width": "100%",
+      }
+    }
+  />
+  <Text
+    style={
+      {
+        "backgroundColor": "white",
+        "color": "#595959",
+        "fontSize": 14,
+        "margin": 0,
+        "paddingHorizontal": 10,
+        "top": -13,
+        "zIndex": 1,
+      }
+    }
+    testID="breakline-text"
+  >
+    test breakline
+  </Text>
+</View>
+`;

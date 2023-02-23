@@ -56,7 +56,7 @@ const style = ({pressed}: Props) =>
     //       : 'white',
     // },
     primaryButton: {
-      height: 60,
+      height: 65,
       borderRadius: 8,
       borderColor: primary,
       borderStyle: 'solid',
@@ -66,7 +66,7 @@ const style = ({pressed}: Props) =>
       backgroundColor: primary,
     },
     secondaryButton: {
-      height: 60,
+      height: 65,
       borderRadius: 8,
       borderWidth: 1,
       borderColor: primary,
@@ -77,7 +77,7 @@ const style = ({pressed}: Props) =>
       backgroundColor: secondary,
     },
     tertiaryButton: {
-      height: 60,
+      height: 65,
       borderRadius: 8,
       borderColor: primary,
       borderStyle: 'solid',

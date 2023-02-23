@@ -29,3 +29,4 @@ test('should render logintemplate', () => {
   const logintemplateElement = screen.getByTestId('test-logintemplate-id');
   expect(logintemplateElement).toBeOnTheScreen();
 });
+//TODO: add tests when loginform is finished

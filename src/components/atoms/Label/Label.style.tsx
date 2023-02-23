@@ -1,5 +1,5 @@
 import {StyleSheet} from 'react-native';
-import {font} from 'theme/fonts';
+import {defaultWeight, font} from 'theme/fonts';
 
 interface Props {
   color?: string;
@@ -15,6 +15,7 @@ const style = ({color, size, align}: Props) =>
       textAlign: align || 'left',
       fontSize: size || 14,
       fontFamily: font,
+      fontWeight: defaultWeight,
     },
   });
 export default style;

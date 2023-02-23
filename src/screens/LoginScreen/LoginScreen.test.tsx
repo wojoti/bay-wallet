@@ -30,3 +30,4 @@ test('should render loginscreen', () => {
   const loginscreenElement = screen.getByTestId('test-loginscreen-id');
   expect(loginscreenElement).toBeOnTheScreen();
 });
+//TODO: add tests when loginform is finished

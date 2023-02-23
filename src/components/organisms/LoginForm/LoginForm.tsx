@@ -1,5 +1,5 @@
 import {Button, Container, Header, Label, Link} from 'components/atoms';
-import {InputArea} from 'components/molecules';
+import {Breakline, InputArea} from 'components/molecules';
 import {PropsWithChildren, useState} from 'react';
 import {darkGrey, primary} from 'theme/colors';
 import style from './LoginForm.style';
@@ -60,6 +60,9 @@ const LoginForm = ({
             Tap here for reset
           </Link>
         </Container>
+      </Container>
+      <Container>
+        <Breakline testId="loginform-breakline">or sign in with</Breakline>
       </Container>
     </Container>
   );

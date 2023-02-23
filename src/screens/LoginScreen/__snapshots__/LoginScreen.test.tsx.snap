@@ -139,9 +139,10 @@ exports[`should match snapshot 1`] = `
             <Text
               style={
                 {
-                  "color": "black",
+                  "color": "#363062",
                   "fontFamily": "Poppins-Light",
                   "fontSize": 14,
+                  "fontWeight": "400",
                   "margin": 0,
                   "padding": 0,
                   "textAlign": "left",
@@ -165,7 +166,8 @@ exports[`should match snapshot 1`] = `
                 "borderWidth": 1,
                 "fontFamily": "Poppins-Light",
                 "fontSize": 16,
-                "height": 60,
+                "fontWeight": "400",
+                "height": 65,
                 "paddingLeft": 30,
                 "width": "100%",
               }
@@ -214,9 +216,10 @@ exports[`should match snapshot 1`] = `
             <Text
               style={
                 {
-                  "color": "black",
+                  "color": "#363062",
                   "fontFamily": "Poppins-Light",
                   "fontSize": 14,
+                  "fontWeight": "400",
                   "margin": 0,
                   "padding": 0,
                   "textAlign": "left",
@@ -241,7 +244,8 @@ exports[`should match snapshot 1`] = `
                 "borderWidth": 1,
                 "fontFamily": "Poppins-Light",
                 "fontSize": 16,
-                "height": 60,
+                "fontWeight": "400",
+                "height": 65,
                 "paddingLeft": 30,
                 "width": "100%",
               }
@@ -303,7 +307,7 @@ exports[`should match snapshot 1`] = `
                 "borderColor": "#363062",
                 "borderRadius": 8,
                 "borderStyle": "solid",
-                "height": 60,
+                "height": 65,
                 "justifyContent": "center",
                 "opacity": 1,
               }
@@ -361,6 +365,7 @@ exports[`should match snapshot 1`] = `
                   "color": "#595959",
                   "fontFamily": "Poppins-Light",
                   "fontSize": 12,
+                  "fontWeight": "400",
                   "margin": 0,
                   "padding": 0,
                   "textAlign": "left",
@@ -440,6 +445,57 @@ exports[`should match snapshot 1`] = `
                 Tap here for reset
               </Text>
             </View>
+          </View>
+        </View>
+        <View
+          style={
+            [
+              {
+                "alignItems": "stretch",
+                "flex": undefined,
+                "flexDirection": "column",
+                "justifyContent": "flex-start",
+                "width": "100%",
+              },
+              undefined,
+            ]
+          }
+        >
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "marginVertical": 10,
+                "width": "100%",
+              }
+            }
+            testID="loginform-breakline"
+          >
+            <View
+              style={
+                {
+                  "backgroundColor": "#BDBDBD",
+                  "height": 1,
+                  "width": "100%",
+                }
+              }
+            />
+            <Text
+              style={
+                {
+                  "backgroundColor": "white",
+                  "color": "#595959",
+                  "fontSize": 14,
+                  "margin": 0,
+                  "paddingHorizontal": 10,
+                  "top": -13,
+                  "zIndex": 1,
+                }
+              }
+              testID="breakline-text"
+            >
+              or sign in with
+            </Text>
           </View>
         </View>
       </View>

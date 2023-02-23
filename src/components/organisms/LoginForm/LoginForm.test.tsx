@@ -159,3 +159,4 @@ test('should render loginform - link - should handle onPress event', () => {
   fireEvent.press(loginformHeaderElement);
   expect(handleResetPress).toHaveBeenCalledTimes(1);
 });
+//TODO: add tests for new components

@@ -27,12 +27,13 @@ exports[`should match snapshot 1`] = `
           "width": "100%",
         },
         {
+          "alignItems": "flex-start",
           "backgroundColor": "white",
           "flex": 0,
           "marginHorizontal": 15,
           "paddingHorizontal": 10,
           "top": 15,
-          "width": "auto",
+          "width": 95,
           "zIndex": 1,
         },
       ]
@@ -41,9 +42,10 @@ exports[`should match snapshot 1`] = `
     <Text
       style={
         {
-          "color": "black",
+          "color": "#363062",
           "fontFamily": "Poppins-Light",
           "fontSize": 14,
+          "fontWeight": "400",
           "margin": 0,
           "padding": 0,
           "textAlign": "left",
@@ -66,7 +68,9 @@ exports[`should match snapshot 1`] = `
         "borderRadius": 8,
         "borderWidth": 1,
         "fontFamily": "Poppins-Light",
-        "height": 60,
+        "fontSize": 16,
+        "fontWeight": "400",
+        "height": 65,
         "paddingLeft": 30,
         "width": "100%",
       }
