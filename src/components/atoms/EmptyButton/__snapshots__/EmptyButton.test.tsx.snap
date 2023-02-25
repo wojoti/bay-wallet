@@ -7,7 +7,7 @@ exports[`should match snapshot 1`] = `
     {
       "busy": undefined,
       "checked": undefined,
-      "disabled": undefined,
+      "disabled": false,
       "expanded": undefined,
       "selected": undefined,
     }
@@ -44,22 +44,10 @@ exports[`should match snapshot 1`] = `
       "opacity": 1,
     }
   }
-  testID="test-button-id"
+  testID="test-emptybutton-id"
 >
-  <Text
-    style={
-      {
-        "color": "white",
-        "fontFamily": "Poppins-Bold",
-        "fontSize": 18,
-        "margin": 0,
-        "padding": 0,
-        "textAlign": "center",
-      }
-    }
-    testID="button-text"
-  >
-    test button
+  <Text>
+    test emptybutton
   </Text>
 </View>
 `;

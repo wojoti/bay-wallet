@@ -24,7 +24,6 @@ const WelcomeScreen = ({testId}: WelcomeScreenProps) => {
   useEffect(() => {
     if (isFocused) {
       dispatch(lightMode());
-      console.log('welcome screen');
     }
   }, [dispatch, isFocused]);
 

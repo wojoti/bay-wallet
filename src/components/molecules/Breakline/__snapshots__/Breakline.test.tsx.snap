@@ -26,7 +26,6 @@ exports[`should match snapshot 1`] = `
         "backgroundColor": "white",
         "color": "#595959",
         "fontSize": 14,
-        "margin": 0,
         "paddingHorizontal": 10,
         "top": -13,
         "zIndex": 1,

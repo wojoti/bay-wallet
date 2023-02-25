@@ -1,5 +1,7 @@
-import {Button, Container, Header, Img, ImgType, Label} from 'components/atoms';
+import {Container, Header, Img, ImgType, Label} from 'components/atoms';
+import {Button} from 'components/molecules';
 import {PropsWithChildren} from 'react';
+import {primary, secondary} from 'theme/colors';
 import style from './WelcomeCardsArea.style';
 
 export type WelcomeCardsAreaProps = PropsWithChildren<{
@@ -47,8 +49,10 @@ const WelcomeCardsArea = ({
         </Container>
         <Container align="flex-end" customStyle={style({mt: 30}).sizer}>
           <Button
+            color={secondary}
+            borderColor={secondary}
+            fontColor={primary}
             onPress={onButtonPress}
-            type={'tertiary-alternative'}
             testId={'welcomecardsarea-button'}>
             GET STARTED
           </Button>

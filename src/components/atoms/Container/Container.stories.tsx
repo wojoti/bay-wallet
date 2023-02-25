@@ -23,19 +23,11 @@ export default {
         'space-between',
         'space-around',
         'space-evenly',
-        undefined,
       ],
     },
     align: {
       control: {type: 'select'},
-      options: [
-        'flex-start',
-        'flex-end',
-        'center',
-        'stretch',
-        'baseline',
-        undefined,
-      ],
+      options: ['flex-start', 'flex-end', 'center', 'stretch', 'baseline'],
     },
     background: {
       control: {type: 'color'},

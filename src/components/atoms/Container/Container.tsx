@@ -1,5 +1,5 @@
 import {PropsWithChildren} from 'react';
-import {View} from 'react-native';
+import {StyleProp, View, ViewStyle} from 'react-native';
 import style from './Container.style';
 
 export type ContainerProps = PropsWithChildren<{
@@ -9,19 +9,12 @@ export type ContainerProps = PropsWithChildren<{
     | 'center'
     | 'space-between'
     | 'space-around'
-    | 'space-evenly'
-    | undefined;
-  align?:
-    | 'flex-start'
-    | 'flex-end'
-    | 'center'
-    | 'stretch'
-    | 'baseline'
-    | undefined;
+    | 'space-evenly';
+  align?: 'flex-start' | 'flex-end' | 'center' | 'stretch' | 'baseline';
   flex?: number;
   testId?: string;
   direction?: 'row' | 'column';
-  customStyle?: object;
+  customStyle?: StyleProp<ViewStyle>;
 }>;
 
 const Container = ({

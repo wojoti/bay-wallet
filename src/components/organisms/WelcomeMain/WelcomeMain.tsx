@@ -1,5 +1,7 @@
-import {Button, Container, Header, Img, ImgType, Label} from 'components/atoms';
+import {Container, Header, Img, ImgType, Label} from 'components/atoms';
+import {Button} from 'components/molecules';
 import {PropsWithChildren} from 'react';
+import {secondary} from 'theme/colors';
 import style from './WelcomeMain.style';
 
 export type WelcomeMainProps = PropsWithChildren<{
@@ -49,7 +51,9 @@ const Welcomemain = ({
         </Container>
         <Container flex={1}>
           <Button
-            type="tertiary"
+            borderColor={secondary}
+            color={secondary}
+            fontColor={'black'}
             onPress={onButtonPress}
             testId={'welcomemain-button'}>
             GET STARTED

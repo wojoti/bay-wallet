@@ -13,7 +13,6 @@ const style = StyleSheet.create({
     backgroundColor: iconGrey,
   },
   StyledText: {
-    margin: 0,
     backgroundColor: secondary,
     fontSize: 14,
     color: darkGrey,

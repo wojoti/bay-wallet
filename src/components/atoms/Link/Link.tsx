@@ -6,7 +6,7 @@ export type LinkProps = PropsWithChildren<{
   testId?: string;
   bold?: boolean;
   color?: string;
-  align?: 'left' | 'auto' | 'right' | 'center' | 'justify' | undefined;
+  align?: 'left' | 'auto' | 'right' | 'center' | 'justify';
   onPress: () => void;
 }>;
 

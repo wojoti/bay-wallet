@@ -13,7 +13,7 @@ export default {
     onPress: {action: 'onPress'},
     align: {
       control: {type: 'select'},
-      options: ['left', 'right', 'auto', 'center', 'justify', undefined],
+      options: ['left', 'right', 'auto', 'center', 'justify'],
     },
   },
 } as ComponentMeta<typeof Link>;

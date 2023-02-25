@@ -7,15 +7,8 @@ interface Props {
     | 'center'
     | 'space-between'
     | 'space-around'
-    | 'space-evenly'
-    | undefined;
-  align?:
-    | 'flex-start'
-    | 'flex-end'
-    | 'center'
-    | 'stretch'
-    | 'baseline'
-    | undefined;
+    | 'space-evenly';
+  align?: 'flex-start' | 'flex-end' | 'center' | 'stretch' | 'baseline';
   flex?: number;
   direction?: 'row' | 'column';
 }

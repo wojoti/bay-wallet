@@ -13,8 +13,8 @@ const Input = ({type, onChange, testId}: InputProps) => {
     case 'username':
       return (
         <TextInput
-          accessibilityLabel={'Login input field'}
-          accessibilityHint={'Allow to insert username'}
+          accessibilityLabel="Login input field"
+          accessibilityHint="Allow to insert username"
           style={style.wrapper}
           testID={testId}
           onChangeText={onChange}

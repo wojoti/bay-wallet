@@ -5,7 +5,7 @@ import style from './Header.style';
 export type HeaderProps = PropsWithChildren<{
   color?: string;
   testId?: string;
-  align?: 'left' | 'auto' | 'right' | 'center' | 'justify' | undefined;
+  align?: 'left' | 'auto' | 'right' | 'center' | 'justify';
   size?: number;
 }>;
 

@@ -1,6 +1,7 @@
 import '@testing-library/jest-native/extend-expect';
 import {fireEvent, render, screen} from '@testing-library/react-native';
 import TestRenderer from 'react-test-renderer';
+import {primary} from 'theme/colors';
 import Button, {ButtonProps} from './Button';
 
 const handlePress = jest.fn();
@@ -8,12 +9,16 @@ const props: ButtonProps = {
   onPress: handlePress,
   testId: 'test-button-id',
   children: 'test button',
-  type: 'primary',
+  height: 65,
+  borderRadius: 8,
+  borderColor: primary,
+  color: primary,
+  fontColor: 'white',
 };
 
 const modifiedProps: ButtonProps = {
   ...props,
-  type: 'disabled',
+  disabled: true,
 };
 
 test('should match snapshot', () => {

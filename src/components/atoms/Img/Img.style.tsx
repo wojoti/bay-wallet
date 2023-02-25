@@ -7,8 +7,6 @@ interface Props {
 const style = ({width, height}: Props) =>
   StyleSheet.create({
     wrapper: {
-      margin: 0,
-      padding: 0,
       width: width,
       height: height,
     },

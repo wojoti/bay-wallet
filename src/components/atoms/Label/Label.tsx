@@ -5,7 +5,7 @@ import style from './Label.style';
 export type LabelProps = PropsWithChildren<{
   color?: string;
   testId?: string;
-  align?: 'left' | 'auto' | 'right' | 'center' | 'justify' | undefined;
+  align?: 'left' | 'auto' | 'right' | 'center' | 'justify';
   size?: number;
 }>;
 

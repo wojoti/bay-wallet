@@ -7,7 +7,7 @@ exports[`should match snapshot 1`] = `
     {
       "busy": undefined,
       "checked": undefined,
-      "disabled": undefined,
+      "disabled": false,
       "expanded": undefined,
       "selected": undefined,
     }
@@ -34,22 +34,30 @@ exports[`should match snapshot 1`] = `
   onStartShouldSetResponder={[Function]}
   style={
     {
-      "backgroundColor": "none",
-      "borderColor": "none",
+      "alignItems": "center",
+      "backgroundColor": "#363062",
+      "borderColor": "#363062",
+      "borderRadius": 8,
+      "borderStyle": "solid",
+      "height": 65,
+      "justifyContent": "center",
+      "opacity": 1,
     }
   }
-  testID="test-link-id"
+  testID="test-button-id"
 >
   <Text
     style={
       {
-        "color": "black",
-        "fontWeight": "400",
-        "textAlign": "left",
+        "color": "white",
+        "fontFamily": "Poppins-Bold",
+        "fontSize": 18,
+        "textAlign": "center",
       }
     }
+    testID="button-text"
   >
-    test link
+    test button
   </Text>
 </View>
 `;

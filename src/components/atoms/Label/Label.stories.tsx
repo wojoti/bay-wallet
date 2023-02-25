@@ -12,7 +12,7 @@ export default {
     },
     align: {
       control: {type: 'select'},
-      options: ['left', 'auto', 'right', 'center', 'justify', undefined],
+      options: ['left', 'auto', 'right', 'center', 'justify'],
     },
   },
 } as ComponentMeta<typeof Label>;

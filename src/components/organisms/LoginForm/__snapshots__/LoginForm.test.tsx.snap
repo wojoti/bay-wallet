@@ -22,8 +22,6 @@ exports[`should match snapshot 1`] = `
         "color": "black",
         "fontFamily": "Poppins-Bold",
         "fontSize": 24,
-        "margin": 0,
-        "padding": 0,
         "textAlign": "left",
       }
     }
@@ -76,8 +74,6 @@ exports[`should match snapshot 1`] = `
             "fontFamily": "Poppins-Light",
             "fontSize": 14,
             "fontWeight": "400",
-            "margin": 0,
-            "padding": 0,
             "textAlign": "left",
           }
         }
@@ -153,8 +149,6 @@ exports[`should match snapshot 1`] = `
             "fontFamily": "Poppins-Light",
             "fontSize": 14,
             "fontWeight": "400",
-            "margin": 0,
-            "padding": 0,
             "textAlign": "left",
           }
         }
@@ -208,7 +202,7 @@ exports[`should match snapshot 1`] = `
         {
           "busy": undefined,
           "checked": undefined,
-          "disabled": undefined,
+          "disabled": false,
           "expanded": undefined,
           "selected": undefined,
         }
@@ -253,8 +247,6 @@ exports[`should match snapshot 1`] = `
             "color": "white",
             "fontFamily": "Poppins-Bold",
             "fontSize": 18,
-            "margin": 0,
-            "padding": 0,
             "textAlign": "center",
           }
         }
@@ -299,8 +291,6 @@ exports[`should match snapshot 1`] = `
             "fontFamily": "Poppins-Light",
             "fontSize": 12,
             "fontWeight": "400",
-            "margin": 0,
-            "padding": 0,
             "textAlign": "left",
           }
         }
@@ -358,8 +348,6 @@ exports[`should match snapshot 1`] = `
           {
             "backgroundColor": "none",
             "borderColor": "none",
-            "margin": 0,
-            "padding": 0,
           }
         }
         testID="loginform-link"
@@ -369,8 +357,6 @@ exports[`should match snapshot 1`] = `
             {
               "color": "#363062",
               "fontWeight": "400",
-              "margin": 0,
-              "padding": 0,
               "textAlign": "right",
             }
           }
@@ -422,7 +408,6 @@ exports[`should match snapshot 1`] = `
             "backgroundColor": "white",
             "color": "#595959",
             "fontSize": 14,
-            "margin": 0,
             "paddingHorizontal": 10,
             "top": -13,
             "zIndex": 1,
