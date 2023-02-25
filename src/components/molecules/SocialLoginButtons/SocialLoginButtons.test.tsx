@@ -1,5 +1,5 @@
 import '@testing-library/jest-native/extend-expect';
-import {render, screen, within} from '@testing-library/react-native';
+import {fireEvent, render, screen, within} from '@testing-library/react-native';
 import TestRenderer from 'react-test-renderer';
 import SocialLoginButtons, {
   SocialLoginButtonsProps,
@@ -53,4 +53,50 @@ test('should render SocialLoginButtons - render facebook button', () => {
   expect(buttonElement).toBeOnTheScreen();
   const buttonImgElement1 = within(buttonElement).getByTestId('img-facebook');
   expect(buttonImgElement1).toBeOnTheScreen();
+});
+
+const googleMockOnIconPress = jest.fn<
+  SocialLoginButtonsProps['onIconPress'],
+  [origin: string]
+>();
+test('should handle correct onPress on google button', () => {
+  render(<SocialLoginButtons {...props} onIconPress={googleMockOnIconPress} />);
+  const SocialLoginButtonsElement = screen.getByTestId(
+    'test-socialloginbuttons-id',
+  );
+  expect(SocialLoginButtonsElement).toBeOnTheScreen();
+  const buttonElement = within(SocialLoginButtonsElement).getByTestId(
+    'socialloginbuttons-button-google',
+  );
+  expect(buttonElement).toBeOnTheScreen();
+  const buttonImgElement1 = within(buttonElement).getByTestId('img-google');
+  expect(buttonImgElement1).toBeOnTheScreen();
+  expect(googleMockOnIconPress).toBeCalledTimes(0);
+  fireEvent.press(buttonElement);
+  expect(googleMockOnIconPress).toBeCalledTimes(1);
+  expect(googleMockOnIconPress).toBeCalledWith('google');
+});
+
+const facebookMockOnIconPress = jest.fn<
+  SocialLoginButtonsProps['onIconPress'],
+  [origin: string]
+>();
+test('should handle correct onPress on facebook button', () => {
+  render(
+    <SocialLoginButtons {...props} onIconPress={facebookMockOnIconPress} />,
+  );
+  const SocialLoginButtonsElement = screen.getByTestId(
+    'test-socialloginbuttons-id',
+  );
+  expect(SocialLoginButtonsElement).toBeOnTheScreen();
+  const buttonElement = within(SocialLoginButtonsElement).getByTestId(
+    'socialloginbuttons-button-facebook',
+  );
+  expect(buttonElement).toBeOnTheScreen();
+  const buttonImgElement1 = within(buttonElement).getByTestId('img-facebook');
+  expect(buttonImgElement1).toBeOnTheScreen();
+  expect(facebookMockOnIconPress).toBeCalledTimes(0);
+  fireEvent.press(buttonElement);
+  expect(facebookMockOnIconPress).toBeCalledTimes(1);
+  expect(facebookMockOnIconPress).toBeCalledWith('facebook');
 });

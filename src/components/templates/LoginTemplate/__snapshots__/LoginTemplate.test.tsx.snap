@@ -82,6 +82,7 @@ exports[`should match snapshot 1`] = `
             undefined,
           ]
         }
+        testID="logintemplate-loginform"
       >
         <Text
           style={
@@ -301,6 +302,7 @@ exports[`should match snapshot 1`] = `
                 "borderColor": "#363062",
                 "borderRadius": 8,
                 "borderStyle": "solid",
+                "borderWidth": 1,
                 "height": 65,
                 "justifyContent": "center",
                 "opacity": 1,
@@ -444,7 +446,6 @@ exports[`should match snapshot 1`] = `
                 "width": "100%",
               },
               {
-                "marginBottom": 20,
                 "marginTop": 50,
               },
             ]
@@ -504,27 +505,30 @@ exports[`should match snapshot 1`] = `
             style={
               [
                 {
-                  "alignItems": "stretch",
-                  "flex": 1,
-                  "flexDirection": "column",
+                  "alignItems": "flex-start",
+                  "flex": undefined,
+                  "flexDirection": "row",
                   "justifyContent": "space-between",
                   "width": "100%",
                 },
                 undefined,
               ]
             }
+            testID="loginform-socialloginbuttons"
           >
             <View
               style={
                 [
                   {
                     "alignItems": "stretch",
-                    "flex": 1,
+                    "flex": undefined,
                     "flexDirection": "column",
                     "justifyContent": "flex-start",
                     "width": "100%",
                   },
-                  undefined,
+                  {
+                    "width": "47%",
+                  },
                 ]
               }
             >
@@ -566,6 +570,7 @@ exports[`should match snapshot 1`] = `
                     "borderColor": "#E2E2E2",
                     "borderRadius": 8,
                     "borderStyle": "solid",
+                    "borderWidth": 1,
                     "height": 65,
                     "justifyContent": "center",
                     "opacity": 1,
@@ -574,7 +579,7 @@ exports[`should match snapshot 1`] = `
                 testID="socialloginbuttons-button-google"
               >
                 <SvgMock
-                  height="50"
+                  height="25"
                   testID="img-google"
                   width="100%"
                 />
@@ -585,12 +590,14 @@ exports[`should match snapshot 1`] = `
                 [
                   {
                     "alignItems": "stretch",
-                    "flex": 1,
+                    "flex": undefined,
                     "flexDirection": "column",
                     "justifyContent": "flex-start",
                     "width": "100%",
                   },
-                  undefined,
+                  {
+                    "width": "47%",
+                  },
                 ]
               }
             >
@@ -632,6 +639,7 @@ exports[`should match snapshot 1`] = `
                     "borderColor": "#E2E2E2",
                     "borderRadius": 8,
                     "borderStyle": "solid",
+                    "borderWidth": 1,
                     "height": 65,
                     "justifyContent": "center",
                     "opacity": 1,
@@ -640,7 +648,7 @@ exports[`should match snapshot 1`] = `
                 testID="socialloginbuttons-button-facebook"
               >
                 <SvgMock
-                  height="50"
+                  height="25"
                   testID="img-facebook"
                   width="100%"
                 />

@@ -107,7 +107,6 @@ test('should render welcomemain with button and correct button style', () => {
   expect(textElement).toHaveStyle({color: 'black'});
 });
 
-// //////////////////////////////
 test('should render welcomecards', () => {
   renderWithProviders(<WelcomeScreen {...props} />);
   const welcomescreenElement = screen.getByTestId('test-welcomescreen-id');

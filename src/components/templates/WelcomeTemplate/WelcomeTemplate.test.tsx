@@ -109,7 +109,6 @@ test('should render welcomemain with button - handle onPress', () => {
   fireEvent.press(welcomemainButtonElement);
   expect(handlePress).toBeCalledTimes(1);
 });
-//////////////////////////////
 test('should render welcomecards', () => {
   render(<WelcomeTemplate {...props} />);
   const welcometemplateElement = screen.getByTestId('test-welcometemplate-id');

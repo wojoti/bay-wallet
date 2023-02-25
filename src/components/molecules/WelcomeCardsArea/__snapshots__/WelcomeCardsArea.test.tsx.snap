@@ -202,6 +202,7 @@ exports[`should match snapshot 1`] = `
             "borderColor": "white",
             "borderRadius": 8,
             "borderStyle": "solid",
+            "borderWidth": 1,
             "height": 65,
             "justifyContent": "center",
             "opacity": 1,

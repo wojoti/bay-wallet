@@ -67,7 +67,10 @@ const LoginForm = ({
         <Breakline testId="loginform-breakline">or sign in with</Breakline>
       </Container>
       <Container>
-        <SocialLoginButtons onIconPress={onSocialLoginPress} />
+        <SocialLoginButtons
+          onIconPress={onSocialLoginPress}
+          testId="loginform-socialloginbuttons"
+        />
       </Container>
     </Container>
   );

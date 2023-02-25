@@ -10,26 +10,13 @@ const props: ImgProps = {
   alt: 'alt-text',
   testId: 'test-img-id',
 };
-
-const altProps: ImgProps = {
-  ...props,
-  src: ImgType.logo,
-  height: '100%',
-};
-
 test('should match snapshot', () => {
   const tree = TestRenderer.create(<Img {...props} />).toJSON();
   expect(tree).toMatchSnapshot();
 });
 
-test('should render Img with integer width and height', () => {
+test('should render Img ', () => {
   render(<Img {...props} />);
-  const ImgElement = screen.getByTestId('test-img-id');
-  expect(ImgElement).toBeOnTheScreen();
-});
-
-test('should render Img with percent width and height', () => {
-  render(<Img {...altProps} />);
   const ImgElement = screen.getByTestId('test-img-id');
   expect(ImgElement).toBeOnTheScreen();
 });

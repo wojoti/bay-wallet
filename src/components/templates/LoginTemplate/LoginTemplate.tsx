@@ -32,6 +32,7 @@ const LoginTemplate = ({
             onLoginSubmit={onLoginSubmit}
             onPasswordReset={onPasswordReset}
             onSocialLoginPress={onSocialLoginPress}
+            testId="logintemplate-loginform"
           />
         </Container>
       </Container>

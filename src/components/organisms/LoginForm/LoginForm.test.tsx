@@ -7,10 +7,12 @@ const mockOnLoginSubmit = jest.fn<
   LoginFormProps['onLoginSubmit'],
   [email: string, password: string]
 >();
-const handleResetPress = jest.fn();
+const mockOnPasswordReset = jest.fn();
+const mockOnSocialLoginPress = jest.fn();
 const props: LoginFormProps = {
   onLoginSubmit: mockOnLoginSubmit,
-  onPasswordReset: handleResetPress,
+  onPasswordReset: mockOnPasswordReset,
+  onSocialLoginPress: mockOnSocialLoginPress,
   testId: 'test-loginform-id',
 };
 
@@ -155,9 +157,9 @@ test('should render loginform - link - should handle onPress event', () => {
   const loginformHeaderElement =
     within(loginformElement).getByTestId('loginform-link');
   expect(loginformHeaderElement).toBeOnTheScreen();
-  expect(handleResetPress).toHaveBeenCalledTimes(0);
+  expect(mockOnPasswordReset).toHaveBeenCalledTimes(0);
   fireEvent.press(loginformHeaderElement);
-  expect(handleResetPress).toHaveBeenCalledTimes(1);
+  expect(mockOnPasswordReset).toHaveBeenCalledTimes(1);
 });
 test('should render loginform - breakline', () => {
   render(<LoginForm {...props} />);
@@ -169,4 +171,92 @@ test('should render loginform - breakline', () => {
   expect(loginformBreaklineElement).toBeOnTheScreen();
 });
 
-//TODO: add tests for new components
+test('should render loginform - SocialLoginButtons', () => {
+  render(<LoginForm {...props} />);
+  const loginformElement = screen.getByTestId('test-loginform-id');
+  expect(loginformElement).toBeOnTheScreen();
+  const SocialLoginButtonsElement = within(loginformElement).getByTestId(
+    'loginform-socialloginbuttons',
+  );
+  expect(SocialLoginButtonsElement).toBeOnTheScreen();
+});
+
+test('should render loginform - SocialLoginButtons - render google button', () => {
+  render(<LoginForm {...props} />);
+  const loginformElement = screen.getByTestId('test-loginform-id');
+  expect(loginformElement).toBeOnTheScreen();
+  const SocialLoginButtonsElement = within(loginformElement).getByTestId(
+    'loginform-socialloginbuttons',
+  );
+  expect(SocialLoginButtonsElement).toBeOnTheScreen();
+  const buttonElement = within(SocialLoginButtonsElement).getByTestId(
+    'socialloginbuttons-button-google',
+  );
+  expect(buttonElement).toBeOnTheScreen();
+  const buttonImgElement1 = within(buttonElement).getByTestId('img-google');
+  expect(buttonImgElement1).toBeOnTheScreen();
+});
+
+test('should render loginform - SocialLoginButtons - render facebook button', () => {
+  render(<LoginForm {...props} />);
+  const loginformElement = screen.getByTestId('test-loginform-id');
+  expect(loginformElement).toBeOnTheScreen();
+  const SocialLoginButtonsElement = within(loginformElement).getByTestId(
+    'loginform-socialloginbuttons',
+  );
+  expect(SocialLoginButtonsElement).toBeOnTheScreen();
+  const buttonElement = within(SocialLoginButtonsElement).getByTestId(
+    'socialloginbuttons-button-facebook',
+  );
+  expect(buttonElement).toBeOnTheScreen();
+  const buttonImgElement1 = within(buttonElement).getByTestId('img-facebook');
+  expect(buttonImgElement1).toBeOnTheScreen();
+});
+
+const googleMockOnIconPress = jest.fn<
+  LoginFormProps['onSocialLoginPress'],
+  [origin: string]
+>();
+test('should handle correct onPress on google button', () => {
+  render(<LoginForm {...props} onSocialLoginPress={googleMockOnIconPress} />);
+  const loginformElement = screen.getByTestId('test-loginform-id');
+  expect(loginformElement).toBeOnTheScreen();
+  const SocialLoginButtonsElement = within(loginformElement).getByTestId(
+    'loginform-socialloginbuttons',
+  );
+  expect(SocialLoginButtonsElement).toBeOnTheScreen();
+  const buttonElement = within(SocialLoginButtonsElement).getByTestId(
+    'socialloginbuttons-button-google',
+  );
+  expect(buttonElement).toBeOnTheScreen();
+  const buttonImgElement1 = within(buttonElement).getByTestId('img-google');
+  expect(buttonImgElement1).toBeOnTheScreen();
+  expect(googleMockOnIconPress).toBeCalledTimes(0);
+  fireEvent.press(buttonElement);
+  expect(googleMockOnIconPress).toBeCalledTimes(1);
+  expect(googleMockOnIconPress).toBeCalledWith('google');
+});
+
+const facebookMockOnIconPress = jest.fn<
+  LoginFormProps['onSocialLoginPress'],
+  [origin: string]
+>();
+test('should handle correct onPress on facebook button', () => {
+  render(<LoginForm {...props} onSocialLoginPress={facebookMockOnIconPress} />);
+  const loginformElement = screen.getByTestId('test-loginform-id');
+  expect(loginformElement).toBeOnTheScreen();
+  const SocialLoginButtonsElement = within(loginformElement).getByTestId(
+    'loginform-socialloginbuttons',
+  );
+  expect(SocialLoginButtonsElement).toBeOnTheScreen();
+  const buttonElement = within(SocialLoginButtonsElement).getByTestId(
+    'socialloginbuttons-button-facebook',
+  );
+  expect(buttonElement).toBeOnTheScreen();
+  const buttonImgElement1 = within(buttonElement).getByTestId('img-facebook');
+  expect(buttonImgElement1).toBeOnTheScreen();
+  expect(facebookMockOnIconPress).toBeCalledTimes(0);
+  fireEvent.press(buttonElement);
+  expect(facebookMockOnIconPress).toBeCalledTimes(1);
+  expect(facebookMockOnIconPress).toBeCalledWith('facebook');
+});
