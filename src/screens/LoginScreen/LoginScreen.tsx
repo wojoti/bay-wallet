@@ -36,9 +36,9 @@ const LoginScreen = ({testId}: LoginScreenProps) => {
     navigation.navigate('Welcome');
   };
 
-  const onSocialLoginPress = (icon: string) => {
+  const onSocialLoginPress = (origin: string) => {
     navigation.navigate('Storybook');
-    console.log(icon);
+    console.log(origin);
   };
 
   return (

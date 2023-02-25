@@ -1,3 +1,4 @@
+export {default as Button} from './Button/Button';
 export {default as Container} from './Container/Container';
 export {default as EmptyButton} from './EmptyButton/EmptyButton';
 export {default as Header} from './Header/Header';

@@ -1,5 +1,4 @@
-import {Container, Header, Img, ImgType, Label} from 'components/atoms';
-import {Button} from 'components/molecules';
+import {Button, Container, Header, Img, ImgType, Label} from 'components/atoms';
 import {PropsWithChildren} from 'react';
 import {primary, secondary} from 'theme/colors';
 import style from './WelcomeCardsArea.style';

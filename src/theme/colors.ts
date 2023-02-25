@@ -5,6 +5,7 @@ export const secondary = 'white';
 export const darkGrey = '#595959';
 export const grey = '#6B6B6B';
 export const vlightGrey = '#D1D1D1';
+export const borderGrey = '#E2E2E2';
 
 export const iconGrey = '#BDBDBD';
 

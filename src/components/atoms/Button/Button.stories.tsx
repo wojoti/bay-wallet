@@ -1,9 +1,9 @@
 import {ComponentMeta, ComponentStory} from '@storybook/react-native';
-import {Button} from 'components/molecules';
+import {Button} from 'components/atoms';
 import {primary} from 'theme/colors';
 
 export default {
-  title: 'Molecules/Button',
+  title: 'Atoms/Button',
   component: Button,
   argTypes: {
     onPress: {action: 'onPress'},

@@ -7,7 +7,6 @@ interface PressableProps {
   borderRadius?: number;
   borderColor?: string;
   color?: string;
-  fontColor?: string;
 }
 
 const style = ({
@@ -21,6 +20,7 @@ const style = ({
     pressable: {
       height: height || 65,
       borderRadius: borderRadius || 8,
+      borderWidth: 1,
       borderColor: borderColor || primary,
       borderStyle: 'solid',
       opacity: pressed ? 0.8 : 1,

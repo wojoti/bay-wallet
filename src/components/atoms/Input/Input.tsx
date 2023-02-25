@@ -5,7 +5,7 @@ import style from './Input.style';
 export type InputProps = PropsWithChildren<{
   type: 'username' | 'password' | 'phone' | 'password-confirm';
   onChange: (value: string) => void;
-  testId?: string;
+  testId: string;
 }>;
 
 const Input = ({type, onChange, testId}: InputProps) => {

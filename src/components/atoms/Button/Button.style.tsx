@@ -8,16 +8,27 @@ interface PressableProps {
   borderRadius?: number;
   borderColor?: string;
   color?: string;
+}
+
+interface TextProps {
   fontColor?: string;
 }
 
+export const textStyle = ({fontColor}: TextProps) =>
+  StyleSheet.create({
+    font: {
+      textAlign: 'center',
+      fontFamily: boldFont,
+      fontSize: 18,
+      color: fontColor || 'white',
+    },
+  });
 const style = ({
   pressed,
   height,
   borderRadius,
   borderColor,
   color,
-  fontColor,
 }: PressableProps) =>
   StyleSheet.create({
     pressable: {
@@ -26,15 +37,10 @@ const style = ({
       borderColor: borderColor || primary,
       borderStyle: 'solid',
       opacity: pressed ? 0.8 : 1,
+      borderWidth: 1,
       justifyContent: 'center',
       alignItems: 'center',
       backgroundColor: color || primary,
-    },
-    text: {
-      textAlign: 'center',
-      fontFamily: boldFont,
-      fontSize: 18,
-      color: fontColor || 'white',
     },
   });
 export default style;

@@ -6,7 +6,7 @@ import style from './LoginTemplate.style';
 export type LoginTemplateProps = PropsWithChildren<{
   onLoginSubmit: (username: string, password: string) => void;
   onPasswordReset: () => void;
-  onSocialLoginPress: (icon: string) => void;
+  onSocialLoginPress: (origin: string) => void;
   testId?: string;
 }>;
 
@@ -16,11 +16,6 @@ const LoginTemplate = ({
   onSocialLoginPress,
   testId,
 }: LoginTemplateProps) => {
-  const onSocialPress = () => {
-    onSocialLoginPress(
-      'beda 2 funkcje od fejsa i googla - poki co nie mam komponentow',
-    );
-  };
   return (
     <Container testId={testId} customStyle={style.wrapper}>
       <Container flex={1} justify="center" align="center">
@@ -36,6 +31,7 @@ const LoginTemplate = ({
           <LoginForm
             onLoginSubmit={onLoginSubmit}
             onPasswordReset={onPasswordReset}
+            onSocialLoginPress={onSocialLoginPress}
           />
         </Container>
       </Container>

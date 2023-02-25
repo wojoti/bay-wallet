@@ -3,7 +3,7 @@ import {Pressable, Text} from 'react-native';
 import style, {textStyle} from './Link.style';
 
 export type LinkProps = PropsWithChildren<{
-  testId?: string;
+  testId: string;
   bold?: boolean;
   color?: string;
   align?: 'left' | 'auto' | 'right' | 'center' | 'justify';

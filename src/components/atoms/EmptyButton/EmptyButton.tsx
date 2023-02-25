@@ -9,7 +9,7 @@ export type EmptyButtonProps = PropsWithChildren<{
   borderColor?: string;
   color?: string;
   fontColor?: string;
-  testId?: string;
+  testId: string;
   disabled?: boolean;
   children: ReactNode;
 }>;
@@ -20,7 +20,6 @@ const EmptyButton = ({
   borderRadius,
   borderColor,
   color,
-  fontColor,
   disabled = false,
   testId,
   children,
@@ -29,8 +28,7 @@ const EmptyButton = ({
     <Pressable
       accessibilityRole="button"
       style={({pressed}) =>
-        style({pressed, height, borderRadius, borderColor, color, fontColor})
-          .pressable
+        style({pressed, height, borderRadius, borderColor, color}).pressable
       }
       testID={testId}
       onPress={onPress}
