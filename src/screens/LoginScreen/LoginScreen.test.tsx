@@ -31,8 +31,6 @@ test('should render loginscreen', () => {
   expect(loginscreenElement).toBeOnTheScreen();
 });
 
-/////////////////////
-
 test('should render loginscreen - logintemplate - logo', () => {
   renderWithProviders(<LoginScreen {...props} />);
   const loginscreenElement = screen.getByTestId('test-loginscreen-id');

@@ -1,0 +1,19 @@
+import {ComponentMeta, ComponentStory} from '@storybook/react-native';
+
+import MainTemplate from './MainTemplate';
+
+// More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
+export default {
+  title: 'Templates/MainTemplate',
+  component: MainTemplate,
+} as ComponentMeta<typeof MainTemplate>;
+
+// More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
+const Template: ComponentStory<typeof MainTemplate> = args => (
+  <MainTemplate {...args} />
+);
+
+export const Example = Template.bind({});
+Example.args = {
+  testId: '',
+};

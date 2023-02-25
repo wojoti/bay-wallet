@@ -4,7 +4,7 @@ import {useEffect} from 'react';
 import {StatusBar} from 'react-native';
 import {hideNavigationBar} from 'react-native-navigation-bar-color';
 import {Provider, useSelector} from 'react-redux';
-import {LoginScreen, WelcomeScreen} from 'screens/index';
+import {LoginScreen, MainScreen, WelcomeScreen} from 'screens/index';
 import {store} from 'store/store';
 import {selectStyleData} from 'store/styleSlice';
 import {
@@ -16,7 +16,7 @@ export {StorybookUIHMRRoot};
 export type RootStackParamList = {
   Welcome: undefined;
   Login: undefined;
-
+  Main: undefined;
   Storybook: undefined;
 };
 
@@ -36,6 +36,7 @@ function App(): JSX.Element {
         }}>
         <Stack.Screen name="Welcome" component={WelcomeScreen} />
         <Stack.Screen name="Login" component={LoginScreen} />
+        <Stack.Screen name="Main" component={MainScreen} />
         <Stack.Screen name="Storybook" component={Storybook} />
       </Stack.Navigator>
     </NavigationContainer>
