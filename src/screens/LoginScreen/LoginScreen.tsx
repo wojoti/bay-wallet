@@ -29,7 +29,7 @@ const LoginScreen = ({testId}: LoginScreenProps) => {
 
   const onLoginSubmit = (username: string, password: string) => {
     console.log('username:' + username + ',pwd:' + password);
-    //navigation.navigate('Storybook');
+    navigation.navigate('Main');
   };
 
   const onPasswordReset = () => {

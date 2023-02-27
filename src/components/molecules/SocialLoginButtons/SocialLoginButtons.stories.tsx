@@ -2,7 +2,7 @@ import {ComponentMeta, ComponentStory} from '@storybook/react-native';
 import {SocialLoginButtons} from 'components/molecules';
 
 export default {
-  title: 'Atoms/SocialLoginButtons',
+  title: 'Molecules/SocialLoginButtons',
   component: SocialLoginButtons,
   argTypes: {
     onIconPress: {action: 'onIconPress'},

@@ -27,7 +27,31 @@ const MainScreen = ({testId}: MainScreenProps) => {
     }
   }, [dispatch, isFocused]);
 
-  return <MainTemplate testId={testId} />;
+  const onNotificationPress = () => {
+    console.log('onNotificationPress');
+  };
+  const onUserProfilePress = () => {
+    console.log('onUserProfilePress');
+  };
+  const onDetailsPress = () => {
+    console.log('onDetailsPress');
+  };
+  const onTransferPress = () => {
+    console.log('onTransferPress');
+  };
+  const onWithdrawPress = () => {
+    console.log('onWithdrawPress');
+  };
+  return (
+    <MainTemplate
+      testId={testId}
+      onNotificationPress={onNotificationPress}
+      onUserProfilePress={onUserProfilePress}
+      onDetailsPress={onDetailsPress}
+      onTransferPress={onTransferPress}
+      onWithdrawPress={onWithdrawPress}
+    />
+  );
 };
 
 export default MainScreen;

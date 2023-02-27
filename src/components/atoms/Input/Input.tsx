@@ -5,10 +5,11 @@ import style from './Input.style';
 export type InputProps = PropsWithChildren<{
   type: 'username' | 'password' | 'phone' | 'password-confirm';
   onChange: (value: string) => void;
+  value: string;
   testId: string;
 }>;
 
-const Input = ({type, onChange, testId}: InputProps) => {
+const Input = ({type, onChange, value, testId}: InputProps) => {
   switch (type) {
     case 'username':
       return (
@@ -20,6 +21,7 @@ const Input = ({type, onChange, testId}: InputProps) => {
           onChangeText={onChange}
           autoComplete={'username'}
           autoCorrect={false}
+          value={value}
         />
       );
     case 'password':
@@ -33,6 +35,7 @@ const Input = ({type, onChange, testId}: InputProps) => {
           onChangeText={onChange}
           autoComplete={'password'}
           autoCorrect={false}
+          value={value}
         />
       );
     case 'phone':
@@ -46,6 +49,7 @@ const Input = ({type, onChange, testId}: InputProps) => {
           onChangeText={onChange}
           autoComplete={'tel'}
           autoCorrect={false}
+          value={value}
         />
       );
     case 'password-confirm':
@@ -59,6 +63,7 @@ const Input = ({type, onChange, testId}: InputProps) => {
           onChangeText={onChange}
           autoComplete={'off'}
           autoCorrect={false}
+          value={value}
         />
       );
   }

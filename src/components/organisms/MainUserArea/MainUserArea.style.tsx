@@ -1,11 +1,7 @@
 import {StyleSheet} from 'react-native';
-import {primary, secondary} from 'theme/colors';
+import {primary} from 'theme/colors';
 
 const style = StyleSheet.create({
-  wrapper: {
-    backgroundColor: secondary,
-    height: '100%',
-  },
   contentWithRadius: {
     backgroundColor: primary,
     borderWidth: 0,
@@ -18,5 +14,6 @@ const style = StyleSheet.create({
     width: '93%',
     marginTop: 35,
   },
+  bottomContent: {width: '85%', marginTop: 30},
 });
 export default style;

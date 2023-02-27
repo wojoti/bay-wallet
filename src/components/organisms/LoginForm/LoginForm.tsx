@@ -36,11 +36,13 @@ const LoginForm = ({
         type="username"
         onChange={onEmailChange}
         testId="loginform-inputarea-username"
+        value={email}
       />
       <InputArea
         type="password"
         onChange={onPasswordChange}
         testId="loginform-inputarea-password"
+        value={password}
       />
       <Container customStyle={style.buttonMargin}>
         <Button onPress={onSubmit} testId="loginform-button">

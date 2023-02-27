@@ -170,6 +170,7 @@ exports[`should match snapshot 1`] = `
               }
             }
             testID="inputarea-input"
+            value=""
           />
         </View>
         <View
@@ -246,6 +247,7 @@ exports[`should match snapshot 1`] = `
               }
             }
             testID="inputarea-input"
+            value=""
           />
         </View>
         <View

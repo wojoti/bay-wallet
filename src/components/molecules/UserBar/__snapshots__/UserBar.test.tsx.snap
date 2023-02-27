@@ -1,0 +1,179 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot 1`] = `
+<View
+  style={
+    [
+      {
+        "alignItems": "stretch",
+        "flex": undefined,
+        "flexDirection": "row",
+        "justifyContent": "flex-start",
+        "width": "100%",
+      },
+      undefined,
+    ]
+  }
+  testID="test-userbar-id"
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "flex-start",
+          "flex": 2.6,
+          "flexDirection": "column",
+          "justifyContent": "flex-start",
+          "width": "100%",
+        },
+        undefined,
+      ]
+    }
+  >
+    <Text
+      style={
+        {
+          "color": "white",
+          "fontFamily": "Poppins-Light",
+          "fontSize": 14,
+          "fontWeight": "400",
+          "textAlign": "left",
+        }
+      }
+      testID="userbar-welcome"
+    >
+      Good Morning
+    </Text>
+    <Text
+      style={
+        {
+          "color": "white",
+          "fontFamily": "Poppins-Bold",
+          "fontSize": 24,
+          "textAlign": "left",
+        }
+      }
+      testID="userbar-username"
+    >
+      test username
+    </Text>
+  </View>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "flex": 1,
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "width": "100%",
+        },
+        undefined,
+      ]
+    }
+  >
+    <View
+      accessibilityRole="button"
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": false,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "alignItems": "center",
+          "backgroundColor": "#363062",
+          "borderColor": "#363062",
+          "borderRadius": 8,
+          "borderStyle": "solid",
+          "borderWidth": 1,
+          "height": 65,
+          "justifyContent": "center",
+          "opacity": 1,
+        }
+      }
+      testID="userbar-notification"
+    >
+      <SvgMock
+        height={26}
+        width={24}
+      />
+    </View>
+    <View
+      accessibilityRole="button"
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": false,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "alignItems": "center",
+          "backgroundColor": "#363062",
+          "borderColor": "#363062",
+          "borderRadius": 8,
+          "borderStyle": "solid",
+          "borderWidth": 1,
+          "height": 65,
+          "justifyContent": "center",
+          "opacity": 1,
+        }
+      }
+      testID="userbar-userprofile"
+    >
+      <SvgMock
+        height={40}
+        width={40}
+      />
+    </View>
+  </View>
+</View>
+`;

@@ -1,6 +1,6 @@
 import {StyleSheet} from 'react-native';
 import {primary} from 'theme/colors';
-import {boldFont} from 'theme/fonts';
+import {boldFont, font} from 'theme/fonts';
 
 interface PressableProps {
   pressed?: boolean;
@@ -12,14 +12,16 @@ interface PressableProps {
 
 interface TextProps {
   fontColor?: string;
+  fontSize?: number;
+  fontWeight?: 'normal' | 'bold';
 }
 
-export const textStyle = ({fontColor}: TextProps) =>
+export const textStyle = ({fontColor, fontSize, fontWeight}: TextProps) =>
   StyleSheet.create({
     font: {
       textAlign: 'center',
-      fontFamily: boldFont,
-      fontSize: 18,
+      fontFamily: fontWeight === 'normal' ? font : boldFont,
+      fontSize: fontSize || 18,
       color: fontColor || 'white',
     },
   });

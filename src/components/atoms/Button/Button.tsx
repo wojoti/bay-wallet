@@ -9,6 +9,8 @@ export type ButtonProps = PropsWithChildren<{
   borderColor?: string;
   color?: string;
   fontColor?: string;
+  fontSize?: number;
+  fontWeight?: 'normal' | 'bold';
   testId: string;
   disabled?: boolean;
 }>;
@@ -20,6 +22,8 @@ const Button = ({
   borderColor,
   color,
   fontColor,
+  fontSize,
+  fontWeight,
   disabled = false,
   testId,
   children,
@@ -37,6 +41,8 @@ const Button = ({
         style={
           textStyle({
             fontColor,
+            fontSize,
+            fontWeight,
           }).font
         }
         testID="button-text">

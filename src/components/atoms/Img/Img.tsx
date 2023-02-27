@@ -4,6 +4,12 @@ import Logo_splash_white from 'img/bw_logo_splash_white.svg';
 import Card_lock from 'img/card_lock.svg';
 import Facebook from 'img/facebook.svg';
 import Google from 'img/google.svg';
+import Notification from 'img/notification.svg';
+import Notification_red from 'img/notification_red.svg';
+import Profile from 'img/profile.svg';
+import Transfer from 'img/transfer.svg';
+import Wave_green from 'img/wave_green.svg';
+import Withdraw from 'img/withdraw.svg';
 import {PropsWithChildren} from 'react';
 
 export type ImgProps = PropsWithChildren<{
@@ -21,6 +27,12 @@ export enum ImgType {
   logoSplashWhite = 'img/bw_logo_splash_white.svg',
   facebook = 'img/facebook.svg',
   google = 'img/google.svg',
+  profile = 'img/profile.svg',
+  notification = 'img/notification.svg',
+  notificationRed = 'img/notification_red.svg',
+  waveGreen = 'img/wave_green.svg',
+  transfer = 'img/transfer.svg',
+  withdraw = 'img/withdraw.svg',
 }
 
 function Img({src, height, width = '100%', testId}: ImgProps) {
@@ -41,6 +53,18 @@ function Img({src, height, width = '100%', testId}: ImgProps) {
       return <Facebook width={width} height={height} testID={testId} />;
     case ImgType.google:
       return <Google width={width} height={height} testID={testId} />;
+    case ImgType.profile:
+      return <Profile width={width} height={height} testID={testId} />;
+    case ImgType.notification:
+      return <Notification width={width} height={height} testID={testId} />;
+    case ImgType.notificationRed:
+      return <Notification_red width={width} height={height} testID={testId} />;
+    case ImgType.waveGreen:
+      return <Wave_green width={width} height={height} testID={testId} />;
+    case ImgType.transfer:
+      return <Transfer width={width} height={height} testID={testId} />;
+    case ImgType.withdraw:
+      return <Withdraw width={width} height={height} testID={testId} />;
   }
 }
 export default Img;

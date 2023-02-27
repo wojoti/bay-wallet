@@ -6,10 +6,11 @@ import style from './InputArea.style';
 export type InputAreaProps = PropsWithChildren<{
   type: 'username' | 'password' | 'phone' | 'password-confirm';
   onChange: (value: string) => void;
+  value: string;
   testId?: string;
 }>;
 
-const InputArea = ({type, onChange, testId}: InputAreaProps) => {
+const InputArea = ({type, onChange, value, testId}: InputAreaProps) => {
   switch (type) {
     case 'username':
       return (
@@ -23,6 +24,7 @@ const InputArea = ({type, onChange, testId}: InputAreaProps) => {
             type={'username'}
             onChange={onChange}
             testId="inputarea-input"
+            value={value}
           />
         </Container>
       );
@@ -38,6 +40,7 @@ const InputArea = ({type, onChange, testId}: InputAreaProps) => {
             type={'password'}
             onChange={onChange}
             testId="inputarea-input"
+            value={value}
           />
         </Container>
       );
@@ -49,7 +52,12 @@ const InputArea = ({type, onChange, testId}: InputAreaProps) => {
               Phone
             </Label>
           </Container>
-          <Input type={'phone'} onChange={onChange} testId="inputarea-input" />
+          <Input
+            type={'phone'}
+            onChange={onChange}
+            testId="inputarea-input"
+            value={value}
+          />
         </Container>
       );
     case 'password-confirm':
@@ -64,6 +72,7 @@ const InputArea = ({type, onChange, testId}: InputAreaProps) => {
             type={'password-confirm'}
             onChange={onChange}
             testId="inputarea-input"
+            value={value}
           />
         </Container>
       );
