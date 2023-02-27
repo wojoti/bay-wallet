@@ -1,9 +1,9 @@
 import {Container} from 'components/atoms';
 import {BalanceBox, TransferAndWithdraw, UserBar} from 'components/molecules';
 import {PropsWithChildren} from 'react';
-import style from './MainUserArea.style';
+import style from './UserArea.style';
 
-export type MainUserAreaProps = PropsWithChildren<{
+export type UserAreaProps = PropsWithChildren<{
   onNotificationPress: () => void;
   onUserProfilePress: () => void;
   onDetailsPress: () => void;
@@ -12,14 +12,14 @@ export type MainUserAreaProps = PropsWithChildren<{
   testId?: string;
 }>;
 
-const MainUserArea = ({
+const UserArea = ({
   onNotificationPress,
   onUserProfilePress,
   onDetailsPress,
   onTransferPress,
   onWithdrawPress,
   testId,
-}: MainUserAreaProps) => (
+}: UserAreaProps) => (
   <Container
     flex={1}
     customStyle={style.contentWithRadius}
@@ -44,4 +44,4 @@ const MainUserArea = ({
   </Container>
 );
 
-export default MainUserArea;
+export default UserArea;

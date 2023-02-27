@@ -11,6 +11,7 @@
       "theme/*": ["src/theme/*"],
       "store/*": ["src/store/*"],
       "storybook/*": [".storybook/*"],
+      "data/*": ["src/data/*"],
       "root/*": ["./*"]
     }
   }

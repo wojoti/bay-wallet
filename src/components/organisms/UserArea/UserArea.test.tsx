@@ -1,29 +1,29 @@
 import '@testing-library/jest-native/extend-expect';
 import {render, screen} from '@testing-library/react-native';
 import TestRenderer from 'react-test-renderer';
-import MainUserArea, {MainUserAreaProps} from './MainUserArea';
+import UserArea, {UserAreaProps} from './UserArea';
 
 const mockOnNotificationPress = jest.fn();
 const mockOnUserProfilePress = jest.fn();
 const mockOnDetailsPress = jest.fn();
 const mockOnTransferPress = jest.fn();
 const mockOnWithdrawPress = jest.fn();
-const props: MainUserAreaProps = {
+const props: UserAreaProps = {
   onNotificationPress: mockOnNotificationPress,
   onUserProfilePress: mockOnUserProfilePress,
   onDetailsPress: mockOnDetailsPress,
   onTransferPress: mockOnTransferPress,
   onWithdrawPress: mockOnWithdrawPress,
-  testId: 'test-mainuserarea-id',
+  testId: 'test-userarea-id',
 };
 
 test('should match snapshot', () => {
-  const tree = TestRenderer.create(<MainUserArea {...props} />).toJSON();
+  const tree = TestRenderer.create(<UserArea {...props} />).toJSON();
   expect(tree).toMatchSnapshot();
 });
 
-test('should render mainuserarea', () => {
-  render(<MainUserArea {...props} />);
-  const mainuserareaElement = screen.getByTestId('test-mainuserarea-id');
-  expect(mainuserareaElement).toBeOnTheScreen();
+test('should render userarea', () => {
+  render(<UserArea {...props} />);
+  const userareaElement = screen.getByTestId('test-userarea-id');
+  expect(userareaElement).toBeOnTheScreen();
 });

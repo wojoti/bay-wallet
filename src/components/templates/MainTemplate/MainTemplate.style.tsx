@@ -18,5 +18,6 @@ const style = StyleSheet.create({
     width: '93%',
     marginTop: 35,
   },
+  width: {width: '85%'},
 });
 export default style;

@@ -12,6 +12,7 @@ module.exports = {
           img: './src/img',
           store: './src/store',
           storybook: './.storybook',
+          data: './src/data',
           root: './',
         },
       },

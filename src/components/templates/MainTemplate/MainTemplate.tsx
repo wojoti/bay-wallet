@@ -1,5 +1,5 @@
-import {Container, Label} from 'components/atoms';
-import {MainUserArea} from 'components/organisms';
+import {Container} from 'components/atoms';
+import {MarketList, UserArea} from 'components/organisms';
 import {PropsWithChildren} from 'react';
 import style from './MainTemplate.style';
 
@@ -9,6 +9,7 @@ export type MainTemplateProps = PropsWithChildren<{
   onDetailsPress: () => void;
   onTransferPress: () => void;
   onWithdrawPress: () => void;
+  onViewMorePress: () => void;
   testId?: string;
 }>;
 
@@ -18,22 +19,25 @@ const MainTemplate = ({
   onDetailsPress,
   onTransferPress,
   onWithdrawPress,
+  onViewMorePress,
   testId,
-}: MainTemplateProps) => (
-  <Container customStyle={style.wrapper} testId={testId}>
-    <Container flex={1}>
-      <MainUserArea
-        onNotificationPress={onNotificationPress}
-        onUserProfilePress={onUserProfilePress}
-        onDetailsPress={onDetailsPress}
-        onTransferPress={onTransferPress}
-        onWithdrawPress={onWithdrawPress}
-      />
+}: MainTemplateProps) => {
+  return (
+    <Container customStyle={style.wrapper} testId={testId} align="center">
+      <Container flex={1}>
+        <UserArea
+          onNotificationPress={onNotificationPress}
+          onUserProfilePress={onUserProfilePress}
+          onDetailsPress={onDetailsPress}
+          onTransferPress={onTransferPress}
+          onWithdrawPress={onWithdrawPress}
+        />
+      </Container>
+      <Container flex={1}>
+        <MarketList onViewMorePress={onViewMorePress} />
+      </Container>
     </Container>
-    <Container flex={1}>
-      <Label>Latest market</Label>
-    </Container>
-  </Container>
-);
+  );
+};
 
 export default MainTemplate;

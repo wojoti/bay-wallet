@@ -22,6 +22,9 @@ const style = StyleSheet.create({
     height: 140,
     width: '92%',
     borderRadius: 12,
+  },
+  imgBackground: {
+    flex: 1,
     paddingVertical: 14,
     paddingLeft: 22,
     paddingRight: 18,

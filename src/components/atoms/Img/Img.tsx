@@ -1,7 +1,10 @@
+import Bitcoin from 'img/bitcoin.svg';
 import Logo from 'img/bw_logo.svg';
 import Logo_splash_color from 'img/bw_logo_splash_color.svg';
 import Logo_splash_white from 'img/bw_logo_splash_white.svg';
 import Card_lock from 'img/card_lock.svg';
+import Dash_down from 'img/dash_down.svg';
+import Dash_up from 'img/dash_up.svg';
 import Facebook from 'img/facebook.svg';
 import Google from 'img/google.svg';
 import Notification from 'img/notification.svg';
@@ -33,6 +36,9 @@ export enum ImgType {
   waveGreen = 'img/wave_green.svg',
   transfer = 'img/transfer.svg',
   withdraw = 'img/withdraw.svg',
+  bitcoin = 'img/bitcoin.svg',
+  dashUp = 'img/dash_up.svg',
+  dashDown = 'img/dash_down.svg',
 }
 
 function Img({src, height, width = '100%', testId}: ImgProps) {
@@ -65,6 +71,12 @@ function Img({src, height, width = '100%', testId}: ImgProps) {
       return <Transfer width={width} height={height} testID={testId} />;
     case ImgType.withdraw:
       return <Withdraw width={width} height={height} testID={testId} />;
+    case ImgType.bitcoin:
+      return <Bitcoin width={width} height={height} testID={testId} />;
+    case ImgType.dashUp:
+      return <Dash_up width={width} height={height} testID={testId} />;
+    case ImgType.dashDown:
+      return <Dash_down width={width} height={height} testID={testId} />;
   }
 }
 export default Img;

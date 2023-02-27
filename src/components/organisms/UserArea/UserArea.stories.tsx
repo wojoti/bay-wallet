@@ -1,11 +1,11 @@
 import {ComponentMeta, ComponentStory} from '@storybook/react-native';
 
-import MainUserArea from './MainUserArea';
+import UserArea from './UserArea';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'Organisms/MainUserArea',
-  component: MainUserArea,
+  title: 'Organisms/UserArea',
+  component: UserArea,
   argTypes: {
     onNotificationPress: {action: 'onNotificationPress'},
     onUserProfilePress: {action: 'onUserProfilePress'},
@@ -13,11 +13,11 @@ export default {
     onTransferPress: {action: 'onTransferPress'},
     onWithdrawPress: {action: 'onWithdrawPress'},
   },
-} as ComponentMeta<typeof MainUserArea>;
+} as ComponentMeta<typeof UserArea>;
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template: ComponentStory<typeof MainUserArea> = args => (
-  <MainUserArea {...args} />
+const Template: ComponentStory<typeof UserArea> = args => (
+  <UserArea {...args} />
 );
 
 export const Example = Template.bind({});
