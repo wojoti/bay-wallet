@@ -213,7 +213,7 @@ test('should render first welcomecardsarea: button and correct style', () => {
   ).getByTestId('welcomecardsarea-button');
   expect(welcomecardsareaButtonElement).toBeOnTheScreen();
   expect(welcomecardsareaButtonElement).toHaveStyle({
-    backgroundColor: secondary,
+    borderWidth: 0,
   });
   const buttonText = within(welcomecardsareaButtonElement).getByTestId(
     'button-text',
@@ -294,7 +294,7 @@ test('should render second welcomecardsarea: button with correct style ', () => 
   ).getByTestId('welcomecardsarea-button');
   expect(welcomecardsareaButtonElement).toBeOnTheScreen();
   expect(welcomecardsareaButtonElement).toHaveStyle({
-    backgroundColor: secondary,
+    borderWidth: 0,
   });
   const buttonText = within(welcomecardsareaButtonElement).getByTestId(
     'button-text',

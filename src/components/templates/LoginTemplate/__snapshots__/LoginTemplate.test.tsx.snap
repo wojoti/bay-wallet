@@ -151,11 +151,12 @@ exports[`should match snapshot 1`] = `
             </Text>
           </View>
           <TextInput
-            accessibilityHint="Allow to insert username"
-            accessibilityLabel="Login input field"
-            autoComplete="username"
+            accessibilityHint="Type username here"
+            accessibilityLabel="Username input"
+            autoComplete="off"
             autoCorrect={false}
             onChangeText={[Function]}
+            secureTextEntry={false}
             style={
               {
                 "borderColor": "#363062",
@@ -170,6 +171,7 @@ exports[`should match snapshot 1`] = `
               }
             }
             testID="inputarea-input"
+            value=""
           />
         </View>
         <View
@@ -226,9 +228,9 @@ exports[`should match snapshot 1`] = `
             </Text>
           </View>
           <TextInput
-            accessibilityHint="Allow to insert password"
-            accessibilityLabel="Password input field"
-            autoComplete="password"
+            accessibilityHint="Type password here"
+            accessibilityLabel="Password input"
+            autoComplete="off"
             autoCorrect={false}
             onChangeText={[Function]}
             secureTextEntry={true}
@@ -246,6 +248,7 @@ exports[`should match snapshot 1`] = `
               }
             }
             testID="inputarea-input"
+            value=""
           />
         </View>
         <View
@@ -296,28 +299,37 @@ exports[`should match snapshot 1`] = `
             onResponderTerminationRequest={[Function]}
             onStartShouldSetResponder={[Function]}
             style={
-              {
-                "alignItems": "center",
-                "backgroundColor": "#363062",
-                "borderColor": "#363062",
-                "borderRadius": 8,
-                "borderStyle": "solid",
-                "borderWidth": 1,
-                "height": 65,
-                "justifyContent": "center",
-                "opacity": 1,
-              }
+              [
+                {
+                  "alignItems": "center",
+                  "borderRadius": 8,
+                  "borderStyle": "solid",
+                  "borderWidth": 1,
+                  "height": 65,
+                  "justifyContent": "center",
+                  "opacity": 1,
+                },
+                false,
+                {
+                  "backgroundColor": "#363062",
+                  "borderWidth": 0,
+                },
+              ]
             }
             testID="loginform-button"
           >
             <Text
               style={
-                {
-                  "color": "white",
-                  "fontFamily": "Poppins-Bold",
-                  "fontSize": 18,
-                  "textAlign": "center",
-                }
+                [
+                  {
+                    "fontFamily": "Poppins-Bold",
+                    "fontSize": 18,
+                    "textAlign": "center",
+                  },
+                  {
+                    "color": "white",
+                  },
+                ]
               }
               testID="button-text"
             >
@@ -425,6 +437,7 @@ exports[`should match snapshot 1`] = `
                 style={
                   {
                     "color": "#363062",
+                    "fontFamily": "Poppins-Light",
                     "fontWeight": "400",
                     "textAlign": "right",
                   }
@@ -564,17 +577,22 @@ exports[`should match snapshot 1`] = `
                 onResponderTerminationRequest={[Function]}
                 onStartShouldSetResponder={[Function]}
                 style={
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "white",
-                    "borderColor": "#E2E2E2",
-                    "borderRadius": 8,
-                    "borderStyle": "solid",
-                    "borderWidth": 1,
-                    "height": 65,
-                    "justifyContent": "center",
-                    "opacity": 1,
-                  }
+                  [
+                    {
+                      "alignItems": "center",
+                      "backgroundColor": "transparent",
+                      "borderStyle": "solid",
+                      "justifyContent": "center",
+                      "opacity": 1,
+                    },
+                    false,
+                    {
+                      "borderColor": "#E2E2E2",
+                      "borderRadius": 6,
+                      "borderWidth": 1,
+                      "height": 60,
+                    },
+                  ]
                 }
                 testID="socialloginbuttons-button-google"
               >
@@ -633,17 +651,22 @@ exports[`should match snapshot 1`] = `
                 onResponderTerminationRequest={[Function]}
                 onStartShouldSetResponder={[Function]}
                 style={
-                  {
-                    "alignItems": "center",
-                    "backgroundColor": "white",
-                    "borderColor": "#E2E2E2",
-                    "borderRadius": 8,
-                    "borderStyle": "solid",
-                    "borderWidth": 1,
-                    "height": 65,
-                    "justifyContent": "center",
-                    "opacity": 1,
-                  }
+                  [
+                    {
+                      "alignItems": "center",
+                      "backgroundColor": "transparent",
+                      "borderStyle": "solid",
+                      "justifyContent": "center",
+                      "opacity": 1,
+                    },
+                    false,
+                    {
+                      "borderColor": "#E2E2E2",
+                      "borderRadius": 6,
+                      "borderWidth": 1,
+                      "height": 60,
+                    },
+                  ]
                 }
                 testID="socialloginbuttons-button-facebook"
               >

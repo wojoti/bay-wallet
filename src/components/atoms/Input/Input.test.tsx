@@ -8,7 +8,10 @@ const handleChange = jest.fn(inputValue => (value = inputValue));
 const props: InputProps = {
   onChange: handleChange,
   testId: 'test-input-id',
-  type: 'username',
+  accessibilityLabel: 'Username input',
+  accessibilityHint: 'Type username here',
+  safe: false,
+  value: value,
 };
 
 test('should match snapshot', () => {

@@ -14,5 +14,6 @@ const style = StyleSheet.create({
     alignItems: 'center',
     marginRight: 15,
   },
+  detailsSpacer: {width: 'auto', marginRight: 10},
 });
 export default style;

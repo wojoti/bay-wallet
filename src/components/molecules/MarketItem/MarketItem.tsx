@@ -34,7 +34,7 @@ const MarketItem = ({value, name, percent, testId}: MarketItemProps) => {
         </Container>
       </Container>
       <Container flex={1} direction={'row'} justify="flex-end" align="center">
-        <Container customStyle={{width: 'auto', marginRight: 10}}>
+        <Container customStyle={style.detailsSpacer}>
           <Header size={14} color={detailColor}>
             {percent}%
           </Header>

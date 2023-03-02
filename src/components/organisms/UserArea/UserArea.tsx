@@ -33,7 +33,13 @@ const UserArea = ({
       />
     </Container>
     <Container customStyle={style.balanceBoxSizer}>
-      <BalanceBox onDetailsPress={onDetailsPress} amount={'45.500,12'} />
+      <BalanceBox
+        onDetailsPress={onDetailsPress}
+        amount={'45.500,12'}
+        percent={'4.5'}
+        balanceLabel={'Your main balance'}
+        detailsLabel={'Details >'}
+      />
     </Container>
     <Container customStyle={style.bottomContent}>
       <TransferAndWithdraw

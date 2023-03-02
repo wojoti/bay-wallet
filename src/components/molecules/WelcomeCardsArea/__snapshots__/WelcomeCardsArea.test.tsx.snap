@@ -30,8 +30,6 @@ exports[`should match snapshot 1`] = `
           "width": "100%",
         },
         {
-          "marginHorizontal": undefined,
-          "marginTop": undefined,
           "width": "85%",
         },
       ]
@@ -49,9 +47,7 @@ exports[`should match snapshot 1`] = `
             "width": "100%",
           },
           {
-            "marginHorizontal": undefined,
             "marginTop": 50,
-            "width": undefined,
           },
         ]
       }
@@ -67,8 +63,6 @@ exports[`should match snapshot 1`] = `
               "width": "100%",
             },
             {
-              "marginHorizontal": undefined,
-              "marginTop": undefined,
               "width": "78%",
             },
           ]
@@ -99,8 +93,6 @@ exports[`should match snapshot 1`] = `
               "width": "100%",
             },
             {
-              "marginHorizontal": undefined,
-              "marginTop": undefined,
               "width": "auto",
             },
           ]
@@ -124,9 +116,7 @@ exports[`should match snapshot 1`] = `
             "width": "100%",
           },
           {
-            "marginHorizontal": undefined,
             "marginTop": 20,
-            "width": undefined,
           },
         ]
       }
@@ -157,9 +147,7 @@ exports[`should match snapshot 1`] = `
             "width": "100%",
           },
           {
-            "marginHorizontal": undefined,
             "marginTop": 30,
-            "width": undefined,
           },
         ]
       }
@@ -196,33 +184,39 @@ exports[`should match snapshot 1`] = `
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
         style={
-          {
-            "alignItems": "center",
-            "backgroundColor": "white",
-            "borderColor": "white",
-            "borderRadius": 8,
-            "borderStyle": "solid",
-            "borderWidth": 1,
-            "height": 65,
-            "justifyContent": "center",
-            "opacity": 1,
-          }
+          [
+            {
+              "alignItems": "center",
+              "borderRadius": 8,
+              "borderStyle": "solid",
+              "borderWidth": 1,
+              "height": 65,
+              "justifyContent": "center",
+              "opacity": 1,
+            },
+            false,
+            {
+              "borderWidth": 0,
+            },
+          ]
         }
         testID="welcomecardsarea-button"
       >
         <Text
           style={
-            {
-              "color": "#363062",
-              "fontFamily": "Poppins-Bold",
-              "fontSize": 18,
-              "textAlign": "center",
-            }
+            [
+              {
+                "fontFamily": "Poppins-Bold",
+                "fontSize": 18,
+                "textAlign": "center",
+              },
+              {
+                "color": "#363062",
+              },
+            ]
           }
           testID="button-text"
-        >
-          GET STARTED
-        </Text>
+        />
       </View>
     </View>
   </View>

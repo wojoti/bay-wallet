@@ -1,32 +1,28 @@
 import {StyleSheet} from 'react-native';
 
-interface Props {
-  background?: string;
-  radius?: number;
-  width?: string;
-  mt?: number;
-  m?: number;
-}
-const style = ({background, radius, width, mt, m}: Props) =>
-  StyleSheet.create({
-    wrapper: {
-      backgroundColor: background,
-    },
-    contentWithRadius: {
-      backgroundColor: background,
-      borderWidth: 0,
-      borderColor: 'transparent',
-      borderTopLeftRadius: radius,
-      borderTopRightRadius: radius,
-    },
-    sizer: {
-      width: width,
-      marginTop: mt,
-      marginHorizontal: m,
-    },
-    cardSizer: {
-      width: '100%',
-      alignItems: 'center',
-    },
-  });
+const style = StyleSheet.create({
+  wrapper: {
+    width: '100%',
+    alignItems: 'center',
+  },
+  cardSizer: {width: '85%'},
+  topSpacer: {
+    marginTop: 50,
+  },
+  labelSpacer: {
+    marginTop: 20,
+  },
+  buttonSpacer: {
+    marginTop: 30,
+  },
+  headerSizer: {
+    width: '78%',
+  },
+  logoSizer: {
+    width: 'auto',
+  },
+  btnStyle: {
+    borderWidth: 0,
+  },
+});
 export default style;

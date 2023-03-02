@@ -1,0 +1,698 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot 1`] = `
+<View
+  style={
+    [
+      {
+        "alignItems": "center",
+        "flex": 1,
+        "flexDirection": "column",
+        "justifyContent": "flex-start",
+        "width": "100%",
+      },
+      {
+        "backgroundColor": "#363062",
+        "borderBottomLeftRadius": 30,
+        "borderBottomRightRadius": 30,
+        "borderColor": "transparent",
+        "borderWidth": 0,
+      },
+    ]
+  }
+  testID="test-userarea-id"
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "stretch",
+          "flex": undefined,
+          "flexDirection": "column",
+          "justifyContent": "flex-start",
+          "width": "100%",
+        },
+        {
+          "marginTop": 60,
+          "width": "85%",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "alignItems": "stretch",
+            "flex": undefined,
+            "flexDirection": "row",
+            "justifyContent": "flex-start",
+            "width": "100%",
+          },
+          undefined,
+        ]
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "alignItems": "flex-start",
+              "flex": 2.6,
+              "flexDirection": "column",
+              "justifyContent": "flex-start",
+              "width": "100%",
+            },
+            undefined,
+          ]
+        }
+      >
+        <Text
+          style={
+            {
+              "color": "white",
+              "fontFamily": "Poppins-Light",
+              "fontSize": 14,
+              "fontWeight": "400",
+              "textAlign": "left",
+            }
+          }
+          testID="userbar-welcome"
+        >
+          Good Morning
+        </Text>
+        <Text
+          style={
+            {
+              "color": "white",
+              "fontFamily": "Poppins-Bold",
+              "fontSize": 24,
+              "textAlign": "left",
+            }
+          }
+          testID="userbar-username"
+        >
+          David Kowalski
+        </Text>
+      </View>
+      <View
+        style={
+          [
+            {
+              "alignItems": "center",
+              "flex": 1,
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "width": "100%",
+            },
+            undefined,
+          ]
+        }
+      >
+        <View
+          accessibilityRole="button"
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": false,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            [
+              {
+                "alignItems": "center",
+                "backgroundColor": "transparent",
+                "borderStyle": "solid",
+                "justifyContent": "center",
+                "opacity": 1,
+              },
+              false,
+              undefined,
+            ]
+          }
+          testID="userbar-notification"
+        >
+          <SvgMock
+            height={26}
+            width={24}
+          />
+        </View>
+        <View
+          accessibilityRole="button"
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": false,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            [
+              {
+                "alignItems": "center",
+                "backgroundColor": "transparent",
+                "borderStyle": "solid",
+                "justifyContent": "center",
+                "opacity": 1,
+              },
+              false,
+              undefined,
+            ]
+          }
+          testID="userbar-userprofile"
+        >
+          <SvgMock
+            height={40}
+            width={40}
+          />
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      [
+        {
+          "alignItems": "stretch",
+          "flex": undefined,
+          "flexDirection": "column",
+          "justifyContent": "flex-start",
+          "width": "100%",
+        },
+        {
+          "marginTop": 35,
+          "width": "93%",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "alignItems": "stretch",
+            "flex": undefined,
+            "flexDirection": "column",
+            "justifyContent": "flex-start",
+            "width": "100%",
+          },
+          {
+            "alignItems": "center",
+            "justifyContent": "center",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "alignItems": "stretch",
+              "flex": undefined,
+              "flexDirection": "column",
+              "justifyContent": "flex-start",
+              "width": "100%",
+            },
+            {
+              "backgroundColor": "#26204E",
+              "borderRadius": 12,
+              "height": 102,
+              "position": "absolute",
+              "width": "100%",
+            },
+          ]
+        }
+      />
+      <View
+        style={
+          [
+            {
+              "alignItems": "stretch",
+              "flex": undefined,
+              "flexDirection": "column",
+              "justifyContent": "flex-start",
+              "width": "100%",
+            },
+            {
+              "backgroundColor": "#F8F8FF",
+              "borderRadius": 12,
+              "height": 140,
+              "width": "92%",
+            },
+          ]
+        }
+      >
+        <View
+          accessibilityIgnoresInvertColors={true}
+          style={
+            [
+              {
+                "flex": 1,
+              },
+              {
+                "flex": 1,
+                "paddingLeft": 22,
+                "paddingRight": 18,
+                "paddingVertical": 14,
+              },
+            ]
+          }
+        >
+          <Image
+            source={
+              {
+                "testUri": "../../../src/img/wave.png",
+              }
+            }
+            style={
+              [
+                {
+                  "bottom": 0,
+                  "left": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                },
+                {
+                  "height": undefined,
+                  "width": undefined,
+                },
+                undefined,
+              ]
+            }
+          />
+          <View
+            style={
+              [
+                {
+                  "alignItems": "stretch",
+                  "flex": 1,
+                  "flexDirection": "column",
+                  "justifyContent": "space-between",
+                  "width": "100%",
+                },
+                undefined,
+              ]
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#595959",
+                  "fontFamily": "Poppins-Light",
+                  "fontSize": 15,
+                  "fontWeight": "400",
+                  "textAlign": "left",
+                }
+              }
+            >
+              Your main balance
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "black",
+                  "fontFamily": "Poppins-Bold",
+                  "fontSize": 28,
+                  "textAlign": "left",
+                }
+              }
+            >
+              $ 
+              45.500,12
+            </Text>
+          </View>
+          <View
+            style={
+              [
+                {
+                  "alignItems": "flex-end",
+                  "flex": 1,
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "width": "100%",
+                },
+                undefined,
+              ]
+            }
+          >
+            <View
+              accessibilityRole="button"
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": false,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                [
+                  {
+                    "alignItems": "center",
+                    "borderRadius": 8,
+                    "borderStyle": "solid",
+                    "borderWidth": 1,
+                    "height": 65,
+                    "justifyContent": "center",
+                    "opacity": 1,
+                  },
+                  false,
+                  {
+                    "borderWidth": 0,
+                    "color": "transparent",
+                    "height": 30,
+                  },
+                ]
+              }
+              testID="balancebox-button"
+            >
+              <Text
+                style={
+                  [
+                    {
+                      "fontFamily": "Poppins-Bold",
+                      "fontSize": 18,
+                      "textAlign": "center",
+                    },
+                    {
+                      "color": "#363062",
+                      "fontSize": 15,
+                    },
+                  ]
+                }
+                testID="button-text"
+              >
+                Details &gt;
+              </Text>
+            </View>
+            <View
+              style={
+                [
+                  {
+                    "alignItems": "flex-start",
+                    "flex": undefined,
+                    "flexDirection": "row",
+                    "justifyContent": "space-between",
+                    "width": "100%",
+                  },
+                  {
+                    "width": 90,
+                  },
+                ]
+              }
+            >
+              <Text
+                style={
+                  {
+                    "color": "#61C277",
+                    "fontFamily": "Poppins-Bold",
+                    "fontSize": 15,
+                    "textAlign": "left",
+                  }
+                }
+              >
+                4.5
+                 %
+              </Text>
+              <SvgMock
+                height="20"
+                width={41}
+              />
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      [
+        {
+          "alignItems": "stretch",
+          "flex": undefined,
+          "flexDirection": "column",
+          "justifyContent": "flex-start",
+          "width": "100%",
+        },
+        {
+          "marginTop": 30,
+          "width": "85%",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "alignItems": "stretch",
+            "flex": undefined,
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "width": "100%",
+          },
+          undefined,
+        ]
+      }
+    >
+      <View
+        accessibilityRole="button"
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": false,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          [
+            {
+              "alignItems": "center",
+              "backgroundColor": "transparent",
+              "borderStyle": "solid",
+              "justifyContent": "center",
+              "opacity": 1,
+            },
+            false,
+            {
+              "backgroundColor": "#4E439E",
+              "borderRadius": 14,
+              "height": 60,
+            },
+          ]
+        }
+        testID="transfer-button"
+      >
+        <View
+          style={
+            [
+              {
+                "alignItems": "flex-start",
+                "flex": undefined,
+                "flexDirection": "row",
+                "justifyContent": "space-evenly",
+                "width": "100%",
+              },
+              {
+                "width": 155,
+              },
+            ]
+          }
+        >
+          <SvgMock
+            height="24"
+            width={24}
+          />
+          <Text
+            style={
+              {
+                "color": "white",
+                "fontFamily": "Poppins-Light",
+                "fontSize": 15,
+                "fontWeight": "400",
+                "textAlign": "left",
+              }
+            }
+          >
+            Transfer
+          </Text>
+        </View>
+      </View>
+      <View
+        accessibilityRole="button"
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": false,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          [
+            {
+              "alignItems": "center",
+              "backgroundColor": "transparent",
+              "borderStyle": "solid",
+              "justifyContent": "center",
+              "opacity": 1,
+            },
+            false,
+            {
+              "backgroundColor": "#4E439E",
+              "borderRadius": 14,
+              "height": 60,
+            },
+          ]
+        }
+        testID="withdraw-button"
+      >
+        <View
+          style={
+            [
+              {
+                "alignItems": "flex-start",
+                "flex": undefined,
+                "flexDirection": "row",
+                "justifyContent": "space-evenly",
+                "width": "100%",
+              },
+              {
+                "width": 155,
+              },
+            ]
+          }
+        >
+          <SvgMock
+            height="24"
+            width={24}
+          />
+          <Text
+            style={
+              {
+                "color": "white",
+                "fontFamily": "Poppins-Light",
+                "fontSize": 15,
+                "fontWeight": "400",
+                "textAlign": "left",
+              }
+            }
+          >
+            Withdraw
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;

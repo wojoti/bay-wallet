@@ -1,18 +1,25 @@
 import {Container} from 'components/atoms';
 import {MarketItem} from 'components/molecules';
-import {MarketData} from 'data/index';
 import {PropsWithChildren} from 'react';
 import {FlatList} from 'react-native';
+
+export type MarketData = {
+  id: string;
+  name: string;
+  value: string;
+  percent: string;
+};
 
 export type MarketListProps = PropsWithChildren<{
   onViewMorePress: () => void;
   testId?: string;
+  data: MarketData[];
 }>;
 
-const MarketList = ({onViewMorePress, testId}: MarketListProps) => (
+const MarketList = ({onViewMorePress, data, testId}: MarketListProps) => (
   <Container flex={1} testId={testId}>
     <FlatList
-      data={MarketData}
+      data={data}
       renderItem={({item}) => (
         <MarketItem
           value={item.value}

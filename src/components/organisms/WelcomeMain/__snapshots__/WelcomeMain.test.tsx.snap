@@ -156,28 +156,37 @@ exports[`should match snapshot 1`] = `
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
         style={
-          {
-            "alignItems": "center",
-            "backgroundColor": "white",
-            "borderColor": "white",
-            "borderRadius": 8,
-            "borderStyle": "solid",
-            "borderWidth": 1,
-            "height": 65,
-            "justifyContent": "center",
-            "opacity": 1,
-          }
+          [
+            {
+              "alignItems": "center",
+              "borderRadius": 8,
+              "borderStyle": "solid",
+              "borderWidth": 1,
+              "height": 65,
+              "justifyContent": "center",
+              "opacity": 1,
+            },
+            false,
+            {
+              "backgroundColor": "white",
+              "borderWidth": 0,
+            },
+          ]
         }
         testID="welcomemain-button"
       >
         <Text
           style={
-            {
-              "color": "black",
-              "fontFamily": "Poppins-Bold",
-              "fontSize": 18,
-              "textAlign": "center",
-            }
+            [
+              {
+                "fontFamily": "Poppins-Bold",
+                "fontSize": 18,
+                "textAlign": "center",
+              },
+              {
+                "color": "black",
+              },
+            ]
           }
           testID="button-text"
         >

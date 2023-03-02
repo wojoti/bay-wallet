@@ -1,5 +1,5 @@
 import {StyleSheet} from 'react-native';
-import {balanceWhite, darkPurple} from 'theme/colors';
+import {balanceWhite, darkPurple, primary} from 'theme/colors';
 
 const style = StyleSheet.create({
   balanceBoxSizer: {
@@ -31,6 +31,15 @@ const style = StyleSheet.create({
   },
   width: {
     width: 90,
+  },
+  btnStyle: {
+    height: 30,
+    color: 'transparent',
+    borderWidth: 0,
+  },
+  btnTextStyle: {
+    color: primary,
+    fontSize: 15,
   },
 });
 export default style;

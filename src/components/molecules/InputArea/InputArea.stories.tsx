@@ -11,7 +11,7 @@ const Template: ComponentStory<typeof InputArea> = args => (
 );
 
 export const Username = Template.bind({});
-Username.args = {type: 'username', testId: ''};
+Username.args = {label: 'username', testId: ''};
 
 export const Password = Template.bind({});
-Password.args = {type: 'password', testId: ''};
+Password.args = {label: 'password', testId: ''};

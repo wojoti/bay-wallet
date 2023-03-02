@@ -2,6 +2,7 @@ import {useIsFocused} from '@react-navigation/native';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import {RootStackParamList} from 'App';
 import {MainTemplate} from 'components/templates';
+import {MarketData} from 'data/index';
 import {useEffect} from 'react';
 import {useDispatch} from 'react-redux';
 import {AppDispatch} from 'store/store';
@@ -42,6 +43,9 @@ const MainScreen = ({testId}: MainScreenProps) => {
   const onWithdrawPress = () => {
     console.log('onWithdrawPress');
   };
+  const onViewMorePress = () => {
+    console.log('onViewMorePress');
+  };
   return (
     <MainTemplate
       testId={testId}
@@ -50,6 +54,8 @@ const MainScreen = ({testId}: MainScreenProps) => {
       onDetailsPress={onDetailsPress}
       onTransferPress={onTransferPress}
       onWithdrawPress={onWithdrawPress}
+      onViewMorePress={onViewMorePress}
+      data={MarketData}
     />
   );
 };

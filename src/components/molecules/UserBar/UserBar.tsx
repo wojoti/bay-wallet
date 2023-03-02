@@ -1,6 +1,6 @@
 import {
+  ComposableButton,
   Container,
-  EmptyButton,
   Header,
   Img,
   ImgType,
@@ -37,14 +37,16 @@ const UserBar = ({
         flex={1}
         align="center"
         direction="row">
-        <EmptyButton
+        <ComposableButton
           onPress={onNotificationPress}
           testId="userbar-notification">
           <Img src={ImgType.notificationRed} height={26} width={24} alt={''} />
-        </EmptyButton>
-        <EmptyButton onPress={onUserProfilePress} testId="userbar-userprofile">
+        </ComposableButton>
+        <ComposableButton
+          onPress={onUserProfilePress}
+          testId="userbar-userprofile">
           <Img src={ImgType.profile} height={40} width={40} alt={''} />
-        </EmptyButton>
+        </ComposableButton>
       </Container>
     </Container>
   );

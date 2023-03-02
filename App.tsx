@@ -30,7 +30,7 @@ function App(): JSX.Element {
     <NavigationContainer>
       <StatusBar barStyle={style.barStyle} backgroundColor="transparent" />
       <Stack.Navigator
-        initialRouteName={'Main'}
+        initialRouteName={'Welcome'}
         screenOptions={{
           headerShown: false,
         }}>

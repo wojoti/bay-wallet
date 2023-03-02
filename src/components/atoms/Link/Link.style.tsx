@@ -1,4 +1,5 @@
 import {StyleSheet} from 'react-native';
+import {font} from 'theme/fonts';
 
 interface textProps {
   color?: string;
@@ -11,6 +12,7 @@ export const textStyle = ({color, bold, align}: textProps) =>
       color: color || 'black',
       fontWeight: bold ? 'bold' : '400',
       textAlign: align || 'left',
+      fontFamily: font,
     },
   });
 

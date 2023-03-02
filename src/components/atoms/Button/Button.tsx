@@ -1,29 +1,19 @@
 import {PropsWithChildren} from 'react';
-import {Pressable, Text} from 'react-native';
-import style, {textStyle} from './Button.style';
+import {Pressable, StyleProp, Text, TextStyle, ViewStyle} from 'react-native';
+import style, {fontStyle} from './Button.style';
 
 export type ButtonProps = PropsWithChildren<{
   onPress: () => void;
-  height?: number;
-  borderRadius?: number;
-  borderColor?: string;
-  color?: string;
-  fontColor?: string;
-  fontSize?: number;
-  fontWeight?: 'normal' | 'bold';
+  customStyle?: StyleProp<ViewStyle>;
+  customFontStyle?: StyleProp<TextStyle>;
   testId: string;
   disabled?: boolean;
 }>;
 
 const Button = ({
   onPress,
-  height,
-  borderRadius,
-  borderColor,
-  color,
-  fontColor,
-  fontSize,
-  fontWeight,
+  customStyle,
+  customFontStyle,
   disabled = false,
   testId,
   children,
@@ -32,20 +22,14 @@ const Button = ({
     <Pressable
       accessibilityRole="button"
       testID={testId}
-      style={({pressed}) =>
-        style({pressed, height, borderRadius, borderColor, color}).pressable
-      }
+      style={({pressed}) => [
+        style.wrapper,
+        pressed && style.pressed,
+        customStyle,
+      ]}
       onPress={onPress}
       disabled={disabled}>
-      <Text
-        style={
-          textStyle({
-            fontColor,
-            fontSize,
-            fontWeight,
-          }).font
-        }
-        testID="button-text">
+      <Text style={[fontStyle.wrapper, customFontStyle]} testID="button-text">
         {children}
       </Text>
     </Pressable>

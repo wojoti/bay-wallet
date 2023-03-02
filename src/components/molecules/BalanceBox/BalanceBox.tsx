@@ -1,28 +1,48 @@
-import {Button, Container, Header, Img, ImgType, Label} from 'components/atoms';
+import {
+  Background,
+  Button,
+  Container,
+  Header,
+  Img,
+  ImgType,
+  Label,
+} from 'components/atoms';
 import {PropsWithChildren} from 'react';
-import {ImageBackground} from 'react-native';
-import {darkGrey, green, primary} from 'theme/colors';
+import {darkGrey, green} from 'theme/colors';
 import style from './BalanceBox.style';
 
 export type BalanceBoxProps = PropsWithChildren<{
   onDetailsPress: () => void;
   testId?: string;
   amount: string;
+  percent: string;
+  balanceLabel: string;
+  detailsLabel: string;
 }>;
 
-const BalanceBox = ({onDetailsPress, amount, testId}: BalanceBoxProps) => {
+const BalanceBox = ({
+  onDetailsPress,
+  amount,
+  percent,
+  balanceLabel,
+  detailsLabel,
+  testId,
+}: BalanceBoxProps) => {
   return (
     <Container customStyle={style.balanceBox} testId={testId}>
       <Container customStyle={style.backgroundBox} />
       <Container customStyle={style.whiteBox}>
-        <ImageBackground
+        <Background
           source={require('img/wave.png')}
-          style={style.imgBackground}>
+          customStyle={style.imgBackground}
+          testId={'balancebox-background'}>
           <Container flex={1} justify="space-between">
-            <Label size={15} color={darkGrey}>
-              Your main balance
+            <Label size={15} color={darkGrey} testId={'balancebox-label'}>
+              {balanceLabel}
             </Label>
-            <Header size={28}>$ {amount}</Header>
+            <Header size={28} testId={'balancebox-amount'}>
+              $ {amount}
+            </Header>
           </Container>
           <Container
             flex={1}
@@ -30,28 +50,30 @@ const BalanceBox = ({onDetailsPress, amount, testId}: BalanceBoxProps) => {
             justify="space-between"
             direction="row">
             <Button
-              height={30}
-              fontColor={primary}
-              fontSize={15}
-              fontWeight="normal"
-              color={'transparent'}
-              borderColor={'transparent'}
+              customStyle={style.btnStyle}
+              customFontStyle={style.btnTextStyle}
               onPress={onDetailsPress}
               testId={'balancebox-button'}>
-              Details {'>'}
+              {detailsLabel}
             </Button>
             <Container
               customStyle={style.width}
               direction="row"
               align="flex-start"
               justify="space-between">
-              <Header size={15} color={green}>
-                4.5%
+              <Header size={15} color={green} testId={'balancebox-percent'}>
+                {percent} %
               </Header>
-              <Img src={ImgType.waveGreen} height={'20'} width={41} alt={''} />
+              <Img
+                src={ImgType.waveGreen}
+                height={'20'}
+                width={41}
+                alt={''}
+                testId={'balancebox-wave'}
+              />
             </Container>
           </Container>
-        </ImageBackground>
+        </Background>
       </Container>
     </Container>
   );

@@ -64,17 +64,22 @@ exports[`should match snapshot 1`] = `
       onResponderTerminationRequest={[Function]}
       onStartShouldSetResponder={[Function]}
       style={
-        {
-          "alignItems": "center",
-          "backgroundColor": "white",
-          "borderColor": "#E2E2E2",
-          "borderRadius": 8,
-          "borderStyle": "solid",
-          "borderWidth": 1,
-          "height": 65,
-          "justifyContent": "center",
-          "opacity": 1,
-        }
+        [
+          {
+            "alignItems": "center",
+            "backgroundColor": "transparent",
+            "borderStyle": "solid",
+            "justifyContent": "center",
+            "opacity": 1,
+          },
+          false,
+          {
+            "borderColor": "#E2E2E2",
+            "borderRadius": 6,
+            "borderWidth": 1,
+            "height": 60,
+          },
+        ]
       }
       testID="socialloginbuttons-button-google"
     >
@@ -133,17 +138,22 @@ exports[`should match snapshot 1`] = `
       onResponderTerminationRequest={[Function]}
       onStartShouldSetResponder={[Function]}
       style={
-        {
-          "alignItems": "center",
-          "backgroundColor": "white",
-          "borderColor": "#E2E2E2",
-          "borderRadius": 8,
-          "borderStyle": "solid",
-          "borderWidth": 1,
-          "height": 65,
-          "justifyContent": "center",
-          "opacity": 1,
-        }
+        [
+          {
+            "alignItems": "center",
+            "backgroundColor": "transparent",
+            "borderStyle": "solid",
+            "justifyContent": "center",
+            "opacity": 1,
+          },
+          false,
+          {
+            "borderColor": "#E2E2E2",
+            "borderRadius": 6,
+            "borderWidth": 1,
+            "height": 60,
+          },
+        ]
       }
       testID="socialloginbuttons-button-facebook"
     >

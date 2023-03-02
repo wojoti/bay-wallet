@@ -1,6 +1,5 @@
-import {Container, EmptyButton, Img, ImgType} from 'components/atoms';
+import {ComposableButton, Container, Img, ImgType} from 'components/atoms';
 import {PropsWithChildren} from 'react';
-import {borderGrey, secondary} from 'theme/colors';
 import style from './SocialLoginButtons.style';
 
 export type SocialLoginButtonsProps = PropsWithChildren<{
@@ -22,9 +21,8 @@ const SocialLoginButtons = ({onIconPress, testId}: SocialLoginButtonsProps) => {
       align="flex-start"
       testId={testId}>
       <Container customStyle={style.width}>
-        <EmptyButton
-          color={secondary}
-          borderColor={borderGrey}
+        <ComposableButton
+          customStyle={style.socialBtnStyle}
           onPress={onPressG}
           testId="socialloginbuttons-button-google">
           <Img
@@ -33,12 +31,11 @@ const SocialLoginButtons = ({onIconPress, testId}: SocialLoginButtonsProps) => {
             alt={'google login'}
             testId="img-google"
           />
-        </EmptyButton>
+        </ComposableButton>
       </Container>
       <Container customStyle={style.width}>
-        <EmptyButton
-          color={secondary}
-          borderColor={borderGrey}
+        <ComposableButton
+          customStyle={style.socialBtnStyle}
           onPress={onPressF}
           testId="socialloginbuttons-button-facebook">
           <Img
@@ -47,7 +44,7 @@ const SocialLoginButtons = ({onIconPress, testId}: SocialLoginButtonsProps) => {
             alt={'facebook login'}
             testId="img-facebook"
           />
-        </EmptyButton>
+        </ComposableButton>
       </Container>
     </Container>
   );

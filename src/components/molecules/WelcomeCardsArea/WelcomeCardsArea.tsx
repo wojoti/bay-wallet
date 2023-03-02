@@ -1,12 +1,13 @@
 import {Button, Container, Header, Img, ImgType, Label} from 'components/atoms';
 import {PropsWithChildren} from 'react';
-import {primary, secondary} from 'theme/colors';
+import {buttonTextStyle} from 'theme/button';
 import style from './WelcomeCardsArea.style';
 
 export type WelcomeCardsAreaProps = PropsWithChildren<{
   onButtonPress: () => void;
   mainText: string;
   cardText: string;
+  buttonText: string;
   testId?: string;
 }>;
 
@@ -14,24 +15,25 @@ const WelcomeCardsArea = ({
   onButtonPress,
   mainText,
   cardText,
+  buttonText,
   testId,
 }: WelcomeCardsAreaProps) => {
   return (
-    <Container flex={1} customStyle={style({}).cardSizer} testId={testId}>
+    <Container flex={1} customStyle={style.wrapper} testId={testId}>
       <Container
         flex={1}
-        customStyle={style({width: '85%'}).sizer}
+        customStyle={style.cardSizer}
         testId={'welcomecardsarea-card'}>
         <Container
           direction="row"
           justify="space-between"
-          customStyle={style({mt: 50}).sizer}>
-          <Container customStyle={style({width: '78%'}).sizer}>
+          customStyle={style.topSpacer}>
+          <Container customStyle={style.headerSizer}>
             <Header size={40} testId={'welcomecardsarea-header'}>
               {mainText}
             </Header>
           </Container>
-          <Container customStyle={style({width: 'auto'}).sizer}>
+          <Container customStyle={style.logoSizer}>
             <Img
               src={ImgType.logo}
               height={60}
@@ -41,19 +43,18 @@ const WelcomeCardsArea = ({
             />
           </Container>
         </Container>
-        <Container customStyle={style({mt: 20}).sizer}>
+        <Container customStyle={style.labelSpacer}>
           <Label size={14} testId={'welcomecardsarea-label'}>
             {cardText}
           </Label>
         </Container>
-        <Container align="flex-end" customStyle={style({mt: 30}).sizer}>
+        <Container align="flex-end" customStyle={style.buttonSpacer}>
           <Button
-            color={secondary}
-            borderColor={secondary}
-            fontColor={primary}
+            customStyle={style.btnStyle}
+            customFontStyle={buttonTextStyle.secondary}
             onPress={onButtonPress}
             testId={'welcomecardsarea-button'}>
-            GET STARTED
+            {buttonText}
           </Button>
         </Container>
       </Container>

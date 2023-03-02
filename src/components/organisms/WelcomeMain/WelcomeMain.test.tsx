@@ -1,14 +1,12 @@
 import '@testing-library/jest-native/extend-expect';
 import {fireEvent, render, screen, within} from '@testing-library/react-native';
 import TestRenderer from 'react-test-renderer';
-import {primary, secondary} from 'theme/colors';
+import {secondary} from 'theme/colors';
 import WelcomeMain, {WelcomeMainProps} from './WelcomeMain';
 
 const handlePress = jest.fn();
 const props: WelcomeMainProps = {
   onButtonPress: handlePress,
-  mainColor: primary,
-  accentColor: secondary,
   testId: 'test-welcomemain-id',
 };
 

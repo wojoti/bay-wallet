@@ -9,7 +9,17 @@ export default {
 const Template: ComponentStory<typeof Input> = args => <Input {...args} />;
 
 export const Username = Template.bind({});
-Username.args = {type: 'username', testId: ''};
+Username.args = {
+  accessibilityLabel: 'Username input',
+  accessibilityHint: 'Type username here',
+  safe: false,
+  testId: '',
+};
 
 export const Password = Template.bind({});
-Password.args = {type: 'password', testId: ''};
+Password.args = {
+  accessibilityLabel: 'Password input',
+  accessibilityHint: 'Type password here',
+  safe: true,
+  testId: '',
+};

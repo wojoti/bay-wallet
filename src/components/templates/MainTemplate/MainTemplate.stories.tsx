@@ -1,4 +1,5 @@
 import {ComponentMeta, ComponentStory} from '@storybook/react-native';
+import {MarketData} from 'data/index';
 
 import MainTemplate from './MainTemplate';
 
@@ -12,6 +13,7 @@ export default {
     onDetailsPress: {action: 'onDetailsPress'},
     onTransferPress: {action: 'onTransferPress'},
     onWithdrawPress: {action: 'onWithdrawPress'},
+    onViewMorePress: {action: 'onViewMorePress'},
   },
 } as ComponentMeta<typeof MainTemplate>;
 
@@ -23,4 +25,5 @@ const Template: ComponentStory<typeof MainTemplate> = args => (
 export const Example = Template.bind({});
 Example.args = {
   testId: '',
+  data: MarketData,
 };

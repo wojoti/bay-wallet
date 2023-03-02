@@ -50,16 +50,13 @@ exports[`should match snapshot 1`] = `
         }
       }
       testID="inputarea-label"
-    >
-      Username
-    </Text>
+    />
   </View>
   <TextInput
-    accessibilityHint="Allow to insert username"
-    accessibilityLabel="Login input field"
-    autoComplete="username"
+    autoComplete="off"
     autoCorrect={false}
     onChangeText={[MockFunction]}
+    secureTextEntry={false}
     style={
       {
         "borderColor": "#363062",

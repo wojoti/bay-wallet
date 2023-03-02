@@ -44,6 +44,7 @@ exports[`should match snapshot 1`] = `
     style={
       {
         "color": "black",
+        "fontFamily": "Poppins-Light",
         "fontWeight": "400",
         "textAlign": "left",
       }

@@ -2,7 +2,6 @@ import {Container} from 'components/atoms';
 import {WelcomeCards, WelcomeMain} from 'components/organisms';
 import {PropsWithChildren, useState} from 'react';
 import Swiper from 'react-native-swiper';
-import {primary, secondary} from 'theme/colors';
 import style from './WelcomeTemplate.style';
 
 export type WelcomeTemplateProps = PropsWithChildren<{
@@ -22,14 +21,10 @@ const WelcomeTemplate = ({onButtonPress, testId}: WelcomeTemplateProps) => {
         showsPagination={scrollable}>
         <WelcomeMain
           onButtonPress={onButtonPress}
-          mainColor={primary}
-          accentColor={secondary}
           testId={'test-welcomemain-id'}
         />
         <WelcomeCards
           onButtonPress={onButtonPress}
-          mainColor={primary}
-          cardColor={secondary}
           mainText1={'New cards in few clicks'}
           cardText1={
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.'

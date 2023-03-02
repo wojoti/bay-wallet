@@ -15,5 +15,8 @@ const Template: ComponentStory<typeof BalanceBox> = args => (
 export const Example = Template.bind({});
 Example.args = {
   amount: '45.500,12',
+  percent: '5',
+  balanceLabel: 'Your main balance',
+  detailsLabel: 'Details >',
   testId: '',
 };

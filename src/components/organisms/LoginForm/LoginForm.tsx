@@ -1,6 +1,7 @@
 import {Button, Container, Header, Label, Link} from 'components/atoms';
 import {Breakline, InputArea, SocialLoginButtons} from 'components/molecules';
 import {PropsWithChildren, useState} from 'react';
+import buttonStyle, {buttonTextStyle} from 'theme/button';
 import {darkGrey, primary} from 'theme/colors';
 import style from './LoginForm.style';
 
@@ -33,19 +34,28 @@ const LoginForm = ({
     <Container testId={testId}>
       <Header testId="loginform-header">Login</Header>
       <InputArea
-        type="username"
         onChange={onEmailChange}
         testId="loginform-inputarea-username"
         value={email}
+        label={'Username'}
+        accessibilityLabel={'Username input'}
+        accessibilityHint={'Type username here'}
       />
       <InputArea
-        type="password"
         onChange={onPasswordChange}
         testId="loginform-inputarea-password"
         value={password}
+        label={'Password'}
+        accessibilityLabel={'Password input'}
+        accessibilityHint={'Type password here'}
+        safe={true}
       />
       <Container customStyle={style.buttonMargin}>
-        <Button onPress={onSubmit} testId="loginform-button">
+        <Button
+          customStyle={buttonStyle.primary}
+          customFontStyle={buttonTextStyle.primary}
+          onPress={onSubmit}
+          testId="loginform-button">
           SIGN IN
         </Button>
       </Container>

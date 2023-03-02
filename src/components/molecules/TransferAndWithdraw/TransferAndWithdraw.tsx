@@ -1,6 +1,13 @@
-import {Container, EmptyButton, Img, ImgType, Label} from 'components/atoms';
+import {
+  ComposableButton,
+  Container,
+  Img,
+  ImgType,
+  Label,
+} from 'components/atoms';
 import {PropsWithChildren} from 'react';
-import {lightPrimary, secondary} from 'theme/colors';
+import {secondary} from 'theme/colors';
+import style from './TransferAndWithdraw.style';
 
 export type TransferAndWithdrawProps = PropsWithChildren<{
   onTransferPress: () => void;
@@ -15,13 +22,12 @@ const TransferAndWithdraw = ({
 }: TransferAndWithdrawProps) => {
   return (
     <Container direction="row" justify="space-between" testId={testId}>
-      <EmptyButton
-        color={lightPrimary}
+      <ComposableButton
+        customStyle={style.btnStyle}
         onPress={onTransferPress}
-        testId={'transfer-button'}
-        borderRadius={14}>
+        testId={'transfer-button'}>
         <Container
-          customStyle={{width: 155}}
+          customStyle={style.sizer}
           direction="row"
           justify="space-evenly"
           align="flex-start">
@@ -30,14 +36,13 @@ const TransferAndWithdraw = ({
             Transfer
           </Label>
         </Container>
-      </EmptyButton>
-      <EmptyButton
-        color={lightPrimary}
+      </ComposableButton>
+      <ComposableButton
+        customStyle={style.btnStyle}
         onPress={onWithdrawPress}
-        testId={'withdraw-button'}
-        borderRadius={14}>
+        testId={'withdraw-button'}>
         <Container
-          customStyle={{width: 155}}
+          customStyle={style.sizer}
           direction="row"
           justify="space-evenly"
           align="flex-start">
@@ -46,7 +51,7 @@ const TransferAndWithdraw = ({
             Withdraw
           </Label>
         </Container>
-      </EmptyButton>
+      </ComposableButton>
     </Container>
   );
 };

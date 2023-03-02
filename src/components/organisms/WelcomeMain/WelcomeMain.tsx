@@ -5,23 +5,16 @@ import style from './WelcomeMain.style';
 
 export type WelcomeMainProps = PropsWithChildren<{
   onButtonPress: () => void;
-  mainColor: string;
-  accentColor: string;
   testId?: string;
 }>;
 
-const Welcomemain = ({
-  onButtonPress,
-  mainColor,
-  accentColor,
-  testId,
-}: WelcomeMainProps) => {
+const Welcomemain = ({onButtonPress, testId}: WelcomeMainProps) => {
   return (
     <Container
       flex={1}
       justify="center"
       align="center"
-      customStyle={style({mainColor}).wrapper}
+      customStyle={style.wrapper}
       testId={testId}>
       <Container flex={1} justify="flex-end">
         <Img
@@ -31,16 +24,16 @@ const Welcomemain = ({
           testId={'welcomemain-img'}
         />
       </Container>
-      <Container flex={1.1} align="center" customStyle={style({}).content}>
+      <Container flex={1.1} align="center" customStyle={style.content}>
         <Container align="center" flex={2.6}>
-          <Label color={accentColor} size={30} testId={'welcomemain-label'}>
+          <Label color={secondary} size={30} testId={'welcomemain-label'}>
             Welcome to,
           </Label>
-          <Header color={accentColor} size={50} testId={'welcomemain-header'}>
+          <Header color={secondary} size={50} testId={'welcomemain-header'}>
             BayWallet
           </Header>
           <Label
-            color={accentColor}
+            color={secondary}
             size={14}
             align="center"
             testId={'welcomemain-description'}>
@@ -50,9 +43,8 @@ const Welcomemain = ({
         </Container>
         <Container flex={1}>
           <Button
-            borderColor={secondary}
-            color={secondary}
-            fontColor={'black'}
+            customStyle={style.btnStyle}
+            customFontStyle={style.btnTextStyle}
             onPress={onButtonPress}
             testId={'welcomemain-button'}>
             GET STARTED

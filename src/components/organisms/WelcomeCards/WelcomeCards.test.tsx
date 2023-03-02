@@ -1,14 +1,12 @@
 import '@testing-library/jest-native/extend-expect';
 import {fireEvent, render, screen, within} from '@testing-library/react-native';
 import TestRenderer from 'react-test-renderer';
-import {primary, secondary} from 'theme/colors';
+import {primary} from 'theme/colors';
 import WelcomeCards, {WelcomeCardsProps} from './WelcomeCards';
 
 const handlePress = jest.fn();
 const props: WelcomeCardsProps = {
   onButtonPress: handlePress,
-  mainColor: primary,
-  cardColor: secondary,
   mainText1: 'maintext1',
   cardText1: 'cardtext1',
   mainText2: 'maintext2',
@@ -113,7 +111,7 @@ test('should render first welcomecardsarea: button and correct style', () => {
   ).getByTestId('welcomecardsarea-button');
   expect(welcomecardsareaButtonElement).toBeOnTheScreen();
   expect(welcomecardsareaButtonElement).toHaveStyle({
-    backgroundColor: secondary,
+    borderWidth: 0,
   });
   const buttonText = within(welcomecardsareaButtonElement).getByTestId(
     'button-text',
@@ -203,7 +201,7 @@ test('should render second welcomecardsarea: button with correct style ', () => 
   ).getByTestId('welcomecardsarea-button');
   expect(welcomecardsareaButtonElement).toBeOnTheScreen();
   expect(welcomecardsareaButtonElement).toHaveStyle({
-    backgroundColor: secondary,
+    borderWidth: 0,
   });
   const buttonText = within(welcomecardsareaButtonElement).getByTestId(
     'button-text',

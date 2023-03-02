@@ -1,5 +1,4 @@
 import {ComponentMeta, ComponentStory} from '@storybook/react-native';
-import {primary, secondary} from 'theme/colors';
 
 import WelcomeCards from './WelcomeCards';
 
@@ -19,8 +18,6 @@ const Template: ComponentStory<typeof WelcomeCards> = args => (
 
 export const Example = Template.bind({});
 Example.args = {
-  mainColor: primary,
-  cardColor: secondary,
   mainText1: 'New cards in few clicks',
   cardText1:
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.',

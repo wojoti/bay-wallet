@@ -104,17 +104,17 @@ exports[`should match snapshot 1`] = `
       onResponderTerminationRequest={[Function]}
       onStartShouldSetResponder={[Function]}
       style={
-        {
-          "alignItems": "center",
-          "backgroundColor": "#363062",
-          "borderColor": "#363062",
-          "borderRadius": 8,
-          "borderStyle": "solid",
-          "borderWidth": 1,
-          "height": 65,
-          "justifyContent": "center",
-          "opacity": 1,
-        }
+        [
+          {
+            "alignItems": "center",
+            "backgroundColor": "transparent",
+            "borderStyle": "solid",
+            "justifyContent": "center",
+            "opacity": 1,
+          },
+          false,
+          undefined,
+        ]
       }
       testID="userbar-notification"
     >
@@ -155,17 +155,17 @@ exports[`should match snapshot 1`] = `
       onResponderTerminationRequest={[Function]}
       onStartShouldSetResponder={[Function]}
       style={
-        {
-          "alignItems": "center",
-          "backgroundColor": "#363062",
-          "borderColor": "#363062",
-          "borderRadius": 8,
-          "borderStyle": "solid",
-          "borderWidth": 1,
-          "height": 65,
-          "justifyContent": "center",
-          "opacity": 1,
-        }
+        [
+          {
+            "alignItems": "center",
+            "backgroundColor": "transparent",
+            "borderStyle": "solid",
+            "justifyContent": "center",
+            "opacity": 1,
+          },
+          false,
+          undefined,
+        ]
       }
       testID="userbar-userprofile"
     >

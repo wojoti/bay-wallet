@@ -1,0 +1,190 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot 1`] = `
+<View
+  style={
+    [
+      {
+        "alignItems": "stretch",
+        "flex": undefined,
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "width": "100%",
+      },
+      undefined,
+    ]
+  }
+  testID="test-transferandwithdraw-id"
+>
+  <View
+    accessibilityRole="button"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "transparent",
+          "borderStyle": "solid",
+          "justifyContent": "center",
+          "opacity": 1,
+        },
+        false,
+        {
+          "backgroundColor": "#4E439E",
+          "borderRadius": 14,
+          "height": 60,
+        },
+      ]
+    }
+    testID="transfer-button"
+  >
+    <View
+      style={
+        [
+          {
+            "alignItems": "flex-start",
+            "flex": undefined,
+            "flexDirection": "row",
+            "justifyContent": "space-evenly",
+            "width": "100%",
+          },
+          {
+            "width": 155,
+          },
+        ]
+      }
+    >
+      <SvgMock
+        height="24"
+        width={24}
+      />
+      <Text
+        style={
+          {
+            "color": "white",
+            "fontFamily": "Poppins-Light",
+            "fontSize": 15,
+            "fontWeight": "400",
+            "textAlign": "left",
+          }
+        }
+      >
+        Transfer
+      </Text>
+    </View>
+  </View>
+  <View
+    accessibilityRole="button"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "transparent",
+          "borderStyle": "solid",
+          "justifyContent": "center",
+          "opacity": 1,
+        },
+        false,
+        {
+          "backgroundColor": "#4E439E",
+          "borderRadius": 14,
+          "height": 60,
+        },
+      ]
+    }
+    testID="withdraw-button"
+  >
+    <View
+      style={
+        [
+          {
+            "alignItems": "flex-start",
+            "flex": undefined,
+            "flexDirection": "row",
+            "justifyContent": "space-evenly",
+            "width": "100%",
+          },
+          {
+            "width": 155,
+          },
+        ]
+      }
+    >
+      <SvgMock
+        height="24"
+        width={24}
+      />
+      <Text
+        style={
+          {
+            "color": "white",
+            "fontFamily": "Poppins-Light",
+            "fontSize": 15,
+            "fontWeight": "400",
+            "textAlign": "left",
+          }
+        }
+      >
+        Withdraw
+      </Text>
+    </View>
+  </View>
+</View>
+`;

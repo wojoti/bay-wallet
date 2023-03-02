@@ -1,5 +1,4 @@
 import {ComponentMeta, ComponentStory} from '@storybook/react-native';
-import {primary, secondary} from 'theme/colors';
 
 import WelcomeMain from './WelcomeMain';
 
@@ -19,7 +18,5 @@ const Template: ComponentStory<typeof WelcomeMain> = args => (
 
 export const Example = Template.bind({});
 Example.args = {
-  mainColor: primary,
-  accentColor: secondary,
   testId: '',
 };

@@ -1,4 +1,5 @@
 import {ComponentMeta, ComponentStory} from '@storybook/react-native';
+import {MarketData} from 'data/index';
 
 import MarketList from './MarketList';
 
@@ -19,4 +20,5 @@ const Template: ComponentStory<typeof MarketList> = args => (
 export const Example = Template.bind({});
 Example.args = {
   testId: '',
+  data: MarketData,
 };

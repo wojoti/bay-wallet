@@ -1,5 +1,5 @@
 import {Container} from 'components/atoms';
-import {MarketList, UserArea} from 'components/organisms';
+import {MarketData, MarketList, UserArea} from 'components/organisms';
 import {PropsWithChildren} from 'react';
 import style from './MainTemplate.style';
 
@@ -10,6 +10,7 @@ export type MainTemplateProps = PropsWithChildren<{
   onTransferPress: () => void;
   onWithdrawPress: () => void;
   onViewMorePress: () => void;
+  data: MarketData[];
   testId?: string;
 }>;
 
@@ -20,6 +21,7 @@ const MainTemplate = ({
   onTransferPress,
   onWithdrawPress,
   onViewMorePress,
+  data,
   testId,
 }: MainTemplateProps) => {
   return (
@@ -34,7 +36,7 @@ const MainTemplate = ({
         />
       </Container>
       <Container flex={1}>
-        <MarketList onViewMorePress={onViewMorePress} />
+        <MarketList onViewMorePress={onViewMorePress} data={data} />
       </Container>
     </Container>
   );
