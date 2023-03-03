@@ -7,7 +7,7 @@ export default {
   argTypes: {
     onCardPress: {action: 'onCardPress'},
     onMenuPress: {action: 'onMenuPress'},
-    onProfilePress: {action: 'onProfilePress'},
+    onChartPress: {action: 'onChartPress'},
   },
 } as ComponentMeta<typeof OperationBottomBar>;
 const Template: ComponentStory<typeof OperationBottomBar> = args => (

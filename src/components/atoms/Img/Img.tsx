@@ -7,9 +7,12 @@ import Dash_down from 'img/dash_down.svg';
 import Dash_up from 'img/dash_up.svg';
 import Facebook from 'img/facebook.svg';
 import Google from 'img/google.svg';
+import IconCard from 'img/iconcard.svg';
+import IconChart from 'img/iconchart.svg';
 import Notification from 'img/notification.svg';
 import Notification_red from 'img/notification_red.svg';
 import Profile from 'img/profile.svg';
+import Squares from 'img/squares.svg';
 import Transfer from 'img/transfer.svg';
 import Wave_green from 'img/wave_green.svg';
 import Withdraw from 'img/withdraw.svg';
@@ -39,6 +42,9 @@ export enum ImgType {
   bitcoin = 'img/bitcoin.svg',
   dashUp = 'img/dash_up.svg',
   dashDown = 'img/dash_down.svg',
+  iconCard = 'img/iconcard.svg',
+  iconChart = 'img/iconchart.svg',
+  squares = 'img/squares.svg',
 }
 
 function Img({src, height, width = '100%', testId}: ImgProps) {
@@ -77,6 +83,12 @@ function Img({src, height, width = '100%', testId}: ImgProps) {
       return <Dash_up width={width} height={height} testID={testId} />;
     case ImgType.dashDown:
       return <Dash_down width={width} height={height} testID={testId} />;
+    case ImgType.iconCard:
+      return <IconCard width={width} height={height} testID={testId} />;
+    case ImgType.iconChart:
+      return <IconChart width={width} height={height} testID={testId} />;
+    case ImgType.squares:
+      return <Squares width={width} height={height} testID={testId} />;
   }
 }
 export default Img;

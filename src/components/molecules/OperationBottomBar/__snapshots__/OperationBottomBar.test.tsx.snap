@@ -5,16 +5,17 @@ exports[`should match snapshot 1`] = `
   style={
     [
       {
-        "alignItems": "stretch",
+        "alignItems": "center",
         "flex": undefined,
         "flexDirection": "column",
         "justifyContent": "flex-start",
         "width": "100%",
       },
       {
-        "bottom": 20,
-        "height": 200,
+        "backgroundColor": "#ffffffab",
+        "bottom": 0,
         "left": 0,
+        "paddingBottom": 45,
         "position": "absolute",
         "right": 0,
         "width": "100%",
@@ -22,5 +23,191 @@ exports[`should match snapshot 1`] = `
     ]
   }
   testID="test-operationbottombar-id"
-/>
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "flex": undefined,
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "width": "100%",
+        },
+        {
+          "backgroundColor": "white",
+          "borderRadius": 16,
+          "elevation": 10,
+          "width": "85%",
+        },
+      ]
+    }
+  >
+    <View
+      accessibilityRole="button"
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": false,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        [
+          {
+            "alignItems": "center",
+            "backgroundColor": "transparent",
+            "borderStyle": "solid",
+            "justifyContent": "center",
+            "opacity": 1,
+          },
+          false,
+          {
+            "paddingHorizontal": 40,
+            "paddingVertical": 20,
+          },
+        ]
+      }
+      testID="operationbottombar-cards"
+    >
+      <SvgMock
+        height="17"
+        width={23}
+      />
+    </View>
+    <View
+      accessibilityRole="button"
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": false,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        [
+          {
+            "alignItems": "center",
+            "backgroundColor": "transparent",
+            "borderStyle": "solid",
+            "justifyContent": "center",
+            "opacity": 1,
+          },
+          false,
+          {
+            "backgroundColor": "#363062",
+            "borderRadius": 45,
+            "bottom": 30,
+            "elevation": 10,
+            "padding": 20,
+          },
+        ]
+      }
+      testID="operationbottombar-menu"
+    >
+      <SvgMock
+        height="30"
+        width={30}
+      />
+    </View>
+    <View
+      accessibilityRole="button"
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": false,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        [
+          {
+            "alignItems": "center",
+            "backgroundColor": "transparent",
+            "borderStyle": "solid",
+            "justifyContent": "center",
+            "opacity": 1,
+          },
+          false,
+          {
+            "paddingHorizontal": 40,
+            "paddingVertical": 20,
+          },
+        ]
+      }
+      testID="operationbottombar-chart"
+    >
+      <SvgMock
+        height="31"
+        width={23}
+      />
+    </View>
+  </View>
+</View>
 `;

@@ -60,6 +60,7 @@ const getStories = () => {
     "./srccomponentsmoleculesBalanceBoxBalanceBox.stories.tsx": require("../src/components/molecules/BalanceBox/BalanceBox.stories.tsx"),
     "./srccomponentsmoleculesBreaklineBreakline.stories.tsx": require("../src/components/molecules/Breakline/Breakline.stories.tsx"),
     "./srccomponentsmoleculesInputAreaInputArea.stories.tsx": require("../src/components/molecules/InputArea/InputArea.stories.tsx"),
+    "./srccomponentsmoleculesMarketHeaderMarketHeader.stories.tsx": require("../src/components/molecules/MarketHeader/MarketHeader.stories.tsx"),
     "./srccomponentsmoleculesMarketItemMarketItem.stories.tsx": require("../src/components/molecules/MarketItem/MarketItem.stories.tsx"),
     "./srccomponentsmoleculesOperationBottomBarOperationBottomBar.stories.tsx": require("../src/components/molecules/OperationBottomBar/OperationBottomBar.stories.tsx"),
     "./srccomponentsmoleculesSocialLoginButtonsSocialLoginButtons.stories.tsx": require("../src/components/molecules/SocialLoginButtons/SocialLoginButtons.stories.tsx"),

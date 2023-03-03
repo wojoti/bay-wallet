@@ -1,4 +1,5 @@
 import {Container} from 'components/atoms';
+import {OperationBottomBar} from 'components/molecules';
 import {MarketData, MarketList, UserArea} from 'components/organisms';
 import {PropsWithChildren} from 'react';
 import style from './MainTemplate.style';
@@ -38,6 +39,17 @@ const MainTemplate = ({
       <Container flex={1}>
         <MarketList onViewMorePress={onViewMorePress} data={data} />
       </Container>
+      <OperationBottomBar
+        onCardPress={() => {
+          console.log('');
+        }}
+        onMenuPress={() => {
+          console.log('');
+        }}
+        onChartPress={() => {
+          console.log('');
+        }}
+      />
     </Container>
   );
 };
