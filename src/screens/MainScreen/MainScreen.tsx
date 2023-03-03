@@ -46,6 +46,16 @@ const MainScreen = ({testId}: MainScreenProps) => {
   const onViewMorePress = () => {
     console.log('onViewMorePress');
   };
+  const onCardPress = () => {
+    console.log('onCardPress');
+  };
+  const onMenuPress = () => {
+    console.log('onMenuPress');
+  };
+  const onChartPress = () => {
+    console.log('onChartPress');
+  };
+
   return (
     <MainTemplate
       testId={testId}
@@ -56,6 +66,9 @@ const MainScreen = ({testId}: MainScreenProps) => {
       onWithdrawPress={onWithdrawPress}
       onViewMorePress={onViewMorePress}
       data={MarketData}
+      onCardPress={onCardPress}
+      onMenuPress={onMenuPress}
+      onChartPress={onChartPress}
     />
   );
 };

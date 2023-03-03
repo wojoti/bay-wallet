@@ -31,7 +31,7 @@ test('should render MainScreen', () => {
   expect(MainScreenElement).toBeOnTheScreen();
 });
 
-test('should render maintemplate - userarea', () => {
+test('should render mainscreen - maintemplate - userarea', () => {
   renderWithProviders(<MainScreen {...props} />);
   const maintemplateElement = screen.getByTestId('test-mainscreen-id');
   expect(maintemplateElement).toBeOnTheScreen();
@@ -41,7 +41,7 @@ test('should render maintemplate - userarea', () => {
   expect(userareaElement).toBeOnTheScreen();
 });
 
-test('should render maintemplate - userarea - UserBar', () => {
+test('should render mainscreen - maintemplate - userarea - UserBar', () => {
   renderWithProviders(<MainScreen {...props} />);
   const maintemplateElement = screen.getByTestId('test-mainscreen-id');
   expect(maintemplateElement).toBeOnTheScreen();
@@ -54,7 +54,7 @@ test('should render maintemplate - userarea - UserBar', () => {
   expect(UserBarElement).toBeOnTheScreen();
 });
 
-test('should render maintemplate - userarea - UserBar with welcome label', () => {
+test('should render mainscreen - maintemplate - userarea - UserBar with welcome label', () => {
   renderWithProviders(<MainScreen {...props} />);
   const maintemplateElement = screen.getByTestId('test-mainscreen-id');
   expect(maintemplateElement).toBeOnTheScreen();
@@ -69,7 +69,7 @@ test('should render maintemplate - userarea - UserBar with welcome label', () =>
   expect(UserBarLabelElement).toBeOnTheScreen();
 });
 
-test('should render maintemplate - userarea - UserBar with user name', () => {
+test('should render mainscreen - maintemplate - userarea - UserBar with user name', () => {
   renderWithProviders(<MainScreen {...props} />);
   const maintemplateElement = screen.getByTestId('test-mainscreen-id');
   expect(maintemplateElement).toBeOnTheScreen();
@@ -84,7 +84,7 @@ test('should render maintemplate - userarea - UserBar with user name', () => {
   expect(UserBarHeaderElement).toBeOnTheScreen();
 });
 
-test('should render maintemplate - userarea - UserBar with notification button', () => {
+test('should render mainscreen - maintemplate - userarea - UserBar with notification button', () => {
   renderWithProviders(<MainScreen {...props} />);
   const maintemplateElement = screen.getByTestId('test-mainscreen-id');
   expect(maintemplateElement).toBeOnTheScreen();
@@ -99,7 +99,7 @@ test('should render maintemplate - userarea - UserBar with notification button',
   expect(UserBarNotificationElement).toBeOnTheScreen();
 });
 
-test('should render maintemplate - userarea - UserBar with  user profile button', () => {
+test('should render mainscreen - maintemplate - userarea - UserBar with  user profile button', () => {
   renderWithProviders(<MainScreen {...props} />);
   const maintemplateElement = screen.getByTestId('test-mainscreen-id');
   expect(maintemplateElement).toBeOnTheScreen();
@@ -114,7 +114,7 @@ test('should render maintemplate - userarea - UserBar with  user profile button'
   expect(UserBarUserProfileElement).toBeOnTheScreen();
 });
 
-test('should render maintemplate - userarea - balancebox', () => {
+test('should render mainscreen - maintemplate - userarea - balancebox', () => {
   renderWithProviders(<MainScreen {...props} />);
   const maintemplateElement = screen.getByTestId('test-mainscreen-id');
   expect(maintemplateElement).toBeOnTheScreen();
@@ -128,7 +128,7 @@ test('should render maintemplate - userarea - balancebox', () => {
   expect(balanceboxElement).toBeOnTheScreen();
 });
 
-test('should render maintemplate - userarea - balancebox - top label', () => {
+test('should render mainscreen - maintemplate - userarea - balancebox - top label', () => {
   renderWithProviders(<MainScreen {...props} />);
   const maintemplateElement = screen.getByTestId('test-mainscreen-id');
   expect(maintemplateElement).toBeOnTheScreen();
@@ -146,7 +146,7 @@ test('should render maintemplate - userarea - balancebox - top label', () => {
   expect(balanceboxLabelElement).toHaveTextContent('Your main balance');
 });
 
-test('should render maintemplate - userarea - balancebox - header with cash amount', () => {
+test('should render mainscreen - maintemplate - userarea - balancebox - header with cash amount', () => {
   renderWithProviders(<MainScreen {...props} />);
   const maintemplateElement = screen.getByTestId('test-mainscreen-id');
   expect(maintemplateElement).toBeOnTheScreen();
@@ -164,7 +164,7 @@ test('should render maintemplate - userarea - balancebox - header with cash amou
   expect(balanceboxHeaderElement).toHaveTextContent('$ 45.500,12');
 });
 
-test('should render maintemplate - userarea - balancebox - details button', () => {
+test('should render mainscreen - maintemplate - userarea - balancebox - details button', () => {
   renderWithProviders(<MainScreen {...props} />);
   const maintemplateElement = screen.getByTestId('test-mainscreen-id');
   expect(maintemplateElement).toBeOnTheScreen();
@@ -181,7 +181,7 @@ test('should render maintemplate - userarea - balancebox - details button', () =
   expect(balanceboxButtonElement).toBeOnTheScreen();
 });
 
-test('should render maintemplate - userarea - balancebox - percent label', () => {
+test('should render mainscreen - maintemplate - userarea - balancebox - percent label', () => {
   renderWithProviders(<MainScreen {...props} />);
   const maintemplateElement = screen.getByTestId('test-mainscreen-id');
   expect(maintemplateElement).toBeOnTheScreen();
@@ -199,7 +199,7 @@ test('should render maintemplate - userarea - balancebox - percent label', () =>
   expect(balanceboxLabelElement).toHaveTextContent('5 %');
 });
 
-test('should render maintemplate - userarea - balancebox - green/red wave img', () => {
+test('should render mainscreen - maintemplate - userarea - balancebox - green/red wave img', () => {
   renderWithProviders(<MainScreen {...props} />);
   const maintemplateElement = screen.getByTestId('test-mainscreen-id');
   expect(maintemplateElement).toBeOnTheScreen();
@@ -216,7 +216,7 @@ test('should render maintemplate - userarea - balancebox - green/red wave img', 
   expect(balanceboxImgElement).toBeOnTheScreen();
 });
 
-test('should render maintemplate - userarea - TransferAndWithdraw', () => {
+test('should render mainscreen - maintemplate - userarea - TransferAndWithdraw', () => {
   renderWithProviders(<MainScreen {...props} />);
   const maintemplateElement = screen.getByTestId('test-mainscreen-id');
   expect(maintemplateElement).toBeOnTheScreen();
@@ -230,7 +230,7 @@ test('should render maintemplate - userarea - TransferAndWithdraw', () => {
   expect(TransferAndWithdrawElement).toBeOnTheScreen();
 });
 
-test('should render maintemplate - userarea - TransferAndWithdraw - render transfer button', () => {
+test('should render mainscreen - maintemplate - userarea - TransferAndWithdraw - render transfer button', () => {
   renderWithProviders(<MainScreen {...props} />);
   const maintemplateElement = screen.getByTestId('test-mainscreen-id');
   expect(maintemplateElement).toBeOnTheScreen();
@@ -256,7 +256,7 @@ test('should render maintemplate - userarea - TransferAndWithdraw - render trans
   expect(labelElement).toBeOnTheScreen();
 });
 
-test('should render maintemplate - userarea - TransferAndWithdraw - render withdraw button', () => {
+test('should render mainscreen - maintemplate - userarea - TransferAndWithdraw - render withdraw button', () => {
   renderWithProviders(<MainScreen {...props} />);
   const maintemplateElement = screen.getByTestId('test-mainscreen-id');
   expect(maintemplateElement).toBeOnTheScreen();
@@ -280,4 +280,120 @@ test('should render maintemplate - userarea - TransferAndWithdraw - render withd
     'withdraw-label',
   );
   expect(labelElement).toBeOnTheScreen();
+});
+
+test('should render mainscreen - maintemplate - marketlist', () => {
+  renderWithProviders(<MainScreen {...props} />);
+  const maintemplateElement = screen.getByTestId('test-mainscreen-id');
+  expect(maintemplateElement).toBeOnTheScreen();
+  const marketlistElement = within(maintemplateElement).getByTestId(
+    'maintemplate-marketlist',
+  );
+  expect(marketlistElement).toBeOnTheScreen();
+});
+
+test('should render mainscreen - maintemplate - marketlist - marketheader', () => {
+  renderWithProviders(<MainScreen {...props} />);
+  const maintemplateElement = screen.getByTestId('test-mainscreen-id');
+  expect(maintemplateElement).toBeOnTheScreen();
+  const marketlistElement = within(maintemplateElement).getByTestId(
+    'maintemplate-marketlist',
+  );
+  expect(marketlistElement).toBeOnTheScreen();
+  const marketheaderElement = within(marketlistElement).getByTestId(
+    'marketlist-marketheader',
+  );
+  expect(marketheaderElement).toBeOnTheScreen();
+});
+
+test('should render mainscreen - maintemplate - marketlist - marketheader - header', () => {
+  renderWithProviders(<MainScreen {...props} />);
+  const maintemplateElement = screen.getByTestId('test-mainscreen-id');
+  expect(maintemplateElement).toBeOnTheScreen();
+  const marketlistElement = within(maintemplateElement).getByTestId(
+    'maintemplate-marketlist',
+  );
+  expect(marketlistElement).toBeOnTheScreen();
+  const marketheaderElement = within(marketlistElement).getByTestId(
+    'marketlist-marketheader',
+  );
+  expect(marketheaderElement).toBeOnTheScreen();
+  const marketheaderHeaderElement = within(marketheaderElement).getByTestId(
+    'marketheader-header',
+  );
+  expect(marketheaderHeaderElement).toBeOnTheScreen();
+  expect(marketheaderHeaderElement).toHaveTextContent('Latest Market');
+});
+
+test('should render mainscreen - maintemplate - marketlist - marketheader - button', () => {
+  renderWithProviders(<MainScreen {...props} />);
+  const maintemplateElement = screen.getByTestId('test-mainscreen-id');
+  expect(maintemplateElement).toBeOnTheScreen();
+  const marketlistElement = within(maintemplateElement).getByTestId(
+    'maintemplate-marketlist',
+  );
+  expect(marketlistElement).toBeOnTheScreen();
+  const marketheaderElement = within(marketlistElement).getByTestId(
+    'marketlist-marketheader',
+  );
+  expect(marketheaderElement).toBeOnTheScreen();
+  const marketheaderButtonElement = within(marketheaderElement).getByTestId(
+    'marketheader-button',
+  );
+  expect(marketheaderButtonElement).toBeOnTheScreen();
+  const labelElement = within(marketheaderButtonElement).getByTestId(
+    'button-text',
+  );
+  expect(labelElement).toBeOnTheScreen();
+  expect(labelElement).toHaveTextContent('View more');
+});
+
+test('should render maintemplate - OperationBottomBar', () => {
+  renderWithProviders(<MainScreen {...props} />);
+  const maintemplateElement = screen.getByTestId('test-mainscreen-id');
+  expect(maintemplateElement).toBeOnTheScreen();
+  const OperationBottomBarElement = within(maintemplateElement).getByTestId(
+    'maintemplate-operationbottombar',
+  );
+  expect(OperationBottomBarElement).toBeOnTheScreen();
+});
+
+test('should render maintemplate - OperationBottomBar - cards button', () => {
+  renderWithProviders(<MainScreen {...props} />);
+  const maintemplateElement = screen.getByTestId('test-mainscreen-id');
+  expect(maintemplateElement).toBeOnTheScreen();
+  const OperationBottomBarElement = within(maintemplateElement).getByTestId(
+    'maintemplate-operationbottombar',
+  );
+  expect(OperationBottomBarElement).toBeOnTheScreen();
+  const buttonElement = within(OperationBottomBarElement).getByTestId(
+    'operationbottombar-cards',
+  );
+  expect(buttonElement).toBeOnTheScreen();
+});
+test('should render maintemplate - OperationBottomBar - menu button', () => {
+  renderWithProviders(<MainScreen {...props} />);
+  const maintemplateElement = screen.getByTestId('test-mainscreen-id');
+  expect(maintemplateElement).toBeOnTheScreen();
+  const OperationBottomBarElement = within(maintemplateElement).getByTestId(
+    'maintemplate-operationbottombar',
+  );
+  expect(OperationBottomBarElement).toBeOnTheScreen();
+  const buttonElement = within(OperationBottomBarElement).getByTestId(
+    'operationbottombar-menu',
+  );
+  expect(buttonElement).toBeOnTheScreen();
+});
+test('should render maintemplate - OperationBottomBar - chart button', () => {
+  renderWithProviders(<MainScreen {...props} />);
+  const maintemplateElement = screen.getByTestId('test-mainscreen-id');
+  expect(maintemplateElement).toBeOnTheScreen();
+  const OperationBottomBarElement = within(maintemplateElement).getByTestId(
+    'maintemplate-operationbottombar',
+  );
+  expect(OperationBottomBarElement).toBeOnTheScreen();
+  const buttonElement = within(OperationBottomBarElement).getByTestId(
+    'operationbottombar-chart',
+  );
+  expect(buttonElement).toBeOnTheScreen();
 });

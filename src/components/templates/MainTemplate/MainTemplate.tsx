@@ -11,6 +11,9 @@ export type MainTemplateProps = PropsWithChildren<{
   onTransferPress: () => void;
   onWithdrawPress: () => void;
   onViewMorePress: () => void;
+  onCardPress: () => void;
+  onMenuPress: () => void;
+  onChartPress: () => void;
   data: MarketData[];
   testId?: string;
 }>;
@@ -22,6 +25,9 @@ const MainTemplate = ({
   onTransferPress,
   onWithdrawPress,
   onViewMorePress,
+  onCardPress,
+  onMenuPress,
+  onChartPress,
   data,
   testId,
 }: MainTemplateProps) => {
@@ -45,15 +51,9 @@ const MainTemplate = ({
         />
       </Container>
       <OperationBottomBar
-        onCardPress={() => {
-          console.log('');
-        }}
-        onMenuPress={() => {
-          console.log('');
-        }}
-        onChartPress={() => {
-          console.log('');
-        }}
+        onCardPress={onCardPress}
+        onMenuPress={onMenuPress}
+        onChartPress={onChartPress}
         testId="maintemplate-operationbottombar"
       />
     </Container>
