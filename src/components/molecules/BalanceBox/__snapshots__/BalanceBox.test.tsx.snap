@@ -96,6 +96,7 @@ exports[`should match snapshot 1`] = `
             undefined,
           ]
         }
+        testID="balancebox-background"
       />
       <View
         style={
@@ -121,6 +122,7 @@ exports[`should match snapshot 1`] = `
               "textAlign": "left",
             }
           }
+          testID="balancebox-label"
         >
           Your main balance
         </Text>
@@ -133,6 +135,7 @@ exports[`should match snapshot 1`] = `
               "textAlign": "left",
             }
           }
+          testID="balancebox-amount"
         >
           $ 
           45.500,12
@@ -248,12 +251,14 @@ exports[`should match snapshot 1`] = `
                 "textAlign": "left",
               }
             }
+            testID="balancebox-percent"
           >
             5
              %
           </Text>
           <SvgMock
             height="20"
+            testID="balancebox-wave"
             width={41}
           />
         </View>

@@ -9,6 +9,7 @@ const props: WelcomeCardsAreaProps = {
   onButtonPress: handlePress,
   mainText: 'maintext',
   cardText: 'cardtext',
+  buttonText: 'buttontext',
   testId: 'test-welcomecardsarea-id',
 };
 

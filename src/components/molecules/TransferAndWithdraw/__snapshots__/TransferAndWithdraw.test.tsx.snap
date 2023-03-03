@@ -84,6 +84,7 @@ exports[`should match snapshot 1`] = `
     >
       <SvgMock
         height="24"
+        testID="transfer-img"
         width={24}
       />
       <Text
@@ -96,6 +97,7 @@ exports[`should match snapshot 1`] = `
             "textAlign": "left",
           }
         }
+        testID="transfer-label"
       >
         Transfer
       </Text>
@@ -169,6 +171,7 @@ exports[`should match snapshot 1`] = `
     >
       <SvgMock
         height="24"
+        testID="withdraw-img"
         width={24}
       />
       <Text
@@ -181,6 +184,7 @@ exports[`should match snapshot 1`] = `
             "textAlign": "left",
           }
         }
+        testID="withdraw-label"
       >
         Withdraw
       </Text>

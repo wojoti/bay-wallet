@@ -216,7 +216,9 @@ exports[`should match snapshot 1`] = `
             ]
           }
           testID="button-text"
-        />
+        >
+          buttontext
+        </Text>
       </View>
     </View>
   </View>

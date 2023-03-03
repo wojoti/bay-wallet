@@ -356,6 +356,7 @@ exports[`should match snapshot 1`] = `
                     undefined,
                   ]
                 }
+                testID="balancebox-background"
               />
               <View
                 style={
@@ -381,6 +382,7 @@ exports[`should match snapshot 1`] = `
                       "textAlign": "left",
                     }
                   }
+                  testID="balancebox-label"
                 >
                   Your main balance
                 </Text>
@@ -393,6 +395,7 @@ exports[`should match snapshot 1`] = `
                       "textAlign": "left",
                     }
                   }
+                  testID="balancebox-amount"
                 >
                   $ 
                   45.500,12
@@ -508,12 +511,14 @@ exports[`should match snapshot 1`] = `
                         "textAlign": "left",
                       }
                     }
+                    testID="balancebox-percent"
                   >
                     4.5
                      %
                   </Text>
                   <SvgMock
                     height="20"
+                    testID="balancebox-wave"
                     width={41}
                   />
                 </View>
@@ -621,6 +626,7 @@ exports[`should match snapshot 1`] = `
             >
               <SvgMock
                 height="24"
+                testID="transfer-img"
                 width={24}
               />
               <Text
@@ -633,6 +639,7 @@ exports[`should match snapshot 1`] = `
                     "textAlign": "left",
                   }
                 }
+                testID="transfer-label"
               >
                 Transfer
               </Text>
@@ -706,6 +713,7 @@ exports[`should match snapshot 1`] = `
             >
               <SvgMock
                 height="24"
+                testID="withdraw-img"
                 width={24}
               />
               <Text
@@ -718,6 +726,7 @@ exports[`should match snapshot 1`] = `
                     "textAlign": "left",
                   }
                 }
+                testID="withdraw-label"
               >
                 Withdraw
               </Text>
@@ -756,6 +765,13 @@ exports[`should match snapshot 1`] = `
       }
     >
       <RCTScrollView
+        ListHeaderComponent={
+          <MarketHeader
+            buttonLabel="View more"
+            header="Latest Market"
+            onButtonPress={[Function]}
+          />
+        }
         data={
           [
             {
@@ -838,6 +854,110 @@ exports[`should match snapshot 1`] = `
       >
         <View>
           <View
+            onLayout={[Function]}
+          >
+            <View
+              style={
+                [
+                  {
+                    "alignItems": "center",
+                    "flex": undefined,
+                    "flexDirection": "row",
+                    "justifyContent": "space-around",
+                    "width": "100%",
+                  },
+                  {
+                    "marginTop": 20,
+                  },
+                ]
+              }
+            >
+              <Text
+                style={
+                  {
+                    "color": "black",
+                    "fontFamily": "Poppins-Bold",
+                    "fontSize": 20,
+                    "textAlign": "left",
+                  }
+                }
+                testID="marketheader-header"
+              >
+                Latest Market
+              </Text>
+              <View
+                accessibilityRole="button"
+                accessibilityState={
+                  {
+                    "busy": undefined,
+                    "checked": undefined,
+                    "disabled": false,
+                    "expanded": undefined,
+                    "selected": undefined,
+                  }
+                }
+                accessibilityValue={
+                  {
+                    "max": undefined,
+                    "min": undefined,
+                    "now": undefined,
+                    "text": undefined,
+                  }
+                }
+                accessible={true}
+                collapsable={false}
+                focusable={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  [
+                    {
+                      "alignItems": "center",
+                      "borderRadius": 8,
+                      "borderStyle": "solid",
+                      "borderWidth": 1,
+                      "height": 65,
+                      "justifyContent": "center",
+                      "opacity": 1,
+                    },
+                    false,
+                    {
+                      "borderWidth": 0,
+                      "height": 50,
+                    },
+                  ]
+                }
+                testID="marketheader-button"
+              >
+                <Text
+                  style={
+                    [
+                      {
+                        "fontFamily": "Poppins-Bold",
+                        "fontSize": 18,
+                        "textAlign": "center",
+                      },
+                      {
+                        "color": "#363062",
+                        "fontSize": 14,
+                      },
+                    ]
+                  }
+                  testID="button-text"
+                >
+                  View more
+                </Text>
+              </View>
+            </View>
+          </View>
+          <View
             onFocusCapture={[Function]}
             onLayout={[Function]}
             style={null}
@@ -897,6 +1017,7 @@ exports[`should match snapshot 1`] = `
                 >
                   <SvgMock
                     height="20"
+                    testID="marketitem-img"
                     width="100%"
                   />
                 </View>
@@ -923,6 +1044,7 @@ exports[`should match snapshot 1`] = `
                         "textAlign": "left",
                       }
                     }
+                    testID="marketitem-value"
                   >
                     $ 
                     0.02137
@@ -937,6 +1059,7 @@ exports[`should match snapshot 1`] = `
                         "textAlign": "left",
                       }
                     }
+                    testID="marketitem-name"
                   >
                     Bitcoin
                   </Text>
@@ -982,6 +1105,7 @@ exports[`should match snapshot 1`] = `
                         "textAlign": "left",
                       }
                     }
+                    testID="marketitem-percent"
                   >
                     4.5
                     %
@@ -989,6 +1113,7 @@ exports[`should match snapshot 1`] = `
                 </View>
                 <SvgMock
                   height="12"
+                  testID="marketitem-dash"
                   width={12}
                 />
               </View>
@@ -1054,6 +1179,7 @@ exports[`should match snapshot 1`] = `
                 >
                   <SvgMock
                     height="20"
+                    testID="marketitem-img"
                     width="100%"
                   />
                 </View>
@@ -1080,6 +1206,7 @@ exports[`should match snapshot 1`] = `
                         "textAlign": "left",
                       }
                     }
+                    testID="marketitem-value"
                   >
                     $ 
                     0.02137
@@ -1094,6 +1221,7 @@ exports[`should match snapshot 1`] = `
                         "textAlign": "left",
                       }
                     }
+                    testID="marketitem-name"
                   >
                     Bitcoin
                   </Text>
@@ -1139,6 +1267,7 @@ exports[`should match snapshot 1`] = `
                         "textAlign": "left",
                       }
                     }
+                    testID="marketitem-percent"
                   >
                     -4.5
                     %
@@ -1146,6 +1275,7 @@ exports[`should match snapshot 1`] = `
                 </View>
                 <SvgMock
                   height="12"
+                  testID="marketitem-dash"
                   width={12}
                 />
               </View>
@@ -1211,6 +1341,7 @@ exports[`should match snapshot 1`] = `
                 >
                   <SvgMock
                     height="20"
+                    testID="marketitem-img"
                     width="100%"
                   />
                 </View>
@@ -1237,6 +1368,7 @@ exports[`should match snapshot 1`] = `
                         "textAlign": "left",
                       }
                     }
+                    testID="marketitem-value"
                   >
                     $ 
                     0.02137
@@ -1251,6 +1383,7 @@ exports[`should match snapshot 1`] = `
                         "textAlign": "left",
                       }
                     }
+                    testID="marketitem-name"
                   >
                     Bitcoin
                   </Text>
@@ -1296,6 +1429,7 @@ exports[`should match snapshot 1`] = `
                         "textAlign": "left",
                       }
                     }
+                    testID="marketitem-percent"
                   >
                     4.5
                     %
@@ -1303,6 +1437,7 @@ exports[`should match snapshot 1`] = `
                 </View>
                 <SvgMock
                   height="12"
+                  testID="marketitem-dash"
                   width={12}
                 />
               </View>
@@ -1368,6 +1503,7 @@ exports[`should match snapshot 1`] = `
                 >
                   <SvgMock
                     height="20"
+                    testID="marketitem-img"
                     width="100%"
                   />
                 </View>
@@ -1394,6 +1530,7 @@ exports[`should match snapshot 1`] = `
                         "textAlign": "left",
                       }
                     }
+                    testID="marketitem-value"
                   >
                     $ 
                     0.02137
@@ -1408,6 +1545,7 @@ exports[`should match snapshot 1`] = `
                         "textAlign": "left",
                       }
                     }
+                    testID="marketitem-name"
                   >
                     Bitcoin
                   </Text>
@@ -1453,6 +1591,7 @@ exports[`should match snapshot 1`] = `
                         "textAlign": "left",
                       }
                     }
+                    testID="marketitem-percent"
                   >
                     -4.5
                     %
@@ -1460,6 +1599,7 @@ exports[`should match snapshot 1`] = `
                 </View>
                 <SvgMock
                   height="12"
+                  testID="marketitem-dash"
                   width={12}
                 />
               </View>
@@ -1525,6 +1665,7 @@ exports[`should match snapshot 1`] = `
                 >
                   <SvgMock
                     height="20"
+                    testID="marketitem-img"
                     width="100%"
                   />
                 </View>
@@ -1551,6 +1692,7 @@ exports[`should match snapshot 1`] = `
                         "textAlign": "left",
                       }
                     }
+                    testID="marketitem-value"
                   >
                     $ 
                     0.02137
@@ -1565,6 +1707,7 @@ exports[`should match snapshot 1`] = `
                         "textAlign": "left",
                       }
                     }
+                    testID="marketitem-name"
                   >
                     Bitcoin
                   </Text>
@@ -1610,6 +1753,7 @@ exports[`should match snapshot 1`] = `
                         "textAlign": "left",
                       }
                     }
+                    testID="marketitem-percent"
                   >
                     4.5
                     %
@@ -1617,6 +1761,7 @@ exports[`should match snapshot 1`] = `
                 </View>
                 <SvgMock
                   height="12"
+                  testID="marketitem-dash"
                   width={12}
                 />
               </View>
@@ -1682,6 +1827,7 @@ exports[`should match snapshot 1`] = `
                 >
                   <SvgMock
                     height="20"
+                    testID="marketitem-img"
                     width="100%"
                   />
                 </View>
@@ -1708,6 +1854,7 @@ exports[`should match snapshot 1`] = `
                         "textAlign": "left",
                       }
                     }
+                    testID="marketitem-value"
                   >
                     $ 
                     0.02137
@@ -1722,6 +1869,7 @@ exports[`should match snapshot 1`] = `
                         "textAlign": "left",
                       }
                     }
+                    testID="marketitem-name"
                   >
                     Bitcoin
                   </Text>
@@ -1767,6 +1915,7 @@ exports[`should match snapshot 1`] = `
                         "textAlign": "left",
                       }
                     }
+                    testID="marketitem-percent"
                   >
                     -4.5
                     %
@@ -1774,6 +1923,7 @@ exports[`should match snapshot 1`] = `
                 </View>
                 <SvgMock
                   height="12"
+                  testID="marketitem-dash"
                   width={12}
                 />
               </View>
@@ -1839,6 +1989,7 @@ exports[`should match snapshot 1`] = `
                 >
                   <SvgMock
                     height="20"
+                    testID="marketitem-img"
                     width="100%"
                   />
                 </View>
@@ -1865,6 +2016,7 @@ exports[`should match snapshot 1`] = `
                         "textAlign": "left",
                       }
                     }
+                    testID="marketitem-value"
                   >
                     $ 
                     0.02137
@@ -1879,6 +2031,7 @@ exports[`should match snapshot 1`] = `
                         "textAlign": "left",
                       }
                     }
+                    testID="marketitem-name"
                   >
                     Bitcoin
                   </Text>
@@ -1924,6 +2077,7 @@ exports[`should match snapshot 1`] = `
                         "textAlign": "left",
                       }
                     }
+                    testID="marketitem-percent"
                   >
                     -4.5
                     %
@@ -1931,6 +2085,7 @@ exports[`should match snapshot 1`] = `
                 </View>
                 <SvgMock
                   height="12"
+                  testID="marketitem-dash"
                   width={12}
                 />
               </View>
@@ -1996,6 +2151,7 @@ exports[`should match snapshot 1`] = `
                 >
                   <SvgMock
                     height="20"
+                    testID="marketitem-img"
                     width="100%"
                   />
                 </View>
@@ -2022,6 +2178,7 @@ exports[`should match snapshot 1`] = `
                         "textAlign": "left",
                       }
                     }
+                    testID="marketitem-value"
                   >
                     $ 
                     0.02137
@@ -2036,6 +2193,7 @@ exports[`should match snapshot 1`] = `
                         "textAlign": "left",
                       }
                     }
+                    testID="marketitem-name"
                   >
                     Bitcoin
                   </Text>
@@ -2081,6 +2239,7 @@ exports[`should match snapshot 1`] = `
                         "textAlign": "left",
                       }
                     }
+                    testID="marketitem-percent"
                   >
                     -4.5
                     %
@@ -2088,6 +2247,7 @@ exports[`should match snapshot 1`] = `
                 </View>
                 <SvgMock
                   height="12"
+                  testID="marketitem-dash"
                   width={12}
                 />
               </View>
@@ -2153,6 +2313,7 @@ exports[`should match snapshot 1`] = `
                 >
                   <SvgMock
                     height="20"
+                    testID="marketitem-img"
                     width="100%"
                   />
                 </View>
@@ -2179,6 +2340,7 @@ exports[`should match snapshot 1`] = `
                         "textAlign": "left",
                       }
                     }
+                    testID="marketitem-value"
                   >
                     $ 
                     0.02137
@@ -2193,6 +2355,7 @@ exports[`should match snapshot 1`] = `
                         "textAlign": "left",
                       }
                     }
+                    testID="marketitem-name"
                   >
                     Bitcoin
                   </Text>
@@ -2238,6 +2401,7 @@ exports[`should match snapshot 1`] = `
                         "textAlign": "left",
                       }
                     }
+                    testID="marketitem-percent"
                   >
                     4.5
                     %
@@ -2245,6 +2409,7 @@ exports[`should match snapshot 1`] = `
                 </View>
                 <SvgMock
                   height="12"
+                  testID="marketitem-dash"
                   width={12}
                 />
               </View>
@@ -2310,6 +2475,7 @@ exports[`should match snapshot 1`] = `
                 >
                   <SvgMock
                     height="20"
+                    testID="marketitem-img"
                     width="100%"
                   />
                 </View>
@@ -2336,6 +2502,7 @@ exports[`should match snapshot 1`] = `
                         "textAlign": "left",
                       }
                     }
+                    testID="marketitem-value"
                   >
                     $ 
                     0.02137
@@ -2350,6 +2517,7 @@ exports[`should match snapshot 1`] = `
                         "textAlign": "left",
                       }
                     }
+                    testID="marketitem-name"
                   >
                     Bitcoin
                   </Text>
@@ -2395,6 +2563,7 @@ exports[`should match snapshot 1`] = `
                         "textAlign": "left",
                       }
                     }
+                    testID="marketitem-percent"
                   >
                     -4.5
                     %
@@ -2402,6 +2571,7 @@ exports[`should match snapshot 1`] = `
                 </View>
                 <SvgMock
                   height="12"
+                  testID="marketitem-dash"
                   width={12}
                 />
               </View>

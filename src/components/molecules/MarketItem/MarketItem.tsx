@@ -22,27 +22,44 @@ const MarketItem = ({value, name, percent, testId}: MarketItemProps) => {
       customStyle={style.wrapper}>
       <Container flex={5} direction={'row'} align="center">
         <Container customStyle={style.circle}>
-          <Img src={ImgType.bitcoin} height={'20'} alt={'bitcoin logo'} />
+          <Img
+            src={ImgType.bitcoin}
+            height={'20'}
+            alt={'bitcoin logo'}
+            testId={'marketitem-img'}
+          />
         </Container>
         <Container justify="center" align="flex-start">
-          <Header color={marketDarkGrey} size={20}>
+          <Header color={marketDarkGrey} size={20} testId={'marketitem-value'}>
             $ {value}
           </Header>
-          <Label color={grey} size={12}>
+          <Label color={grey} size={12} testId={'marketitem-name'}>
             {name}
           </Label>
         </Container>
       </Container>
       <Container flex={1} direction={'row'} justify="flex-end" align="center">
         <Container customStyle={style.detailsSpacer}>
-          <Header size={14} color={detailColor}>
+          <Header size={14} color={detailColor} testId={'marketitem-percent'}>
             {percent}%
           </Header>
         </Container>
         {isDown ? (
-          <Img src={ImgType.dashDown} height={'12'} width={12} alt={''} />
+          <Img
+            src={ImgType.dashDown}
+            height={'12'}
+            width={12}
+            alt={''}
+            testId={'marketitem-dash'}
+          />
         ) : (
-          <Img src={ImgType.dashUp} height={'12'} width={12} alt={''} />
+          <Img
+            src={ImgType.dashUp}
+            height={'12'}
+            width={12}
+            alt={''}
+            testId={'marketitem-dash'}
+          />
         )}
       </Container>
     </Container>

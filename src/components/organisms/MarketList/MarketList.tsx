@@ -1,5 +1,5 @@
 import {Container} from 'components/atoms';
-import {MarketItem} from 'components/molecules';
+import {MarketHeader, MarketItem} from 'components/molecules';
 import {PropsWithChildren} from 'react';
 import {FlatList} from 'react-native';
 
@@ -20,6 +20,13 @@ const MarketList = ({onViewMorePress, data, testId}: MarketListProps) => (
   <Container flex={1} testId={testId}>
     <FlatList
       data={data}
+      ListHeaderComponent={
+        <MarketHeader
+          header={'Latest Market'}
+          buttonLabel={'View more'}
+          onButtonPress={onViewMorePress}
+        />
+      }
       renderItem={({item}) => (
         <MarketItem
           value={item.value}

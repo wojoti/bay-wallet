@@ -50,9 +50,13 @@ exports[`should match snapshot 1`] = `
         }
       }
       testID="inputarea-label"
-    />
+    >
+      username
+    </Text>
   </View>
   <TextInput
+    accessibilityHint="accessibilityHint"
+    accessibilityLabel="accessibilityLabel"
     autoComplete="off"
     autoCorrect={false}
     onChangeText={[MockFunction]}
@@ -71,6 +75,7 @@ exports[`should match snapshot 1`] = `
       }
     }
     testID="inputarea-input"
+    value=""
   />
 </View>
 `;

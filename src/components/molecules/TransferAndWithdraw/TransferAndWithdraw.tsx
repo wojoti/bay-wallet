@@ -31,8 +31,14 @@ const TransferAndWithdraw = ({
           direction="row"
           justify="space-evenly"
           align="flex-start">
-          <Img src={ImgType.transfer} height={'24'} width={24} alt={''} />
-          <Label size={15} color={secondary}>
+          <Img
+            src={ImgType.transfer}
+            height={'24'}
+            width={24}
+            alt={'transfer img'}
+            testId={'transfer-img'}
+          />
+          <Label size={15} color={secondary} testId={'transfer-label'}>
             Transfer
           </Label>
         </Container>
@@ -46,8 +52,14 @@ const TransferAndWithdraw = ({
           direction="row"
           justify="space-evenly"
           align="flex-start">
-          <Img src={ImgType.withdraw} height={'24'} width={24} alt={''} />
-          <Label size={15} color={secondary}>
+          <Img
+            src={ImgType.withdraw}
+            height={'24'}
+            width={24}
+            alt={'withdraw img'}
+            testId={'withdraw-img'}
+          />
+          <Label size={15} color={secondary} testId={'withdraw-label'}>
             Withdraw
           </Label>
         </Container>
