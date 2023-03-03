@@ -34,10 +34,15 @@ const MainTemplate = ({
           onDetailsPress={onDetailsPress}
           onTransferPress={onTransferPress}
           onWithdrawPress={onWithdrawPress}
+          testId="maintemplate-userarea"
         />
       </Container>
       <Container flex={1}>
-        <MarketList onViewMorePress={onViewMorePress} data={data} />
+        <MarketList
+          onViewMorePress={onViewMorePress}
+          data={data}
+          testId="maintemplate-marketlist"
+        />
       </Container>
       <OperationBottomBar
         onCardPress={() => {
@@ -49,6 +54,7 @@ const MainTemplate = ({
         onChartPress={() => {
           console.log('');
         }}
+        testId="maintemplate-operationbottombar"
       />
     </Container>
   );

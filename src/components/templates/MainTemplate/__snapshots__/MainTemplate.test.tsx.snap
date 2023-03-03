@@ -52,6 +52,7 @@ exports[`should match snapshot 1`] = `
           },
         ]
       }
+      testID="maintemplate-userarea"
     >
       <View
         style={
@@ -83,6 +84,7 @@ exports[`should match snapshot 1`] = `
               undefined,
             ]
           }
+          testID="userarea-userbar"
         >
           <View
             style={
@@ -278,6 +280,7 @@ exports[`should match snapshot 1`] = `
               },
             ]
           }
+          testID="userarea-balancebox"
         >
           <View
             style={
@@ -557,6 +560,7 @@ exports[`should match snapshot 1`] = `
               undefined,
             ]
           }
+          testID="userarea-transferandwithdraw"
         >
           <View
             accessibilityRole="button"
@@ -763,6 +767,7 @@ exports[`should match snapshot 1`] = `
           undefined,
         ]
       }
+      testID="maintemplate-marketlist"
     >
       <RCTScrollView
         ListHeaderComponent={
@@ -770,6 +775,7 @@ exports[`should match snapshot 1`] = `
             buttonLabel="View more"
             header="Latest Market"
             onButtonPress={[MockFunction]}
+            testId="marketlist-marketheader"
           />
         }
         data={
@@ -850,6 +856,7 @@ exports[`should match snapshot 1`] = `
         renderItem={[Function]}
         scrollEventThrottle={50}
         stickyHeaderIndices={[]}
+        testID="marketlist-flatlist"
         viewabilityConfigCallbackPairs={[]}
       >
         <View>
@@ -871,6 +878,7 @@ exports[`should match snapshot 1`] = `
                   },
                 ]
               }
+              testID="marketlist-marketheader"
             >
               <Text
                 style={
@@ -978,6 +986,7 @@ exports[`should match snapshot 1`] = `
                   },
                 ]
               }
+              testID="marketlist-marketitem-f944faa6-d6fb-4a31-b099-f3a638b3ff02"
             >
               <View
                 style={
@@ -1140,6 +1149,7 @@ exports[`should match snapshot 1`] = `
                   },
                 ]
               }
+              testID="marketlist-marketitem-3343e4a6-fe82-4e8a-8fac-b9ca0d612242"
             >
               <View
                 style={
@@ -1302,6 +1312,7 @@ exports[`should match snapshot 1`] = `
                   },
                 ]
               }
+              testID="marketlist-marketitem-3b3621cc-a76a-42ad-96a2-0a74e543aeac"
             >
               <View
                 style={
@@ -1464,6 +1475,7 @@ exports[`should match snapshot 1`] = `
                   },
                 ]
               }
+              testID="marketlist-marketitem-cfbdff7b-55de-4058-a6cc-84ebf24a913a"
             >
               <View
                 style={
@@ -1626,6 +1638,7 @@ exports[`should match snapshot 1`] = `
                   },
                 ]
               }
+              testID="marketlist-marketitem-f2a5713a-cb75-4460-ae22-29a98432aa47"
             >
               <View
                 style={
@@ -1788,6 +1801,7 @@ exports[`should match snapshot 1`] = `
                   },
                 ]
               }
+              testID="marketlist-marketitem-a8f5e82d-948a-4974-9c26-a6b3b5288659"
             >
               <View
                 style={
@@ -1950,6 +1964,7 @@ exports[`should match snapshot 1`] = `
                   },
                 ]
               }
+              testID="marketlist-marketitem-324deaaf-fdc3-4e5c-b81c-2a15b50a2497"
             >
               <View
                 style={
@@ -2112,6 +2127,7 @@ exports[`should match snapshot 1`] = `
                   },
                 ]
               }
+              testID="marketlist-marketitem-52b72c45-f9d5-440c-ae3f-e3192c17128d"
             >
               <View
                 style={
@@ -2274,6 +2290,7 @@ exports[`should match snapshot 1`] = `
                   },
                 ]
               }
+              testID="marketlist-marketitem-c8c168ea-bff9-4cd6-9bb6-4b66e1f26f42"
             >
               <View
                 style={
@@ -2436,6 +2453,7 @@ exports[`should match snapshot 1`] = `
                   },
                 ]
               }
+              testID="marketlist-marketitem-dc0254c6-e503-4cc3-a4db-2a57adad9c7b"
             >
               <View
                 style={
@@ -2602,6 +2620,7 @@ exports[`should match snapshot 1`] = `
         },
       ]
     }
+    testID="maintemplate-operationbottombar"
   >
     <View
       style={

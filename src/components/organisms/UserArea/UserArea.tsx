@@ -30,6 +30,7 @@ const UserArea = ({
         username={'David Kowalski'}
         onNotificationPress={onNotificationPress}
         onUserProfilePress={onUserProfilePress}
+        testId="userarea-userbar"
       />
     </Container>
     <Container customStyle={style.balanceBoxSizer}>
@@ -39,12 +40,14 @@ const UserArea = ({
         percent={'4.5'}
         balanceLabel={'Your main balance'}
         detailsLabel={'Details >'}
+        testId="userarea-balancebox"
       />
     </Container>
     <Container customStyle={style.bottomContent}>
       <TransferAndWithdraw
         onTransferPress={onTransferPress}
         onWithdrawPress={onWithdrawPress}
+        testId="userarea-transferandwithdraw"
       />
     </Container>
   </Container>

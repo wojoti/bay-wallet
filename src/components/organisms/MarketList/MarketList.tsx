@@ -25,6 +25,7 @@ const MarketList = ({onViewMorePress, data, testId}: MarketListProps) => (
           header={'Latest Market'}
           buttonLabel={'View more'}
           onButtonPress={onViewMorePress}
+          testId="marketlist-marketheader"
         />
       }
       renderItem={({item}) => (
@@ -32,9 +33,11 @@ const MarketList = ({onViewMorePress, data, testId}: MarketListProps) => (
           value={item.value}
           name={item.name}
           percent={item.percent}
+          testId={'marketlist-marketitem-' + item.id}
         />
       )}
       keyExtractor={item => item.id}
+      testID="marketlist-flatlist"
     />
   </Container>
 );

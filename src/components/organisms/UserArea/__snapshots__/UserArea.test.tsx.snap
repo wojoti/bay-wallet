@@ -52,6 +52,7 @@ exports[`should match snapshot 1`] = `
           undefined,
         ]
       }
+      testID="userarea-userbar"
     >
       <View
         style={
@@ -247,6 +248,7 @@ exports[`should match snapshot 1`] = `
           },
         ]
       }
+      testID="userarea-balancebox"
     >
       <View
         style={
@@ -526,6 +528,7 @@ exports[`should match snapshot 1`] = `
           undefined,
         ]
       }
+      testID="userarea-transferandwithdraw"
     >
       <View
         accessibilityRole="button"
