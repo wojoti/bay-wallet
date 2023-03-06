@@ -13,6 +13,7 @@ module.exports = {
           store: './src/store',
           storybook: './.storybook',
           data: './src/data',
+          navigation: './src/navigation',
           root: './',
         },
       },

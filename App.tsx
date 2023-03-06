@@ -1,6 +1,6 @@
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {NavigationHeader} from 'components/molecules';
+import NavigationHeader from 'navigation/NavigationHeader/NavigationHeader';
 import {useEffect} from 'react';
 import {StatusBar} from 'react-native';
 import {hideNavigationBar} from 'react-native-navigation-bar-color';
