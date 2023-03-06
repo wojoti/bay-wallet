@@ -5,6 +5,7 @@ export {default as MarketHeader} from './MarketHeader/MarketHeader';
 export {default as MarketItem} from './MarketItem/MarketItem';
 export {default as OperationBottomBar} from './OperationBottomBar/OperationBottomBar';
 export {default as SocialLoginButtons} from './SocialLoginButtons/SocialLoginButtons';
+export {default as TransactionItem} from './TransactionItem/TransactionItem';
 export {default as TransferAndWithdraw} from './TransferAndWithdraw/TransferAndWithdraw';
 export {default as UserBar} from './UserBar/UserBar';
 export {default as WelcomeCardsArea} from './WelcomeCardsArea/WelcomeCardsArea';

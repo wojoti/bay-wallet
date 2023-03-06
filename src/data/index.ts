@@ -60,3 +60,38 @@ export const MarketData = [
     percent: '-4.5',
   },
 ];
+
+export const TransactionsData = [
+  {
+    id: '1',
+    expense: true,
+    category: 'Withdraw',
+    clientname: 'ATM',
+    value: '-$1,000',
+    date: '3d ago',
+  },
+  {
+    id: '2',
+    expense: true,
+    category: 'Transfer',
+    clientname: 'Jan Kowalski',
+    value: '-$300',
+    date: '4d ago',
+  },
+  {
+    id: '3',
+    expense: false,
+    category: 'Transfer',
+    clientname: 'Rudy Tabuti',
+    value: '$400',
+    date: '4d ago',
+  },
+  {
+    id: '4',
+    expense: false,
+    category: 'Top Up',
+    clientname: 'Purple Bank',
+    value: '$850',
+    date: '6d ago',
+  },
+];
