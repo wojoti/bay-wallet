@@ -4,6 +4,7 @@ import {searchGrey} from 'theme/colors';
 const style = StyleSheet.create({
   wrapper: {
     backgroundColor: searchGrey,
+    borderRadius: 8,
   },
   searchInput: {
     borderWidth: 0,

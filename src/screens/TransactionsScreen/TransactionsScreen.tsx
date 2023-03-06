@@ -27,27 +27,19 @@ const TransactionsScreen = ({testId}: TransactionsScreenProps) => {
   const onSearchChange = (value: string) => {
     setSearchValue(value);
     setTransactionsData(value);
-    //TODO: fix bug where 1st letter isnt filtered properly on onChange
   };
   const onSearchPress = () => {
     setTransactionsData(searchValue);
   };
 
   const setTransactionsData = (input: string) => {
-    console.log('search:' + input);
     setData(
       TransactionsData.filter(item => {
-        if (searchValue.length !== 0)
+        if (input.length !== 0) {
           return item.clientname.toLowerCase().includes(input.toLowerCase());
+        }
         return true;
-      }).map(({id, expense, category, clientname, value, date}) => ({
-        id,
-        expense,
-        category,
-        clientname,
-        value,
-        date,
-      })),
+      }),
     );
   };
 
