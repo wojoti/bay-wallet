@@ -74,6 +74,7 @@ const getStories = () => {
     "./src/components/organisms/WelcomeMain/WelcomeMain.stories.tsx": require("../src/components/organisms/WelcomeMain/WelcomeMain.stories.tsx"),
     "./src/components/templates/LoginTemplate/LoginTemplate.stories.tsx": require("../src/components/templates/LoginTemplate/LoginTemplate.stories.tsx"),
     "./src/components/templates/MainTemplate/MainTemplate.stories.tsx": require("../src/components/templates/MainTemplate/MainTemplate.stories.tsx"),
+    "./src/components/templates/TransactionsTemplate/TransactionsTemplate.stories.tsx": require("../src/components/templates/TransactionsTemplate/TransactionsTemplate.stories.tsx"),
     "./src/components/templates/WelcomeTemplate/WelcomeTemplate.stories.tsx": require("../src/components/templates/WelcomeTemplate/WelcomeTemplate.stories.tsx"),
   };
 };

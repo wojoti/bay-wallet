@@ -1,4 +1,4 @@
-import {useIsFocused} from '@react-navigation/native';
+import {useIsFocused, useNavigation} from '@react-navigation/native';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import {RootStackParamList} from 'App';
 import {MainTemplate} from 'components/templates';
@@ -18,7 +18,7 @@ export interface MainScreenProps {
 }
 
 const MainScreen = ({testId}: MainScreenProps) => {
-  //const navigation = useNavigation<MainScreenNavigationProp>();
+  const navigation = useNavigation<MainScreenNavigationProp>();
   const dispatch = useDispatch<AppDispatch>();
   const isFocused = useIsFocused();
 
@@ -44,7 +44,7 @@ const MainScreen = ({testId}: MainScreenProps) => {
     console.log('onWithdrawPress');
   };
   const onViewMorePress = () => {
-    console.log('onViewMorePress');
+    navigation.navigate('Transactions');
   };
   const onCardPress = () => {
     console.log('onCardPress');

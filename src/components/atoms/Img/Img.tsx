@@ -1,3 +1,4 @@
+import Back_arrow from 'img/back_arrow.svg';
 import Bitcoin from 'img/bitcoin.svg';
 import Logo from 'img/bw_logo.svg';
 import Logo_splash_color from 'img/bw_logo_splash_color.svg';
@@ -6,6 +7,7 @@ import Card_lock from 'img/card_lock.svg';
 import Dash_down from 'img/dash_down.svg';
 import Dash_up from 'img/dash_up.svg';
 import Facebook from 'img/facebook.svg';
+import Filter from 'img/filter.svg';
 import Google from 'img/google.svg';
 import IconCard from 'img/iconcard.svg';
 import IconChart from 'img/iconchart.svg';
@@ -45,6 +47,8 @@ export enum ImgType {
   iconCard = 'img/iconcard.svg',
   iconChart = 'img/iconchart.svg',
   squares = 'img/squares.svg',
+  filter = 'img/filter.svg',
+  backArrow = 'img/back_arrow.svg',
 }
 
 function Img({src, height, width = '100%', testId}: ImgProps) {
@@ -89,6 +93,10 @@ function Img({src, height, width = '100%', testId}: ImgProps) {
       return <IconChart width={width} height={height} testID={testId} />;
     case ImgType.squares:
       return <Squares width={width} height={height} testID={testId} />;
+    case ImgType.backArrow:
+      return <Back_arrow width={width} height={height} testID={testId} />;
+    case ImgType.filter:
+      return <Filter width={width} height={height} testID={testId} />;
   }
 }
 export default Img;
