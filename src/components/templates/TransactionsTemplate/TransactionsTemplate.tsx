@@ -1,31 +1,48 @@
 import {Container} from 'components/atoms';
-import {TransactionItem} from 'components/molecules';
+import {TransactionsItem, TransactionsSearchBar} from 'components/molecules';
 import {TransactionsData} from 'data/index';
 import {PropsWithChildren} from 'react';
 import {FlatList} from 'react-native-gesture-handler';
 import style from './TransactionsTemplate.style';
 
+export type TransactionsData = {
+  id: string;
+  expense: boolean;
+  category: string;
+  clientname: string;
+  value: string;
+  date: string;
+};
 export type TransactionsTemplateProps = PropsWithChildren<{
+  onSearchChange: (value: string) => void;
+  onSearchPress: () => void;
+  searchValue: string;
+  data: TransactionsData[];
   testId?: string;
 }>;
 
-const TransactionsTemplate = ({testId}: TransactionsTemplateProps) => {
+const TransactionsTemplate = ({
+  onSearchChange,
+  onSearchPress,
+  searchValue,
+  data,
+  testId,
+}: TransactionsTemplateProps) => {
   return (
-    <Container customStyle={style.wrapper} testId={testId}>
-      <Container flex={1}>
+    <Container customStyle={style.wrapper} testId={testId} align="center">
+      <Container flex={1} customStyle={style.searchBarWrapper}>
+        <TransactionsSearchBar
+          onChange={onSearchChange}
+          onPress={onSearchPress}
+          value={searchValue}
+        />
+      </Container>
+      <Container flex={6}>
         <FlatList
-          data={TransactionsData}
-          //   ListHeaderComponent={
-          //     <MarketHeader
-          //       header={'Latest Market'}
-          //       buttonLabel={'View more'}
-          //       onButtonPress={onViewMorePress}
-          //       testId="marketlist-marketheader"
-          //     />
-          //   }
+          data={data}
           renderItem={({item}) => (
-            <TransactionItem
-              testId={'transactionslist-transactionitem-' + item.id}
+            <TransactionsItem
+              testId={'transactionslist-transactionsitem-' + item.id}
               expense={item.expense}
               category={item.category}
               clientname={item.clientname}

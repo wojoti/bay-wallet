@@ -1,5 +1,5 @@
 import {PropsWithChildren} from 'react';
-import {TextInput} from 'react-native';
+import {StyleProp, TextInput, TextStyle} from 'react-native';
 import style from './Input.style';
 
 export type InputProps = PropsWithChildren<{
@@ -9,6 +9,8 @@ export type InputProps = PropsWithChildren<{
   value: string;
   testId: string;
   safe?: boolean;
+  placeholder?: string;
+  customStyle?: StyleProp<TextStyle>;
 }>;
 
 const Input = ({
@@ -18,16 +20,19 @@ const Input = ({
   value,
   testId,
   safe = false,
+  placeholder,
+  customStyle,
 }: InputProps) => {
   return (
     <TextInput
       accessibilityLabel={accessibilityLabel}
       accessibilityHint={accessibilityHint}
-      style={style.wrapper}
+      style={[style.wrapper, customStyle]}
       testID={testId}
       onChangeText={onChange}
       autoComplete={'off'}
       autoCorrect={false}
+      placeholder={placeholder}
       value={value}
       secureTextEntry={safe}
     />

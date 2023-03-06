@@ -6,7 +6,8 @@ const style = StyleSheet.create({
     backgroundColor: secondary,
   },
   spacer: {
-    marginTop: 70,
+    marginTop: 65,
+    marginBottom: 30,
   },
 });
 export default style;

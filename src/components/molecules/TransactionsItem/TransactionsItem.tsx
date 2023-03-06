@@ -1,9 +1,9 @@
 import {Container, Header, Img, ImgType, Label} from 'components/atoms';
 import {PropsWithChildren} from 'react';
 import {green, grey, marketDarkGrey, red} from 'theme/colors';
-import style from './TransactionItem.style';
+import style from './TransactionsItem.style';
 
-export type TransactionItemProps = PropsWithChildren<{
+export type TransactionsItemProps = PropsWithChildren<{
   expense: boolean;
   category: string;
   clientname: string;
@@ -12,14 +12,14 @@ export type TransactionItemProps = PropsWithChildren<{
   testId?: string;
 }>;
 
-const TransactionItem = ({
+const TransactionsItem = ({
   expense,
   category,
   clientname,
   value,
   date,
   testId,
-}: TransactionItemProps) => {
+}: TransactionsItemProps) => {
   const detailColor = expense ? red : green;
   return (
     <Container
@@ -34,29 +34,29 @@ const TransactionItem = ({
             src={ImgType.bitcoin}
             height={'21'}
             alt={'bitcoin logo'}
-            testId={'transactionitem-img'}
+            testId={'transactionsitem-img'}
           />
         </Container>
         <Container justify="center" align="flex-start">
           <Label
             color={marketDarkGrey}
             size={14}
-            testId={'transactionitem-category'}>
+            testId={'transactionsitem-category'}>
             {category}
           </Label>
           <Header
             color={'black'}
             size={16}
-            testId={'transactionitem-clientname'}>
+            testId={'transactionsitem-clientname'}>
             {clientname}
           </Header>
         </Container>
       </Container>
       <Container flex={1} justify="center" align="flex-end">
-        <Header size={16} color={detailColor} testId={'transactionitem-value'}>
+        <Header size={16} color={detailColor} testId={'transactionsitem-value'}>
           {value}
         </Header>
-        <Label size={14} color={grey} testId={'transactionitem-date'}>
+        <Label size={14} color={grey} testId={'transactionsitem-date'}>
           {date}
         </Label>
       </Container>
@@ -64,4 +64,4 @@ const TransactionItem = ({
   );
 };
 
-export default TransactionItem;
+export default TransactionsItem;

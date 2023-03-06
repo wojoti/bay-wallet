@@ -14,6 +14,7 @@ import IconChart from 'img/iconchart.svg';
 import Notification from 'img/notification.svg';
 import Notification_red from 'img/notification_red.svg';
 import Profile from 'img/profile.svg';
+import Search from 'img/search.svg';
 import Squares from 'img/squares.svg';
 import Transfer from 'img/transfer.svg';
 import Wave_green from 'img/wave_green.svg';
@@ -49,6 +50,7 @@ export enum ImgType {
   squares = 'img/squares.svg',
   filter = 'img/filter.svg',
   backArrow = 'img/back_arrow.svg',
+  search = 'img/search.svg',
 }
 
 function Img({src, height, width = '100%', testId}: ImgProps) {
@@ -97,6 +99,8 @@ function Img({src, height, width = '100%', testId}: ImgProps) {
       return <Back_arrow width={width} height={height} testID={testId} />;
     case ImgType.filter:
       return <Filter width={width} height={height} testID={testId} />;
+    case ImgType.search:
+      return <Search width={width} height={height} testID={testId} />;
   }
 }
 export default Img;
