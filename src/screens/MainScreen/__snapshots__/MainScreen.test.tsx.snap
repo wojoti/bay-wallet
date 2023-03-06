@@ -770,6 +770,7 @@ exports[`should match snapshot 1`] = `
       testID="maintemplate-marketlist"
     >
       <RCTScrollView
+        ItemSeparatorComponent={[Function]}
         ListHeaderComponent={
           <MarketHeader
             buttonLabel="View more"
@@ -1127,6 +1128,39 @@ exports[`should match snapshot 1`] = `
                 />
               </View>
             </View>
+            <View
+              style={
+                [
+                  {
+                    "alignItems": "center",
+                    "flex": undefined,
+                    "flexDirection": "column",
+                    "justifyContent": "center",
+                    "width": "100%",
+                  },
+                  undefined,
+                ]
+              }
+            >
+              <View
+                style={
+                  [
+                    {
+                      "alignItems": "stretch",
+                      "flex": undefined,
+                      "flexDirection": "column",
+                      "justifyContent": "flex-start",
+                      "width": "100%",
+                    },
+                    {
+                      "backgroundColor": "#F6F6F6",
+                      "height": 1,
+                      "width": "85%",
+                    },
+                  ]
+                }
+              />
+            </View>
           </View>
           <View
             onFocusCapture={[Function]}
@@ -1289,6 +1323,39 @@ exports[`should match snapshot 1`] = `
                   width={12}
                 />
               </View>
+            </View>
+            <View
+              style={
+                [
+                  {
+                    "alignItems": "center",
+                    "flex": undefined,
+                    "flexDirection": "column",
+                    "justifyContent": "center",
+                    "width": "100%",
+                  },
+                  undefined,
+                ]
+              }
+            >
+              <View
+                style={
+                  [
+                    {
+                      "alignItems": "stretch",
+                      "flex": undefined,
+                      "flexDirection": "column",
+                      "justifyContent": "flex-start",
+                      "width": "100%",
+                    },
+                    {
+                      "backgroundColor": "#F6F6F6",
+                      "height": 1,
+                      "width": "85%",
+                    },
+                  ]
+                }
+              />
             </View>
           </View>
           <View
@@ -1453,6 +1520,39 @@ exports[`should match snapshot 1`] = `
                 />
               </View>
             </View>
+            <View
+              style={
+                [
+                  {
+                    "alignItems": "center",
+                    "flex": undefined,
+                    "flexDirection": "column",
+                    "justifyContent": "center",
+                    "width": "100%",
+                  },
+                  undefined,
+                ]
+              }
+            >
+              <View
+                style={
+                  [
+                    {
+                      "alignItems": "stretch",
+                      "flex": undefined,
+                      "flexDirection": "column",
+                      "justifyContent": "flex-start",
+                      "width": "100%",
+                    },
+                    {
+                      "backgroundColor": "#F6F6F6",
+                      "height": 1,
+                      "width": "85%",
+                    },
+                  ]
+                }
+              />
+            </View>
           </View>
           <View
             onFocusCapture={[Function]}
@@ -1615,6 +1715,39 @@ exports[`should match snapshot 1`] = `
                   width={12}
                 />
               </View>
+            </View>
+            <View
+              style={
+                [
+                  {
+                    "alignItems": "center",
+                    "flex": undefined,
+                    "flexDirection": "column",
+                    "justifyContent": "center",
+                    "width": "100%",
+                  },
+                  undefined,
+                ]
+              }
+            >
+              <View
+                style={
+                  [
+                    {
+                      "alignItems": "stretch",
+                      "flex": undefined,
+                      "flexDirection": "column",
+                      "justifyContent": "flex-start",
+                      "width": "100%",
+                    },
+                    {
+                      "backgroundColor": "#F6F6F6",
+                      "height": 1,
+                      "width": "85%",
+                    },
+                  ]
+                }
+              />
             </View>
           </View>
           <View
@@ -1779,6 +1912,39 @@ exports[`should match snapshot 1`] = `
                 />
               </View>
             </View>
+            <View
+              style={
+                [
+                  {
+                    "alignItems": "center",
+                    "flex": undefined,
+                    "flexDirection": "column",
+                    "justifyContent": "center",
+                    "width": "100%",
+                  },
+                  undefined,
+                ]
+              }
+            >
+              <View
+                style={
+                  [
+                    {
+                      "alignItems": "stretch",
+                      "flex": undefined,
+                      "flexDirection": "column",
+                      "justifyContent": "flex-start",
+                      "width": "100%",
+                    },
+                    {
+                      "backgroundColor": "#F6F6F6",
+                      "height": 1,
+                      "width": "85%",
+                    },
+                  ]
+                }
+              />
+            </View>
           </View>
           <View
             onFocusCapture={[Function]}
@@ -1941,6 +2107,39 @@ exports[`should match snapshot 1`] = `
                   width={12}
                 />
               </View>
+            </View>
+            <View
+              style={
+                [
+                  {
+                    "alignItems": "center",
+                    "flex": undefined,
+                    "flexDirection": "column",
+                    "justifyContent": "center",
+                    "width": "100%",
+                  },
+                  undefined,
+                ]
+              }
+            >
+              <View
+                style={
+                  [
+                    {
+                      "alignItems": "stretch",
+                      "flex": undefined,
+                      "flexDirection": "column",
+                      "justifyContent": "flex-start",
+                      "width": "100%",
+                    },
+                    {
+                      "backgroundColor": "#F6F6F6",
+                      "height": 1,
+                      "width": "85%",
+                    },
+                  ]
+                }
+              />
             </View>
           </View>
           <View
@@ -2105,6 +2304,39 @@ exports[`should match snapshot 1`] = `
                 />
               </View>
             </View>
+            <View
+              style={
+                [
+                  {
+                    "alignItems": "center",
+                    "flex": undefined,
+                    "flexDirection": "column",
+                    "justifyContent": "center",
+                    "width": "100%",
+                  },
+                  undefined,
+                ]
+              }
+            >
+              <View
+                style={
+                  [
+                    {
+                      "alignItems": "stretch",
+                      "flex": undefined,
+                      "flexDirection": "column",
+                      "justifyContent": "flex-start",
+                      "width": "100%",
+                    },
+                    {
+                      "backgroundColor": "#F6F6F6",
+                      "height": 1,
+                      "width": "85%",
+                    },
+                  ]
+                }
+              />
+            </View>
           </View>
           <View
             onFocusCapture={[Function]}
@@ -2268,6 +2500,39 @@ exports[`should match snapshot 1`] = `
                 />
               </View>
             </View>
+            <View
+              style={
+                [
+                  {
+                    "alignItems": "center",
+                    "flex": undefined,
+                    "flexDirection": "column",
+                    "justifyContent": "center",
+                    "width": "100%",
+                  },
+                  undefined,
+                ]
+              }
+            >
+              <View
+                style={
+                  [
+                    {
+                      "alignItems": "stretch",
+                      "flex": undefined,
+                      "flexDirection": "column",
+                      "justifyContent": "flex-start",
+                      "width": "100%",
+                    },
+                    {
+                      "backgroundColor": "#F6F6F6",
+                      "height": 1,
+                      "width": "85%",
+                    },
+                  ]
+                }
+              />
+            </View>
           </View>
           <View
             onFocusCapture={[Function]}
@@ -2430,6 +2695,39 @@ exports[`should match snapshot 1`] = `
                   width={12}
                 />
               </View>
+            </View>
+            <View
+              style={
+                [
+                  {
+                    "alignItems": "center",
+                    "flex": undefined,
+                    "flexDirection": "column",
+                    "justifyContent": "center",
+                    "width": "100%",
+                  },
+                  undefined,
+                ]
+              }
+            >
+              <View
+                style={
+                  [
+                    {
+                      "alignItems": "stretch",
+                      "flex": undefined,
+                      "flexDirection": "column",
+                      "justifyContent": "flex-start",
+                      "width": "100%",
+                    },
+                    {
+                      "backgroundColor": "#F6F6F6",
+                      "height": 1,
+                      "width": "85%",
+                    },
+                  ]
+                }
+              />
             </View>
           </View>
           <View

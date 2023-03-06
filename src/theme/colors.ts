@@ -11,6 +11,8 @@ export const iconGrey = '#BDBDBD';
 
 export const searchGrey = '#F5F5F5';
 
+export const separator = '#F6F6F6';
+
 export const green = '#61C277';
 export const lime = '#53E520';
 export const red = '#E52020';

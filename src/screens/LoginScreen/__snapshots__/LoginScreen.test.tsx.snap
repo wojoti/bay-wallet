@@ -158,17 +158,20 @@ exports[`should match snapshot 1`] = `
             onChangeText={[Function]}
             secureTextEntry={false}
             style={
-              {
-                "borderColor": "#363062",
-                "borderRadius": 8,
-                "borderWidth": 1,
-                "fontFamily": "Poppins-Light",
-                "fontSize": 16,
-                "fontWeight": "400",
-                "height": 65,
-                "paddingLeft": 30,
-                "width": "100%",
-              }
+              [
+                {
+                  "borderColor": "#363062",
+                  "borderRadius": 8,
+                  "borderWidth": 1,
+                  "fontFamily": "Poppins-Light",
+                  "fontSize": 16,
+                  "fontWeight": "400",
+                  "height": 65,
+                  "paddingLeft": 30,
+                  "width": "100%",
+                },
+                undefined,
+              ]
             }
             testID="inputarea-input"
             value=""
@@ -235,17 +238,20 @@ exports[`should match snapshot 1`] = `
             onChangeText={[Function]}
             secureTextEntry={true}
             style={
-              {
-                "borderColor": "#363062",
-                "borderRadius": 8,
-                "borderWidth": 1,
-                "fontFamily": "Poppins-Light",
-                "fontSize": 16,
-                "fontWeight": "400",
-                "height": 65,
-                "paddingLeft": 30,
-                "width": "100%",
-              }
+              [
+                {
+                  "borderColor": "#363062",
+                  "borderRadius": 8,
+                  "borderWidth": 1,
+                  "fontFamily": "Poppins-Light",
+                  "fontSize": 16,
+                  "fontWeight": "400",
+                  "height": 65,
+                  "paddingLeft": 30,
+                  "width": "100%",
+                },
+                undefined,
+              ]
             }
             testID="inputarea-input"
             value=""

@@ -62,17 +62,20 @@ exports[`should match snapshot 1`] = `
     onChangeText={[MockFunction]}
     secureTextEntry={false}
     style={
-      {
-        "borderColor": "#363062",
-        "borderRadius": 8,
-        "borderWidth": 1,
-        "fontFamily": "Poppins-Light",
-        "fontSize": 16,
-        "fontWeight": "400",
-        "height": 65,
-        "paddingLeft": 30,
-        "width": "100%",
-      }
+      [
+        {
+          "borderColor": "#363062",
+          "borderRadius": 8,
+          "borderWidth": 1,
+          "fontFamily": "Poppins-Light",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "height": 65,
+          "paddingLeft": 30,
+          "width": "100%",
+        },
+        undefined,
+      ]
     }
     testID="inputarea-input"
     value=""

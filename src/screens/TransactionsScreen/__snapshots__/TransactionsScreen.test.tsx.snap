@@ -1,0 +1,852 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot 1`] = `
+<View
+  style={
+    [
+      {
+        "alignItems": "center",
+        "flex": undefined,
+        "flexDirection": "column",
+        "justifyContent": "flex-start",
+        "width": "100%",
+      },
+      {
+        "backgroundColor": "white",
+        "height": "100%",
+      },
+    ]
+  }
+  testID="test-transactionsscreen-id"
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "stretch",
+          "flex": 1,
+          "flexDirection": "column",
+          "justifyContent": "flex-start",
+          "width": "100%",
+        },
+        {
+          "width": "85%",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "flex": undefined,
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "width": "100%",
+          },
+          {
+            "backgroundColor": "#F5F5F5",
+          },
+        ]
+      }
+    >
+      <TextInput
+        accessibilityHint="Type to filter transactions"
+        accessibilityLabel="Search bar"
+        autoComplete="off"
+        autoCorrect={false}
+        onChangeText={[Function]}
+        placeholder="Search here"
+        secureTextEntry={false}
+        style={
+          [
+            {
+              "borderColor": "#363062",
+              "borderRadius": 8,
+              "borderWidth": 1,
+              "fontFamily": "Poppins-Light",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "height": 65,
+              "paddingLeft": 30,
+              "width": "100%",
+            },
+            {
+              "borderWidth": 0,
+              "width": "80%",
+            },
+          ]
+        }
+        testID=""
+        value=""
+      />
+      <View
+        style={
+          [
+            {
+              "alignItems": "stretch",
+              "flex": undefined,
+              "flexDirection": "column",
+              "justifyContent": "flex-start",
+              "width": "100%",
+            },
+            {
+              "paddingRight": 30,
+              "width": "auto",
+            },
+          ]
+        }
+      >
+        <View
+          accessibilityRole="button"
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": false,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            [
+              {
+                "alignItems": "center",
+                "backgroundColor": "transparent",
+                "borderStyle": "solid",
+                "justifyContent": "center",
+                "opacity": 1,
+              },
+              false,
+              undefined,
+            ]
+          }
+          testID=""
+        >
+          <SvgMock
+            height="24"
+            width={24}
+          />
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      [
+        {
+          "alignItems": "stretch",
+          "flex": 6,
+          "flexDirection": "column",
+          "justifyContent": "flex-start",
+          "width": "100%",
+        },
+        undefined,
+      ]
+    }
+  >
+    <RCTScrollView
+      collapsable={false}
+      data={
+        [
+          {
+            "category": "Withdraw",
+            "clientname": "ATM",
+            "date": "3d ago",
+            "expense": true,
+            "id": "1",
+            "value": "-$1,000",
+          },
+          {
+            "category": "Transfer",
+            "clientname": "Jan Kowalski",
+            "date": "4d ago",
+            "expense": true,
+            "id": "2",
+            "value": "-$300",
+          },
+          {
+            "category": "Transfer",
+            "clientname": "Rudy Tabuti",
+            "date": "4d ago",
+            "expense": false,
+            "id": "3",
+            "value": "$400",
+          },
+          {
+            "category": "Top Up",
+            "clientname": "Purple Bank",
+            "date": "6d ago",
+            "expense": false,
+            "id": "4",
+            "value": "$850",
+          },
+        ]
+      }
+      getItem={[Function]}
+      getItemCount={[Function]}
+      handlerTag={1}
+      handlerType="NativeViewGestureHandler"
+      keyExtractor={[Function]}
+      onContentSizeChange={[Function]}
+      onGestureHandlerEvent={[Function]}
+      onGestureHandlerStateChange={[Function]}
+      onLayout={[Function]}
+      onMomentumScrollBegin={[Function]}
+      onMomentumScrollEnd={[Function]}
+      onScroll={[Function]}
+      onScrollBeginDrag={[Function]}
+      onScrollEndDrag={[Function]}
+      removeClippedSubviews={false}
+      renderItem={[Function]}
+      renderScrollComponent={[Function]}
+      scrollEventThrottle={50}
+      stickyHeaderIndices={[]}
+      testID="transactions-flatlist"
+      viewabilityConfigCallbackPairs={[]}
+      waitFor={
+        [
+          {
+            "current": null,
+          },
+          {
+            "current": null,
+          },
+        ]
+      }
+    >
+      <View>
+        <View
+          onFocusCapture={[Function]}
+          onLayout={[Function]}
+          style={null}
+        >
+          <View
+            style={
+              [
+                {
+                  "alignItems": "center",
+                  "flex": undefined,
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "width": "100%",
+                },
+                {
+                  "marginVertical": 17,
+                  "paddingHorizontal": 30,
+                },
+              ]
+            }
+            testID="transactionslist-transactionsitem-1"
+          >
+            <View
+              style={
+                [
+                  {
+                    "alignItems": "center",
+                    "flex": 4,
+                    "flexDirection": "row",
+                    "justifyContent": "flex-start",
+                    "width": "100%",
+                  },
+                  undefined,
+                ]
+              }
+            >
+              <View
+                style={
+                  [
+                    {
+                      "alignItems": "stretch",
+                      "flex": undefined,
+                      "flexDirection": "column",
+                      "justifyContent": "flex-start",
+                      "width": "100%",
+                    },
+                    {
+                      "alignItems": "center",
+                      "backgroundColor": "#346EC5",
+                      "borderRadius": 8,
+                      "height": 52,
+                      "justifyContent": "center",
+                      "marginRight": 15,
+                      "width": 52,
+                    },
+                  ]
+                }
+              >
+                <SvgMock
+                  height="21"
+                  testID="transactionsitem-img"
+                  width="100%"
+                />
+              </View>
+              <View
+                style={
+                  [
+                    {
+                      "alignItems": "flex-start",
+                      "flex": undefined,
+                      "flexDirection": "column",
+                      "justifyContent": "center",
+                      "width": "100%",
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                <Text
+                  style={
+                    {
+                      "color": "#3D454B",
+                      "fontFamily": "Poppins-Light",
+                      "fontSize": 14,
+                      "fontWeight": "400",
+                      "textAlign": "left",
+                    }
+                  }
+                  testID="transactionsitem-category"
+                >
+                  Withdraw
+                </Text>
+                <Text
+                  style={
+                    {
+                      "color": "black",
+                      "fontFamily": "Poppins-Bold",
+                      "fontSize": 16,
+                      "textAlign": "left",
+                    }
+                  }
+                  testID="transactionsitem-clientname"
+                >
+                  ATM
+                </Text>
+              </View>
+            </View>
+            <View
+              style={
+                [
+                  {
+                    "alignItems": "flex-end",
+                    "flex": 1,
+                    "flexDirection": "column",
+                    "justifyContent": "center",
+                    "width": "100%",
+                  },
+                  undefined,
+                ]
+              }
+            >
+              <Text
+                style={
+                  {
+                    "color": "#E52020",
+                    "fontFamily": "Poppins-Bold",
+                    "fontSize": 16,
+                    "textAlign": "left",
+                  }
+                }
+                testID="transactionsitem-value"
+              >
+                -$1,000
+              </Text>
+              <Text
+                style={
+                  {
+                    "color": "#6B6B6B",
+                    "fontFamily": "Poppins-Light",
+                    "fontSize": 14,
+                    "fontWeight": "400",
+                    "textAlign": "left",
+                  }
+                }
+                testID="transactionsitem-date"
+              >
+                3d ago
+              </Text>
+            </View>
+          </View>
+        </View>
+        <View
+          onFocusCapture={[Function]}
+          onLayout={[Function]}
+          style={null}
+        >
+          <View
+            style={
+              [
+                {
+                  "alignItems": "center",
+                  "flex": undefined,
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "width": "100%",
+                },
+                {
+                  "marginVertical": 17,
+                  "paddingHorizontal": 30,
+                },
+              ]
+            }
+            testID="transactionslist-transactionsitem-2"
+          >
+            <View
+              style={
+                [
+                  {
+                    "alignItems": "center",
+                    "flex": 4,
+                    "flexDirection": "row",
+                    "justifyContent": "flex-start",
+                    "width": "100%",
+                  },
+                  undefined,
+                ]
+              }
+            >
+              <View
+                style={
+                  [
+                    {
+                      "alignItems": "stretch",
+                      "flex": undefined,
+                      "flexDirection": "column",
+                      "justifyContent": "flex-start",
+                      "width": "100%",
+                    },
+                    {
+                      "alignItems": "center",
+                      "backgroundColor": "#346EC5",
+                      "borderRadius": 8,
+                      "height": 52,
+                      "justifyContent": "center",
+                      "marginRight": 15,
+                      "width": 52,
+                    },
+                  ]
+                }
+              >
+                <SvgMock
+                  height="21"
+                  testID="transactionsitem-img"
+                  width="100%"
+                />
+              </View>
+              <View
+                style={
+                  [
+                    {
+                      "alignItems": "flex-start",
+                      "flex": undefined,
+                      "flexDirection": "column",
+                      "justifyContent": "center",
+                      "width": "100%",
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                <Text
+                  style={
+                    {
+                      "color": "#3D454B",
+                      "fontFamily": "Poppins-Light",
+                      "fontSize": 14,
+                      "fontWeight": "400",
+                      "textAlign": "left",
+                    }
+                  }
+                  testID="transactionsitem-category"
+                >
+                  Transfer
+                </Text>
+                <Text
+                  style={
+                    {
+                      "color": "black",
+                      "fontFamily": "Poppins-Bold",
+                      "fontSize": 16,
+                      "textAlign": "left",
+                    }
+                  }
+                  testID="transactionsitem-clientname"
+                >
+                  Jan Kowalski
+                </Text>
+              </View>
+            </View>
+            <View
+              style={
+                [
+                  {
+                    "alignItems": "flex-end",
+                    "flex": 1,
+                    "flexDirection": "column",
+                    "justifyContent": "center",
+                    "width": "100%",
+                  },
+                  undefined,
+                ]
+              }
+            >
+              <Text
+                style={
+                  {
+                    "color": "#E52020",
+                    "fontFamily": "Poppins-Bold",
+                    "fontSize": 16,
+                    "textAlign": "left",
+                  }
+                }
+                testID="transactionsitem-value"
+              >
+                -$300
+              </Text>
+              <Text
+                style={
+                  {
+                    "color": "#6B6B6B",
+                    "fontFamily": "Poppins-Light",
+                    "fontSize": 14,
+                    "fontWeight": "400",
+                    "textAlign": "left",
+                  }
+                }
+                testID="transactionsitem-date"
+              >
+                4d ago
+              </Text>
+            </View>
+          </View>
+        </View>
+        <View
+          onFocusCapture={[Function]}
+          onLayout={[Function]}
+          style={null}
+        >
+          <View
+            style={
+              [
+                {
+                  "alignItems": "center",
+                  "flex": undefined,
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "width": "100%",
+                },
+                {
+                  "marginVertical": 17,
+                  "paddingHorizontal": 30,
+                },
+              ]
+            }
+            testID="transactionslist-transactionsitem-3"
+          >
+            <View
+              style={
+                [
+                  {
+                    "alignItems": "center",
+                    "flex": 4,
+                    "flexDirection": "row",
+                    "justifyContent": "flex-start",
+                    "width": "100%",
+                  },
+                  undefined,
+                ]
+              }
+            >
+              <View
+                style={
+                  [
+                    {
+                      "alignItems": "stretch",
+                      "flex": undefined,
+                      "flexDirection": "column",
+                      "justifyContent": "flex-start",
+                      "width": "100%",
+                    },
+                    {
+                      "alignItems": "center",
+                      "backgroundColor": "#346EC5",
+                      "borderRadius": 8,
+                      "height": 52,
+                      "justifyContent": "center",
+                      "marginRight": 15,
+                      "width": 52,
+                    },
+                  ]
+                }
+              >
+                <SvgMock
+                  height="21"
+                  testID="transactionsitem-img"
+                  width="100%"
+                />
+              </View>
+              <View
+                style={
+                  [
+                    {
+                      "alignItems": "flex-start",
+                      "flex": undefined,
+                      "flexDirection": "column",
+                      "justifyContent": "center",
+                      "width": "100%",
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                <Text
+                  style={
+                    {
+                      "color": "#3D454B",
+                      "fontFamily": "Poppins-Light",
+                      "fontSize": 14,
+                      "fontWeight": "400",
+                      "textAlign": "left",
+                    }
+                  }
+                  testID="transactionsitem-category"
+                >
+                  Transfer
+                </Text>
+                <Text
+                  style={
+                    {
+                      "color": "black",
+                      "fontFamily": "Poppins-Bold",
+                      "fontSize": 16,
+                      "textAlign": "left",
+                    }
+                  }
+                  testID="transactionsitem-clientname"
+                >
+                  Rudy Tabuti
+                </Text>
+              </View>
+            </View>
+            <View
+              style={
+                [
+                  {
+                    "alignItems": "flex-end",
+                    "flex": 1,
+                    "flexDirection": "column",
+                    "justifyContent": "center",
+                    "width": "100%",
+                  },
+                  undefined,
+                ]
+              }
+            >
+              <Text
+                style={
+                  {
+                    "color": "#61C277",
+                    "fontFamily": "Poppins-Bold",
+                    "fontSize": 16,
+                    "textAlign": "left",
+                  }
+                }
+                testID="transactionsitem-value"
+              >
+                $400
+              </Text>
+              <Text
+                style={
+                  {
+                    "color": "#6B6B6B",
+                    "fontFamily": "Poppins-Light",
+                    "fontSize": 14,
+                    "fontWeight": "400",
+                    "textAlign": "left",
+                  }
+                }
+                testID="transactionsitem-date"
+              >
+                4d ago
+              </Text>
+            </View>
+          </View>
+        </View>
+        <View
+          onFocusCapture={[Function]}
+          onLayout={[Function]}
+          style={null}
+        >
+          <View
+            style={
+              [
+                {
+                  "alignItems": "center",
+                  "flex": undefined,
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "width": "100%",
+                },
+                {
+                  "marginVertical": 17,
+                  "paddingHorizontal": 30,
+                },
+              ]
+            }
+            testID="transactionslist-transactionsitem-4"
+          >
+            <View
+              style={
+                [
+                  {
+                    "alignItems": "center",
+                    "flex": 4,
+                    "flexDirection": "row",
+                    "justifyContent": "flex-start",
+                    "width": "100%",
+                  },
+                  undefined,
+                ]
+              }
+            >
+              <View
+                style={
+                  [
+                    {
+                      "alignItems": "stretch",
+                      "flex": undefined,
+                      "flexDirection": "column",
+                      "justifyContent": "flex-start",
+                      "width": "100%",
+                    },
+                    {
+                      "alignItems": "center",
+                      "backgroundColor": "#346EC5",
+                      "borderRadius": 8,
+                      "height": 52,
+                      "justifyContent": "center",
+                      "marginRight": 15,
+                      "width": 52,
+                    },
+                  ]
+                }
+              >
+                <SvgMock
+                  height="21"
+                  testID="transactionsitem-img"
+                  width="100%"
+                />
+              </View>
+              <View
+                style={
+                  [
+                    {
+                      "alignItems": "flex-start",
+                      "flex": undefined,
+                      "flexDirection": "column",
+                      "justifyContent": "center",
+                      "width": "100%",
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                <Text
+                  style={
+                    {
+                      "color": "#3D454B",
+                      "fontFamily": "Poppins-Light",
+                      "fontSize": 14,
+                      "fontWeight": "400",
+                      "textAlign": "left",
+                    }
+                  }
+                  testID="transactionsitem-category"
+                >
+                  Top Up
+                </Text>
+                <Text
+                  style={
+                    {
+                      "color": "black",
+                      "fontFamily": "Poppins-Bold",
+                      "fontSize": 16,
+                      "textAlign": "left",
+                    }
+                  }
+                  testID="transactionsitem-clientname"
+                >
+                  Purple Bank
+                </Text>
+              </View>
+            </View>
+            <View
+              style={
+                [
+                  {
+                    "alignItems": "flex-end",
+                    "flex": 1,
+                    "flexDirection": "column",
+                    "justifyContent": "center",
+                    "width": "100%",
+                  },
+                  undefined,
+                ]
+              }
+            >
+              <Text
+                style={
+                  {
+                    "color": "#61C277",
+                    "fontFamily": "Poppins-Bold",
+                    "fontSize": 16,
+                    "textAlign": "left",
+                  }
+                }
+                testID="transactionsitem-value"
+              >
+                $850
+              </Text>
+              <Text
+                style={
+                  {
+                    "color": "#6B6B6B",
+                    "fontFamily": "Poppins-Light",
+                    "fontSize": 14,
+                    "fontWeight": "400",
+                    "textAlign": "left",
+                  }
+                }
+                testID="transactionsitem-date"
+              >
+                6d ago
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </RCTScrollView>
+  </View>
+</View>
+`;

@@ -3,6 +3,7 @@ export {default as Breakline} from './Breakline/Breakline';
 export {default as InputArea} from './InputArea/InputArea';
 export {default as MarketHeader} from './MarketHeader/MarketHeader';
 export {default as MarketItem} from './MarketItem/MarketItem';
+export {default as MarketItemSeparator} from './MarketItemSeparator/MarketItemSeparator';
 export {default as OperationBottomBar} from './OperationBottomBar/OperationBottomBar';
 export {default as SocialLoginButtons} from './SocialLoginButtons/SocialLoginButtons';
 export {default as TransactionsItem} from './TransactionsItem/TransactionsItem';

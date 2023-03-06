@@ -1,5 +1,9 @@
 import {Container} from 'components/atoms';
-import {MarketHeader, MarketItem} from 'components/molecules';
+import {
+  MarketHeader,
+  MarketItem,
+  MarketItemSeparator,
+} from 'components/molecules';
 import {PropsWithChildren} from 'react';
 import {FlatList} from 'react-native';
 
@@ -36,6 +40,7 @@ const MarketList = ({onViewMorePress, data, testId}: MarketListProps) => (
           testId={'marketlist-marketitem-' + item.id}
         />
       )}
+      ItemSeparatorComponent={() => <MarketItemSeparator />}
       keyExtractor={item => item.id}
       testID="marketlist-flatlist"
     />

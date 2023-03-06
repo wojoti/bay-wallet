@@ -1,0 +1,150 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot 1`] = `
+<View
+  style={
+    [
+      {
+        "alignItems": "center",
+        "flex": undefined,
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "width": "100%",
+      },
+      {
+        "marginVertical": 17,
+        "paddingHorizontal": 30,
+      },
+    ]
+  }
+  testID="test-transactionsitem-id"
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "flex": 4,
+          "flexDirection": "row",
+          "justifyContent": "flex-start",
+          "width": "100%",
+        },
+        undefined,
+      ]
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "alignItems": "stretch",
+            "flex": undefined,
+            "flexDirection": "column",
+            "justifyContent": "flex-start",
+            "width": "100%",
+          },
+          {
+            "alignItems": "center",
+            "backgroundColor": "#346EC5",
+            "borderRadius": 8,
+            "height": 52,
+            "justifyContent": "center",
+            "marginRight": 15,
+            "width": 52,
+          },
+        ]
+      }
+    >
+      <SvgMock
+        height="21"
+        testID="transactionsitem-img"
+        width="100%"
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "flex-start",
+            "flex": undefined,
+            "flexDirection": "column",
+            "justifyContent": "center",
+            "width": "100%",
+          },
+          undefined,
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#3D454B",
+            "fontFamily": "Poppins-Light",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "textAlign": "left",
+          }
+        }
+        testID="transactionsitem-category"
+      >
+        Withdraw
+      </Text>
+      <Text
+        style={
+          {
+            "color": "black",
+            "fontFamily": "Poppins-Bold",
+            "fontSize": 16,
+            "textAlign": "left",
+          }
+        }
+        testID="transactionsitem-clientname"
+      >
+        ATM
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      [
+        {
+          "alignItems": "flex-end",
+          "flex": 1,
+          "flexDirection": "column",
+          "justifyContent": "center",
+          "width": "100%",
+        },
+        undefined,
+      ]
+    }
+  >
+    <Text
+      style={
+        {
+          "color": "#E52020",
+          "fontFamily": "Poppins-Bold",
+          "fontSize": 16,
+          "textAlign": "left",
+        }
+      }
+      testID="transactionsitem-value"
+    >
+      -$1,000
+    </Text>
+    <Text
+      style={
+        {
+          "color": "#6B6B6B",
+          "fontFamily": "Poppins-Light",
+          "fontSize": 14,
+          "fontWeight": "400",
+          "textAlign": "left",
+        }
+      }
+      testID="transactionsitem-date"
+    >
+      3d ago
+    </Text>
+  </View>
+</View>
+`;
