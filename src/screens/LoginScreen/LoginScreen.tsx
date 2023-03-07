@@ -5,7 +5,7 @@ import {LoginTemplate} from 'components/templates';
 import {useEffect} from 'react';
 import {useDispatch} from 'react-redux';
 import {AppDispatch} from 'store/store';
-import {darkMode} from 'store/styleSlice';
+import {statusBarDarkMode} from 'store/styleSlice';
 
 export type LoginScreenNavigationProp = NativeStackNavigationProp<
   RootStackParamList,
@@ -23,13 +23,13 @@ const LoginScreen = ({testId}: LoginScreenProps) => {
 
   useEffect(() => {
     if (isFocused) {
-      dispatch(darkMode());
+      dispatch(statusBarDarkMode());
     }
   }, [dispatch, isFocused]);
 
   const onLoginSubmit = (username: string, password: string) => {
     console.log('username:' + username + ',pwd:' + password);
-    navigation.navigate('Main');
+    navigation.navigate('Tab');
   };
 
   const onPasswordReset = () => {

@@ -16,10 +16,10 @@ export const styleSlice = createSlice({
     resetState() {
       return initialState;
     },
-    lightMode: state => {
+    statusBarLightMode: state => {
       state.barStyle = 'light-content';
     },
-    darkMode: state => {
+    statusBarDarkMode: state => {
       state.barStyle = 'dark-content';
     },
   },
@@ -27,5 +27,6 @@ export const styleSlice = createSlice({
 
 export const selectStyleData = (state: RootState) => state.style;
 
-export const {resetState, lightMode, darkMode} = styleSlice.actions;
+export const {resetState, statusBarLightMode, statusBarDarkMode} =
+  styleSlice.actions;
 export default styleSlice.reducer;

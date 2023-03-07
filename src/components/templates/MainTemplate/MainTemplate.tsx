@@ -1,5 +1,4 @@
 import {Container} from 'components/atoms';
-import {OperationBottomBar} from 'components/molecules';
 import {MarketData, MarketList, UserArea} from 'components/organisms';
 import {PropsWithChildren} from 'react';
 import style from './MainTemplate.style';
@@ -50,12 +49,12 @@ const MainTemplate = ({
           testId="maintemplate-marketlist"
         />
       </Container>
-      <OperationBottomBar
+      {/* <OperationBottomBar
         onCardPress={onCardPress}
         onMenuPress={onMenuPress}
         onChartPress={onChartPress}
         testId="maintemplate-operationbottombar"
-      />
+      /> */}
     </Container>
   );
 };

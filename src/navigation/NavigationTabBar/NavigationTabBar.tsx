@@ -1,22 +1,30 @@
+import {BottomTabBarProps} from '@react-navigation/bottom-tabs';
 import {ComposableButton, Container, Img, ImgType} from 'components/atoms';
-import {PropsWithChildren} from 'react';
-import style from './OperationBottomBar.style';
+import style from './NavigationTabBar.style';
 
-export type OperationBottomBarProps = PropsWithChildren<{
-  onCardPress: () => void;
-  onMenuPress: () => void;
-  onChartPress: () => void;
-  testId?: string;
-}>;
+const NavigationTabBar = ({
+  state,
+  descriptors,
+  navigation,
+}: BottomTabBarProps) => {
+  const onCardPress = () => {
+    navigation.navigate('Main');
+  };
 
-const OperationBottomBar = ({
-  onCardPress,
-  onMenuPress,
-  onChartPress,
-  testId,
-}: OperationBottomBarProps) => {
+  const onMenuPress = () => {
+    navigation.navigate('Main');
+  };
+
+  const onChartPress = () => {
+    navigation.navigate('Main');
+  };
+
+  console.log(state.index);
   return (
-    <Container testId={testId} customStyle={style.wrapper} align="center">
+    <Container
+      testId={'navigationtabbar'}
+      customStyle={style.wrapper}
+      align="center">
       <Container
         direction="row"
         justify="space-between"
@@ -25,19 +33,19 @@ const OperationBottomBar = ({
         <ComposableButton
           customStyle={style.button}
           onPress={onCardPress}
-          testId={'operationbottombar-cards'}>
+          testId={'navigationtabbar-cards'}>
           <Img src={ImgType.iconCard} height={'17'} width={23} alt={''} />
         </ComposableButton>
         <ComposableButton
           customStyle={style.purpleButton}
           onPress={onMenuPress}
-          testId={'operationbottombar-menu'}>
+          testId={'navigationtabbar-menu'}>
           <Img src={ImgType.squares} height={'30'} width={30} alt={''} />
         </ComposableButton>
         <ComposableButton
           customStyle={style.button}
           onPress={onChartPress}
-          testId={'operationbottombar-chart'}>
+          testId={'navigationtabbar-chart'}>
           <Img src={ImgType.iconChart} height={'31'} width={23} alt={''} />
         </ComposableButton>
       </Container>
@@ -45,4 +53,4 @@ const OperationBottomBar = ({
   );
 };
 
-export default OperationBottomBar;
+export default NavigationTabBar;

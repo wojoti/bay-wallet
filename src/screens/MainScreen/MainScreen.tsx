@@ -1,15 +1,15 @@
+import {BottomTabNavigationProp} from '@react-navigation/bottom-tabs';
 import {useIsFocused, useNavigation} from '@react-navigation/native';
-import {NativeStackNavigationProp} from '@react-navigation/native-stack';
-import {RootStackParamList} from 'App';
 import {MainTemplate} from 'components/templates';
 import {MarketData} from 'data/index';
 import {useEffect} from 'react';
 import {useDispatch} from 'react-redux';
+import {RootTabParamList} from 'root/App';
 import {AppDispatch} from 'store/store';
-import {lightMode} from 'store/styleSlice';
+import {statusBarLightMode} from 'store/styleSlice';
 
-export type MainScreenNavigationProp = NativeStackNavigationProp<
-  RootStackParamList,
+export type MainScreenNavigationProp = BottomTabNavigationProp<
+  RootTabParamList,
   'Main'
 >;
 
@@ -24,7 +24,7 @@ const MainScreen = ({testId}: MainScreenProps) => {
 
   useEffect(() => {
     if (isFocused) {
-      dispatch(lightMode());
+      dispatch(statusBarLightMode());
     }
   }, [dispatch, isFocused]);
 
@@ -44,7 +44,7 @@ const MainScreen = ({testId}: MainScreenProps) => {
     console.log('onWithdrawPress');
   };
   const onViewMorePress = () => {
-    navigation.navigate('Transactions');
+    navigation.getParent()?.navigate('Transactions');
   };
   const onCardPress = () => {
     console.log('onCardPress');

@@ -6,7 +6,7 @@ import {TransactionsData} from 'data/index';
 import {useEffect, useState} from 'react';
 import {useDispatch} from 'react-redux';
 import {AppDispatch} from 'store/store';
-import {darkMode} from 'store/styleSlice';
+import {statusBarDarkMode} from 'store/styleSlice';
 
 export type TransactionsScreenNavigationProp = NativeStackNavigationProp<
   RootStackParamList,
@@ -45,7 +45,7 @@ const TransactionsScreen = ({testId}: TransactionsScreenProps) => {
 
   useEffect(() => {
     if (isFocused) {
-      dispatch(darkMode());
+      dispatch(statusBarDarkMode());
     }
   }, [dispatch, isFocused]);
 

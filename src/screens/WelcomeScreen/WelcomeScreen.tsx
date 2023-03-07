@@ -5,7 +5,7 @@ import {WelcomeTemplate} from 'components/templates';
 import {useEffect} from 'react';
 import {useDispatch} from 'react-redux';
 import {AppDispatch} from 'store/store';
-import {lightMode} from 'store/styleSlice';
+import {statusBarLightMode} from 'store/styleSlice';
 
 export type WelcomeScreenNavigationProp = NativeStackNavigationProp<
   RootStackParamList,
@@ -23,7 +23,7 @@ const WelcomeScreen = ({testId}: WelcomeScreenProps) => {
 
   useEffect(() => {
     if (isFocused) {
-      dispatch(lightMode());
+      dispatch(statusBarLightMode());
     }
   }, [dispatch, isFocused]);
 
