@@ -6,7 +6,7 @@ const style = StyleSheet.create({
     backgroundColor: secondary,
     height: '100%',
   },
-  searchBarWrapper: {
+  spacer: {
     width: '85%',
   },
 });

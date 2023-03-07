@@ -1,5 +1,9 @@
 import {Container} from 'components/atoms';
-import {SearchBar, TransactionsItem} from 'components/molecules';
+import {
+  SearchBar,
+  TransactionsFilter,
+  TransactionsItem,
+} from 'components/molecules';
 import {TransactionsData} from 'data/index';
 import {PropsWithChildren} from 'react';
 import {FlatList} from 'react-native-gesture-handler';
@@ -18,6 +22,8 @@ export type TransactionsTemplateProps = PropsWithChildren<{
   onSearchPress: () => void;
   searchValue: string;
   data: TransactionsData[];
+  onFilterPress: (id: number) => void;
+  selectedId: number;
   testId?: string;
 }>;
 
@@ -25,19 +31,28 @@ const TransactionsTemplate = ({
   onSearchChange,
   onSearchPress,
   searchValue,
+  onFilterPress,
+  selectedId,
   data,
   testId,
 }: TransactionsTemplateProps) => {
   return (
     <Container customStyle={style.wrapper} testId={testId} align="center">
-      <Container flex={1} customStyle={style.searchBarWrapper}>
+      <Container customStyle={style.spacer}>
         <SearchBar
           onChange={onSearchChange}
           onPress={onSearchPress}
           value={searchValue}
+          testId="transactionstemplate-searchbar"
         />
       </Container>
-      <Container flex={6}>
+      <Container customStyle={style.spacer}>
+        <TransactionsFilter
+          onFilterPress={onFilterPress}
+          selectedId={selectedId}
+        />
+      </Container>
+      <Container>
         <FlatList
           data={data}
           renderItem={({item}) => (
@@ -51,7 +66,7 @@ const TransactionsTemplate = ({
             />
           )}
           keyExtractor={item => item.id}
-          testID="transactions-flatlist"
+          testID="transactionstemplate-flatlist"
         />
       </Container>
     </Container>

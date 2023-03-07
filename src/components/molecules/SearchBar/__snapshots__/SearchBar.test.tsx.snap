@@ -1,0 +1,122 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot 1`] = `
+<View
+  style={
+    [
+      {
+        "alignItems": "center",
+        "flex": undefined,
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "width": "100%",
+      },
+      {
+        "backgroundColor": "#F5F5F5",
+        "borderRadius": 8,
+      },
+    ]
+  }
+  testID="test-searchbar-id"
+>
+  <TextInput
+    accessibilityHint="Type to filter transactions"
+    accessibilityLabel="Search bar"
+    autoComplete="off"
+    autoCorrect={false}
+    onChangeText={[MockFunction]}
+    placeholder="Search here"
+    secureTextEntry={false}
+    style={
+      [
+        {
+          "borderColor": "#363062",
+          "borderRadius": 8,
+          "borderWidth": 1,
+          "fontFamily": "Poppins-Light",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "height": 65,
+          "paddingLeft": 30,
+          "width": "100%",
+        },
+        {
+          "borderWidth": 0,
+          "width": "80%",
+        },
+      ]
+    }
+    testID="searchbar-input"
+    value=""
+  />
+  <View
+    style={
+      [
+        {
+          "alignItems": "stretch",
+          "flex": undefined,
+          "flexDirection": "column",
+          "justifyContent": "flex-start",
+          "width": "100%",
+        },
+        {
+          "paddingRight": 30,
+          "width": "auto",
+        },
+      ]
+    }
+  >
+    <View
+      accessibilityRole="button"
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": false,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        [
+          {
+            "alignItems": "center",
+            "backgroundColor": "transparent",
+            "borderStyle": "solid",
+            "justifyContent": "center",
+            "opacity": 1,
+          },
+          false,
+          undefined,
+        ]
+      }
+      testID="searchbar-button"
+    >
+      <SvgMock
+        height="24"
+        width={24}
+      />
+    </View>
+  </View>
+</View>
+`;

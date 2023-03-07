@@ -10,9 +10,6 @@ const mockOnDetailsPress = jest.fn();
 const mockOnTransferPress = jest.fn();
 const mockOnWithdrawPress = jest.fn();
 const mockOnViewMorePress = jest.fn();
-const mockOnCardPress = jest.fn();
-const mockOnMenuPress = jest.fn();
-const mockOnChartPress = jest.fn();
 const props: MainTemplateProps = {
   onNotificationPress: mockOnNotificationPress,
   onUserProfilePress: mockOnUserProfilePress,
@@ -20,9 +17,6 @@ const props: MainTemplateProps = {
   onTransferPress: mockOnTransferPress,
   onWithdrawPress: mockOnWithdrawPress,
   onViewMorePress: mockOnViewMorePress,
-  onCardPress: mockOnCardPress,
-  onMenuPress: mockOnMenuPress,
-  onChartPress: mockOnChartPress,
   testId: 'test-maintemplate-id',
   data: MarketData,
 };
@@ -443,101 +437,16 @@ test('should render maintemplate - marketlist - marketheader - button - onPress'
   expect(mockOnViewMorePress).toBeCalledTimes(1);
 });
 
-test('should render maintemplate - OperationBottomBar', () => {
+test('should render maintemplate - marketlist - flatlist', () => {
   render(<MainTemplate {...props} />);
   const maintemplateElement = screen.getByTestId('test-maintemplate-id');
   expect(maintemplateElement).toBeOnTheScreen();
-  const OperationBottomBarElement = within(maintemplateElement).getByTestId(
-    'maintemplate-operationbottombar',
+  const marketlistElement = within(maintemplateElement).getByTestId(
+    'maintemplate-marketlist',
   );
-  expect(OperationBottomBarElement).toBeOnTheScreen();
-});
-
-test('should render maintemplate - OperationBottomBar - cards button', () => {
-  render(<MainTemplate {...props} />);
-  const maintemplateElement = screen.getByTestId('test-maintemplate-id');
-  expect(maintemplateElement).toBeOnTheScreen();
-  const OperationBottomBarElement = within(maintemplateElement).getByTestId(
-    'maintemplate-operationbottombar',
+  expect(marketlistElement).toBeOnTheScreen();
+  const flatlistElement = within(marketlistElement).getByTestId(
+    'marketlist-flatlist',
   );
-  expect(OperationBottomBarElement).toBeOnTheScreen();
-  const buttonElement = within(OperationBottomBarElement).getByTestId(
-    'operationbottombar-cards',
-  );
-  expect(buttonElement).toBeOnTheScreen();
-});
-test('should render maintemplate - OperationBottomBar - menu button', () => {
-  render(<MainTemplate {...props} />);
-  const maintemplateElement = screen.getByTestId('test-maintemplate-id');
-  expect(maintemplateElement).toBeOnTheScreen();
-  const OperationBottomBarElement = within(maintemplateElement).getByTestId(
-    'maintemplate-operationbottombar',
-  );
-  expect(OperationBottomBarElement).toBeOnTheScreen();
-  const buttonElement = within(OperationBottomBarElement).getByTestId(
-    'operationbottombar-menu',
-  );
-  expect(buttonElement).toBeOnTheScreen();
-});
-test('should render maintemplate - OperationBottomBar - chart button', () => {
-  render(<MainTemplate {...props} />);
-  const maintemplateElement = screen.getByTestId('test-maintemplate-id');
-  expect(maintemplateElement).toBeOnTheScreen();
-  const OperationBottomBarElement = within(maintemplateElement).getByTestId(
-    'maintemplate-operationbottombar',
-  );
-  expect(OperationBottomBarElement).toBeOnTheScreen();
-  const buttonElement = within(OperationBottomBarElement).getByTestId(
-    'operationbottombar-chart',
-  );
-  expect(buttonElement).toBeOnTheScreen();
-});
-
-test('should render maintemplate - OperationBottomBar - cards button - handle onPress', () => {
-  render(<MainTemplate {...props} />);
-  const maintemplateElement = screen.getByTestId('test-maintemplate-id');
-  expect(maintemplateElement).toBeOnTheScreen();
-  const OperationBottomBarElement = within(maintemplateElement).getByTestId(
-    'maintemplate-operationbottombar',
-  );
-  expect(OperationBottomBarElement).toBeOnTheScreen();
-  const buttonElement = within(OperationBottomBarElement).getByTestId(
-    'operationbottombar-cards',
-  );
-  expect(buttonElement).toBeOnTheScreen();
-  expect(mockOnCardPress).toBeCalledTimes(0);
-  fireEvent.press(buttonElement);
-  expect(mockOnCardPress).toBeCalledTimes(1);
-});
-test('should render maintemplate - OperationBottomBar - menu button - handle onPress', () => {
-  render(<MainTemplate {...props} />);
-  const maintemplateElement = screen.getByTestId('test-maintemplate-id');
-  expect(maintemplateElement).toBeOnTheScreen();
-  const OperationBottomBarElement = within(maintemplateElement).getByTestId(
-    'maintemplate-operationbottombar',
-  );
-  expect(OperationBottomBarElement).toBeOnTheScreen();
-  const buttonElement = within(OperationBottomBarElement).getByTestId(
-    'operationbottombar-menu',
-  );
-  expect(buttonElement).toBeOnTheScreen();
-  expect(mockOnMenuPress).toBeCalledTimes(0);
-  fireEvent.press(buttonElement);
-  expect(mockOnMenuPress).toBeCalledTimes(1);
-});
-test('should render maintemplate - OperationBottomBar - chart button - handle onPress', () => {
-  render(<MainTemplate {...props} />);
-  const maintemplateElement = screen.getByTestId('test-maintemplate-id');
-  expect(maintemplateElement).toBeOnTheScreen();
-  const OperationBottomBarElement = within(maintemplateElement).getByTestId(
-    'maintemplate-operationbottombar',
-  );
-  expect(OperationBottomBarElement).toBeOnTheScreen();
-  const buttonElement = within(OperationBottomBarElement).getByTestId(
-    'operationbottombar-chart',
-  );
-  expect(buttonElement).toBeOnTheScreen();
-  expect(mockOnChartPress).toBeCalledTimes(0);
-  fireEvent.press(buttonElement);
-  expect(mockOnChartPress).toBeCalledTimes(1);
+  expect(flatlistElement).toBeOnTheScreen();
 });

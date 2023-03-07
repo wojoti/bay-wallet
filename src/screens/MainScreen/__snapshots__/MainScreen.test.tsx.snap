@@ -520,7 +520,7 @@ exports[`should match snapshot 1`] = `
                      %
                   </Text>
                   <SvgMock
-                    height="20"
+                    height={20}
                     testID="balancebox-wave"
                     width={41}
                   />

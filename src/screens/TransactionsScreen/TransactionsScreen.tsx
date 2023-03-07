@@ -22,25 +22,57 @@ const TransactionsScreen = ({testId}: TransactionsScreenProps) => {
   const dispatch = useDispatch<AppDispatch>();
   const isFocused = useIsFocused();
   const [searchValue, setSearchValue] = useState('');
-  const [data, setData] = useState(TransactionsData);
+  const [filterId, setFilterId] = useState(0);
+  const [data, setData] = useState(TransactionsData); //whole transactions data with button filter
+  const [filteredData, setFilteredData] = useState(TransactionsData); //filtered by button + text
 
   const onSearchChange = (value: string) => {
     setSearchValue(value);
-    setTransactionsData(value);
+    filterDataWithText(value);
   };
   const onSearchPress = () => {
-    setTransactionsData(searchValue);
+    filterDataWithText(searchValue);
   };
 
-  const setTransactionsData = (input: string) => {
-    setData(
-      TransactionsData.filter(item => {
+  const filterDataWithText = (input: string) => {
+    setFilteredData(
+      data.filter(item => {
         if (input.length !== 0) {
           return item.clientname.toLowerCase().includes(input.toLowerCase());
         }
         return true;
       }),
     );
+  };
+
+  const filterData = (id: number) => {
+    setData(
+      TransactionsData.filter(item => {
+        if (id) {
+          if (id === 1) {
+            return item.expense === true;
+          }
+          return item.expense === false;
+        }
+        return true;
+      }),
+    );
+    setFilteredData(
+      TransactionsData.filter(item => {
+        if (id) {
+          if (id === 1) {
+            return item.expense === true;
+          }
+          return item.expense === false;
+        }
+        return true;
+      }),
+    );
+  };
+
+  const onFilterPress = (id: number) => {
+    setFilterId(id);
+    filterData(id);
   };
 
   useEffect(() => {
@@ -55,7 +87,9 @@ const TransactionsScreen = ({testId}: TransactionsScreenProps) => {
       onSearchChange={onSearchChange}
       onSearchPress={onSearchPress}
       searchValue={searchValue}
-      data={data}
+      data={filteredData}
+      onFilterPress={onFilterPress}
+      selectedId={filterId}
     />
   );
 };

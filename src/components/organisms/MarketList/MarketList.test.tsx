@@ -22,6 +22,16 @@ test('should render marketlist', () => {
   expect(marketlistElement).toBeOnTheScreen();
 });
 
+test('should render marketlist - flatlist', () => {
+  render(<MarketList {...props} />);
+  const marketlistElement = screen.getByTestId('test-marketlist-id');
+  expect(marketlistElement).toBeOnTheScreen();
+  const flatlistElement = within(marketlistElement).getByTestId(
+    'marketlist-flatlist',
+  );
+  expect(flatlistElement).toBeOnTheScreen();
+});
+
 test('should render marketlist - marketheader', () => {
   render(<MarketList {...props} />);
   const marketlistElement = screen.getByTestId('test-marketlist-id');
