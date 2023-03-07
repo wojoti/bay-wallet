@@ -23,7 +23,7 @@ const InputArea = ({
   testId,
 }: InputAreaProps) => {
   return (
-    <Container testId={testId} align={'flex-start'}>
+    <Container testId={testId} align="flex-start">
       <Container customStyle={style.fixedLabel}>
         <Label color={primary} testId="inputarea-label">
           {label}

@@ -33,15 +33,15 @@ const WelcomeCards = ({
         <Img
           src={ImgType.cardLock}
           height={330}
-          alt={''}
-          testId={'welcomecards-img'}
+          alt=""
+          testId="welcomecards-img"
         />
       </Container>
       <Container
         flex={1}
         customStyle={style.contentWithRadius}
         align="center"
-        testId={'welcomecards-radius'}>
+        testId="welcomecards-radius">
         <Swiper
           loop={false}
           activeDotColor={primary}
@@ -50,16 +50,16 @@ const WelcomeCards = ({
             onButtonPress={onButtonPress}
             mainText={mainText1}
             cardText={cardText1}
-            testId={'welcomecards-welcomecardsarea1'}
-            buttonText={'GET STARTED'}
+            testId="welcomecards-welcomecardsarea1"
+            buttonText="GET STARTED"
           />
 
           <WelcomeCardsArea
             onButtonPress={onButtonPress}
             mainText={mainText2}
             cardText={cardText2}
-            testId={'welcomecards-welcomecardsarea2'}
-            buttonText={'GET STARTED'}
+            testId="welcomecards-welcomecardsarea2"
+            buttonText="GET STARTED"
           />
         </Swiper>
       </Container>

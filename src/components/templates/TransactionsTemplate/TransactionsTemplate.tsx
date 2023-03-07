@@ -1,5 +1,5 @@
 import {Container} from 'components/atoms';
-import {TransactionsItem, TransactionsSearchBar} from 'components/molecules';
+import {SearchBar, TransactionsItem} from 'components/molecules';
 import {TransactionsData} from 'data/index';
 import {PropsWithChildren} from 'react';
 import {FlatList} from 'react-native-gesture-handler';
@@ -31,7 +31,7 @@ const TransactionsTemplate = ({
   return (
     <Container customStyle={style.wrapper} testId={testId} align="center">
       <Container flex={1} customStyle={style.searchBarWrapper}>
-        <TransactionsSearchBar
+        <SearchBar
           onChange={onSearchChange}
           onPress={onSearchPress}
           value={searchValue}

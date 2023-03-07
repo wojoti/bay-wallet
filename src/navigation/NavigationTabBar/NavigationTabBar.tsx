@@ -22,7 +22,7 @@ const NavigationTabBar = ({
   console.log(state.index);
   return (
     <Container
-      testId={'navigationtabbar'}
+      testId="navigationtabbar"
       customStyle={style.wrapper}
       align="center">
       <Container
@@ -33,20 +33,20 @@ const NavigationTabBar = ({
         <ComposableButton
           customStyle={style.button}
           onPress={onCardPress}
-          testId={'navigationtabbar-cards'}>
-          <Img src={ImgType.iconCard} height={'17'} width={23} alt={''} />
+          testId="navigationtabbar-cards">
+          <Img src={ImgType.iconCard} height="17" width={23} alt="" />
         </ComposableButton>
         <ComposableButton
           customStyle={style.purpleButton}
           onPress={onMenuPress}
-          testId={'navigationtabbar-menu'}>
-          <Img src={ImgType.squares} height={'30'} width={30} alt={''} />
+          testId="navigationtabbar-menu">
+          <Img src={ImgType.squares} height="30" width={30} alt="" />
         </ComposableButton>
         <ComposableButton
           customStyle={style.button}
           onPress={onChartPress}
-          testId={'navigationtabbar-chart'}>
-          <Img src={ImgType.iconChart} height={'31'} width={23} alt={''} />
+          testId="navigationtabbar-chart">
+          <Img src={ImgType.iconChart} height="31" width={23} alt="" />
         </ComposableButton>
       </Container>
     </Container>

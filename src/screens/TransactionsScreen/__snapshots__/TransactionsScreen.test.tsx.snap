@@ -47,6 +47,7 @@ exports[`should match snapshot 1`] = `
           },
           {
             "backgroundColor": "#F5F5F5",
+            "borderRadius": 8,
           },
         ]
       }

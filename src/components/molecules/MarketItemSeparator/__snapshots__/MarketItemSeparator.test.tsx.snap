@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot 1`] = `
+<View
+  style={
+    [
+      {
+        "alignItems": "center",
+        "flex": undefined,
+        "flexDirection": "column",
+        "justifyContent": "center",
+        "width": "100%",
+      },
+      undefined,
+    ]
+  }
+  testID="test-marketitemseparator-id"
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "stretch",
+          "flex": undefined,
+          "flexDirection": "column",
+          "justifyContent": "flex-start",
+          "width": "100%",
+        },
+        {
+          "backgroundColor": "#F6F6F6",
+          "height": 1,
+          "width": "85%",
+        },
+      ]
+    }
+  />
+</View>
+`;

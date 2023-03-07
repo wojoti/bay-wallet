@@ -26,8 +26,8 @@ const MarketList = ({onViewMorePress, data, testId}: MarketListProps) => (
       data={data}
       ListHeaderComponent={
         <MarketHeader
-          header={'Latest Market'}
-          buttonLabel={'View more'}
+          header="Latest Market"
+          buttonLabel="View more"
           onButtonPress={onViewMorePress}
           testId="marketlist-marketheader"
         />
@@ -40,7 +40,7 @@ const MarketList = ({onViewMorePress, data, testId}: MarketListProps) => (
           testId={'marketlist-marketitem-' + item.id}
         />
       )}
-      ItemSeparatorComponent={() => <MarketItemSeparator />}
+      ItemSeparatorComponent={MarketItemSeparator}
       keyExtractor={item => item.id}
       testID="marketlist-flatlist"
     />

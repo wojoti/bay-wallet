@@ -37,17 +37,17 @@ const LoginForm = ({
         onChange={onEmailChange}
         testId="loginform-inputarea-username"
         value={email}
-        label={'Username'}
-        accessibilityLabel={'Username input'}
-        accessibilityHint={'Type username here'}
+        label="Username"
+        accessibilityLabel="Username input"
+        accessibilityHint="Type username here"
       />
       <InputArea
         onChange={onPasswordChange}
         testId="loginform-inputarea-password"
         value={password}
-        label={'Password'}
-        accessibilityLabel={'Password input'}
-        accessibilityHint={'Type password here'}
+        label="Password"
+        accessibilityLabel="Password input"
+        accessibilityHint="Type password here"
         safe={true}
       />
       <Container customStyle={style.buttonMargin}>

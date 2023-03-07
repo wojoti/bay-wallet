@@ -15,25 +15,25 @@ const WelcomeTemplate = ({onButtonPress, testId}: WelcomeTemplateProps) => {
     <Container customStyle={style.wrapper} testId={testId}>
       <Swiper
         loop={false}
-        activeDotColor={'white'}
+        activeDotColor="white"
         onIndexChanged={() => setScrollable(false)}
         scrollEnabled={scrollable}
         showsPagination={scrollable}>
         <WelcomeMain
           onButtonPress={onButtonPress}
-          testId={'test-welcomemain-id'}
+          testId="test-welcomemain-id"
         />
         <WelcomeCards
           onButtonPress={onButtonPress}
-          mainText1={'New cards in few clicks'}
+          mainText1="New cards in few clicks"
           cardText1={
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.'
           }
-          mainText2={'Easy payments'}
+          mainText2="Easy payments"
           cardText2={
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.'
           }
-          testId={'test-welcomecards-id'}
+          testId="test-welcomecards-id"
         />
       </Swiper>
     </Container>

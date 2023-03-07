@@ -28,35 +28,32 @@ const TransactionsItem = ({
       align="center"
       justify="space-between"
       customStyle={style.wrapper}>
-      <Container flex={4} direction={'row'} align="center">
+      <Container flex={4} direction="row" align="center">
         <Container customStyle={style.logobox}>
           <Img
             src={ImgType.bitcoin}
-            height={'21'}
-            alt={'bitcoin logo'}
-            testId={'transactionsitem-img'}
+            height="21"
+            alt="bitcoin logo"
+            testId="transactionsitem-img"
           />
         </Container>
         <Container justify="center" align="flex-start">
           <Label
             color={marketDarkGrey}
             size={14}
-            testId={'transactionsitem-category'}>
+            testId="transactionsitem-category">
             {category}
           </Label>
-          <Header
-            color={'black'}
-            size={16}
-            testId={'transactionsitem-clientname'}>
+          <Header color="black" size={16} testId="transactionsitem-clientname">
             {clientname}
           </Header>
         </Container>
       </Container>
       <Container flex={1} justify="center" align="flex-end">
-        <Header size={16} color={detailColor} testId={'transactionsitem-value'}>
+        <Header size={16} color={detailColor} testId="transactionsitem-value">
           {value}
         </Header>
-        <Label size={14} color={grey} testId={'transactionsitem-date'}>
+        <Label size={14} color={grey} testId="transactionsitem-date">
           {date}
         </Label>
       </Container>

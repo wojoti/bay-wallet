@@ -27,7 +27,7 @@ const UserArea = ({
     testId={testId}>
     <Container customStyle={style.topContent}>
       <UserBar
-        username={'David Kowalski'}
+        username="David Kowalski"
         onNotificationPress={onNotificationPress}
         onUserProfilePress={onUserProfilePress}
         testId="userarea-userbar"
@@ -36,10 +36,10 @@ const UserArea = ({
     <Container customStyle={style.balanceBoxSizer}>
       <BalanceBox
         onDetailsPress={onDetailsPress}
-        amount={'45.500,12'}
-        percent={'4.5'}
-        balanceLabel={'Your main balance'}
-        detailsLabel={'Details >'}
+        amount="45.500,12"
+        percent="4.5"
+        balanceLabel="Your main balance"
+        detailsLabel="Details >"
         testId="userarea-balancebox"
       />
     </Container>

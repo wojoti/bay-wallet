@@ -25,7 +25,7 @@ const TransferAndWithdraw = ({
       <ComposableButton
         customStyle={style.btnStyle}
         onPress={onTransferPress}
-        testId={'transfer-button'}>
+        testId="transfer-button">
         <Container
           customStyle={style.sizer}
           direction="row"
@@ -33,12 +33,12 @@ const TransferAndWithdraw = ({
           align="flex-start">
           <Img
             src={ImgType.transfer}
-            height={'24'}
+            height="24"
             width={24}
-            alt={'transfer img'}
-            testId={'transfer-img'}
+            alt="transfer img"
+            testId="transfer-img"
           />
-          <Label size={15} color={secondary} testId={'transfer-label'}>
+          <Label size={15} color={secondary} testId="transfer-label">
             Transfer
           </Label>
         </Container>
@@ -46,7 +46,7 @@ const TransferAndWithdraw = ({
       <ComposableButton
         customStyle={style.btnStyle}
         onPress={onWithdrawPress}
-        testId={'withdraw-button'}>
+        testId="withdraw-button">
         <Container
           customStyle={style.sizer}
           direction="row"
@@ -54,12 +54,12 @@ const TransferAndWithdraw = ({
           align="flex-start">
           <Img
             src={ImgType.withdraw}
-            height={'24'}
+            height="24"
             width={24}
-            alt={'withdraw img'}
-            testId={'withdraw-img'}
+            alt="withdraw img"
+            testId="withdraw-img"
           />
-          <Label size={15} color={secondary} testId={'withdraw-label'}>
+          <Label size={15} color={secondary} testId="withdraw-label">
             Withdraw
           </Label>
         </Container>

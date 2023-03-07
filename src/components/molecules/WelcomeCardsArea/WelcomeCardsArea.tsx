@@ -23,13 +23,13 @@ const WelcomeCardsArea = ({
       <Container
         flex={1}
         customStyle={style.cardSizer}
-        testId={'welcomecardsarea-card'}>
+        testId="welcomecardsarea-card">
         <Container
           direction="row"
           justify="space-between"
           customStyle={style.topSpacer}>
           <Container customStyle={style.headerSizer}>
-            <Header size={40} testId={'welcomecardsarea-header'}>
+            <Header size={40} testId="welcomecardsarea-header">
               {mainText}
             </Header>
           </Container>
@@ -38,13 +38,13 @@ const WelcomeCardsArea = ({
               src={ImgType.logo}
               height={60}
               width={60}
-              alt={''}
-              testId={'welcomecardsarea-logo'}
+              alt=""
+              testId="welcomecardsarea-logo"
             />
           </Container>
         </Container>
         <Container customStyle={style.labelSpacer}>
-          <Label size={14} testId={'welcomecardsarea-label'}>
+          <Label size={14} testId="welcomecardsarea-label">
             {cardText}
           </Label>
         </Container>
@@ -53,7 +53,7 @@ const WelcomeCardsArea = ({
             customStyle={style.btnStyle}
             customFontStyle={buttonTextStyle.secondary}
             onPress={onButtonPress}
-            testId={'welcomecardsarea-button'}>
+            testId="welcomecardsarea-button">
             {buttonText}
           </Button>
         </Container>

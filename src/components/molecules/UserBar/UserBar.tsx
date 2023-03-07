@@ -40,12 +40,12 @@ const UserBar = ({
         <ComposableButton
           onPress={onNotificationPress}
           testId="userbar-notification">
-          <Img src={ImgType.notificationRed} height={26} width={24} alt={''} />
+          <Img src={ImgType.notificationRed} height={26} width={24} alt="" />
         </ComposableButton>
         <ComposableButton
           onPress={onUserProfilePress}
           testId="userbar-userprofile">
-          <Img src={ImgType.profile} height={40} width={40} alt={''} />
+          <Img src={ImgType.profile} height={40} width={40} alt="" />
         </ComposableButton>
       </Container>
     </Container>

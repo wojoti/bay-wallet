@@ -18,18 +18,18 @@ const MarketHeader = ({
   return (
     <Container
       testId={testId}
-      direction={'row'}
-      align={'center'}
-      justify={'space-around'}
+      direction="row"
+      align="center"
+      justify="space-around"
       customStyle={style.wrapper}>
-      <Header size={20} testId={'marketheader-header'}>
+      <Header size={20} testId="marketheader-header">
         {header}
       </Header>
       <Button
         customStyle={style.btnStyle}
         customFontStyle={style.btnTextStyle}
         onPress={onButtonPress}
-        testId={'marketheader-button'}>
+        testId="marketheader-button">
         {buttonLabel}
       </Button>
     </Container>

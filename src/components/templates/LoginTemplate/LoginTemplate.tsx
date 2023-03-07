@@ -23,8 +23,8 @@ const LoginTemplate = ({
           <Img
             src={ImgType.logoSplashWhite}
             height={230}
-            alt={''}
-            testId={'logintemplate-img'}
+            alt=""
+            testId="logintemplate-img"
           />
         </Container>
         <Container flex={2} customStyle={style.sizer}>

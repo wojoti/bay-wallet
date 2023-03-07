@@ -6,21 +6,16 @@ import {
   Input,
 } from 'components/atoms';
 import {PropsWithChildren} from 'react';
-import style from './TransactionsSearchBar.style';
+import style from './SearchBar.style';
 
-export type TransactionsSearchBarProps = PropsWithChildren<{
+export type SearchBarProps = PropsWithChildren<{
   onChange: (value: string) => void;
   onPress: () => void;
   value: string;
   testId?: string;
 }>;
 
-const TransactionsSearchBar = ({
-  onChange,
-  onPress,
-  value,
-  testId,
-}: TransactionsSearchBarProps) => {
+const SearchBar = ({onChange, onPress, value, testId}: SearchBarProps) => {
   return (
     <Container
       testId={testId}
@@ -29,21 +24,21 @@ const TransactionsSearchBar = ({
       align="center"
       justify="space-between">
       <Input
-        accessibilityLabel={'Search bar'}
-        accessibilityHint={'Type to filter transactions'}
+        accessibilityLabel="Search bar"
+        accessibilityHint="Type to filter transactions"
         onChange={onChange}
         value={value}
-        testId={''}
-        placeholder={'Search here'}
+        testId="searchbar-input"
+        placeholder="Search here"
         customStyle={style.searchInput}
       />
       <Container customStyle={style.searchButton}>
-        <ComposableButton onPress={onPress} testId={''}>
-          <Img src={ImgType.search} height={'24'} width={24} alt={''} />
+        <ComposableButton onPress={onPress} testId="searchbar-button">
+          <Img src={ImgType.search} height="24" width={24} alt="" />
         </ComposableButton>
       </Container>
     </Container>
   );
 };
 
-export default TransactionsSearchBar;
+export default SearchBar;

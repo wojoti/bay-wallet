@@ -41,7 +41,7 @@ const StackNavigator = () => {
     <NavigationContainer>
       <StatusBar barStyle={style.barStyle} backgroundColor="transparent" />
       <Stack.Navigator
-        initialRouteName={'Welcome'}
+        initialRouteName="Welcome"
         screenOptions={{
           headerShown: false,
           header: NavigationHeader,

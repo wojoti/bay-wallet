@@ -35,12 +35,12 @@ const BalanceBox = ({
         <Background
           source={require('img/wave.png')}
           customStyle={style.imgBackground}
-          testId={'balancebox-background'}>
+          testId="balancebox-background">
           <Container flex={1} justify="space-between">
-            <Label size={15} color={darkGrey} testId={'balancebox-label'}>
+            <Label size={15} color={darkGrey} testId="balancebox-label">
               {balanceLabel}
             </Label>
-            <Header size={28} testId={'balancebox-amount'}>
+            <Header size={28} testId="balancebox-amount">
               $ {amount}
             </Header>
           </Container>
@@ -53,7 +53,7 @@ const BalanceBox = ({
               customStyle={style.btnStyle}
               customFontStyle={style.btnTextStyle}
               onPress={onDetailsPress}
-              testId={'balancebox-button'}>
+              testId="balancebox-button">
               {detailsLabel}
             </Button>
             <Container
@@ -61,15 +61,15 @@ const BalanceBox = ({
               direction="row"
               align="flex-start"
               justify="space-between">
-              <Header size={15} color={green} testId={'balancebox-percent'}>
+              <Header size={15} color={green} testId="balancebox-percent">
                 {percent} %
               </Header>
               <Img
                 src={ImgType.waveGreen}
-                height={'20'}
+                height={20}
                 width={41}
-                alt={''}
-                testId={'balancebox-wave'}
+                alt=""
+                testId="balancebox-wave"
               />
             </Container>
           </Container>

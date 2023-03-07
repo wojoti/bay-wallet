@@ -20,23 +20,23 @@ const Welcomemain = ({onButtonPress, testId}: WelcomeMainProps) => {
         <Img
           src={ImgType.logoSplashColor}
           height={330}
-          alt={''}
-          testId={'welcomemain-img'}
+          alt=""
+          testId="welcomemain-img"
         />
       </Container>
       <Container flex={1.1} align="center" customStyle={style.content}>
         <Container align="center" flex={2.6}>
-          <Label color={secondary} size={30} testId={'welcomemain-label'}>
+          <Label color={secondary} size={30} testId="welcomemain-label">
             Welcome to,
           </Label>
-          <Header color={secondary} size={50} testId={'welcomemain-header'}>
+          <Header color={secondary} size={50} testId="welcomemain-header">
             BayWallet
           </Header>
           <Label
             color={secondary}
             size={14}
             align="center"
-            testId={'welcomemain-description'}>
+            testId="welcomemain-description">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore
           </Label>
@@ -46,7 +46,7 @@ const Welcomemain = ({onButtonPress, testId}: WelcomeMainProps) => {
             customStyle={style.btnStyle}
             customFontStyle={style.btnTextStyle}
             onPress={onButtonPress}
-            testId={'welcomemain-button'}>
+            testId="welcomemain-button">
             GET STARTED
           </Button>
         </Container>
