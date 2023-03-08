@@ -28,7 +28,21 @@ const style = StyleSheet.create({
     paddingVertical: 20,
     paddingHorizontal: 40,
   },
-  purpleButton: {
+  bigButton: {
+    bottom: 30,
+    backgroundColor: secondary,
+    borderRadius: 45,
+    padding: 20,
+    elevation: 10,
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 5,
+    },
+    shadowOpacity: 0.34,
+    shadowRadius: 6.27,
+  },
+  selectedBigButton: {
     bottom: 30,
     backgroundColor: primary,
     borderRadius: 45,

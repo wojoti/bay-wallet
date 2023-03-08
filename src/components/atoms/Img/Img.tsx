@@ -10,12 +10,15 @@ import Facebook from 'img/facebook.svg';
 import Filter from 'img/filter.svg';
 import Google from 'img/google.svg';
 import IconCard from 'img/iconcard.svg';
+import IconCard_selected from 'img/iconcard_selected.svg';
 import IconChart from 'img/iconchart.svg';
+import IconChart_selected from 'img/iconchart_selected.svg';
 import Notification from 'img/notification.svg';
 import Notification_red from 'img/notification_red.svg';
 import Profile from 'img/profile.svg';
 import Search from 'img/search.svg';
 import Squares from 'img/squares.svg';
+import Squares_selected from 'img/squares_selected.svg';
 import Transfer from 'img/transfer.svg';
 import Wave_green from 'img/wave_green.svg';
 import Withdraw from 'img/withdraw.svg';
@@ -47,10 +50,13 @@ export enum ImgType {
   dashDown = 'img/dash_down.svg',
   iconCard = 'img/iconcard.svg',
   iconChart = 'img/iconchart.svg',
+  iconCardSelected = 'img/iconcard_selected.svg',
+  iconChartSelected = 'img/iconchart_selected.svg',
   squares = 'img/squares.svg',
   filter = 'img/filter.svg',
   backArrow = 'img/back_arrow.svg',
   search = 'img/search.svg',
+  squaresSelected = 'img/squares_selected.svg',
 }
 
 function Img({src, height, width = '100%', testId}: ImgProps) {
@@ -101,6 +107,16 @@ function Img({src, height, width = '100%', testId}: ImgProps) {
       return <Filter width={width} height={height} testID={testId} />;
     case ImgType.search:
       return <Search width={width} height={height} testID={testId} />;
+    case ImgType.iconCardSelected:
+      return (
+        <IconCard_selected width={width} height={height} testID={testId} />
+      );
+    case ImgType.iconChartSelected:
+      return (
+        <IconChart_selected width={width} height={height} testID={testId} />
+      );
+    case ImgType.squaresSelected:
+      return <Squares_selected width={width} height={height} testID={testId} />;
   }
 }
 export default Img;
