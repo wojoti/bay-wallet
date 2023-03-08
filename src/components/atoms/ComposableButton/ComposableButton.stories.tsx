@@ -11,18 +11,18 @@ export default {
   },
 } as ComponentMeta<typeof ComposableButton>;
 const Template: ComponentStory<typeof ComposableButton> = args => (
-  <ComposableButton {...args} />
+  <ComposableButton {...args}>
+    <Text>Added required component</Text>
+  </ComposableButton>
 );
 
 export const Primary = Template.bind({});
 Primary.args = {
   testId: '',
-  children: <Text>Added required component</Text>,
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
   testId: '',
   customStyle: {backgroundColor: primary, borderWidth: 0},
-  children: <Text>Added required component</Text>,
 };

@@ -273,7 +273,7 @@ exports[`should match snapshot 1`] = `
               }
             >
               <SvgMock
-                height="20"
+                height={20}
                 testID="marketitem-img"
                 width="100%"
               />
@@ -369,7 +369,7 @@ exports[`should match snapshot 1`] = `
               </Text>
             </View>
             <SvgMock
-              height="12"
+              height={12}
               testID="marketitem-dash"
               width={12}
             />
@@ -469,7 +469,7 @@ exports[`should match snapshot 1`] = `
               }
             >
               <SvgMock
-                height="20"
+                height={20}
                 testID="marketitem-img"
                 width="100%"
               />
@@ -565,7 +565,7 @@ exports[`should match snapshot 1`] = `
               </Text>
             </View>
             <SvgMock
-              height="12"
+              height={12}
               testID="marketitem-dash"
               width={12}
             />
@@ -665,7 +665,7 @@ exports[`should match snapshot 1`] = `
               }
             >
               <SvgMock
-                height="20"
+                height={20}
                 testID="marketitem-img"
                 width="100%"
               />
@@ -761,7 +761,7 @@ exports[`should match snapshot 1`] = `
               </Text>
             </View>
             <SvgMock
-              height="12"
+              height={12}
               testID="marketitem-dash"
               width={12}
             />
@@ -861,7 +861,7 @@ exports[`should match snapshot 1`] = `
               }
             >
               <SvgMock
-                height="20"
+                height={20}
                 testID="marketitem-img"
                 width="100%"
               />
@@ -957,7 +957,7 @@ exports[`should match snapshot 1`] = `
               </Text>
             </View>
             <SvgMock
-              height="12"
+              height={12}
               testID="marketitem-dash"
               width={12}
             />
@@ -1057,7 +1057,7 @@ exports[`should match snapshot 1`] = `
               }
             >
               <SvgMock
-                height="20"
+                height={20}
                 testID="marketitem-img"
                 width="100%"
               />
@@ -1153,7 +1153,7 @@ exports[`should match snapshot 1`] = `
               </Text>
             </View>
             <SvgMock
-              height="12"
+              height={12}
               testID="marketitem-dash"
               width={12}
             />
@@ -1253,7 +1253,7 @@ exports[`should match snapshot 1`] = `
               }
             >
               <SvgMock
-                height="20"
+                height={20}
                 testID="marketitem-img"
                 width="100%"
               />
@@ -1349,7 +1349,7 @@ exports[`should match snapshot 1`] = `
               </Text>
             </View>
             <SvgMock
-              height="12"
+              height={12}
               testID="marketitem-dash"
               width={12}
             />
@@ -1449,7 +1449,7 @@ exports[`should match snapshot 1`] = `
               }
             >
               <SvgMock
-                height="20"
+                height={20}
                 testID="marketitem-img"
                 width="100%"
               />
@@ -1545,7 +1545,7 @@ exports[`should match snapshot 1`] = `
               </Text>
             </View>
             <SvgMock
-              height="12"
+              height={12}
               testID="marketitem-dash"
               width={12}
             />
@@ -1645,7 +1645,7 @@ exports[`should match snapshot 1`] = `
               }
             >
               <SvgMock
-                height="20"
+                height={20}
                 testID="marketitem-img"
                 width="100%"
               />
@@ -1741,7 +1741,7 @@ exports[`should match snapshot 1`] = `
               </Text>
             </View>
             <SvgMock
-              height="12"
+              height={12}
               testID="marketitem-dash"
               width={12}
             />
@@ -1841,7 +1841,7 @@ exports[`should match snapshot 1`] = `
               }
             >
               <SvgMock
-                height="20"
+                height={20}
                 testID="marketitem-img"
                 width="100%"
               />
@@ -1937,7 +1937,7 @@ exports[`should match snapshot 1`] = `
               </Text>
             </View>
             <SvgMock
-              height="12"
+              height={12}
               testID="marketitem-dash"
               width={12}
             />
@@ -2037,7 +2037,7 @@ exports[`should match snapshot 1`] = `
               }
             >
               <SvgMock
-                height="20"
+                height={20}
                 testID="marketitem-img"
                 width="100%"
               />
@@ -2133,7 +2133,7 @@ exports[`should match snapshot 1`] = `
               </Text>
             </View>
             <SvgMock
-              height="12"
+              height={12}
               testID="marketitem-dash"
               width={12}
             />

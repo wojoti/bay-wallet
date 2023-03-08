@@ -83,7 +83,7 @@ exports[`should match snapshot 1`] = `
       }
     >
       <SvgMock
-        height="24"
+        height={24}
         testID="transfer-img"
         width={24}
       />
@@ -170,7 +170,7 @@ exports[`should match snapshot 1`] = `
       }
     >
       <SvgMock
-        height="24"
+        height={24}
         testID="withdraw-img"
         width={24}
       />

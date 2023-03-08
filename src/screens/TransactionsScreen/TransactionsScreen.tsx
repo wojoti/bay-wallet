@@ -25,12 +25,8 @@ const TransactionsScreen = ({testId}: TransactionsScreenProps) => {
   const [filterId, setFilterId] = useState(0);
   const [dataArray, setDataArray] = useState([
     TransactionsData,
-    TransactionsData.filter(item => {
-      return item.expense === true;
-    }),
-    TransactionsData.filter(item => {
-      return item.expense === false;
-    }),
+    TransactionsData,
+    TransactionsData,
   ]); //whole transactions data with button filter
   const [filteredData, setFilteredData] = useState(TransactionsData); //filtered by button + text
 
@@ -64,6 +60,15 @@ const TransactionsScreen = ({testId}: TransactionsScreenProps) => {
   useEffect(() => {
     if (isFocused) {
       dispatch(statusBarDarkMode());
+      setDataArray([
+        TransactionsData,
+        TransactionsData.filter(item => {
+          return item.expense === true;
+        }),
+        TransactionsData.filter(item => {
+          return item.expense === false;
+        }),
+      ]);
     }
   }, [dispatch, isFocused]);
 

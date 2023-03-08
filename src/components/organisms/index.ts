@@ -1,3 +1,4 @@
+export {default as BankCard} from './BankCard/BankCard';
 export {default as LoginForm} from './LoginForm/LoginForm';
 export {default as MarketList} from './MarketList/MarketList';
 export type {MarketData} from './MarketList/MarketList';

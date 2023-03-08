@@ -603,7 +603,7 @@ exports[`should match snapshot 1`] = `
                 testID="socialloginbuttons-button-google"
               >
                 <SvgMock
-                  height="25"
+                  height={25}
                   testID="img-google"
                   width="100%"
                 />
@@ -677,7 +677,7 @@ exports[`should match snapshot 1`] = `
                 testID="socialloginbuttons-button-facebook"
               >
                 <SvgMock
-                  height="25"
+                  height={25}
                   testID="img-facebook"
                   width="100%"
                 />

@@ -147,7 +147,7 @@ exports[`should match snapshot 1`] = `
           testID="searchbar-button"
         >
           <SvgMock
-            height="24"
+            height={24}
             width={24}
           />
         </View>
@@ -538,7 +538,7 @@ exports[`should match snapshot 1`] = `
                 }
               >
                 <SvgMock
-                  height="21"
+                  height={21}
                   testID="transactionsitem-img"
                   width="100%"
                 />
@@ -690,7 +690,7 @@ exports[`should match snapshot 1`] = `
                 }
               >
                 <SvgMock
-                  height="21"
+                  height={21}
                   testID="transactionsitem-img"
                   width="100%"
                 />
@@ -842,7 +842,7 @@ exports[`should match snapshot 1`] = `
                 }
               >
                 <SvgMock
-                  height="21"
+                  height={21}
                   testID="transactionsitem-img"
                   width="100%"
                 />
@@ -994,7 +994,7 @@ exports[`should match snapshot 1`] = `
                 }
               >
                 <SvgMock
-                  height="21"
+                  height={21}
                   testID="transactionsitem-img"
                   width="100%"
                 />
