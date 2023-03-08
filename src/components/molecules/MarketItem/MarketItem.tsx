@@ -24,7 +24,7 @@ const MarketItem = ({value, name, percent, testId}: MarketItemProps) => {
         <Container customStyle={style.circle}>
           <Img
             src={ImgType.bitcoin}
-            height="20"
+            height={20}
             alt="bitcoin logo"
             testId="marketitem-img"
           />
@@ -47,7 +47,7 @@ const MarketItem = ({value, name, percent, testId}: MarketItemProps) => {
         {isDown ? (
           <Img
             src={ImgType.dashDown}
-            height="12"
+            height={12}
             width={12}
             alt=""
             testId="marketitem-dash"
@@ -55,7 +55,7 @@ const MarketItem = ({value, name, percent, testId}: MarketItemProps) => {
         ) : (
           <Img
             src={ImgType.dashUp}
-            height="12"
+            height={12}
             width={12}
             alt=""
             testId="marketitem-dash"

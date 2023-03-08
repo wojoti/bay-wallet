@@ -32,7 +32,7 @@ const TransactionsItem = ({
         <Container customStyle={style.logobox}>
           <Img
             src={ImgType.bitcoin}
-            height="21"
+            height={21}
             alt="bitcoin logo"
             testId="transactionsitem-img"
           />

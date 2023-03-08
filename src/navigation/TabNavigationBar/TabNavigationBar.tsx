@@ -33,9 +33,9 @@ const TabNavigationBar = ({
           onPress={onCardPress}
           testId="tabnavigationbar-cards">
           {state.index === 1 ? (
-            <Img src={ImgType.iconCardSelected} height="17" width={23} alt="" />
+            <Img src={ImgType.iconCardSelected} height={17} width={23} alt="" />
           ) : (
-            <Img src={ImgType.iconCard} height="17" width={23} alt="" />
+            <Img src={ImgType.iconCard} height={17} width={23} alt="" />
           )}
         </ComposableButton>
         <ComposableButton
@@ -45,9 +45,9 @@ const TabNavigationBar = ({
           onPress={onMenuPress}
           testId="tabnavigationbar-menu">
           {state.index === 0 ? (
-            <Img src={ImgType.squares} height="30" width={30} alt="" />
+            <Img src={ImgType.squares} height={30} width={30} alt="" />
           ) : (
-            <Img src={ImgType.squaresSelected} height="30" width={30} alt="" />
+            <Img src={ImgType.squaresSelected} height={30} width={30} alt="" />
           )}
         </ComposableButton>
         <ComposableButton
@@ -57,12 +57,12 @@ const TabNavigationBar = ({
           {state.index === 2 ? (
             <Img
               src={ImgType.iconChartSelected}
-              height="31"
+              height={31}
               width={23}
               alt=""
             />
           ) : (
-            <Img src={ImgType.iconChart} height="31" width={23} alt="" />
+            <Img src={ImgType.iconChart} height={31} width={23} alt="" />
           )}
         </ComposableButton>
       </Container>

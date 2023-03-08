@@ -21,13 +21,13 @@ const StackNavigationHeader = (props: NativeStackHeaderProps) => {
         <ComposableButton
           onPress={props.navigation.goBack}
           testId="stacknavigationheader-button-back">
-          <Img src={ImgType.backArrow} height="12" width={24} alt="" />
+          <Img src={ImgType.backArrow} height={12} width={24} alt="" />
         </ComposableButton>
         <Header>{title}</Header>
         <ComposableButton
           onPress={props.navigation.goBack}
           testId="stacknavigationheader-button-options">
-          <Img src={ImgType.filter} height="24" width={24} alt="" />
+          <Img src={ImgType.filter} height={24} width={24} alt="" />
         </ComposableButton>
       </Container>
     </Container>

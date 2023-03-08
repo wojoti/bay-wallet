@@ -33,7 +33,7 @@ const TransferAndWithdraw = ({
           align="flex-start">
           <Img
             src={ImgType.transfer}
-            height="24"
+            height={24}
             width={24}
             alt="transfer img"
             testId="transfer-img"
@@ -54,7 +54,7 @@ const TransferAndWithdraw = ({
           align="flex-start">
           <Img
             src={ImgType.withdraw}
-            height="24"
+            height={24}
             width={24}
             alt="withdraw img"
             testId="withdraw-img"

@@ -27,7 +27,7 @@ const SocialLoginButtons = ({onIconPress, testId}: SocialLoginButtonsProps) => {
           testId="socialloginbuttons-button-google">
           <Img
             src={ImgType.google}
-            height="25"
+            height={25}
             alt="google login"
             testId="img-google"
           />
@@ -40,7 +40,7 @@ const SocialLoginButtons = ({onIconPress, testId}: SocialLoginButtonsProps) => {
           testId="socialloginbuttons-button-facebook">
           <Img
             src={ImgType.facebook}
-            height="25"
+            height={25}
             alt="facebook login"
             testId="img-facebook"
           />

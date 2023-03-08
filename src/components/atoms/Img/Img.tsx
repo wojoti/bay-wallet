@@ -4,6 +4,7 @@ import Logo from 'img/bw_logo.svg';
 import Logo_splash_color from 'img/bw_logo_splash_color.svg';
 import Logo_splash_white from 'img/bw_logo_splash_white.svg';
 import Card_lock from 'img/card_lock.svg';
+import ColorNotification from 'img/colorNotification.svg';
 import Dash_down from 'img/dash_down.svg';
 import Dash_up from 'img/dash_up.svg';
 import Facebook from 'img/facebook.svg';
@@ -57,6 +58,7 @@ export enum ImgType {
   backArrow = 'img/back_arrow.svg',
   search = 'img/search.svg',
   squaresSelected = 'img/squares_selected.svg',
+  colorNotification = 'img/colorNotification.svg',
 }
 
 function Img({src, height, width = '100%', testId}: ImgProps) {
@@ -117,6 +119,10 @@ function Img({src, height, width = '100%', testId}: ImgProps) {
       );
     case ImgType.squaresSelected:
       return <Squares_selected width={width} height={height} testID={testId} />;
+    case ImgType.colorNotification:
+      return (
+        <ColorNotification width={width} height={height} testID={testId} />
+      );
   }
 }
 export default Img;

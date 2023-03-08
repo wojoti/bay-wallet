@@ -12,23 +12,48 @@ import style from './TabNavigationHeader.style';
 
 const TabNavigationHeader = (props: BottomTabHeaderProps) => {
   const title = getHeaderTitle(props.options, props.route.name);
+
+  const onNotificationPress = () => {
+    console.log('onNotificationPress');
+  };
+  const onUserProfilePress = () => {
+    console.log('onUserProfilePress');
+  };
   return (
-    <Container customStyle={style.wrapper} testId="tabnavigationheader">
+    <Container
+      customStyle={style.wrapper}
+      justify="center"
+      align="center"
+      testId="tabnavigationheader">
       <Container
         direction="row"
         justify="space-around"
         customStyle={style.spacer}>
-        <ComposableButton
-          onPress={props.navigation.goBack}
-          testId="tabnavigationheader-button-back">
-          <Img src={ImgType.backArrow} height="12" width={24} alt="" />
-        </ComposableButton>
-        <Header>{title}</Header>
-        <ComposableButton
-          onPress={props.navigation.goBack}
-          testId="tabnavigationheader-button-options">
-          <Img src={ImgType.filter} height="24" width={24} alt="" />
-        </ComposableButton>
+        <Container flex={7} justify="center" align="flex-start">
+          <Header>{title}</Header>
+        </Container>
+
+        <Container
+          flex={3}
+          direction="row"
+          justify="space-around"
+          align="center">
+          <ComposableButton
+            onPress={onNotificationPress}
+            testId="userbar-notification">
+            <Img
+              src={ImgType.colorNotification}
+              height={26}
+              width={24}
+              alt=""
+            />
+          </ComposableButton>
+          <ComposableButton
+            onPress={onUserProfilePress}
+            testId="userbar-userprofile">
+            <Img src={ImgType.profile} height={40} width={40} alt="" />
+          </ComposableButton>
+        </Container>
       </Container>
     </Container>
   );

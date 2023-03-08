@@ -34,7 +34,7 @@ const SearchBar = ({onChange, onPress, value, testId}: SearchBarProps) => {
       />
       <Container customStyle={style.searchButton}>
         <ComposableButton onPress={onPress} testId="searchbar-button">
-          <Img src={ImgType.search} height="24" width={24} alt="" />
+          <Img src={ImgType.search} height={24} width={24} alt="" />
         </ComposableButton>
       </Container>
     </Container>
