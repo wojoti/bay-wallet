@@ -7,11 +7,19 @@ export type HeaderProps = PropsWithChildren<{
   testId?: string;
   align?: 'left' | 'auto' | 'right' | 'center' | 'justify';
   size?: number;
+  spacing?: number;
 }>;
 
-const Header = ({color, align, size, testId, children}: HeaderProps) => {
+const Header = ({
+  color,
+  align,
+  spacing,
+  size,
+  testId,
+  children,
+}: HeaderProps) => {
   return (
-    <Text style={style({color, size, align}).wrapper} testID={testId}>
+    <Text style={style({color, size, align, spacing}).wrapper} testID={testId}>
       {children}
     </Text>
   );

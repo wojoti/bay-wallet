@@ -22,3 +22,5 @@ export const darkPurple = '#26204E';
 export const balanceWhite = '#F8F8FF';
 
 export const marketDarkGrey = '#3D454B';
+
+export const cardYellow = '#FFEF60';

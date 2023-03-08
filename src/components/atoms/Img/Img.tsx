@@ -3,6 +3,9 @@ import Bitcoin from 'img/bitcoin.svg';
 import Logo from 'img/bw_logo.svg';
 import Logo_splash_color from 'img/bw_logo_splash_color.svg';
 import Logo_splash_white from 'img/bw_logo_splash_white.svg';
+import CardLogo_1 from 'img/cardlogo_1.svg';
+import CardLogo_2 from 'img/cardlogo_2.svg';
+import CardLogo_3 from 'img/cardlogo_3.svg';
 import Card_lock from 'img/card_lock.svg';
 import ColorNotification from 'img/colorNotification.svg';
 import Dash_down from 'img/dash_down.svg';
@@ -59,6 +62,9 @@ export enum ImgType {
   search = 'img/search.svg',
   squaresSelected = 'img/squares_selected.svg',
   colorNotification = 'img/colorNotification.svg',
+  cardlogo1 = 'img/cardlogo_1.svg',
+  cardlogo2 = 'img/cardlogo_2.svg',
+  cardlogo3 = 'img/cardlogo_3.svg',
 }
 
 function Img({src, height, width = '100%', testId}: ImgProps) {
@@ -123,6 +129,12 @@ function Img({src, height, width = '100%', testId}: ImgProps) {
       return (
         <ColorNotification width={width} height={height} testID={testId} />
       );
+    case ImgType.cardlogo1:
+      return <CardLogo_1 width={width} height={height} testID={testId} />;
+    case ImgType.cardlogo2:
+      return <CardLogo_2 width={width} height={height} testID={testId} />;
+    case ImgType.cardlogo3:
+      return <CardLogo_3 width={width} height={height} testID={testId} />;
   }
 }
 export default Img;
