@@ -1,7 +1,11 @@
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {NavigationTabBar, StackNavigationHeader} from 'navigation/index';
+import {
+  StackNavigationHeader,
+  TabNavigationBar,
+  TabNavigationHeader,
+} from 'navigation/index';
 import {useEffect} from 'react';
 import {StatusBar} from 'react-native';
 import {hideNavigationBar} from 'react-native-navigation-bar-color';
@@ -71,11 +75,17 @@ const TabNavigator = () => {
       initialRouteName="Main"
       screenOptions={{
         headerShown: false,
-        tabBarShowLabel: true,
+        header: TabNavigationHeader,
       }}
-      tabBar={NavigationTabBar}>
+      tabBar={TabNavigationBar}>
       <Tab.Screen name="Main" component={MainScreen} />
-      <Tab.Screen name="Cards" component={CardsScreen} />
+      <Tab.Screen
+        name="Cards"
+        options={{
+          headerShown: true,
+        }}
+        component={CardsScreen}
+      />
     </Tab.Navigator>
   );
 };

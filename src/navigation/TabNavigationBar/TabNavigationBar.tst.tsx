@@ -1,8 +1,8 @@
-//TODO: mock bottom bar props and create tests
+// TODO: mock bottom bar props and create tests
 // import {BottomTabBarProps} from '@react-navigation/bottom-tabs';
 // import {render, screen} from '@testing-library/react-native';
 // import TestRenderer from 'react-test-renderer';
-// import NavigationTabBar from './NavigationTabBar';
+// import TabNavigationBar from './TabNavigationBar';
 
 // const props: BottomTabBarProps = {
 //   state: {},
@@ -12,13 +12,13 @@
 // };
 
 // test('should match snapshot', () => {
-//   const tree = TestRenderer.create(<NavigationTabBar {...props} />).toJSON();
+//   const tree = TestRenderer.create(<TabNavigationBar {...props} />).toJSON();
 //   expect(tree).toMatchSnapshot();
 // });
 
 // test('should render transactionstemplate', () => {
-//   render(<NavigationTabBar {...props} />);
-//   const transactionstemplateElement = screen.getByTestId('navigationtabbar');
+//   render(<TabNavigationBar {...props} />);
+//   const transactionstemplateElement = screen.getByTestId('tabnavigationbar');
 //   expect(transactionstemplateElement).toBeOnTheScreen();
 // });
 

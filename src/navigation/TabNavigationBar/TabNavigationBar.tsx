@@ -1,8 +1,8 @@
 import {BottomTabBarProps} from '@react-navigation/bottom-tabs';
 import {ComposableButton, Container, Img, ImgType} from 'components/atoms';
-import style from './NavigationTabBar.style';
+import style from './TabNavigationBar.style';
 
-const NavigationTabBar = ({
+const TabNavigationBar = ({
   state,
   descriptors,
   navigation,
@@ -21,7 +21,7 @@ const NavigationTabBar = ({
 
   return (
     <Container
-      testId="navigationtabbar"
+      testId="tabnavigationbar"
       customStyle={style.wrapper}
       align="center">
       <Container
@@ -32,19 +32,19 @@ const NavigationTabBar = ({
         <ComposableButton
           customStyle={style.button}
           onPress={onCardPress}
-          testId="navigationtabbar-cards">
+          testId="tabnavigationbar-cards">
           <Img src={ImgType.iconCard} height="17" width={23} alt="" />
         </ComposableButton>
         <ComposableButton
           customStyle={style.purpleButton}
           onPress={onMenuPress}
-          testId="navigationtabbar-menu">
+          testId="tabnavigationbar-menu">
           <Img src={ImgType.squares} height="30" width={30} alt="" />
         </ComposableButton>
         <ComposableButton
           customStyle={style.button}
           onPress={onChartPress}
-          testId="navigationtabbar-chart">
+          testId="tabnavigationbar-chart">
           <Img src={ImgType.iconChart} height="31" width={23} alt="" />
         </ComposableButton>
       </Container>
@@ -52,4 +52,4 @@ const NavigationTabBar = ({
   );
 };
 
-export default NavigationTabBar;
+export default TabNavigationBar;

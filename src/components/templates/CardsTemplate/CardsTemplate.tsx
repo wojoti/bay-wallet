@@ -1,4 +1,4 @@
-import {Container} from 'components/atoms';
+import {Container, Label} from 'components/atoms';
 import {PropsWithChildren} from 'react';
 import {FlatList} from 'react-native-gesture-handler';
 import style from './CardsTemplate.style';
@@ -18,6 +18,7 @@ export type CardsTemplateProps = PropsWithChildren<{
 const CardsTemplate = ({data, testId}: CardsTemplateProps) => {
   return (
     <Container customStyle={style.wrapper} testId={testId} align="center">
+      <Label>CardsTemplate</Label>
       <FlatList data={data} renderItem={undefined} />
     </Container>
   );
