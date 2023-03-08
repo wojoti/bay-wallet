@@ -19,7 +19,6 @@ const NavigationTabBar = ({
     navigation.navigate('Main');
   };
 
-  console.log(state.index);
   return (
     <Container
       testId="navigationtabbar"

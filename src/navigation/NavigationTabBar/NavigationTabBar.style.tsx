@@ -16,6 +16,13 @@ const style = StyleSheet.create({
     backgroundColor: secondary,
     borderRadius: 16,
     elevation: 10,
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 5,
+    },
+    shadowOpacity: 0.34,
+    shadowRadius: 6.27,
   },
   button: {
     paddingVertical: 20,
@@ -27,6 +34,13 @@ const style = StyleSheet.create({
     borderRadius: 45,
     padding: 20,
     elevation: 10,
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 5,
+    },
+    shadowOpacity: 0.34,
+    shadowRadius: 6.27,
   },
 });
 export default style;

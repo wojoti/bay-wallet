@@ -23,7 +23,15 @@ const TransactionsScreen = ({testId}: TransactionsScreenProps) => {
   const isFocused = useIsFocused();
   const [searchValue, setSearchValue] = useState('');
   const [filterId, setFilterId] = useState(0);
-  const [data, setData] = useState(TransactionsData); //whole transactions data with button filter
+  const [dataArray, setDataArray] = useState([
+    TransactionsData,
+    TransactionsData.filter(item => {
+      return item.expense === true;
+    }),
+    TransactionsData.filter(item => {
+      return item.expense === false;
+    }),
+  ]); //whole transactions data with button filter
   const [filteredData, setFilteredData] = useState(TransactionsData); //filtered by button + text
 
   const onSearchChange = (value: string) => {
@@ -36,7 +44,7 @@ const TransactionsScreen = ({testId}: TransactionsScreenProps) => {
 
   const filterDataWithText = (input: string) => {
     setFilteredData(
-      data.filter(item => {
+      dataArray[filterId].filter(item => {
         if (input.length !== 0) {
           return item.clientname.toLowerCase().includes(input.toLowerCase());
         }
@@ -46,35 +54,13 @@ const TransactionsScreen = ({testId}: TransactionsScreenProps) => {
   };
 
   const filterData = (id: number) => {
-    setData(
-      TransactionsData.filter(item => {
-        if (id) {
-          if (id === 1) {
-            return item.expense === true;
-          }
-          return item.expense === false;
-        }
-        return true;
-      }),
-    );
-    setFilteredData(
-      TransactionsData.filter(item => {
-        if (id) {
-          if (id === 1) {
-            return item.expense === true;
-          }
-          return item.expense === false;
-        }
-        return true;
-      }),
-    );
+    setFilteredData(dataArray[id]);
   };
 
   const onFilterPress = (id: number) => {
     setFilterId(id);
     filterData(id);
   };
-
   useEffect(() => {
     if (isFocused) {
       dispatch(statusBarDarkMode());
