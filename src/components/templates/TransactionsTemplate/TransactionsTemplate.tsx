@@ -4,7 +4,6 @@ import {
   TransactionsFilter,
   TransactionsItem,
 } from 'components/molecules';
-import {TransactionsData} from 'data/index';
 import {PropsWithChildren} from 'react';
 import {FlatList} from 'react-native-gesture-handler';
 import style from './TransactionsTemplate.style';

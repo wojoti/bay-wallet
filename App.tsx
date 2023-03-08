@@ -1,12 +1,13 @@
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {NavigationHeader, NavigationTabBar} from 'navigation/index';
+import {NavigationTabBar, StackNavigationHeader} from 'navigation/index';
 import {useEffect} from 'react';
 import {StatusBar} from 'react-native';
 import {hideNavigationBar} from 'react-native-navigation-bar-color';
 import {Provider, useSelector} from 'react-redux';
 import {
+  CardsScreen,
   LoginScreen,
   MainScreen,
   TransactionsScreen,
@@ -31,6 +32,7 @@ export type RootStackParamList = {
 
 export type RootTabParamList = {
   Main: undefined;
+  Cards: undefined;
 };
 
 const StackNavigator = () => {
@@ -44,7 +46,7 @@ const StackNavigator = () => {
         initialRouteName="Welcome"
         screenOptions={{
           headerShown: false,
-          header: NavigationHeader,
+          header: StackNavigationHeader,
         }}>
         <Stack.Screen name="Welcome" component={WelcomeScreen} />
         <Stack.Screen name="Login" component={LoginScreen} />
@@ -73,6 +75,7 @@ const TabNavigator = () => {
       }}
       tabBar={NavigationTabBar}>
       <Tab.Screen name="Main" component={MainScreen} />
+      <Tab.Screen name="Cards" component={CardsScreen} />
     </Tab.Navigator>
   );
 };

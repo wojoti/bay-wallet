@@ -95,3 +95,41 @@ export const TransactionsData = [
     date: '6d ago',
   },
 ];
+
+export const CardsData = [
+  {
+    id: '1',
+    name: 'Main Wallet',
+    value: '$45.500,12',
+    number: '444 221 224 123',
+    cardType: 'purple',
+  },
+  {
+    id: '2',
+    name: 'XYZ Wallet',
+    value: '$250,2',
+    number: '444 221 224 123',
+    cardType: 'green',
+  },
+  {
+    id: '3',
+    name: 'ABC Wallet',
+    value: '$4.500,12',
+    number: '444 221 224 123',
+    cardType: 'pink',
+  },
+  {
+    id: '4',
+    name: 'ASDF Wallet',
+    value: '$450.500,72',
+    number: '444 221 224 123',
+    cardType: 'purple',
+  },
+  {
+    id: '5',
+    name: 'Dark Wallet',
+    value: '$21,37',
+    number: '444 221 224 123',
+    cardType: 'darkPurple',
+  },
+];

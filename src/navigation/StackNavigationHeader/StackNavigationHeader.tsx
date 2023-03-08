@@ -8,25 +8,25 @@ import {
   Img,
   ImgType,
 } from 'components/atoms';
-import style from './NavigationHeader.style';
+import style from './StackNavigationHeader.style';
 
-const NavigationHeader = (props: NativeStackHeaderProps) => {
+const StackNavigationHeader = (props: NativeStackHeaderProps) => {
   const title = getHeaderTitle(props.options, props.route.name);
   return (
-    <Container customStyle={style.wrapper} testId="navigationheader">
+    <Container customStyle={style.wrapper} testId="stacknavigationheader">
       <Container
         direction="row"
         justify="space-around"
         customStyle={style.spacer}>
         <ComposableButton
           onPress={props.navigation.goBack}
-          testId="navigationheader-button-back">
+          testId="stacknavigationheader-button-back">
           <Img src={ImgType.backArrow} height="12" width={24} alt="" />
         </ComposableButton>
         <Header>{title}</Header>
         <ComposableButton
           onPress={props.navigation.goBack}
-          testId="navigationheader-button-options">
+          testId="stacknavigationheader-button-options">
           <Img src={ImgType.filter} height="24" width={24} alt="" />
         </ComposableButton>
       </Container>
@@ -34,4 +34,4 @@ const NavigationHeader = (props: NativeStackHeaderProps) => {
   );
 };
 
-export default NavigationHeader;
+export default StackNavigationHeader;
