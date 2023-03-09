@@ -173,6 +173,7 @@ exports[`should match snapshot 1`] = `
                       "color": "white",
                       "fontFamily": "Poppins-Bold",
                       "fontSize": 50,
+                      "letterSpacing": undefined,
                       "textAlign": "left",
                     }
                   }
@@ -501,6 +502,7 @@ exports[`should match snapshot 1`] = `
                                     "color": "black",
                                     "fontFamily": "Poppins-Bold",
                                     "fontSize": 40,
+                                    "letterSpacing": undefined,
                                     "textAlign": "left",
                                   }
                                 }
@@ -737,6 +739,7 @@ exports[`should match snapshot 1`] = `
                                     "color": "black",
                                     "fontFamily": "Poppins-Bold",
                                     "fontSize": 40,
+                                    "letterSpacing": undefined,
                                     "textAlign": "left",
                                   }
                                 }

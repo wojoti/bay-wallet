@@ -31,6 +31,7 @@ const CardsTemplate = ({data, testId}: CardsTemplateProps) => {
             name={item.name}
             value={item.value}
             cardNumber={item.number}
+            testId={'cardstemplate-bankcard-' + item.id}
           />
         )}
         keyExtractor={item => item.id}

@@ -120,6 +120,7 @@ exports[`should match snapshot 1`] = `
                   "color": "white",
                   "fontFamily": "Poppins-Bold",
                   "fontSize": 24,
+                  "letterSpacing": undefined,
                   "textAlign": "left",
                 }
               }
@@ -395,6 +396,7 @@ exports[`should match snapshot 1`] = `
                       "color": "black",
                       "fontFamily": "Poppins-Bold",
                       "fontSize": 28,
+                      "letterSpacing": undefined,
                       "textAlign": "left",
                     }
                   }
@@ -511,6 +513,7 @@ exports[`should match snapshot 1`] = `
                         "color": "#61C277",
                         "fontFamily": "Poppins-Bold",
                         "fontSize": 15,
+                        "letterSpacing": undefined,
                         "textAlign": "left",
                       }
                     }
@@ -887,6 +890,7 @@ exports[`should match snapshot 1`] = `
                     "color": "black",
                     "fontFamily": "Poppins-Bold",
                     "fontSize": 20,
+                    "letterSpacing": undefined,
                     "textAlign": "left",
                   }
                 }
@@ -1051,6 +1055,7 @@ exports[`should match snapshot 1`] = `
                         "color": "#3D454B",
                         "fontFamily": "Poppins-Bold",
                         "fontSize": 20,
+                        "letterSpacing": undefined,
                         "textAlign": "left",
                       }
                     }
@@ -1112,6 +1117,7 @@ exports[`should match snapshot 1`] = `
                         "color": "#53E520",
                         "fontFamily": "Poppins-Bold",
                         "fontSize": 14,
+                        "letterSpacing": undefined,
                         "textAlign": "left",
                       }
                     }
@@ -1247,6 +1253,7 @@ exports[`should match snapshot 1`] = `
                         "color": "#3D454B",
                         "fontFamily": "Poppins-Bold",
                         "fontSize": 20,
+                        "letterSpacing": undefined,
                         "textAlign": "left",
                       }
                     }
@@ -1308,6 +1315,7 @@ exports[`should match snapshot 1`] = `
                         "color": "#E52020",
                         "fontFamily": "Poppins-Bold",
                         "fontSize": 14,
+                        "letterSpacing": undefined,
                         "textAlign": "left",
                       }
                     }
@@ -1443,6 +1451,7 @@ exports[`should match snapshot 1`] = `
                         "color": "#3D454B",
                         "fontFamily": "Poppins-Bold",
                         "fontSize": 20,
+                        "letterSpacing": undefined,
                         "textAlign": "left",
                       }
                     }
@@ -1504,6 +1513,7 @@ exports[`should match snapshot 1`] = `
                         "color": "#53E520",
                         "fontFamily": "Poppins-Bold",
                         "fontSize": 14,
+                        "letterSpacing": undefined,
                         "textAlign": "left",
                       }
                     }
@@ -1639,6 +1649,7 @@ exports[`should match snapshot 1`] = `
                         "color": "#3D454B",
                         "fontFamily": "Poppins-Bold",
                         "fontSize": 20,
+                        "letterSpacing": undefined,
                         "textAlign": "left",
                       }
                     }
@@ -1700,6 +1711,7 @@ exports[`should match snapshot 1`] = `
                         "color": "#E52020",
                         "fontFamily": "Poppins-Bold",
                         "fontSize": 14,
+                        "letterSpacing": undefined,
                         "textAlign": "left",
                       }
                     }
@@ -1835,6 +1847,7 @@ exports[`should match snapshot 1`] = `
                         "color": "#3D454B",
                         "fontFamily": "Poppins-Bold",
                         "fontSize": 20,
+                        "letterSpacing": undefined,
                         "textAlign": "left",
                       }
                     }
@@ -1896,6 +1909,7 @@ exports[`should match snapshot 1`] = `
                         "color": "#53E520",
                         "fontFamily": "Poppins-Bold",
                         "fontSize": 14,
+                        "letterSpacing": undefined,
                         "textAlign": "left",
                       }
                     }
@@ -2031,6 +2045,7 @@ exports[`should match snapshot 1`] = `
                         "color": "#3D454B",
                         "fontFamily": "Poppins-Bold",
                         "fontSize": 20,
+                        "letterSpacing": undefined,
                         "textAlign": "left",
                       }
                     }
@@ -2092,6 +2107,7 @@ exports[`should match snapshot 1`] = `
                         "color": "#E52020",
                         "fontFamily": "Poppins-Bold",
                         "fontSize": 14,
+                        "letterSpacing": undefined,
                         "textAlign": "left",
                       }
                     }
@@ -2227,6 +2243,7 @@ exports[`should match snapshot 1`] = `
                         "color": "#3D454B",
                         "fontFamily": "Poppins-Bold",
                         "fontSize": 20,
+                        "letterSpacing": undefined,
                         "textAlign": "left",
                       }
                     }
@@ -2288,6 +2305,7 @@ exports[`should match snapshot 1`] = `
                         "color": "#E52020",
                         "fontFamily": "Poppins-Bold",
                         "fontSize": 14,
+                        "letterSpacing": undefined,
                         "textAlign": "left",
                       }
                     }
@@ -2423,6 +2441,7 @@ exports[`should match snapshot 1`] = `
                         "color": "#3D454B",
                         "fontFamily": "Poppins-Bold",
                         "fontSize": 20,
+                        "letterSpacing": undefined,
                         "textAlign": "left",
                       }
                     }
@@ -2484,6 +2503,7 @@ exports[`should match snapshot 1`] = `
                         "color": "#E52020",
                         "fontFamily": "Poppins-Bold",
                         "fontSize": 14,
+                        "letterSpacing": undefined,
                         "textAlign": "left",
                       }
                     }
@@ -2619,6 +2639,7 @@ exports[`should match snapshot 1`] = `
                         "color": "#3D454B",
                         "fontFamily": "Poppins-Bold",
                         "fontSize": 20,
+                        "letterSpacing": undefined,
                         "textAlign": "left",
                       }
                     }
@@ -2680,6 +2701,7 @@ exports[`should match snapshot 1`] = `
                         "color": "#53E520",
                         "fontFamily": "Poppins-Bold",
                         "fontSize": 14,
+                        "letterSpacing": undefined,
                         "textAlign": "left",
                       }
                     }
@@ -2815,6 +2837,7 @@ exports[`should match snapshot 1`] = `
                         "color": "#3D454B",
                         "fontFamily": "Poppins-Bold",
                         "fontSize": 20,
+                        "letterSpacing": undefined,
                         "textAlign": "left",
                       }
                     }
@@ -2876,6 +2899,7 @@ exports[`should match snapshot 1`] = `
                         "color": "#E52020",
                         "fontFamily": "Poppins-Bold",
                         "fontSize": 14,
+                        "letterSpacing": undefined,
                         "textAlign": "left",
                       }
                     }

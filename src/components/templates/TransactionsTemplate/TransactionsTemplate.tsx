@@ -49,6 +49,7 @@ const TransactionsTemplate = ({
         <TransactionsFilter
           onFilterPress={onFilterPress}
           selectedId={selectedId}
+          testId="transactionstemplate-transactionsfilter"
         />
       </Container>
       <Container>
@@ -56,7 +57,7 @@ const TransactionsTemplate = ({
           data={data}
           renderItem={({item}) => (
             <TransactionsItem
-              testId={'transactionslist-transactionsitem-' + item.id}
+              testId={'transactionstemplate-transactionsitem-' + item.id}
               expense={item.expense}
               category={item.category}
               clientname={item.clientname}

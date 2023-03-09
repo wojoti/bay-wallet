@@ -1,5 +1,5 @@
 import {BottomTabNavigationProp} from '@react-navigation/bottom-tabs';
-import {useIsFocused, useNavigation} from '@react-navigation/native';
+import {useIsFocused} from '@react-navigation/native';
 import {CardsTemplate} from 'components/templates';
 import {CardsData} from 'data/index';
 import {useEffect} from 'react';
@@ -18,7 +18,7 @@ export interface CardsScreenProps {
 }
 
 const CardsScreen = ({testId}: CardsScreenProps) => {
-  const navigation = useNavigation<CardsScreenNavigationProp>();
+  //  const navigation = useNavigation<CardsScreenNavigationProp>();
   const dispatch = useDispatch<AppDispatch>();
   const isFocused = useIsFocused();
 

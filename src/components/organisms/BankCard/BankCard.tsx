@@ -27,7 +27,12 @@ const BankCard = ({
   testId,
 }: BankCardProps) => {
   const modifiedCardNumber =
-    cardNumber.substring(0, 3) + ' ' + cardNumber.substring(3, 6) + ' ***';
+    cardNumber.substring(0, 3) +
+    ' ' +
+    cardNumber.substring(3, 6) +
+    ' ' +
+    cardNumber.substring(6, 9) +
+    ' ***';
   switch (cardTheme) {
     case 'purple':
       return (

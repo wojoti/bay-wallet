@@ -66,6 +66,7 @@ const getStories = () => {
     "./src/components/molecules/MarketItemSeparator/MarketItemSeparator.stories.tsx": require("../src/components/molecules/MarketItemSeparator/MarketItemSeparator.stories.tsx"),
     "./src/components/molecules/SearchBar/SearchBar.stories.tsx": require("../src/components/molecules/SearchBar/SearchBar.stories.tsx"),
     "./src/components/molecules/SocialLoginButtons/SocialLoginButtons.stories.tsx": require("../src/components/molecules/SocialLoginButtons/SocialLoginButtons.stories.tsx"),
+    "./src/components/molecules/TransactionsFilter/TransactionsFilter.stories.tsx": require("../src/components/molecules/TransactionsFilter/TransactionsFilter.stories.tsx"),
     "./src/components/molecules/TransactionsItem/TransactionsItem.stories.tsx": require("../src/components/molecules/TransactionsItem/TransactionsItem.stories.tsx"),
     "./src/components/molecules/TransferAndWithdraw/TransferAndWithdraw.stories.tsx": require("../src/components/molecules/TransferAndWithdraw/TransferAndWithdraw.stories.tsx"),
     "./src/components/molecules/UserBar/UserBar.stories.tsx": require("../src/components/molecules/UserBar/UserBar.stories.tsx"),
@@ -76,10 +77,12 @@ const getStories = () => {
     "./src/components/organisms/UserArea/UserArea.stories.tsx": require("../src/components/organisms/UserArea/UserArea.stories.tsx"),
     "./src/components/organisms/WelcomeCards/WelcomeCards.stories.tsx": require("../src/components/organisms/WelcomeCards/WelcomeCards.stories.tsx"),
     "./src/components/organisms/WelcomeMain/WelcomeMain.stories.tsx": require("../src/components/organisms/WelcomeMain/WelcomeMain.stories.tsx"),
+    "./src/components/templates/CardsTemplate/CardsTemplate.stories.tsx": require("../src/components/templates/CardsTemplate/CardsTemplate.stories.tsx"),
     "./src/components/templates/LoginTemplate/LoginTemplate.stories.tsx": require("../src/components/templates/LoginTemplate/LoginTemplate.stories.tsx"),
     "./src/components/templates/MainTemplate/MainTemplate.stories.tsx": require("../src/components/templates/MainTemplate/MainTemplate.stories.tsx"),
     "./src/components/templates/TransactionsTemplate/TransactionsTemplate.stories.tsx": require("../src/components/templates/TransactionsTemplate/TransactionsTemplate.stories.tsx"),
     "./src/components/templates/WelcomeTemplate/WelcomeTemplate.stories.tsx": require("../src/components/templates/WelcomeTemplate/WelcomeTemplate.stories.tsx"),
+    "./src/navigation/StackNavigationHeader/StackNavigationHeader.stories.tsx": require("../src/navigation/StackNavigationHeader/StackNavigationHeader.stories.tsx"),
   };
 };
 

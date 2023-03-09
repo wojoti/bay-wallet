@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot 1`] = `
+<View
+  style={
+    [
+      {
+        "alignItems": "stretch",
+        "flex": 1,
+        "flexDirection": "column",
+        "justifyContent": "flex-start",
+        "width": "100%",
+      },
+      {
+        "borderRadius": 14,
+      },
+    ]
+  }
+  testID="test-gradientarea-id"
+>
+  <BVLinearGradient
+    colors={
+      [
+        4278222848,
+        4278255360,
+      ]
+    }
+    endPoint={
+      {
+        "x": 1,
+        "y": 1,
+      }
+    }
+    locations={null}
+    startPoint={
+      {
+        "x": 0,
+        "y": 0,
+      }
+    }
+    style={
+      {
+        "borderRadius": 14,
+        "flex": 1,
+      }
+    }
+    testID="gradientarea-gradient"
+  />
+</View>
+`;

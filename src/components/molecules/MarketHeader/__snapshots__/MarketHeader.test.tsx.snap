@@ -24,6 +24,7 @@ exports[`should match snapshot 1`] = `
         "color": "black",
         "fontFamily": "Poppins-Bold",
         "fontSize": 20,
+        "letterSpacing": undefined,
         "textAlign": "left",
       }
     }

@@ -183,6 +183,7 @@ exports[`should match snapshot 1`] = `
           undefined,
         ]
       }
+      testID="transactionstemplate-transactionsfilter"
     >
       <View
         accessibilityRole="button"
@@ -499,7 +500,7 @@ exports[`should match snapshot 1`] = `
                 },
               ]
             }
-            testID="transactionslist-transactionsitem-1"
+            testID="transactionstemplate-transactionsitem-1"
           >
             <View
               style={
@@ -577,6 +578,7 @@ exports[`should match snapshot 1`] = `
                       "color": "black",
                       "fontFamily": "Poppins-Bold",
                       "fontSize": 16,
+                      "letterSpacing": undefined,
                       "textAlign": "left",
                     }
                   }
@@ -606,6 +608,7 @@ exports[`should match snapshot 1`] = `
                     "color": "#E52020",
                     "fontFamily": "Poppins-Bold",
                     "fontSize": 16,
+                    "letterSpacing": undefined,
                     "textAlign": "left",
                   }
                 }
@@ -651,7 +654,7 @@ exports[`should match snapshot 1`] = `
                 },
               ]
             }
-            testID="transactionslist-transactionsitem-2"
+            testID="transactionstemplate-transactionsitem-2"
           >
             <View
               style={
@@ -729,6 +732,7 @@ exports[`should match snapshot 1`] = `
                       "color": "black",
                       "fontFamily": "Poppins-Bold",
                       "fontSize": 16,
+                      "letterSpacing": undefined,
                       "textAlign": "left",
                     }
                   }
@@ -758,6 +762,7 @@ exports[`should match snapshot 1`] = `
                     "color": "#E52020",
                     "fontFamily": "Poppins-Bold",
                     "fontSize": 16,
+                    "letterSpacing": undefined,
                     "textAlign": "left",
                   }
                 }
@@ -803,7 +808,7 @@ exports[`should match snapshot 1`] = `
                 },
               ]
             }
-            testID="transactionslist-transactionsitem-3"
+            testID="transactionstemplate-transactionsitem-3"
           >
             <View
               style={
@@ -881,6 +886,7 @@ exports[`should match snapshot 1`] = `
                       "color": "black",
                       "fontFamily": "Poppins-Bold",
                       "fontSize": 16,
+                      "letterSpacing": undefined,
                       "textAlign": "left",
                     }
                   }
@@ -910,6 +916,7 @@ exports[`should match snapshot 1`] = `
                     "color": "#61C277",
                     "fontFamily": "Poppins-Bold",
                     "fontSize": 16,
+                    "letterSpacing": undefined,
                     "textAlign": "left",
                   }
                 }
@@ -955,7 +962,7 @@ exports[`should match snapshot 1`] = `
                 },
               ]
             }
-            testID="transactionslist-transactionsitem-4"
+            testID="transactionstemplate-transactionsitem-4"
           >
             <View
               style={
@@ -1033,6 +1040,7 @@ exports[`should match snapshot 1`] = `
                       "color": "black",
                       "fontFamily": "Poppins-Bold",
                       "fontSize": 16,
+                      "letterSpacing": undefined,
                       "textAlign": "left",
                     }
                   }
@@ -1062,6 +1070,7 @@ exports[`should match snapshot 1`] = `
                     "color": "#61C277",
                     "fontFamily": "Poppins-Bold",
                     "fontSize": 16,
+                    "letterSpacing": undefined,
                     "textAlign": "left",
                   }
                 }

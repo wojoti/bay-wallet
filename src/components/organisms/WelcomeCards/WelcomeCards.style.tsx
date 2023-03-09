@@ -1,13 +1,6 @@
 import {StyleSheet} from 'react-native';
 import {primary, secondary} from 'theme/colors';
 
-interface Props {
-  background?: string;
-  radius?: number;
-  width?: string;
-  mt?: number;
-  m?: number;
-}
 const style = StyleSheet.create({
   wrapper: {
     backgroundColor: primary,
