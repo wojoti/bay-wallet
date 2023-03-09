@@ -4,6 +4,12 @@ import BankCard from './BankCard';
 export default {
   title: 'Organisms/BankCard',
   component: BankCard,
+  argTypes: {
+    cardTheme: {
+      control: {type: 'select'},
+      options: ['purple', 'green', 'pink', 'darkPurple'],
+    },
+  },
 } as ComponentMeta<typeof BankCard>;
 const Template: ComponentStory<typeof BankCard> = args => (
   <BankCard {...args} />
