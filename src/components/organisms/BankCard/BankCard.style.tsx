@@ -3,7 +3,9 @@ import {StyleSheet} from 'react-native';
 const style = StyleSheet.create({
   wrapper: {
     height: 180,
+    marginBottom: 30,
   },
+  align: {flex: 1, width: '85%'},
   spacer: {
     paddingVertical: 35,
     paddingLeft: 25,

@@ -6,6 +6,7 @@ const style = StyleSheet.create({
     backgroundColor: secondary,
     height: '100%',
   },
+
   spacer: {
     width: '85%',
   },
