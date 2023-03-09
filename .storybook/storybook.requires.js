@@ -82,7 +82,6 @@ const getStories = () => {
     "./src/components/templates/MainTemplate/MainTemplate.stories.tsx": require("../src/components/templates/MainTemplate/MainTemplate.stories.tsx"),
     "./src/components/templates/TransactionsTemplate/TransactionsTemplate.stories.tsx": require("../src/components/templates/TransactionsTemplate/TransactionsTemplate.stories.tsx"),
     "./src/components/templates/WelcomeTemplate/WelcomeTemplate.stories.tsx": require("../src/components/templates/WelcomeTemplate/WelcomeTemplate.stories.tsx"),
-    "./src/navigation/StackNavigationHeader/StackNavigationHeader.stories.tsx": require("../src/navigation/StackNavigationHeader/StackNavigationHeader.stories.tsx"),
   };
 };
 
