@@ -38,7 +38,7 @@ const MainScreen = ({testId}: MainScreenProps) => {
     console.log('onDetailsPress');
   };
   const onTransferPress = () => {
-    console.log('onTransferPress');
+    navigation.getParent()?.navigate('Transfer');
   };
   const onWithdrawPress = () => {
     console.log('onWithdrawPress');

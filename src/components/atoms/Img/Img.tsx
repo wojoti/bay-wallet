@@ -1,4 +1,5 @@
 import Back_arrow from 'img/back_arrow.svg';
+import Back_arrow_white from 'img/back_arrow_white.svg';
 import Bitcoin from 'img/bitcoin.svg';
 import Logo from 'img/bw_logo.svg';
 import Logo_splash_color from 'img/bw_logo_splash_color.svg';
@@ -59,6 +60,7 @@ export enum ImgType {
   squares = 'img/squares.svg',
   filter = 'img/filter.svg',
   backArrow = 'img/back_arrow.svg',
+  backArrowWhite = 'img/back_arrow_white.svg',
   search = 'img/search.svg',
   squaresSelected = 'img/squares_selected.svg',
   colorNotification = 'img/colorNotification.svg',
@@ -111,6 +113,8 @@ function Img({src, height, width = '100%', testId}: ImgProps) {
       return <Squares width={width} height={height} testID={testId} />;
     case ImgType.backArrow:
       return <Back_arrow width={width} height={height} testID={testId} />;
+    case ImgType.backArrowWhite:
+      return <Back_arrow_white width={width} height={height} testID={testId} />;
     case ImgType.filter:
       return <Filter width={width} height={height} testID={testId} />;
     case ImgType.search:

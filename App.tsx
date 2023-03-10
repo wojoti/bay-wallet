@@ -2,6 +2,7 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {
+  StackColorNavigationHeader,
   StackNavigationHeader,
   TabNavigationBar,
   TabNavigationHeader,
@@ -15,6 +16,7 @@ import {
   LoginScreen,
   MainScreen,
   TransactionsScreen,
+  TransferScreen,
   WelcomeScreen,
 } from 'screens/index';
 import {store} from 'store/store';
@@ -31,6 +33,7 @@ export type RootStackParamList = {
   Login: undefined;
   Tab: undefined;
   Transactions: undefined;
+  Transfer: undefined;
   Storybook: undefined;
 };
 
@@ -50,7 +53,6 @@ const StackNavigator = () => {
         initialRouteName="Welcome"
         screenOptions={{
           headerShown: false,
-          header: StackNavigationHeader,
         }}>
         <Stack.Screen name="Welcome" component={WelcomeScreen} />
         <Stack.Screen name="Login" component={LoginScreen} />
@@ -60,7 +62,13 @@ const StackNavigator = () => {
           component={TransactionsScreen}
           options={{
             headerShown: true,
+            header: StackNavigationHeader,
           }}
+        />
+        <Stack.Screen
+          name="Transfer"
+          component={TransferScreen}
+          options={{headerShown: true, header: StackColorNavigationHeader}}
         />
         <Stack.Screen name="Storybook" component={Storybook} />
       </Stack.Navigator>
