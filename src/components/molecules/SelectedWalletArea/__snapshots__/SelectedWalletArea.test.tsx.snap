@@ -1,0 +1,152 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot 1`] = `
+<View
+  style={
+    [
+      {
+        "alignItems": "stretch",
+        "flex": undefined,
+        "flexDirection": "row",
+        "justifyContent": "space-around",
+        "width": "100%",
+      },
+      {
+        "marginBottom": 30,
+        "width": "85%",
+      },
+    ]
+  }
+  testID="test-selectedwalletarea-id"
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "stretch",
+          "flex": 1,
+          "flexDirection": "column",
+          "justifyContent": "flex-start",
+          "width": "100%",
+        },
+        undefined,
+      ]
+    }
+  >
+    <Text
+      style={
+        {
+          "color": "#D8B9C3",
+          "fontFamily": "Poppins-Bold",
+          "fontSize": 28,
+          "letterSpacing": 1,
+          "textAlign": "left",
+        }
+      }
+      testID="selectedwalletarea-header"
+    >
+      $ 1.000
+    </Text>
+    <Text
+      style={
+        {
+          "color": "#BDBDBD",
+          "fontFamily": "Poppins-Light",
+          "fontSize": 15,
+          "fontWeight": "400",
+          "textAlign": "left",
+        }
+      }
+      testID="selectedwalletarea-label"
+    >
+      Example Wallet
+    </Text>
+  </View>
+  <View
+    style={
+      [
+        {
+          "alignItems": "flex-end",
+          "flex": 1,
+          "flexDirection": "column",
+          "justifyContent": "flex-end",
+          "width": "100%",
+        },
+        undefined,
+      ]
+    }
+  >
+    <View
+      accessibilityRole="button"
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": false,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderRadius": 8,
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "height": 65,
+            "justifyContent": "center",
+            "opacity": 1,
+          },
+          false,
+          {
+            "borderWidth": 0,
+            "height": "auto",
+          },
+        ]
+      }
+      testID="selectedwalletarea-button"
+    >
+      <Text
+        style={
+          [
+            {
+              "fontFamily": "Poppins-Bold",
+              "fontSize": 18,
+              "textAlign": "center",
+            },
+            {
+              "color": "white",
+              "fontSize": 15,
+              "fontWeight": "normal",
+            },
+          ]
+        }
+        testID="button-text"
+      >
+        Change
+      </Text>
+    </View>
+  </View>
+</View>
+`;

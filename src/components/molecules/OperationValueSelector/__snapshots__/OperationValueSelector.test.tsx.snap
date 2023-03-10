@@ -1,0 +1,549 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot 1`] = `
+<View
+  style={
+    [
+      {
+        "alignItems": "center",
+        "flex": undefined,
+        "flexDirection": "column",
+        "justifyContent": "flex-start",
+        "width": "100%",
+      },
+      {
+        "backgroundColor": "white",
+      },
+    ]
+  }
+  testID="test-operationvalueselector-id"
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "flex": undefined,
+          "flexDirection": "column",
+          "justifyContent": "flex-start",
+          "width": "100%",
+        },
+        {
+          "width": "85%",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "flex": undefined,
+            "flexDirection": "column",
+            "justifyContent": "space-between",
+            "width": "100%",
+          },
+          {
+            "height": 70,
+            "marginBottom": 40,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "black",
+            "fontFamily": "Poppins-Bold",
+            "fontSize": 30,
+            "letterSpacing": undefined,
+            "textAlign": "left",
+          }
+        }
+        testID="operationvalueselector-header"
+      >
+        $ 50
+      </Text>
+      <Text
+        style={
+          {
+            "color": "grey",
+            "fontFamily": "Poppins-Light",
+            "fontSize": 15,
+            "fontWeight": "400",
+            "textAlign": "left",
+          }
+        }
+        testID="operationvalueselector-label"
+      >
+        Operation Amount
+      </Text>
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "stretch",
+            "flex": undefined,
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "width": "100%",
+          },
+          {
+            "marginBottom": 20,
+          },
+        ]
+      }
+    >
+      <View
+        accessibilityRole="button"
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": false,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          [
+            {
+              "alignItems": "center",
+              "borderRadius": 8,
+              "borderStyle": "solid",
+              "borderWidth": 1,
+              "height": 65,
+              "justifyContent": "center",
+              "opacity": 1,
+            },
+            false,
+            {
+              "backgroundColor": "#363062",
+              "borderWidth": 0,
+              "height": 45,
+              "width": 95,
+            },
+          ]
+        }
+        testID="operationvalueselector-button-50"
+      >
+        <Text
+          style={
+            [
+              {
+                "fontFamily": "Poppins-Bold",
+                "fontSize": 18,
+                "textAlign": "center",
+              },
+              {
+                "color": "white",
+                "fontSize": 19,
+              },
+            ]
+          }
+          testID="button-text"
+        >
+          50
+        </Text>
+      </View>
+      <View
+        accessibilityRole="button"
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": false,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          [
+            {
+              "alignItems": "center",
+              "borderRadius": 8,
+              "borderStyle": "solid",
+              "borderWidth": 1,
+              "height": 65,
+              "justifyContent": "center",
+              "opacity": 1,
+            },
+            false,
+            {
+              "backgroundColor": "#EFEFEF",
+              "borderWidth": 0,
+              "height": 45,
+              "width": 95,
+            },
+          ]
+        }
+        testID="operationvalueselector-button-100"
+      >
+        <Text
+          style={
+            [
+              {
+                "fontFamily": "Poppins-Bold",
+                "fontSize": 18,
+                "textAlign": "center",
+              },
+              {
+                "color": "#6B6B6B",
+                "fontSize": 19,
+              },
+            ]
+          }
+          testID="button-text"
+        >
+          100
+        </Text>
+      </View>
+      <View
+        accessibilityRole="button"
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": false,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          [
+            {
+              "alignItems": "center",
+              "borderRadius": 8,
+              "borderStyle": "solid",
+              "borderWidth": 1,
+              "height": 65,
+              "justifyContent": "center",
+              "opacity": 1,
+            },
+            false,
+            {
+              "backgroundColor": "#EFEFEF",
+              "borderWidth": 0,
+              "height": 45,
+              "width": 95,
+            },
+          ]
+        }
+        testID="operationvalueselector-button-200"
+      >
+        <Text
+          style={
+            [
+              {
+                "fontFamily": "Poppins-Bold",
+                "fontSize": 18,
+                "textAlign": "center",
+              },
+              {
+                "color": "#6B6B6B",
+                "fontSize": 19,
+              },
+            ]
+          }
+          testID="button-text"
+        >
+          200
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "stretch",
+            "flex": undefined,
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "width": "100%",
+          },
+          undefined,
+        ]
+      }
+    >
+      <View
+        accessibilityRole="button"
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": false,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          [
+            {
+              "alignItems": "center",
+              "borderRadius": 8,
+              "borderStyle": "solid",
+              "borderWidth": 1,
+              "height": 65,
+              "justifyContent": "center",
+              "opacity": 1,
+            },
+            false,
+            {
+              "backgroundColor": "#EFEFEF",
+              "borderWidth": 0,
+              "height": 45,
+              "width": 95,
+            },
+          ]
+        }
+        testID="operationvalueselector-button-400"
+      >
+        <Text
+          style={
+            [
+              {
+                "fontFamily": "Poppins-Bold",
+                "fontSize": 18,
+                "textAlign": "center",
+              },
+              {
+                "color": "#6B6B6B",
+                "fontSize": 19,
+              },
+            ]
+          }
+          testID="button-text"
+        >
+          400
+        </Text>
+      </View>
+      <View
+        accessibilityRole="button"
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": false,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          [
+            {
+              "alignItems": "center",
+              "borderRadius": 8,
+              "borderStyle": "solid",
+              "borderWidth": 1,
+              "height": 65,
+              "justifyContent": "center",
+              "opacity": 1,
+            },
+            false,
+            {
+              "backgroundColor": "#EFEFEF",
+              "borderWidth": 0,
+              "height": 45,
+              "width": 95,
+            },
+          ]
+        }
+        testID="operationvalueselector-button-700"
+      >
+        <Text
+          style={
+            [
+              {
+                "fontFamily": "Poppins-Bold",
+                "fontSize": 18,
+                "textAlign": "center",
+              },
+              {
+                "color": "#6B6B6B",
+                "fontSize": 19,
+              },
+            ]
+          }
+          testID="button-text"
+        >
+          700
+        </Text>
+      </View>
+      <View
+        accessibilityRole="button"
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": false,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          [
+            {
+              "alignItems": "center",
+              "borderRadius": 8,
+              "borderStyle": "solid",
+              "borderWidth": 1,
+              "height": 65,
+              "justifyContent": "center",
+              "opacity": 1,
+            },
+            false,
+            {
+              "backgroundColor": "#EFEFEF",
+              "borderWidth": 0,
+              "height": 45,
+              "width": 95,
+            },
+          ]
+        }
+        testID="operationvalueselector-button-1000"
+      >
+        <Text
+          style={
+            [
+              {
+                "fontFamily": "Poppins-Bold",
+                "fontSize": 18,
+                "textAlign": "center",
+              },
+              {
+                "color": "#6B6B6B",
+                "fontSize": 19,
+              },
+            ]
+          }
+          testID="button-text"
+        >
+          1.000
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;

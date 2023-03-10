@@ -24,3 +24,5 @@ export const balanceWhite = '#F8F8FF';
 export const marketDarkGrey = '#3D454B';
 
 export const cardYellow = '#FFEF60';
+
+export const buttonGrey = '#EFEFEF';
