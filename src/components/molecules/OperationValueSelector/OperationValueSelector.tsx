@@ -42,7 +42,7 @@ const OperationValueSelector = ({
 
   return (
     <Container customStyle={style.wrapper} testId={testId} align="center">
-      <Container customStyle={style.sizer} align="center">
+      <Container align="center">
         <Container
           customStyle={style.top}
           align="center"

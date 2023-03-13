@@ -5,9 +5,6 @@ const style = StyleSheet.create({
   wrapper: {
     backgroundColor: secondary,
   },
-  sizer: {
-    width: '85%',
-  },
   top: {
     height: 70,
     marginBottom: 40,

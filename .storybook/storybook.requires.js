@@ -64,6 +64,7 @@ const getStories = () => {
     "./src/components/molecules/MarketHeader/MarketHeader.stories.tsx": require("../src/components/molecules/MarketHeader/MarketHeader.stories.tsx"),
     "./src/components/molecules/MarketItem/MarketItem.stories.tsx": require("../src/components/molecules/MarketItem/MarketItem.stories.tsx"),
     "./src/components/molecules/MarketItemSeparator/MarketItemSeparator.stories.tsx": require("../src/components/molecules/MarketItemSeparator/MarketItemSeparator.stories.tsx"),
+    "./src/components/molecules/OperationValueSelector/OperationValueSelector.stories.tsx": require("../src/components/molecules/OperationValueSelector/OperationValueSelector.stories.tsx"),
     "./src/components/molecules/SearchBar/SearchBar.stories.tsx": require("../src/components/molecules/SearchBar/SearchBar.stories.tsx"),
     "./src/components/molecules/SelectedWalletArea/SelectedWalletArea.stories.tsx": require("../src/components/molecules/SelectedWalletArea/SelectedWalletArea.stories.tsx"),
     "./src/components/molecules/SocialLoginButtons/SocialLoginButtons.stories.tsx": require("../src/components/molecules/SocialLoginButtons/SocialLoginButtons.stories.tsx"),

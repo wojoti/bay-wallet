@@ -18,6 +18,7 @@ import IconCard from 'img/iconcard.svg';
 import IconCard_selected from 'img/iconcard_selected.svg';
 import IconChart from 'img/iconchart.svg';
 import IconChart_selected from 'img/iconchart_selected.svg';
+import IconUser from 'img/iconuser.svg';
 import Notification from 'img/notification.svg';
 import Notification_red from 'img/notification_red.svg';
 import Profile from 'img/profile.svg';
@@ -67,6 +68,7 @@ export enum ImgType {
   cardlogo1 = 'img/cardlogo_1.svg',
   cardlogo2 = 'img/cardlogo_2.svg',
   cardlogo3 = 'img/cardlogo_3.svg',
+  iconUser = 'img/iconuser.svg',
 }
 
 function Img({src, height, width = '100%', testId}: ImgProps) {
@@ -139,6 +141,8 @@ function Img({src, height, width = '100%', testId}: ImgProps) {
       return <CardLogo_2 width={width} height={height} testID={testId} />;
     case ImgType.cardlogo3:
       return <CardLogo_3 width={width} height={height} testID={testId} />;
+    case ImgType.iconUser:
+      return <IconUser width={width} height={height} testID={testId} />;
   }
 }
 export default Img;

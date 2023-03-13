@@ -2,6 +2,7 @@ import {useIsFocused} from '@react-navigation/native';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import {RootStackParamList} from 'App';
 import {TransferTemplate} from 'components/templates';
+import {ReceiverData} from 'data/index';
 import {useEffect, useState} from 'react';
 import {useDispatch} from 'react-redux';
 import {AppDispatch} from 'store/store';
@@ -22,6 +23,7 @@ const TransferScreen = ({testId}: TransferScreenProps) => {
   const isFocused = useIsFocused();
   const [transferValue, setTransferValue] = useState('$ 50');
   const [selectedButton, setSelectedButton] = useState(0);
+  const [selectedReceiver, setSelectedReceiver] = useState('');
 
   const onChangePress = () => {
     console.log('onChangePress');
@@ -34,6 +36,14 @@ const TransferScreen = ({testId}: TransferScreenProps) => {
 
   const onMorePress = () => {
     console.log('onMorePress');
+  };
+
+  const onReceiverPress = (id: string) => {
+    setSelectedReceiver(id);
+  };
+
+  const onSendPress = () => {
+    console.log('onSendPress');
   };
 
   useEffect(() => {
@@ -51,8 +61,11 @@ const TransferScreen = ({testId}: TransferScreenProps) => {
       transferValue={transferValue}
       onValuePress={onValuePress}
       selectedButton={selectedButton}
+      selectedReceiver={selectedReceiver}
       onMorePress={onMorePress}
-      receiverData={[]}
+      receiverData={ReceiverData}
+      onReceiverPress={onReceiverPress}
+      onSendPress={onSendPress}
     />
   );
 };

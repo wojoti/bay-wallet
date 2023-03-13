@@ -133,3 +133,43 @@ export const CardsData = [
     cardType: 'darkPurple',
   },
 ];
+
+export const ReceiverData = [
+  {
+    id: '1',
+    firstName: 'Julia',
+    lastName: 'Kowalska',
+    userName: 'xxJuliaxx',
+  },
+  {
+    id: '2',
+    firstName: 'Andrew',
+    lastName: 'Sullivan',
+    userName: 'andr3w',
+  },
+
+  {
+    id: '3',
+    firstName: 'David',
+    lastName: 'Bekam',
+    userName: 'david_b',
+  },
+  {
+    id: '4',
+    firstName: 'Susan',
+    lastName: 'Muse',
+    userName: 'smuse',
+  },
+  {
+    id: '5',
+    firstName: 'Edisson',
+    lastName: 'Johanson',
+    userName: 'edisson2115',
+  },
+  {
+    id: '7',
+    firstName: 'Bella',
+    lastName: 'McDonald',
+    userName: 'bella_ciao',
+  },
+];
