@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot 1`] = `
+<View
+  style={
+    [
+      {
+        "alignItems": "flex-start",
+        "flex": undefined,
+        "flexDirection": "column",
+        "justifyContent": "flex-start",
+        "width": "100%",
+      },
+      {
+        "marginRight": 20,
+        "width": "auto",
+      },
+    ]
+  }
+  testID="test-receiveritem-id"
+>
+  <View
+    accessibilityRole="button"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "transparent",
+          "borderStyle": "solid",
+          "justifyContent": "center",
+          "opacity": 1,
+        },
+        false,
+        {
+          "backgroundColor": "#EFEFEF",
+          "borderRadius": 8,
+          "height": 60,
+          "width": 60,
+        },
+      ]
+    }
+    testID="receiveritem-button"
+  >
+    <SvgMock
+      height={24}
+      testID="receiveritem-img"
+      width={23}
+    />
+  </View>
+  <View
+    style={
+      [
+        {
+          "alignItems": "stretch",
+          "flex": undefined,
+          "flexDirection": "column",
+          "justifyContent": "flex-start",
+          "width": "100%",
+        },
+        {
+          "marginVertical": 10,
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        {
+          "color": "black",
+          "fontFamily": "Poppins-Light",
+          "fontSize": 14,
+          "fontWeight": "400",
+          "textAlign": "left",
+        }
+      }
+      testID="receiveritem-label"
+    >
+      First Name
+    </Text>
+  </View>
+</View>
+`;

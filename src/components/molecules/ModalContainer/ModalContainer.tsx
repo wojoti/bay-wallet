@@ -27,12 +27,20 @@ const ModalContainer = ({
       justify="center">
       <Container customStyle={style.box} align="center">
         <Container align="center" customStyle={style.spacer}>
-          <Header>{header}</Header>
+          <Header testId="modalcontainer-header">{header}</Header>
         </Container>
 
-        <Label color={grey}>{description}</Label>
+        <Label testId="modalcontainer-label" color={grey}>
+          {description}
+        </Label>
         <Container customStyle={style.circle} justify="center" align="center">
-          <Img src={ImgType.success} height={25} width={27} alt={''} />
+          <Img
+            testId="modalcontainer-img"
+            src={ImgType.success}
+            height={25}
+            width={27}
+            alt={''}
+          />
         </Container>
         <Button
           customStyle={style.button}

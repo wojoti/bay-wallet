@@ -41,12 +41,17 @@ const TransferTemplate = ({
 }: TransferTemplateProps) => {
   return (
     <Container align="center" customStyle={style.wrapper} testId={testId}>
-      <Modal animationType="fade" transparent={true} visible={modalVisible}>
+      <Modal
+        testID="transfertemplate-modal"
+        animationType="fade"
+        transparent={true}
+        visible={modalVisible}>
         <ModalContainer
           onPress={onModalPress}
           header="Success!"
           description="Your payment has been procceded!"
           buttonText="DONE"
+          testId="transfertemplate-transfermodal"
         />
       </Modal>
       <SelectedWalletArea

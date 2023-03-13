@@ -1,0 +1,1553 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot 1`] = `
+<View
+  style={
+    [
+      {
+        "alignItems": "center",
+        "flex": 1,
+        "flexDirection": "column",
+        "justifyContent": "flex-start",
+        "width": "100%",
+      },
+      {
+        "backgroundColor": "white",
+        "borderColor": "transparent",
+        "borderTopLeftRadius": 30,
+        "borderTopRightRadius": 30,
+        "borderWidth": 1,
+        "paddingTop": 40,
+      },
+    ]
+  }
+  testID="test-transferform-id"
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "flex": undefined,
+          "flexDirection": "column",
+          "justifyContent": "flex-start",
+          "width": "100%",
+        },
+        {
+          "width": "85%",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "flex": undefined,
+            "flexDirection": "column",
+            "justifyContent": "flex-start",
+            "width": "100%",
+          },
+          {
+            "backgroundColor": "white",
+          },
+        ]
+      }
+      testID="transferform-operationvalueselector"
+    >
+      <View
+        style={
+          [
+            {
+              "alignItems": "center",
+              "flex": undefined,
+              "flexDirection": "column",
+              "justifyContent": "flex-start",
+              "width": "100%",
+            },
+            undefined,
+          ]
+        }
+      >
+        <View
+          style={
+            [
+              {
+                "alignItems": "center",
+                "flex": undefined,
+                "flexDirection": "column",
+                "justifyContent": "space-between",
+                "width": "100%",
+              },
+              {
+                "height": 70,
+                "marginBottom": 40,
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              {
+                "color": "black",
+                "fontFamily": "Poppins-Bold",
+                "fontSize": 30,
+                "letterSpacing": undefined,
+                "textAlign": "left",
+              }
+            }
+            testID="operationvalueselector-header"
+          >
+            $ 50
+          </Text>
+          <Text
+            style={
+              {
+                "color": "grey",
+                "fontFamily": "Poppins-Light",
+                "fontSize": 15,
+                "fontWeight": "400",
+                "textAlign": "left",
+              }
+            }
+            testID="operationvalueselector-label"
+          >
+            Operation Amount
+          </Text>
+        </View>
+        <View
+          style={
+            [
+              {
+                "alignItems": "stretch",
+                "flex": undefined,
+                "flexDirection": "row",
+                "justifyContent": "space-between",
+                "width": "100%",
+              },
+              {
+                "marginBottom": 20,
+              },
+            ]
+          }
+        >
+          <View
+            accessibilityRole="button"
+            accessibilityState={
+              {
+                "busy": undefined,
+                "checked": undefined,
+                "disabled": false,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              [
+                {
+                  "alignItems": "center",
+                  "borderRadius": 8,
+                  "borderStyle": "solid",
+                  "borderWidth": 1,
+                  "height": 65,
+                  "justifyContent": "center",
+                  "opacity": 1,
+                },
+                false,
+                {
+                  "backgroundColor": "#363062",
+                  "borderWidth": 0,
+                  "height": 45,
+                  "width": 95,
+                },
+              ]
+            }
+            testID="operationvalueselector-button-50"
+          >
+            <Text
+              style={
+                [
+                  {
+                    "fontFamily": "Poppins-Bold",
+                    "fontSize": 18,
+                    "textAlign": "center",
+                  },
+                  {
+                    "color": "white",
+                    "fontSize": 19,
+                  },
+                ]
+              }
+              testID="button-text"
+            >
+              50
+            </Text>
+          </View>
+          <View
+            accessibilityRole="button"
+            accessibilityState={
+              {
+                "busy": undefined,
+                "checked": undefined,
+                "disabled": false,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              [
+                {
+                  "alignItems": "center",
+                  "borderRadius": 8,
+                  "borderStyle": "solid",
+                  "borderWidth": 1,
+                  "height": 65,
+                  "justifyContent": "center",
+                  "opacity": 1,
+                },
+                false,
+                {
+                  "backgroundColor": "#EFEFEF",
+                  "borderWidth": 0,
+                  "height": 45,
+                  "width": 95,
+                },
+              ]
+            }
+            testID="operationvalueselector-button-100"
+          >
+            <Text
+              style={
+                [
+                  {
+                    "fontFamily": "Poppins-Bold",
+                    "fontSize": 18,
+                    "textAlign": "center",
+                  },
+                  {
+                    "color": "#6B6B6B",
+                    "fontSize": 19,
+                  },
+                ]
+              }
+              testID="button-text"
+            >
+              100
+            </Text>
+          </View>
+          <View
+            accessibilityRole="button"
+            accessibilityState={
+              {
+                "busy": undefined,
+                "checked": undefined,
+                "disabled": false,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              [
+                {
+                  "alignItems": "center",
+                  "borderRadius": 8,
+                  "borderStyle": "solid",
+                  "borderWidth": 1,
+                  "height": 65,
+                  "justifyContent": "center",
+                  "opacity": 1,
+                },
+                false,
+                {
+                  "backgroundColor": "#EFEFEF",
+                  "borderWidth": 0,
+                  "height": 45,
+                  "width": 95,
+                },
+              ]
+            }
+            testID="operationvalueselector-button-200"
+          >
+            <Text
+              style={
+                [
+                  {
+                    "fontFamily": "Poppins-Bold",
+                    "fontSize": 18,
+                    "textAlign": "center",
+                  },
+                  {
+                    "color": "#6B6B6B",
+                    "fontSize": 19,
+                  },
+                ]
+              }
+              testID="button-text"
+            >
+              200
+            </Text>
+          </View>
+        </View>
+        <View
+          style={
+            [
+              {
+                "alignItems": "stretch",
+                "flex": undefined,
+                "flexDirection": "row",
+                "justifyContent": "space-between",
+                "width": "100%",
+              },
+              undefined,
+            ]
+          }
+        >
+          <View
+            accessibilityRole="button"
+            accessibilityState={
+              {
+                "busy": undefined,
+                "checked": undefined,
+                "disabled": false,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              [
+                {
+                  "alignItems": "center",
+                  "borderRadius": 8,
+                  "borderStyle": "solid",
+                  "borderWidth": 1,
+                  "height": 65,
+                  "justifyContent": "center",
+                  "opacity": 1,
+                },
+                false,
+                {
+                  "backgroundColor": "#EFEFEF",
+                  "borderWidth": 0,
+                  "height": 45,
+                  "width": 95,
+                },
+              ]
+            }
+            testID="operationvalueselector-button-400"
+          >
+            <Text
+              style={
+                [
+                  {
+                    "fontFamily": "Poppins-Bold",
+                    "fontSize": 18,
+                    "textAlign": "center",
+                  },
+                  {
+                    "color": "#6B6B6B",
+                    "fontSize": 19,
+                  },
+                ]
+              }
+              testID="button-text"
+            >
+              400
+            </Text>
+          </View>
+          <View
+            accessibilityRole="button"
+            accessibilityState={
+              {
+                "busy": undefined,
+                "checked": undefined,
+                "disabled": false,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              [
+                {
+                  "alignItems": "center",
+                  "borderRadius": 8,
+                  "borderStyle": "solid",
+                  "borderWidth": 1,
+                  "height": 65,
+                  "justifyContent": "center",
+                  "opacity": 1,
+                },
+                false,
+                {
+                  "backgroundColor": "#EFEFEF",
+                  "borderWidth": 0,
+                  "height": 45,
+                  "width": 95,
+                },
+              ]
+            }
+            testID="operationvalueselector-button-700"
+          >
+            <Text
+              style={
+                [
+                  {
+                    "fontFamily": "Poppins-Bold",
+                    "fontSize": 18,
+                    "textAlign": "center",
+                  },
+                  {
+                    "color": "#6B6B6B",
+                    "fontSize": 19,
+                  },
+                ]
+              }
+              testID="button-text"
+            >
+              700
+            </Text>
+          </View>
+          <View
+            accessibilityRole="button"
+            accessibilityState={
+              {
+                "busy": undefined,
+                "checked": undefined,
+                "disabled": false,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              [
+                {
+                  "alignItems": "center",
+                  "borderRadius": 8,
+                  "borderStyle": "solid",
+                  "borderWidth": 1,
+                  "height": 65,
+                  "justifyContent": "center",
+                  "opacity": 1,
+                },
+                false,
+                {
+                  "backgroundColor": "#EFEFEF",
+                  "borderWidth": 0,
+                  "height": 45,
+                  "width": 95,
+                },
+              ]
+            }
+            testID="operationvalueselector-button-1000"
+          >
+            <Text
+              style={
+                [
+                  {
+                    "fontFamily": "Poppins-Bold",
+                    "fontSize": 18,
+                    "textAlign": "center",
+                  },
+                  {
+                    "color": "#6B6B6B",
+                    "fontSize": 19,
+                  },
+                ]
+              }
+              testID="button-text"
+            >
+              1.000
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "flex": undefined,
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "width": "100%",
+          },
+          {
+            "marginTop": 35,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "black",
+            "fontFamily": "Poppins-Bold",
+            "fontSize": 18,
+            "letterSpacing": undefined,
+            "textAlign": "left",
+          }
+        }
+      >
+        Receiver
+      </Text>
+      <View
+        accessibilityRole="button"
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": false,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          [
+            {
+              "alignItems": "center",
+              "borderRadius": 8,
+              "borderStyle": "solid",
+              "borderWidth": 1,
+              "height": 65,
+              "justifyContent": "center",
+              "opacity": 1,
+            },
+            false,
+            {
+              "borderWidth": 0,
+            },
+          ]
+        }
+        testID="transferform-more"
+      >
+        <Text
+          style={
+            [
+              {
+                "fontFamily": "Poppins-Bold",
+                "fontSize": 18,
+                "textAlign": "center",
+              },
+              {
+                "color": "#363062",
+                "fontSize": 16,
+              },
+            ]
+          }
+          testID="button-text"
+        >
+          More
+        </Text>
+      </View>
+    </View>
+    <RCTScrollView
+      collapsable={false}
+      data={
+        [
+          {
+            "firstName": "Julia",
+            "id": "1",
+            "lastName": "Kowalska",
+            "userName": "xxJuliaxx",
+          },
+          {
+            "firstName": "Andrew",
+            "id": "2",
+            "lastName": "Sullivan",
+            "userName": "andr3w",
+          },
+          {
+            "firstName": "David",
+            "id": "3",
+            "lastName": "Bekam",
+            "userName": "david_b",
+          },
+          {
+            "firstName": "Susan",
+            "id": "4",
+            "lastName": "Muse",
+            "userName": "smuse",
+          },
+          {
+            "firstName": "Edisson",
+            "id": "5",
+            "lastName": "Johanson",
+            "userName": "edisson2115",
+          },
+          {
+            "firstName": "Bella",
+            "id": "7",
+            "lastName": "McDonald",
+            "userName": "bella_ciao",
+          },
+        ]
+      }
+      getItem={[Function]}
+      getItemCount={[Function]}
+      handlerTag={1}
+      handlerType="NativeViewGestureHandler"
+      horizontal={true}
+      keyExtractor={[Function]}
+      onContentSizeChange={[Function]}
+      onGestureHandlerEvent={[Function]}
+      onGestureHandlerStateChange={[Function]}
+      onLayout={[Function]}
+      onMomentumScrollBegin={[Function]}
+      onMomentumScrollEnd={[Function]}
+      onScroll={[Function]}
+      onScrollBeginDrag={[Function]}
+      onScrollEndDrag={[Function]}
+      removeClippedSubviews={false}
+      renderItem={[Function]}
+      renderScrollComponent={[Function]}
+      scrollEventThrottle={50}
+      stickyHeaderIndices={[]}
+      viewabilityConfigCallbackPairs={[]}
+      waitFor={
+        [
+          {
+            "current": null,
+          },
+          {
+            "current": null,
+          },
+        ]
+      }
+    >
+      <View>
+        <View
+          onFocusCapture={[Function]}
+          onLayout={[Function]}
+          style={
+            [
+              {
+                "flexDirection": "row",
+              },
+              null,
+            ]
+          }
+        >
+          <View
+            style={
+              [
+                {
+                  "alignItems": "flex-start",
+                  "flex": undefined,
+                  "flexDirection": "column",
+                  "justifyContent": "flex-start",
+                  "width": "100%",
+                },
+                {
+                  "marginRight": 20,
+                  "width": "auto",
+                },
+              ]
+            }
+            testID="transferform-receiveritem-1"
+          >
+            <View
+              accessibilityRole="button"
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": false,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                [
+                  {
+                    "alignItems": "center",
+                    "backgroundColor": "transparent",
+                    "borderStyle": "solid",
+                    "justifyContent": "center",
+                    "opacity": 1,
+                  },
+                  false,
+                  {
+                    "backgroundColor": "#363062",
+                    "borderRadius": 8,
+                    "height": 60,
+                    "width": 60,
+                  },
+                ]
+              }
+              testID="receiveritem-button"
+            >
+              <SvgMock
+                height={24}
+                testID="receiveritem-img"
+                width={23}
+              />
+            </View>
+            <View
+              style={
+                [
+                  {
+                    "alignItems": "stretch",
+                    "flex": undefined,
+                    "flexDirection": "column",
+                    "justifyContent": "flex-start",
+                    "width": "100%",
+                  },
+                  {
+                    "marginVertical": 10,
+                  },
+                ]
+              }
+            >
+              <Text
+                style={
+                  {
+                    "color": "black",
+                    "fontFamily": "Poppins-Light",
+                    "fontSize": 14,
+                    "fontWeight": "400",
+                    "textAlign": "left",
+                  }
+                }
+                testID="receiveritem-label"
+              >
+                Julia
+              </Text>
+            </View>
+          </View>
+        </View>
+        <View
+          onFocusCapture={[Function]}
+          onLayout={[Function]}
+          style={
+            [
+              {
+                "flexDirection": "row",
+              },
+              null,
+            ]
+          }
+        >
+          <View
+            style={
+              [
+                {
+                  "alignItems": "flex-start",
+                  "flex": undefined,
+                  "flexDirection": "column",
+                  "justifyContent": "flex-start",
+                  "width": "100%",
+                },
+                {
+                  "marginRight": 20,
+                  "width": "auto",
+                },
+              ]
+            }
+            testID="transferform-receiveritem-2"
+          >
+            <View
+              accessibilityRole="button"
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": false,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                [
+                  {
+                    "alignItems": "center",
+                    "backgroundColor": "transparent",
+                    "borderStyle": "solid",
+                    "justifyContent": "center",
+                    "opacity": 1,
+                  },
+                  false,
+                  {
+                    "backgroundColor": "#EFEFEF",
+                    "borderRadius": 8,
+                    "height": 60,
+                    "width": 60,
+                  },
+                ]
+              }
+              testID="receiveritem-button"
+            >
+              <SvgMock
+                height={24}
+                testID="receiveritem-img"
+                width={23}
+              />
+            </View>
+            <View
+              style={
+                [
+                  {
+                    "alignItems": "stretch",
+                    "flex": undefined,
+                    "flexDirection": "column",
+                    "justifyContent": "flex-start",
+                    "width": "100%",
+                  },
+                  {
+                    "marginVertical": 10,
+                  },
+                ]
+              }
+            >
+              <Text
+                style={
+                  {
+                    "color": "black",
+                    "fontFamily": "Poppins-Light",
+                    "fontSize": 14,
+                    "fontWeight": "400",
+                    "textAlign": "left",
+                  }
+                }
+                testID="receiveritem-label"
+              >
+                Andrew
+              </Text>
+            </View>
+          </View>
+        </View>
+        <View
+          onFocusCapture={[Function]}
+          onLayout={[Function]}
+          style={
+            [
+              {
+                "flexDirection": "row",
+              },
+              null,
+            ]
+          }
+        >
+          <View
+            style={
+              [
+                {
+                  "alignItems": "flex-start",
+                  "flex": undefined,
+                  "flexDirection": "column",
+                  "justifyContent": "flex-start",
+                  "width": "100%",
+                },
+                {
+                  "marginRight": 20,
+                  "width": "auto",
+                },
+              ]
+            }
+            testID="transferform-receiveritem-3"
+          >
+            <View
+              accessibilityRole="button"
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": false,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                [
+                  {
+                    "alignItems": "center",
+                    "backgroundColor": "transparent",
+                    "borderStyle": "solid",
+                    "justifyContent": "center",
+                    "opacity": 1,
+                  },
+                  false,
+                  {
+                    "backgroundColor": "#EFEFEF",
+                    "borderRadius": 8,
+                    "height": 60,
+                    "width": 60,
+                  },
+                ]
+              }
+              testID="receiveritem-button"
+            >
+              <SvgMock
+                height={24}
+                testID="receiveritem-img"
+                width={23}
+              />
+            </View>
+            <View
+              style={
+                [
+                  {
+                    "alignItems": "stretch",
+                    "flex": undefined,
+                    "flexDirection": "column",
+                    "justifyContent": "flex-start",
+                    "width": "100%",
+                  },
+                  {
+                    "marginVertical": 10,
+                  },
+                ]
+              }
+            >
+              <Text
+                style={
+                  {
+                    "color": "black",
+                    "fontFamily": "Poppins-Light",
+                    "fontSize": 14,
+                    "fontWeight": "400",
+                    "textAlign": "left",
+                  }
+                }
+                testID="receiveritem-label"
+              >
+                David
+              </Text>
+            </View>
+          </View>
+        </View>
+        <View
+          onFocusCapture={[Function]}
+          onLayout={[Function]}
+          style={
+            [
+              {
+                "flexDirection": "row",
+              },
+              null,
+            ]
+          }
+        >
+          <View
+            style={
+              [
+                {
+                  "alignItems": "flex-start",
+                  "flex": undefined,
+                  "flexDirection": "column",
+                  "justifyContent": "flex-start",
+                  "width": "100%",
+                },
+                {
+                  "marginRight": 20,
+                  "width": "auto",
+                },
+              ]
+            }
+            testID="transferform-receiveritem-4"
+          >
+            <View
+              accessibilityRole="button"
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": false,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                [
+                  {
+                    "alignItems": "center",
+                    "backgroundColor": "transparent",
+                    "borderStyle": "solid",
+                    "justifyContent": "center",
+                    "opacity": 1,
+                  },
+                  false,
+                  {
+                    "backgroundColor": "#EFEFEF",
+                    "borderRadius": 8,
+                    "height": 60,
+                    "width": 60,
+                  },
+                ]
+              }
+              testID="receiveritem-button"
+            >
+              <SvgMock
+                height={24}
+                testID="receiveritem-img"
+                width={23}
+              />
+            </View>
+            <View
+              style={
+                [
+                  {
+                    "alignItems": "stretch",
+                    "flex": undefined,
+                    "flexDirection": "column",
+                    "justifyContent": "flex-start",
+                    "width": "100%",
+                  },
+                  {
+                    "marginVertical": 10,
+                  },
+                ]
+              }
+            >
+              <Text
+                style={
+                  {
+                    "color": "black",
+                    "fontFamily": "Poppins-Light",
+                    "fontSize": 14,
+                    "fontWeight": "400",
+                    "textAlign": "left",
+                  }
+                }
+                testID="receiveritem-label"
+              >
+                Susan
+              </Text>
+            </View>
+          </View>
+        </View>
+        <View
+          onFocusCapture={[Function]}
+          onLayout={[Function]}
+          style={
+            [
+              {
+                "flexDirection": "row",
+              },
+              null,
+            ]
+          }
+        >
+          <View
+            style={
+              [
+                {
+                  "alignItems": "flex-start",
+                  "flex": undefined,
+                  "flexDirection": "column",
+                  "justifyContent": "flex-start",
+                  "width": "100%",
+                },
+                {
+                  "marginRight": 20,
+                  "width": "auto",
+                },
+              ]
+            }
+            testID="transferform-receiveritem-5"
+          >
+            <View
+              accessibilityRole="button"
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": false,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                [
+                  {
+                    "alignItems": "center",
+                    "backgroundColor": "transparent",
+                    "borderStyle": "solid",
+                    "justifyContent": "center",
+                    "opacity": 1,
+                  },
+                  false,
+                  {
+                    "backgroundColor": "#EFEFEF",
+                    "borderRadius": 8,
+                    "height": 60,
+                    "width": 60,
+                  },
+                ]
+              }
+              testID="receiveritem-button"
+            >
+              <SvgMock
+                height={24}
+                testID="receiveritem-img"
+                width={23}
+              />
+            </View>
+            <View
+              style={
+                [
+                  {
+                    "alignItems": "stretch",
+                    "flex": undefined,
+                    "flexDirection": "column",
+                    "justifyContent": "flex-start",
+                    "width": "100%",
+                  },
+                  {
+                    "marginVertical": 10,
+                  },
+                ]
+              }
+            >
+              <Text
+                style={
+                  {
+                    "color": "black",
+                    "fontFamily": "Poppins-Light",
+                    "fontSize": 14,
+                    "fontWeight": "400",
+                    "textAlign": "left",
+                  }
+                }
+                testID="receiveritem-label"
+              >
+                Edisson
+              </Text>
+            </View>
+          </View>
+        </View>
+        <View
+          onFocusCapture={[Function]}
+          onLayout={[Function]}
+          style={
+            [
+              {
+                "flexDirection": "row",
+              },
+              null,
+            ]
+          }
+        >
+          <View
+            style={
+              [
+                {
+                  "alignItems": "flex-start",
+                  "flex": undefined,
+                  "flexDirection": "column",
+                  "justifyContent": "flex-start",
+                  "width": "100%",
+                },
+                {
+                  "marginRight": 20,
+                  "width": "auto",
+                },
+              ]
+            }
+            testID="transferform-receiveritem-7"
+          >
+            <View
+              accessibilityRole="button"
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": false,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                [
+                  {
+                    "alignItems": "center",
+                    "backgroundColor": "transparent",
+                    "borderStyle": "solid",
+                    "justifyContent": "center",
+                    "opacity": 1,
+                  },
+                  false,
+                  {
+                    "backgroundColor": "#EFEFEF",
+                    "borderRadius": 8,
+                    "height": 60,
+                    "width": 60,
+                  },
+                ]
+              }
+              testID="receiveritem-button"
+            >
+              <SvgMock
+                height={24}
+                testID="receiveritem-img"
+                width={23}
+              />
+            </View>
+            <View
+              style={
+                [
+                  {
+                    "alignItems": "stretch",
+                    "flex": undefined,
+                    "flexDirection": "column",
+                    "justifyContent": "flex-start",
+                    "width": "100%",
+                  },
+                  {
+                    "marginVertical": 10,
+                  },
+                ]
+              }
+            >
+              <Text
+                style={
+                  {
+                    "color": "black",
+                    "fontFamily": "Poppins-Light",
+                    "fontSize": 14,
+                    "fontWeight": "400",
+                    "textAlign": "left",
+                  }
+                }
+                testID="receiveritem-label"
+              >
+                Bella
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </RCTScrollView>
+    <View
+      accessibilityRole="button"
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": false,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderRadius": 8,
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "height": 65,
+            "justifyContent": "center",
+            "opacity": 1,
+          },
+          false,
+          {
+            "backgroundColor": "#363062",
+            "marginTop": 50,
+            "width": "100%",
+          },
+        ]
+      }
+      testID="transferform-send"
+    >
+      <Text
+        style={
+          [
+            {
+              "fontFamily": "Poppins-Bold",
+              "fontSize": 18,
+              "textAlign": "center",
+            },
+            {
+              "color": "white",
+            },
+          ]
+        }
+        testID="button-text"
+      >
+        SEND
+      </Text>
+    </View>
+  </View>
+</View>
+`;

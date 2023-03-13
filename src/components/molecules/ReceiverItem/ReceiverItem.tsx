@@ -33,7 +33,13 @@ const ReceiverItem = ({
           customStyle={style.buttonPressed}
           onPress={onReceiverPress}
           testId="receiveritem-button">
-          <Img src={ImgType.iconUser} height={24} width={23} alt={''} />
+          <Img
+            testId="receiveritem-img"
+            src={ImgType.iconUser}
+            height={24}
+            width={23}
+            alt={''}
+          />
         </ComposableButton>
       ) : (
         <ComposableButton
@@ -41,6 +47,7 @@ const ReceiverItem = ({
           onPress={onReceiverPress}
           testId="receiveritem-button">
           <Img
+            testId="receiveritem-img"
             src={ImgType.iconChartSelected}
             height={24}
             width={23}
@@ -50,7 +57,7 @@ const ReceiverItem = ({
       )}
 
       <Container customStyle={style.spacing}>
-        <Label>{firstname}</Label>
+        <Label testId="receiveritem-label">{firstname}</Label>
       </Container>
     </Container>
   );
