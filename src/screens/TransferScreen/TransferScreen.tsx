@@ -23,7 +23,8 @@ const TransferScreen = ({testId}: TransferScreenProps) => {
   const isFocused = useIsFocused();
   const [transferValue, setTransferValue] = useState('$ 50');
   const [selectedButton, setSelectedButton] = useState(0);
-  const [selectedReceiver, setSelectedReceiver] = useState('');
+  const [selectedReceiver, setSelectedReceiver] = useState('1');
+  const [modalVisible, setModalVisible] = useState(false);
 
   const onChangePress = () => {
     console.log('onChangePress');
@@ -44,6 +45,12 @@ const TransferScreen = ({testId}: TransferScreenProps) => {
 
   const onSendPress = () => {
     console.log('onSendPress');
+    setModalVisible(true);
+  };
+
+  const onModalPress = () => {
+    console.log('onModalPress');
+    setModalVisible(false);
   };
 
   useEffect(() => {
@@ -66,6 +73,8 @@ const TransferScreen = ({testId}: TransferScreenProps) => {
       receiverData={ReceiverData}
       onReceiverPress={onReceiverPress}
       onSendPress={onSendPress}
+      modalVisible={modalVisible}
+      onModalPress={onModalPress}
     />
   );
 };

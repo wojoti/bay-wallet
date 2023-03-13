@@ -5,6 +5,7 @@ export {default as InputArea} from './InputArea/InputArea';
 export {default as MarketHeader} from './MarketHeader/MarketHeader';
 export {default as MarketItem} from './MarketItem/MarketItem';
 export {default as MarketItemSeparator} from './MarketItemSeparator/MarketItemSeparator';
+export {default as ModalContainer} from './ModalContainer/ModalContainer';
 export {default as OperationValueSelector} from './OperationValueSelector/OperationValueSelector';
 export {default as ReceiverItem} from './ReceiverItem/ReceiverItem';
 export {default as SearchBar} from './SearchBar/SearchBar';

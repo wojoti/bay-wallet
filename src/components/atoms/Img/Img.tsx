@@ -25,6 +25,7 @@ import Profile from 'img/profile.svg';
 import Search from 'img/search.svg';
 import Squares from 'img/squares.svg';
 import Squares_selected from 'img/squares_selected.svg';
+import Success from 'img/success.svg';
 import Transfer from 'img/transfer.svg';
 import Wave_green from 'img/wave_green.svg';
 import Withdraw from 'img/withdraw.svg';
@@ -69,6 +70,7 @@ export enum ImgType {
   cardlogo2 = 'img/cardlogo_2.svg',
   cardlogo3 = 'img/cardlogo_3.svg',
   iconUser = 'img/iconuser.svg',
+  success = 'img/success.svg',
 }
 
 function Img({src, height, width = '100%', testId}: ImgProps) {
@@ -143,6 +145,8 @@ function Img({src, height, width = '100%', testId}: ImgProps) {
       return <CardLogo_3 width={width} height={height} testID={testId} />;
     case ImgType.iconUser:
       return <IconUser width={width} height={height} testID={testId} />;
+    case ImgType.success:
+      return <Success width={width} height={height} testID={testId} />;
   }
 }
 export default Img;

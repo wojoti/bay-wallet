@@ -1,8 +1,9 @@
 import {Container} from 'components/atoms';
-import {SelectedWalletArea} from 'components/molecules';
+import {ModalContainer, SelectedWalletArea} from 'components/molecules';
 import {TransferForm} from 'components/organisms';
 import {Receiver} from 'components/organisms/TransferForm/TransferForm';
 import {PropsWithChildren} from 'react';
+import {Modal} from 'react-native';
 import style from './TransferTemplate.style';
 
 export type TransferTemplateProps = PropsWithChildren<{
@@ -18,6 +19,8 @@ export type TransferTemplateProps = PropsWithChildren<{
   onMorePress: () => void;
   receiverData: Receiver[];
   onSendPress: () => void;
+  modalVisible: boolean;
+  onModalPress: () => void;
 }>;
 
 const TransferTemplate = ({
@@ -33,9 +36,19 @@ const TransferTemplate = ({
   onMorePress,
   receiverData,
   onSendPress,
+  modalVisible,
+  onModalPress,
 }: TransferTemplateProps) => {
   return (
     <Container align="center" customStyle={style.wrapper} testId={testId}>
+      <Modal animationType="fade" transparent={true} visible={modalVisible}>
+        <ModalContainer
+          onPress={onModalPress}
+          header="Success!"
+          description="Your payment has been procceded!"
+          buttonText="DONE"
+        />
+      </Modal>
       <SelectedWalletArea
         onChangePress={onChangePress}
         walletValue={walletValue}

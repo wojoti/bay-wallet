@@ -17,6 +17,8 @@ export const green = '#61C277';
 export const lime = '#53E520';
 export const red = '#E52020';
 
+export const successGreen = '#3EB290';
+
 export const pink = '#D8B9C3';
 export const darkPurple = '#26204E';
 export const balanceWhite = '#F8F8FF';
